@@ -27,4 +27,4 @@ The list of terms has been sourced from the JATS for Reuse site.<sup>[2](#fn2)</
 ## References
 <a name="fn1">\[1\]</a> *CRediT.* NISO. Available from http://credit.niso.org/
 
-<a name="fn1">\[2\]</a> *CRediT taxonomy.* In: JATS4R. Published 2020-09-21. Available from https://jats4r.org/credit-taxonomy
+<a name="fn2">\[2\]</a> *CRediT taxonomy.* In: JATS4R. Published 2020-09-21. Available from https://jats4r.org/credit-taxonomy
