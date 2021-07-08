@@ -1,8 +1,10 @@
 # CRediT Role Type 
 
-The type of role from the CRediT contribution role taxonomy.
+The type of role from the CRediT contribution role taxonomy.<sup>[1](#fn1)</sup>
 
 ## Closed list of terms
+
+The list of terms has been sourced from the JATS for Reuse site.<sup>[2](#fn2)</sup>
 
 | Term | Definition | NISO URL | UUID |
 | --- | --- | --- | --- |
@@ -20,3 +22,9 @@ The type of role from the CRediT contribution role taxonomy.
 | Visualization | Preparation, creation and/or presentation of the published work, specifically visualization/data presentation. | http://credit.niso.org/contributor-roles/visualization/ | 76b9d56a-e430-4e0a-84c9-59c11be343ae |
 | Writing – original draft | Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation). | http://credit.niso.org/contributor-roles/writing-original-draft/ | 43ebbd94-98b4-42f1-866b-c930cef228ca |
 | Writing – review & editing | Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages. | http://credit.niso.org/contributor-roles/writing-review-editing/ | d3aead86-f2a2-47f7-bb99-79de6421164d |
+
+---
+## References
+<a name="fn1">\[1\]</a> *CRediT.* NISO. Available from http://credit.niso.org/
+
+<a name="fn2">\[2\]</a> *CRediT taxonomy.* In: JATS4R. Published 2020-09-21. Available from https://jats4r.org/credit-taxonomy
