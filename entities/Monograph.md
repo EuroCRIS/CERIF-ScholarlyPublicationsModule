@@ -1,9 +1,9 @@
-# Journal Article
+# Monograph
 
-An article on a particular topic and published in a journal issue. <sup>[1](#fn1)</sup>
+[FIXME] Book is a non-serial publication that is complete in one volume or a designated finite number of volumes. <sup>[1](#fn1)</sup> 
+Monograph is a scholarly book or a treatise on a single subject or a group of related subjects.
 
 ## Usage notes
-[FIXME] This class should be used for any type of journal article such as review article or researh article. 
 
 ## Specialization of
 
@@ -25,23 +25,21 @@ authorships: List<[Authorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/
 
 authors: List<[Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) (inherited from [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md))
 
-startPage: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
+ISBN: [ISBN](../datatypes/ISBN.md)
 
-endPage: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
+eISBN: [ISBN](../datatypes/ISBN.md)
 
-volume: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
+editorships: List<[Editorship](../entities/Editorship.md) 
 
-number: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
-
-journal: [Journal](../entities/Journal.md)
+publisherships: List<[Publisher](../entities/Publishership.md) 
 
 
 ## Matches
 
-1. Close match of [COAR Journal Article](http://vocabularies.coar-repositories.org/documentation/resource_types/#http://purl.org/coar/resource_type/c_6501)
-2. Close match of [Fabio Journal Article](https://sparontologies.github.io/fabio/current/fabio.html#d4e3646)
-3. Narrow match of [Bibo Article](http://purl.org/ontology/bibo/Article)
-4. Narrow match of [Schema.org Article](https://schema.org/Article) 
+1. Narrow match of [COAR Book](http://vocabularies.coar-repositories.org/documentation/resource_types/#http://purl.org/coar/resource_type/c_2f33)
+2. Narrow match of [Fabio Book](https://sparontologies.github.io/fabio/current/fabio.html#d4e2263)
+3. Narrow match of [Bibo Book](http://purl.org/ontology/bibo/Book)
+4. Narrow match of [Schema.org Book](https://schema.org/Book) 
 
 ## References
-<a name="fn1">\[1\]</a> Source: COAR resource types vocabulary, http://purl.org/coar/resource_type/c_6501
+<a name="fn1">\[1\]</a> Source: COAR resource types vocabulary, http://purl.org/coar/resource_type/c_2f33

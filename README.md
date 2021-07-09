@@ -7,3 +7,17 @@ Its secondary purpose is to demonstrate the liason between the [CERIF Core](http
 
 (2021-07-06) Experimental.
 
+## Scope
+
+The Scholarly Publications Module consists of the following entities:
+* 
+
+And the following data types:
+* ...
+
+## Usage
+
+
+## Development Tools
+
+
