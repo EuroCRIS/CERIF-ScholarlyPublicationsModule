@@ -1,4 +1,4 @@
-# CRediT Degree of Contribution 
+# CRediT Degree of Contribution  
 
 The degree of contribution from the CRediT role taxonomy.
 Where multiple individuals serve in the same role, the degree of contribution can optionally be specified. 

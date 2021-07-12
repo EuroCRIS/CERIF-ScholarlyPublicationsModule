@@ -44,4 +44,5 @@ journal: [Journal](../entities/Journal.md)
 4. Narrow match of [Schema.org Article](https://schema.org/Article) 
 
 ## References
+
 <a name="fn1">\[1\]</a> Source: COAR resource types vocabulary, http://purl.org/coar/resource_type/c_6501
