@@ -36,7 +36,7 @@ And the following data types:
   * [Degree of Contribution](./datatypes/CRediT_Degree_of_Contribution.md)
 
 ## Usage note
-This module can be used without the core.
+This module cannot be used without the core.
 
 ## Development Tools
 
