@@ -1,5 +1,6 @@
 # Publishership
 
+## Definition
 The relationship of a publisher to some subclasses of [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md).
 A **publisher** (a person or an organization) publishes material.<sup>[1](#fn1)</sup>
 
@@ -21,7 +22,7 @@ contacts: List<[URI](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/
 
 display name: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)  (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md)) 
 
-leading publisher flag: [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md)
+leading publisher flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this publisher was the leading one among several
 
 ---
 ## References
