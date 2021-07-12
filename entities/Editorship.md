@@ -1,7 +1,6 @@
 # Editorship
 
 ## Definition
-
 The relationship of an editor to some specific subclasses of [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md).
 An **editor** selects and prepares for publication material created and submitted by authors, having oversight of its content, format and presentation.<sup>[1](#fn1)</sup>
 
