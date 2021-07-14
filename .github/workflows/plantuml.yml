@@ -13,7 +13,7 @@ jobs:
       - name: Process Diagrams
         run: java -jar tools/plantuml.jar -v -tsvg -r -o "${{ github.workspace }}/diagrams" "diagrams/**.puml"
       - name: Display Diagrams
-        run: pwd && ls output
+        run: pwd && ls diagrams
       - name: Commit Diagrams
         run: |
           git config --local user.email "action@github.com"
