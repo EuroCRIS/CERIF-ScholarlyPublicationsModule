@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Process Diagrams
-        run: java -jar plantuml.jar -v -tsvg -r -o "${{ github.workspace }}/diagrams" "diagrams/**.puml"
+        run: java -jar tools/plantuml.jar -v -tsvg -r -o "${{ github.workspace }}/diagrams" "diagrams/**.puml"
       - name: Display Diagrams
         run: pwd && ls output
       - name: Commit Diagrams
