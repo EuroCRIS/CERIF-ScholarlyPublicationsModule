@@ -1,5 +1,5 @@
 @startuml
-package "CERIF core" #EEEEEE{
+package "CERIF core" #EFEFEF{
     !includesub ./core.puml!TDAS
 }
 

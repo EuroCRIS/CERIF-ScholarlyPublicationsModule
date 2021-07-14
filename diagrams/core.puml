@@ -1,0 +1,86 @@
+@startuml
+    !startsub Document
+    class "Document"{
+        Multilingual_String title
+        Date publicationDate
+        DOI_Type DOI
+    }
+    class "Textual Document"{
+    }
+    !endsub
+    !startsub TDAS
+    class "Textual Document Accessibility Specification"{
+    }
+    !endsub
+    class "Agent"{
+
+    }
+    class "Organisation Unit"{
+        Multilingual_String name
+    }
+    class "Person"{
+        ORCID_iD orcidid
+    }
+    class "Person Name"{
+        String firstNames
+        String familyNames
+        String otherNames
+    }
+    class "Authorship"{
+        Boolean correspondingAuthorFlag
+    }
+    !startsub Contributorship
+    class "Contributorship"{
+        List<URI> contacts
+        String displayName
+    }
+    class "Contribution Statement"{
+    }
+    class "Free Text Contribution"{
+        Multilingual_String statement
+    }
+    !endsub
+    class "Affiliation Statement"{
+        String displayAffiliation
+    }
+    class "Postal Address"{
+        String street
+        String city
+        String zipCode
+    }
+    class "Country"{
+        Multilingual_String name
+        ISO3166_Alpha_Code iso3166alphaCode
+        ISO3166_Numeric_Code iso3166NumericCode
+        EU_Country_Code euCountryCode
+    }
+    "Postal Address" *-- "country" "Country"
+    "Affiliation Statement" *-- "postalAddress" "Postal Address"
+    "Affiliation Statement" *-- "orgUnit" "Organisation Unit"
+    "Affiliation Statement" *-- "institution" "Organisation Unit"
+    !startsub Contributorship
+    "Contribution Statement" <|-- "Free Text Contribution"
+    "Contributorship" -r-* "Document"
+    !endsub
+    !startsub Contributorship
+    "Contributorship" -l-* "Agent"
+    !endsub
+    "Contributorship" o-- "affiliations" "Affiliation Statement"
+    !startsub Contributorship
+    "Contributorship" o-u- "contributionStatements" "Contribution Statement"
+    !endsub
+    "Authorship" -r-* "Textual Document"
+    "Contributorship" <|-u- "Authorship"
+    "Authorship" --> "author" "Agent"
+    note on link #red: author == contributor
+    "Person" o-d- "names" "Person Name"
+    "Agent" <|-d- "Person"
+    "Agent" <|-d- "Organisation Unit"
+    !startsub Document
+    "Document" <|-u- "Textual Document"
+    !endsub
+    "Textual Document" *-u- "accessRights" "Textual Document Accessibility Specification"
+    "Textual Document" *--  "authors" "Agent"
+
+    note left of Agent: The Agent is mandatory for almost all \nsubclasses of Contributorship,\nReviewing is the exception if the \nreviewer's identity is concealed. \nAlso useful when authors are \nusing pseudonyms.
+@enduml

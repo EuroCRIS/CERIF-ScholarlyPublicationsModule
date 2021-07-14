@@ -1,5 +1,5 @@
 @startuml
-package "CERIF core" #EEEEEE{
+package "CERIF core" #EFEFEF{
     !include ./core.puml
 }
     !startsub Coar
