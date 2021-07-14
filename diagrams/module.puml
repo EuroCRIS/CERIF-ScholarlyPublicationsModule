@@ -1,6 +1,6 @@
 @startuml
 package "CERIF core" #EEEEEE{
-    !include core.puml
+    !include ./core.puml
 }
     !startsub Coar
     class "COAR Accessibility Specification v1"

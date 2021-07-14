@@ -1,7 +1,7 @@
 @startuml
 package "CERIF core" #EEEEEE{
-    !includesub core.puml!TDAS
+    !includesub ./core.puml!TDAS
 }
 
-    !includesub module.puml!Coar
+    !includesub ./module.puml!Coar
 @enduml

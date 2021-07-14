@@ -1,8 +1,8 @@
 @startuml
 package "CERIF core" #EEEEEE{
-    !includesub core.puml!Document
-    !includesub core.puml!Contributorship
+    !includesub ./core.puml!Document
+    !includesub ./core.puml!Contributorship
 }
 
-    !includesub module.puml!CRediT
+    !includesub ./module.puml!CRediT
 @enduml
