@@ -35,9 +35,18 @@ And the following data types:
   * [Role Type](./datatypes/CRediT_Role_Type.md)
   * [Degree of Contribution](./datatypes/CRediT_Degree_of_Contribution.md)
 
+
+![The module diagram](./diagrams/module.svg)
+
 ## Usage note
 This module cannot be used without the core.
 
 ## Development Tools
+
+The [tools](./tools/) directory contains useful tools for checking the integrity of this repository.
+
+* plantuml.jar should be used to generate SVG images by using Plant UML files. More details about this tool can be found at this [link](https://gist.github.com/thedmeyer/8b50362ae71ecbadabb17f8683c70ece). It might be run from the tools directory in terminal in this way
+
+java -jar plantuml.jar -v -tsvg -r -o "../diagrams" "../diagrams/**.puml"
 
 

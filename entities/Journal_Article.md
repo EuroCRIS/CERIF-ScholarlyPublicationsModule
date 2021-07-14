@@ -35,6 +35,7 @@ number: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Stri
 
 journal: [Journal](../entities/Journal.md)
 
+![The JournalArticle diagram](../diagrams/journalArticle.svg)
 
 ## Matches
 

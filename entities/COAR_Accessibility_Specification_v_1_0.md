@@ -6,6 +6,8 @@ The COAR Access Rights vocabulary defines concepts to declare the access status 
 ## Usage notes
 This is an abstract entity. There are four subclasses which should be used for open access, embargoed access, restricted access, metadata only access.
 
+![The COAR diagram](../diagrams/coarAccessibilitySpecification.svg)
+
 ## Specialization of 
 [Textual Document Accessibility Rights](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document_Accessibility_Specification.md)
 
