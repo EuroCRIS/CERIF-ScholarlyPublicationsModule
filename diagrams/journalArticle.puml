@@ -1,0 +1,7 @@
+@startuml
+package "CERIF core" #EEEEEE{
+    !includesub core.puml!Document
+}
+
+    !includesub module.puml!Journal
+@enduml

@@ -1,0 +1,114 @@
+@startuml
+package "CERIF core" #EEEEEE{
+    !include core.puml
+}
+    !startsub Coar
+    class "COAR Accessibility Specification v1"
+
+    class "Open Access COAR v1 Accessibility Specification"
+
+    class "Restricted Access COAR v1 Accessibility Specification"
+
+    class "Metadata Only Access COAR v1 Accessibility Specification"
+
+    class "Emargoed Access COAR v1 Accessibility Specification"{
+        Date embargoEndDate
+    }
+    !endsub
+
+    !startsub Journal
+    class "Journal"{
+        Multilingual_String title
+        Multilingual_String acronym
+        ISSN_Type ISSN
+        ISSN_Type eISSN
+        Date startDate
+        Date endDate
+        DOI_Type DOI
+    }
+    class "Journal Article"{
+        String startPage
+        String endPage
+        String volume
+        String issue
+    }
+    !endsub
+
+    class "Monograph"{
+        ISBN_Type ISBN
+        ISBN_Type eISBN
+    }
+    class "Editorship"{
+        Boolean leadingEditorFlag
+    }
+    class "Publishership"{
+        Boolean leadingPublisherFlag
+    }
+    !startsub CRediT
+    class "CRediT Contribution Statement"{
+    }
+    enum "CRediT Degree of Contribution"{
+        Lead
+        Equal
+        Supporting
+    }
+    enum "CRediT Role Type"{
+        Conceptualization
+        Data curation
+        Formal analysis
+        Funding acquisition
+        Investigation
+        Methodology
+        Project administration
+        Resources
+        Software
+        Supervision
+        Validation
+        Visualization
+        Writing – original draft
+        Writing – review & editing
+    }
+    !endsub
+
+    !startsub Coar
+    "Textual Document Accessibility Specification" <|-- "COAR Accessibility Specification v1"
+    !endsub
+    !startsub Coar
+    "COAR Accessibility Specification v1" <|-- "Open Access COAR v1 Accessibility Specification"
+    !endsub
+    !startsub Coar
+    "COAR Accessibility Specification v1" <|-- "Restricted Access COAR v1 Accessibility Specification"
+    !endsub
+    !startsub Coar
+    "COAR Accessibility Specification v1" <|-- "Emargoed Access COAR v1 Accessibility Specification"
+    !endsub
+    !startsub Coar
+    "COAR Accessibility Specification v1" <|-- "Metadata Only Access COAR v1 Accessibility Specification"
+    !endsub
+    !startsub Journal
+    "Textual Document" <|-- "Journal Article"
+    !endsub
+    "Textual Document" <|-- "Monograph"
+    "Contributorship" <|-- "Editorship"
+    "Contributorship" <|-- "Publishership"
+    !startsub CRediT
+    "Contribution Statement" <|-- "CRediT Contribution Statement"
+    !endsub
+    !startsub Journal
+    "Journal" *-- "predecessor" "Journal"
+    !endsub
+    "Journal" *--  "publishers" "Agent"
+    !startsub Journal
+    "Journal Article" *-- "source" "Journal"
+    !endsub
+    "Editorship" --> "editor" "Agent"
+    note on link #red: editor == contributor
+    "Publishership" --> "publisher" "Agent"
+    note on link #red: publisher == contributor
+    !startsub CRediT
+    "CRediT Contribution Statement" *-- "roleType" "CRediT Role Type"
+    "CRediT Contribution Statement" *-- "degreeOfContribution" "CRediT Degree of Contribution"
+    !endsub
+
+    note right of "CRediT Role Type": The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
+@enduml
