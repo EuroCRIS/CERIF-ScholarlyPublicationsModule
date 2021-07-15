@@ -1,7 +1,11 @@
 @startuml
+
+!includesub core.puml!common
+
 package "CERIF core" #EFEFEF{
     !includesub ./core.puml!Document
 }
 
-    !includesub ./module.puml!Journal
+!includesub ./module.puml!Journal
+
 @enduml

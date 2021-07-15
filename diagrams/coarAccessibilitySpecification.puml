@@ -1,7 +1,11 @@
 @startuml
+
+!includesub core.puml!common
+
 package "CERIF core" #EFEFEF{
-    !includesub ./core.puml!TDAS
+    !includesub core.puml!TDAS
 }
 
-    !includesub ./module.puml!Coar
+!includesub ./module.puml!Coar
+
 @enduml

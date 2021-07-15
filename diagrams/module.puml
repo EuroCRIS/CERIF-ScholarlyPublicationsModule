@@ -1,4 +1,7 @@
 @startuml
+
+!includesub core.puml!common
+
 package "CERIF core" #EFEFEF{
     !include ./core.puml
 }
@@ -12,37 +15,37 @@ package "CERIF core" #EFEFEF{
     class "Metadata Only Access COAR v1 Accessibility Specification"
 
     class "Emargoed Access COAR v1 Accessibility Specification"{
-        Date embargoEndDate
+        embargoEndDate : Date
     }
     !endsub
 
     !startsub Journal
     class "Journal"{
-        Multilingual_String title
-        Multilingual_String acronym
-        ISSN_Type ISSN
-        ISSN_Type eISSN
-        Date startDate
-        Date endDate
-        DOI_Type DOI
+        title : Multilingual_String
+        acronym : Multilingual_String
+        ISSN : ISSN_Type
+        eISSN : ISSN_Type
+        startDate : Date
+        endDate : Date
+        DOI : DOI_Type
     }
     class "Journal Article"{
-        String startPage
-        String endPage
-        String volume
-        String issue
+        startPage : String
+        endPage : String
+        volume : String
+        issue : String
     }
     !endsub
 
     class "Monograph"{
-        ISBN_Type ISBN
-        ISBN_Type eISBN
+        ISBN : ISBN_Type
+        eISBN : ISBN_Type
     }
     class "Editorship"{
-        Boolean leadingEditorFlag
+        leadingEditorFlag : Boolean
     }
     class "Publishership"{
-        Boolean leadingPublisherFlag
+        leadingPublisherFlag : Boolean
     }
     !startsub CRediT
     class "CRediT Contribution Statement"{
@@ -95,19 +98,19 @@ package "CERIF core" #EFEFEF{
     "Contribution Statement" <|-- "CRediT Contribution Statement"
     !endsub
     !startsub Journal
-    "Journal" *-- "predecessor" "Journal"
+    "Journal" o-- "predecessor" "Journal"
     !endsub
-    "Journal" *--  "publishers" "Agent"
+    "Journal" o--  "publishers" "Agent"
     !startsub Journal
-    "Journal Article" *-- "source" "Journal"
+    "Journal Article" o-- "source" "Journal"
     !endsub
     "Editorship" --> "editor" "Agent"
     note on link #red: editor == contributor
     "Publishership" --> "publisher" "Agent"
     note on link #red: publisher == contributor
     !startsub CRediT
-    "CRediT Contribution Statement" *-- "roleType" "CRediT Role Type"
-    "CRediT Contribution Statement" *-- "degreeOfContribution" "CRediT Degree of Contribution"
+    "CRediT Contribution Statement" ..> "roleType" "CRediT Role Type"
+    "CRediT Contribution Statement" ..> "degreeOfContribution" "CRediT Degree of Contribution"
     !endsub
 
     note right of "CRediT Role Type": The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
