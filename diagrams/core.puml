@@ -60,7 +60,7 @@
         euCountryCode : EU_Country_Code
     }
     "Postal Address" *-- "country" "Country"
-    "Affiliation Statement" ..> "postalAddress" "Postal Address"
+    "Affiliation Statement" ..> "postalAddress" "Postal_Address"
     "Affiliation Statement" o-- "orgUnit" "Organisation Unit"
     "Affiliation Statement" o-- "institution" "Organisation Unit"
     !startsub Contributorship
@@ -78,7 +78,7 @@
     "Contributorship" <|-u- "Authorship"
     "Authorship" --> "author" "Agent"
     note on link #red: author == contributor
-    "Person" .d.> "names" "Person Name"
+    "Person" .d.> "names" "Person_Name"
     "Agent" <|-d- "Person"
     "Agent" <|-d- "Organisation Unit"
     !startsub Document
