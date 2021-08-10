@@ -11,19 +11,7 @@ An article on a particular topic and published in a journal issue. <sup>[1](#fn1
 
 ## Attributes
 
-DOI: [DOI_Type](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/DOI.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-title: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-publication date: [Date](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Date.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-access rights: [Textual Document Accessibility Specification](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document_Accessibility_Specification.md)
-
-contributorships: List<[Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-authorships: List<[Authorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Authorship.md) (inherited from [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md))
-
-authors: List<[Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) (inherited from [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md))
+Beside those inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#attributes), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#attributes), there are the following attributes specific for this type of textual document:
 
 startPage: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
 
@@ -33,7 +21,12 @@ volume: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Stri
 
 number: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
 
-journal: [Journal](../entities/Journal.md)
+## Relationships
+Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#relationships).
+
+A journal article should contain information about *[journal](../entities/Journal.md)* in which it is published.
+
+## Illustrative Diagram
 
 ![The JournalArticle diagram](../diagrams/journalArticle.svg)
 

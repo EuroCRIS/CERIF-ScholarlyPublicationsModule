@@ -10,17 +10,17 @@
         publicationDate : Date
         DOI : DOI_Type
     }
-    class "Textual Document"{
+    class "Textual_Document"{
     }
     !endsub
     !startsub TDAS
-    class "Textual Document Accessibility Specification"{
+    class "Textual_Document_Accessibility_Specification"{
     }
     !endsub
     class "Agent"{
 
     }
-    class "Organisation Unit"{
+    class "Organisation_Unit"{
         name : Multilingual_String
     }
     class "Person"{
@@ -39,13 +39,13 @@
         contacts : List<URI>
         displayName : String
     }
-    class "Contribution Statement"{
+    class "Contribution_Statement"{
     }
-    class "Free Text Contribution"{
+    class "Free_Text_Contribution"{
         statement : Multilingual_String
     }
     !endsub
-    class "Affiliation Statement"{
+    class "Affiliation_Statement"{
         displayAffiliation : String
     }
    datatype("Postal_Address"){
@@ -59,33 +59,35 @@
         iso3166NumericCode : ISO3166_Numeric_Code
         euCountryCode : EU_Country_Code
     }
-    "Postal Address" *-- "country" "Country"
-    "Affiliation Statement" ..> "postalAddress" "Postal_Address"
-    "Affiliation Statement" o-- "orgUnit" "Organisation Unit"
-    "Affiliation Statement" o-- "institution" "Organisation Unit"
+    "Postal_Address" o-- "country" "Country"
+    "Affiliation_Statement" ..> "postalAddress" "Postal_Address"
+    "Affiliation_Statement" o-- "0..1 orgUnit" "Organisation_Unit"
+    "Affiliation_Statement" o-- "0..1 institution" "Organisation_Unit"
+    "Affiliation_Statement" o-- "person" "Person"
     !startsub Contributorship
-    "Contribution Statement" <|-- "Free Text Contribution"
-    "Contributorship" -r-* "Document"
+    "Contribution_Statement" <|-- "Free_Text_Contribution"
     !endsub
     !startsub Contributorship
-    "Contributorship" -l-* "Agent"
+    "Contributorship" "0..*" -r-* "Document"
     !endsub
-    "Contributorship" *-- "affiliations" "Affiliation Statement"
     !startsub Contributorship
-    "Contributorship" *-u- "contributionStatements" "Contribution Statement"
+    "Contributorship" "0..*" -l-* "0..1 contributor" "Agent"
     !endsub
-    "Authorship" -r-* "Textual Document"
+    "Contributorship" *-- "0..* affiliations" "Affiliation_Statement"
+    !startsub Contributorship
+    "Contributorship" *-u- "0..* contributionStatements" "Contribution_Statement"
+    !endsub
+    "Authorship" -r-* "Textual_Document"
     "Contributorship" <|-u- "Authorship"
-    "Authorship" --> "author" "Agent"
-    note on link #red: author == contributor
+    "Authorship" "0..*" --o "0..1 author" "Agent"
+    note on link #yellow: author == contributor
     "Person" .d.> "names" "Person_Name"
     "Agent" <|-d- "Person"
-    "Agent" <|-d- "Organisation Unit"
+    "Agent" <|-d- "Organisation_Unit"
     !startsub Document
-    "Document" <|-u- "Textual Document"
+    "Document" <|-u- "Textual_Document"
     !endsub
-    "Textual Document" *-u- "accessRights" "Textual Document Accessibility Specification"
-    "Textual Document" *--  "authors" "Agent"
-
+    "Textual_Document" *-u- "0..* accessRights" "Textual_Document_Accessibility_Specification"
+    "Textual_Document" "0..* authoredDocuments" --- "0..* authors" "Agent"
     note left of Agent: The Agent is mandatory for almost all \nsubclasses of Contributorship,\nReviewing is the exception if the \nreviewer's identity is concealed. \nAlso useful when authors are \nusing pseudonyms.
 @enduml

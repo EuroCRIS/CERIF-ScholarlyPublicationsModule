@@ -35,7 +35,7 @@ And the following data types:
   * [Role Type](./datatypes/CRediT_Role_Type.md)
   * [Degree of Contribution](./datatypes/CRediT_Degree_of_Contribution.md)
 
-
+## Illustrative Diagram
 ![The module diagram](./diagrams/module.svg)
 
 ## Usage note

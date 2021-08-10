@@ -8,24 +8,19 @@ An **editor** selects and prepares for publication material created and submitte
 [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Authorship.md)
 
 ## Attributes
-editor: [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md)
-* [FIXME] replacing the inherited contributor attribute from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) 
 
-document: [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md)
+Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#attributes), there are also the following specific attribute:
 
-affiliations: List<[Affiliation Statement](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Affiliation_Statement.md)> (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md))
+leading editor flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this editor contributed all or major effort (true)
 
-contribution statements: List<[Contribution Statement](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution_Statement.md)>  (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md))
+## Relationships
 
-contacts: List<[URI](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/URI.md)> (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md))
-
-display name: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)  (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md)) 
-
-leading editor flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this editor contributed all or major effort (true)
+Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#relationships), there is also a link to *editor*: an instance of [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) 
+[FIXME] replacing the derived *contributor* link from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) 
 
 ---
 ## Matches
-Close match with the **editor** named individual (http://purl.org/spar/pro/editor) from the SPAR PRO Ontology.<sup>[1](#fn1)</sup>
+1. Close match with the **[editor](https://sparontologies.github.io/pro/current/pro.html#d4e705)** named individual from the SPAR PRO Ontology.<sup>[1](#fn1)</sup>
 
 ## References
 <a name="fn1">\[1\]</a> Editor. In: *PRO, the Publishing Roles Ontology*. Shotton, D. and Peroni, S. Available: https://sparontologies.github.io/pro/current/pro.html

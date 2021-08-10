@@ -8,23 +8,19 @@ A **publisher** (a person or an organization) publishes material.<sup>[1](#fn1)<
 [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Authorship.md)
 
 ## Attributes
-publisher: [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md)
-* [FIXME] replacing the inherited contributor attribute from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) 
 
-document: [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md)
+Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#attributes), there are also the following specific attribute:
 
-[FIXME] is there any sense in the next three inhereted attributes in the context of publisership
-affiliations: List<[Affiliation Statement](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Affiliation_Statement.md)> (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md))
+leading editor flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this publisher was the leading one among several (true)
 
-contribution statements: List<[Contribution Statement](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution_Statement.md)>  (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md))
+## Relationships
 
-contacts: List<[URI](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/URI.md)> (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md))
-
-display name: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)  (inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md)) 
-
-leading publisher flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this publisher was the leading one among several
+Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#relationships), there is also a link to *editor*: an instance of [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) 
+[FIXME] replacing the derived *contributor* link from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) 
 
 ---
-## References
-<a name="fn1">\[1\] Publisher. In: *PRO, the Publishing Roles Ontology.* Shotton, D. and Peroni, S. Available: https://sparontologies.github.io/pro/current/pro.html
+## Matches
+1. Close match with the **[publisher](https://sparontologies.github.io/pro/current/pro.html#d4e893)** named individual from the SPAR PRO Ontology.<sup>[1](#fn1)</sup>
 
+## References
+<a name="fn1">\[1\]</a> Publisher. In: *PRO, the Publishing Roles Ontology*. Shotton, D. and Peroni, S. Available: https://sparontologies.github.io/pro/current/pro.html

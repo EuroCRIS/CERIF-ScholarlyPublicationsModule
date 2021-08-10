@@ -3,36 +3,24 @@
 [FIXME] Book is a non-serial publication that is complete in one volume or a designated finite number of volumes. <sup>[1](#fn1)</sup> 
 Monograph is a scholarly book or a treatise on a single subject or a group of related subjects.
 
-## Usage notes
-
 ## Specialization of
 
 [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md)
 
 ## Attributes
 
-DOI: [DOI_Type](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/DOI.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-title: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-publication date: [Date](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Date.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-access rights: [Textual Document Accessibility Specification](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document_Accessibility_Specification.md)
-
-contributorships: List<[Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) (inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md))
-
-authorships: List<[Authorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Authorship.md) (inherited from [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md))
-
-authors: List<[Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) (inherited from [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md))
+Beside those inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#attributes), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#attributes), there are the following attributes specific for this type of textual document:
 
 ISBN: [ISBN](../datatypes/ISBN.md)
 
 eISBN: [ISBN](../datatypes/ISBN.md)
 
-editorships: List<[Editorship](../entities/Editorship.md) 
+## Relationships
+Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#relationships).
 
-publisherships: List<[Publisher](../entities/Publishership.md) 
+A Textual Document has any number of *editorships*: instances of [Editorship](../entities/Editorship.md). This relationship is derived from *Document.contributorships* by including just those [Contributorships](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) that are [Editorships](../entities/Editorship.md).
 
+A Textual Document has any number of *publisherships*: instances of [Publishership](../entities/Publishership.md). This relationship is derived from *Document.contributorships* by including just those [Contributorships](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) that are [Publisherships](../entities/Publishership.md).
 
 ## Matches
 

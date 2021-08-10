@@ -11,6 +11,7 @@ role type : [CRediT Role Type](../datatypes/CRediT_Role_Type.md)
 
 degree of contribution : [CRediT Degree of Contribution](../datatypes/CRediT_Degree_of_Contribution.md)
 
+## Illustrative Diagram
 ![The CRediT diagram](../diagrams/CRediT.svg)
 
 ---

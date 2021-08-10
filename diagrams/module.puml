@@ -6,15 +6,15 @@ package "CERIF core" #EFEFEF{
     !include ./core.puml
 }
     !startsub Coar
-    class "COAR Accessibility Specification v1"
+    class "COAR_Accessibility_Specification_v1"
 
-    class "Open Access COAR v1 Accessibility Specification"
+    class "Open_Access_COAR_v1_Accessibility_Specification"
 
-    class "Restricted Access COAR v1 Accessibility Specification"
+    class "Restricted_Access_COAR_v1_Accessibility_Specification"
 
-    class "Metadata Only Access COAR v1 Accessibility Specification"
+    class "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
 
-    class "Emargoed Access COAR v1 Accessibility Specification"{
+    class "Emargoed_Access_COAR_v1_Accessibility_Specification"{
         embargoEndDate : Date
     }
     !endsub
@@ -29,7 +29,7 @@ package "CERIF core" #EFEFEF{
         endDate : Date
         DOI : DOI_Type
     }
-    class "Journal Article"{
+    class "Journal_Article"{
         startPage : String
         endPage : String
         volume : String
@@ -48,14 +48,14 @@ package "CERIF core" #EFEFEF{
         leadingPublisherFlag : Boolean
     }
     !startsub CRediT
-    class "CRediT Contribution Statement"{
+    class "CRediT_Contribution_Statement"{
     }
-    enum "CRediT Degree of Contribution"{
+    enum "CRediT_Degree_of_Contribution"{
         Lead
         Equal
         Supporting
     }
-    enum "CRediT Role Type"{
+    enum "CRediT_Role_Type"{
         Conceptualization
         Data curation
         Formal analysis
@@ -74,43 +74,43 @@ package "CERIF core" #EFEFEF{
     !endsub
 
     !startsub Coar
-    "Textual Document Accessibility Specification" <|-- "COAR Accessibility Specification v1"
+    "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v1"
     !endsub
     !startsub Coar
-    "COAR Accessibility Specification v1" <|-- "Open Access COAR v1 Accessibility Specification"
+    "COAR_Accessibility_Specification_v1" <|-- "Open_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Coar
-    "COAR Accessibility Specification v1" <|-- "Restricted Access COAR v1 Accessibility Specification"
+    "COAR_Accessibility_Specification_v1" <|-- "Restricted_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Coar
-    "COAR Accessibility Specification v1" <|-- "Emargoed Access COAR v1 Accessibility Specification"
+    "COAR_Accessibility_Specification_v1" <|-- "Emargoed_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Coar
-    "COAR Accessibility Specification v1" <|-- "Metadata Only Access COAR v1 Accessibility Specification"
+    "COAR_Accessibility_Specification_v1" <|-- "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Journal
-    "Textual Document" <|-- "Journal Article"
+    "Textual_Document" <|-- "Journal_Article"
     !endsub
-    "Textual Document" <|-- "Monograph"
+    "Textual_Document" <|-- "Monograph"
     "Contributorship" <|-- "Editorship"
     "Contributorship" <|-- "Publishership"
     !startsub CRediT
-    "Contribution Statement" <|-- "CRediT Contribution Statement"
+    "Contribution_Statement" <|-- "CRediT_Contribution_Statement"
     !endsub
     !startsub Journal
-    "Journal" o-- "predecessor" "Journal"
+    "Journal" o-- "0..* predecessors" "Journal"
     !endsub
-    "Journal" o--  "publishers" "Agent"
+    "Journal" o--  "0..* publishers" "Agent"
     !startsub Journal
-    "Journal Article" o-- "source" "Journal"
+    "Journal_Article" "0..*" o-- "source" "Journal"
     !endsub
     "Editorship" --> "editor" "Agent"
-    note on link #red: editor == contributor
+    note on link #yellow: editor == contributor
     "Publishership" --> "publisher" "Agent"
-    note on link #red: publisher == contributor
+    note on link #yellow: publisher == contributor
     !startsub CRediT
-    "CRediT Contribution Statement" ..> "roleType" "CRediT Role Type"
-    "CRediT Contribution Statement" ..> "degreeOfContribution" "CRediT Degree of Contribution"
+    "CRediT_Contribution_Statement" ..> "roleType" "CRediT_Role_Type"
+    "CRediT_Contribution_Statement" ..> "degreeOfContribution" "CRediT_Degree_of_Contribution"
     !endsub
 
     note right of "CRediT Role Type": The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.

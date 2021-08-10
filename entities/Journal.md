@@ -21,7 +21,11 @@ start date: [Date](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Da
 
 end date: [Date](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Date.md)
 
-publishers: List<[Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) 
+## Relationships
+
+A journal can have any number of *publishers*: instances of [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) 
+
+Moreover, a journal can have any number of its *predecessors*, i.e. it might be a journal which change the title or ISSN, or it might be two journals merged into the new one.  
 
 ## Matches
 
