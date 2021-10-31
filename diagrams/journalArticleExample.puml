@@ -1,0 +1,9 @@
+@startuml
+
+package "CERIF core" #EFEFEF{
+    !include ./coreExample.puml
+}
+
+!include ./example.puml
+
+@enduml

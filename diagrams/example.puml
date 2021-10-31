@@ -1,0 +1,35 @@
+@startuml
+
+package "CERIF core" #EFEFEF{
+    !include ./coreExample.puml
+}
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess
+
+     object "<u>EJOR : Journal</u>" as journalEJOR {
+                title [MultilingualString]: "European Journal of Operational Research"@en
+                issn [ISSN]: "0377-2217"
+                publishers (List<Agent>): [ Elsevier ]
+            }
+
+    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 {
+        	    DOI [DOI_Type]: "10.1016/j.ejor.2020.09.020"
+                title [MultilingualString]: "The responsibility of social media in times of societal and political manipulation"@en
+                authors [List<Agent>]: [ X ]
+                authorships [List<Authorship>]: [ Authorship 1 ]
+                accessRights [Textual Document Accessibility Specification]: Open Access: Open Access COAR v.1.0 Accessibility Specification
+                source [Journal]: EJOR
+                volume [String]: "291"
+                issue [String]: "3"
+                startPage [String]: "906"
+                endPage [String]: "917"
+                publicationDate [Date]: 2021-06-16
+        	}
+
+
+    journalEJOR o-->  "0..* publishers" Elsevier
+    article09020 o--> "source" journalEJOR
+    article09020 o--> "accessRights" OpenAccess
+    article09020 *--> "0..* authorships" Aut1
+    article09020 o--> "0..* authors" X
+
+@enduml

@@ -30,6 +30,8 @@ A journal article should contain information about *[journal](../entities/Journa
 
 ![The JournalArticle diagram](../diagrams/journalArticle.svg)
 
+![The JournalArticle diagram](../diagrams/journalArticleExample.svg)
+
 ## Matches
 
 1. Close match of [COAR Journal Article](http://vocabularies.coar-repositories.org/documentation/resource_types/#http://purl.org/coar/resource_type/c_6501)

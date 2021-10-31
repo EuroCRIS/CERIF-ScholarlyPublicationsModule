@@ -35,8 +35,10 @@ And the following data types:
   * [Role Type](./datatypes/CRediT_Role_Type.md)
   * [Degree of Contribution](./datatypes/CRediT_Degree_of_Contribution.md)
 
-## Illustrative Diagram
+## Illustrative Diagrams
 ![The module diagram](./diagrams/module.svg)
+
+![The example diagram](./diagrams/example.svg)
 
 ## Usage note
 This module cannot be used without the core.

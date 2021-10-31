@@ -16,7 +16,7 @@ package "CERIF core" #EFEFEF{
     !includesub ./core.puml!Document
 }
 
-!includesub ./module.puml!Journal
+!includesub ./example.puml!Journal
 
 @enduml
 
