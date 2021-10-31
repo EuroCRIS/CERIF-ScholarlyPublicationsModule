@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="995px" preserveAspectRatio="none" style="width:1228px;height:995px;background:#FFFFFF;" version="1.1" viewBox="0 0 1228 995" width="1228px" zoomAndPan="magnify"><defs><filter height="300%" id="fk6zcy37lyg1v" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[0ce99cd3eae675f87caad727cac20a4b]
+cluster CERIF core--><polygon fill="#EFEFEF" filter="url(#fk6zcy37lyg1v)" points="96,321,180,321,187,344.6094,1211,344.6094,1211,988,96,988,96,321" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="96" x2="187" y1="344.6094" y2="344.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="78" x="100" y="337.5332">CERIF core</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="39.6719" style="stroke:#A80036;stroke-width:1.5;" width="339" x="855.5" y="782"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="50" x="1000" y="796.457">X:Person</text><line style="stroke:#A80036;stroke-width:1.5;" x1="856.5" x2="1193.5" y1="801.0938" y2="801.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="327" x="861.5" y="815.4746">orcid_id [ORCID_iD_Type] = "https://orcid.org/0000-0003-3432-8728"</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="64.8281" style="stroke:#A80036;stroke-width:1.5;" width="168" x="941" y="907"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="121" x="964.5" y="921.457">X Name:PersonName</text><line style="stroke:#A80036;stroke-width:1.5;" x1="942" x2="1108" y1="926.0938" y2="926.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="131" x="947" y="940.4746">firstNames [String] = "Urlike"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="156" x="947" y="953.0527">familyNames [String] = "Reisach"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="123" x="947" y="965.6309">otherNames [String] = null</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="89.9844" style="stroke:#A80036;stroke-width:1.5;" width="366" x="112" y="757"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="108" x="241" y="771.457">Institution 1:OrgUnit</text><line style="stroke:#A80036;stroke-width:1.5;" x1="113" x2="477" y1="776.0938" y2="776.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="354" x="118" y="790.4746">name [MultilingualString] = "Neu-Ulm University of Applied Sciences"@en,</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="290" x="118" y="803.0527">"Hochschule fÃ¼r angewandte Wissenschaften Neu-Ulm"@de</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="119" x="118" y="815.6309">acronym [String] = "HNU"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="234" x="118" y="828.209">rorId [ROR_ID_Type] = "https://ror.org/03ggzay52"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="207" x="118" y="840.7871">websiteURL [URI] = "https://www.hnu.de/en/"</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="52.25" style="stroke:#A80036;stroke-width:1.5;" width="307" x="513.5" y="776"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="95" x="619.5" y="790.457">Germany:Country</text><line style="stroke:#A80036;stroke-width:1.5;" x1="514.5" x2="819.5" y1="795.0938" y2="795.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="245" x="519.5" y="809.4746">iso3166alphaCode [ISO_3166_Alpha2_Code]: "DE"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="295" x="519.5" y="822.0527">name [MultilingualString]: "Germany"@en, "Deutschland"@de</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="39.6719" style="stroke:#A80036;stroke-width:1.5;" width="235" x="420.5" y="394.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="113" x="481.5" y="408.957">Elsevier B.V.:OrgUnit</text><line style="stroke:#A80036;stroke-width:1.5;" x1="421.5" x2="654.5" y1="413.5938" y2="413.5938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="223" x="426.5" y="427.9746">name [MultilingualString] = "Elsevier B.V."@en</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="165.4531" style="stroke:#A80036;stroke-width:1.5;" width="331" x="526.5" y="532"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="173" x="605.5" y="546.457">Affiliation 1 : AffiliationStatement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="527.5" x2="856.5" y1="551.0938" y2="551.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="319" x="532.5" y="565.4746">displayAffiliation [String]: "Department of Information Management,</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="111" x="532.5" y="578.0527">Prof. Dr. Ulrike Reisach,</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="532.5" y="590.6309">Neu-Ulm University of Applied Sciences,</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="209" x="532.5" y="603.209">Wiley-Street 1, D-89231 Neu-Ulm, Germany"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="104" x="532.5" y="615.7871">orgUnit [OrgUnit]: Null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="152" x="532.5" y="628.3652">institution [OrgUnit]: Institution 1</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="141" x="532.5" y="640.9434">postalAddress [PostalAddress]:</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="144" x="532.5" y="653.5215">streetAddress: "Wiley-Street 1",</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="75" x="532.5" y="666.0996">city: "Neu-Ulm",</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="87" x="532.5" y="678.6777">country: Germany,</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="93" x="532.5" y="691.2559">zipCode: "D-89231"</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="115.1406" style="stroke:#A80036;stroke-width:1.5;" width="281" x="690.5" y="357"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="137" x="762.5" y="371.457">Authorship 1 : Authorship</text><line style="stroke:#A80036;stroke-width:1.5;" x1="691.5" x2="970.5" y1="376.0938" y2="376.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="80" x="696.5" y="390.4746">author [Agent]: X</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="241" x="696.5" y="403.0527">document [Document]: 10.1016/j.ejor.2020.09.020</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="248" x="696.5" y="415.6309">affiliations [List&lt;AffiliationStatement&gt;]: [Affiliation 1]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="179" x="696.5" y="428.209">displayName [String]: "Ulrike Reisach"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="269" x="696.5" y="440.7871">contacts [Collection&lt;URI&gt;]: [ "mailto:xxxxxxxx@hnu.de" ]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="196" x="696.5" y="453.3652">correspondingAuthorFlag [Boolean]: True</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="224" x="696.5" y="465.9434">contributionStatement [MultilingualString]: null</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="35.0938" style="stroke:#A80036;stroke-width:1.5;" width="374" x="7" y="247"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="360" x="14" y="261.457">Open Access: Open Access COAR v.1.0 Accessibility Specification</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="380" y1="266.0938" y2="266.0938"/><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="64.8281" style="stroke:#A80036;stroke-width:1.5;" width="362" x="416" y="232"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="82" x="556" y="246.457">EJOR : Journal</text><line style="stroke:#A80036;stroke-width:1.5;" x1="417" x2="777" y1="251.0938" y2="251.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="350" x="422" y="265.4746">title [MultilingualString]: "European Journal of Operational Research"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="115" x="422" y="278.0527">issn [ISSN]: "0377-2217"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="167" x="422" y="290.6309">publishers (List&lt;Agent&gt;): [ Elsevier ]</text><rect fill="#FEFECE" filter="url(#fk6zcy37lyg1v)" height="165.4531" style="stroke:#A80036;stroke-width:1.5;" width="622" x="403" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="230" x="599" y="21.457">10.1016/j.ejor.2020.09.020: Journal Article</text><line style="stroke:#A80036;stroke-width:1.5;" x1="404" x2="1024" y1="26.0938" y2="26.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="218" x="409" y="40.4746">DOI [DOI_Type]: "10.1016/j.ejor.2020.09.020"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="528" x="409" y="53.0527">title [MultilingualString]: "The responsibility of social media in times of societal and political manipulation"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="124" x="409" y="65.6309">authors [List&lt;Agent&gt;]: [ X ]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="217" x="409" y="78.209">authorships [List&lt;Authorship&gt;]: [ Authorship 1 ]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="610" x="409" y="90.7871">accessRights [Textual Document Accessibility Specification]: Open Access: Open Access COAR v.1.0 Accessibility Specification</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="108" x="409" y="103.3652">source [Journal]: EJOR</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="104" x="409" y="115.9434">volume [String]: "291"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="80" x="409" y="128.5215">issue [String]: "3"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="113" x="409" y="141.0996">startPage [String]: "906"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="112" x="409" y="153.6777">endPage [String]: "917"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="167" x="409" y="166.2559">publicationDate [Date]: 2021-06-16</text><!--MD5=[0de6e0d82a0c46b459c3ae003f151d8a]
+link X to XName--><path codeLine="11" d="M1025,822.13 C1025,842.78 1025,876.18 1025,901.91 " fill="none" id="X-to-XName" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1025,906.95,1029,897.95,1025,901.95,1021,897.95,1025,906.95" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="989.7" y="896.1357">name</text><!--MD5=[6cafdc760387d9ea46ffb3839ecb8ba8]
+link Aut1 to X--><path codeLine="53" d="M865.0229,483.0999 C865.0229,483.0999 978.29,708.18 1009.37,769.95 " fill="none" id="Aut1-X" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1015.39,781.9,1014.9186,772.0624,1013.143,777.4334,1007.772,775.6577,1015.39,781.9" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1013.143" x2="1009.545" y1="777.4334" y2="770.295"/><polygon fill="#FFFFFF" points="859.63,472.38,858.7532,479.5376,865.0229,483.0999,865.8998,475.9423,859.63,472.38" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="971.2796" y="771.2406">author</text><!--MD5=[e9e6ee0994f4ed96c825e5add7595754]
+link Aff1 to Ins1--><path codeLine="54" d="M515.3458,698.0346 C515.3458,698.0346 436.11,735.07 401.3,751.33 " fill="none" id="Aff1-Ins1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="389.2,756.99,399.0472,756.8088,393.7309,754.8756,395.6641,749.5593,389.2,756.99" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="393.7309" x2="400.975" y1="754.8756" y2="751.485"/><polygon fill="#FFFFFF" points="526.22,692.96,519.0914,691.8726,515.3458,698.0346,522.4744,699.122,526.22,692.96" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="343.7506" y="746.0659">institution</text><!--MD5=[da69f6f823684a7fb55bc1426d00d09b]
+link Aff1 to X--><path codeLine="55" d="M849.028,702.9611 C849.028,702.9611 945.06,756.47 978.81,775.27 " fill="none" id="Aff1-X" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="990.58,781.82,984.6652,773.945,986.2123,779.3862,980.7711,780.9333,990.58,781.82" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="986.2123" x2="979.215" y1="779.3862" y2="775.495"/><polygon fill="#FFFFFF" points="838.54,697.13,841.8403,703.5415,849.028,702.9611,845.7277,696.5495,838.54,697.13" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="935.741" y="771.1371">person</text><!--MD5=[48d91d06f17ccf2142226a173c86a258]
+link Aff1 to Ger--><path codeLine="56" d="M679.4045,709.0235 C679.4045,709.0235 674.26,747.13 672.19,762.5 " fill="none" id="Aff1-Ger" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="670.41,775.67,675.5711,767.2817,671.0748,770.7144,667.6421,766.2181,670.41,775.67" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="671.0748" x2="672.15" y1="770.7144" y2="762.785"/><polygon fill="#FFFFFF" points="681,697.13,676.2378,702.5449,679.4045,709.0235,684.1668,703.6086,681,697.13" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="623.2267" y="765.238">country</text><!--MD5=[95d1426ce0860d1e9f4491dbb03adc2d]
+link Aut1 to Aff1--><path codeLine="57" d="M784.2752,482.0615 C784.2752,482.0615 765.98,508.11 756.98,520.94 " fill="none" id="Aut1-Aff1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="749.45,531.67,757.8949,526.6022,752.3228,527.5777,751.3473,522.0056,749.45,531.67" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="752.3228" x2="756.915" y1="527.5777" y2="521.025"/><polygon fill="#A80036" points="791.17,472.24,784.4488,474.8525,784.2752,482.0615,790.9964,479.449,791.17,472.24" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="669.9596" y="521.071">0..* affiliations</text><!--MD5=[78d295f6486c4d03a8c3749297f4290e]
+link journalEJOR to Elsevier--><path codeLine="28" d="M579.8992,308.3981 C579.8992,308.3981 558.83,361.25 550.42,382.34 " fill="none" id="journalEJOR-Elsevier" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="545.59,394.46,552.6394,387.5821,547.4422,389.8157,545.2086,384.6185,545.59,394.46" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="547.4422" x2="550.405" y1="389.8157" y2="382.385"/><polygon fill="#FFFFFF" points="584.34,297.25,578.4036,301.3438,579.8992,308.3981,585.8356,304.3043,584.34,297.25" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="452.2051" y="383.4719">0..* publishers</text><!--MD5=[f85fa358000293560bab4694ebcbe378]
+link article09020 to journalEJOR--><path codeLine="29" d="M652.0359,182.1359 C652.0359,182.1359 633.72,209.2 625.92,220.74 " fill="none" id="article09020-journalEJOR" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="618.46,231.77,626.8188,226.5614,621.2639,227.6302,620.1951,222.0752,618.46,231.77" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="621.2639" x2="625.745" y1="227.6302" y2="221"/><polygon fill="#FFFFFF" points="658.75,172.19,652.0776,174.9249,652.0359,182.1359,658.7082,179.401,658.75,172.19" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="579.8643" y="220.9185">source</text><!--MD5=[147229d7a9bf6acfab943c9c5fe25232]
+link article09020 to OpenAccess--><path codeLine="30" d="M457.4671,175.8587 C457.4671,175.8587 307.14,225.86 256.59,242.68 " fill="none" id="article09020-OpenAccess" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="243.95,246.88,253.7524,247.8355,248.6945,245.3022,251.2279,240.2443,243.95,246.88" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="248.6945" x2="256.285" y1="245.3022" y2="242.775"/><polygon fill="#FFFFFF" points="468.85,172.06,461.8923,170.1651,457.4671,175.8587,464.4248,177.7536,468.85,172.06" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="168.2809" y="236.2498">accessRights</text><!--MD5=[e2f5b33376fa71555aee5a8473f6ae29]
+link article09020 to Aut1--><path codeLine="31" d="M773.1638,182.5352 C773.1638,182.5352 789.98,215.89 796,232 C809.35,267.69 817.84,309.32 823.11,343.7 " fill="none" id="article09020-Aut1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="825.05,356.98,827.7134,347.4981,824.3306,352.032,819.7967,348.6492,825.05,356.98" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="824.3306" x2="823.175" y1="352.032" y2="344.115"/><polygon fill="#A80036" points="767.4,172.01,766.7735,179.1938,773.1638,182.5352,773.7903,175.3513,767.4,172.01" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="727.458" y="346.0939">0..* authorships</text><!--MD5=[9319e62fcbbab493b1953bc62c52e63b]
+link article09020 to X--><path codeLine="32" d="M866.9876,179.1489 C866.9876,179.1489 961.27,260.01 989,313 C1069.71,467.24 1044.28,687.24 1030.91,768.89 " fill="none" id="article09020-X" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1028.7,781.85,1034.1563,773.6507,1029.5407,776.9212,1026.2702,772.3056,1028.7,781.85" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1029.5407" x2="1030.885" y1="776.9212" y2="769.035"/><polygon fill="#FFFFFF" points="857.32,172.04,859.7842,178.817,866.9876,179.1489,864.5235,172.3719,857.32,172.04" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="1039.6275" y="771.1759">0..* authors</text><!--MD5=[ec606cb17ac831e7c2ef5435f5350909]
+@startuml
+
+package "CERIF core" #EFEFEF{
+    !include ./coreExample.puml
+}
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess
+
+     object "<u>EJOR : Journal</u>" as journalEJOR {
+                title [MultilingualString]: "European Journal of Operational Research"@en
+                issn [ISSN]: "0377-2217"
+                publishers (List<Agent>): [ Elsevier ]
+            }
+
+    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 {
+        	    DOI [DOI_Type]: "10.1016/j.ejor.2020.09.020"
+                title [MultilingualString]: "The responsibility of social media in times of societal and political manipulation"@en
+                authors [List<Agent>]: [ X ]
+                authorships [List<Authorship>]: [ Authorship 1 ]
+                accessRights [Textual Document Accessibility Specification]: Open Access: Open Access COAR v.1.0 Accessibility Specification
+                source [Journal]: EJOR
+                volume [String]: "291"
+                issue [String]: "3"
+                startPage [String]: "906"
+                endPage [String]: "917"
+                publicationDate [Date]: 2021-06-16
+        	}
+
+
+    journalEJOR o- ->  "0..* publishers" Elsevier
+    article09020 o- -> "source" journalEJOR
+    article09020 o- -> "accessRights" OpenAccess
+    article09020 *- -> "0..* authorships" Aut1
+    article09020 o- -> "0..* authors" X
+
+@enduml
+
+@startuml
+
+package "CERIF core" #EFEFEF{
+	object "<u>X:Person</u>" as X {
+           orcid_id [ORCID_iD_Type] = "https://orcid.org/0000-0003-3432-8728"
+        }
+
+	object "<u>X Name:PersonName</u>" as XName {
+            firstNames [String] = "Urlike"
+            familyNames [String] = "Reisach"
+            otherNames [String] = null
+        }
+
+    X - -> "name" XName
+
+    object "<u>Institution 1:OrgUnit</u>" as Ins1 {
+    	    name [MultilingualString] = "Neu-Ulm University of Applied Sciences"@en,
+    	    "Hochschule fÃ¼r angewandte Wissenschaften Neu-Ulm"@de
+            acronym [String] = "HNU"
+            rorId [ROR_ID_Type] = "https://ror.org/03ggzay52"
+            websiteURL [URI] = "https://www.hnu.de/en/"
+    	}
+
+    object "<u>Germany:Country</u>" as Ger {
+            iso3166alphaCode [ISO_3166_Alpha2_Code]: "DE"
+            name [MultilingualString]: "Germany"@en, "Deutschland"@de
+        }
+
+    object "<u>Elsevier B.V.:OrgUnit</u>" as Elsevier {
+            name [MultilingualString] = "Elsevier B.V."@en
+        }
+
+    object "<u>Affiliation 1 : AffiliationStatement</u>" as Aff1 {
+            displayAffiliation [String]: "Department of Information Management,
+                 Prof. Dr. Ulrike Reisach,
+                 Neu-Ulm University of Applied Sciences,
+                 Wiley-Street 1, D-89231 Neu-Ulm, Germany"
+            orgUnit [OrgUnit]: Null
+            institution [OrgUnit]: Institution 1
+            postalAddress [PostalAddress]:
+                  streetAddress: "Wiley-Street 1",
+                  city: "Neu-Ulm",
+                  country: Germany,
+                  zipCode: "D-89231"
+        }
+
+    object "<u>Authorship 1 : Authorship</u>" as Aut1 {
+                author [Agent]: X
+                 document [Document]: 10.1016/j.ejor.2020.09.020
+                 affiliations [List<AffiliationStatement>]: [Affiliation 1]
+                 displayName [String]: "Ulrike Reisach"
+                 contacts [Collection<URI>]: [ "mailto:xxxxxxxx@hnu.de" ]
+                 correspondingAuthorFlag [Boolean]: True
+                 contributionStatement [MultilingualString]: null
+            }
+    Aut1 o- -> "author" X
+    Aff1 o- -> "institution" Ins1
+    Aff1 o- -> "person" X
+    Aff1 o- -> "country" Ger
+    Aut1 *- -> "0..* affiliations" Aff1
+
+}
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess
+
+     object "<u>EJOR : Journal</u>" as journalEJOR {
+                title [MultilingualString]: "European Journal of Operational Research"@en
+                issn [ISSN]: "0377-2217"
+                publishers (List<Agent>): [ Elsevier ]
+            }
+
+    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 {
+        	    DOI [DOI_Type]: "10.1016/j.ejor.2020.09.020"
+                title [MultilingualString]: "The responsibility of social media in times of societal and political manipulation"@en
+                authors [List<Agent>]: [ X ]
+                authorships [List<Authorship>]: [ Authorship 1 ]
+                accessRights [Textual Document Accessibility Specification]: Open Access: Open Access COAR v.1.0 Accessibility Specification
+                source [Journal]: EJOR
+                volume [String]: "291"
+                issue [String]: "3"
+                startPage [String]: "906"
+                endPage [String]: "917"
+                publicationDate [Date]: 2021-06-16
+        	}
+
+
+    journalEJOR o- ->  "0..* publishers" Elsevier
+    article09020 o- -> "source" journalEJOR
+    article09020 o- -> "accessRights" OpenAccess
+    article09020 *- -> "0..* authorships" Aut1
+    article09020 o- -> "0..* authors" X
+
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 10:20:59 CEST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) Client VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
