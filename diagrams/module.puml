@@ -21,19 +21,20 @@ package "CERIF core" #EFEFEF{
 
     !startsub Journal
     class "Journal"{
+        DOI : DOI_Type
         title : Multilingual_String
-        acronym : Multilingual_String
         ISSN : ISSN_Type
         eISSN : ISSN_Type
+        acronym : Multilingual_String
         startDate : Date
         endDate : Date
-        DOI : DOI_Type
     }
+
     class "Journal_Article"{
         startPage : String
         endPage : String
         volume : String
-        issue : String
+        number : String
     }
     !endsub
 
@@ -52,8 +53,8 @@ package "CERIF core" #EFEFEF{
     }
     enum "CRediT_Degree_of_Contribution"{
         Lead
-        Equal
         Supporting
+        Equal
     }
     enum "CRediT_Role_Type"{
         Conceptualization

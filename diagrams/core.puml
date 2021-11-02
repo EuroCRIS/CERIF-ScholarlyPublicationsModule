@@ -6,9 +6,9 @@
 
     !startsub Document
     class "Document"{
+        DOI : DOI_Type
         title : Multilingual_String
         publicationDate : Date
-        DOI : DOI_Type
     }
     class "Textual_Document"{
     }
@@ -52,12 +52,13 @@
         street : String
         city : String
         zipCode : String
+        country : Country
     }
     class "Country"{
         name : Multilingual_String
-        iso3166alphaCode : ISO3166_Alpha_Code
-        iso3166NumericCode : ISO3166_Numeric_Code
-        euCountryCode : EU_Country_Code
+        iso3166alpha2Code : ISO3166_Alpha2_Code
+        # iso3166NumericCode : ISO3166_Numeric_Code
+        # euCountryCode : EU_Country_Code
     }
     "Postal_Address" o-- "country" "Country"
     "Affiliation_Statement" ..> "postalAddress" "Postal_Address"

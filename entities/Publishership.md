@@ -11,7 +11,7 @@ A **publisher** (a person or an organization) publishes material.<sup>[1](#fn1)<
 
 Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#attributes), there are also the following specific attribute:
 
-leading editor flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this publisher was the leading one among several (true)
+leading publisher flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this publisher was the leading one among several (true)
 
 ## Relationships
 
