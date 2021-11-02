@@ -28,9 +28,11 @@ A journal article should contain information about *[journal](../entities/Journa
 
 ## Illustrative Diagram
 
+### Class diagram
 ![The JournalArticle diagram](../diagrams/journalArticle.svg)
 
-![The JournalArticle diagram](../diagrams/journalArticleExample.svg)
+### Example usage
+![The JournalArticle example](../diagrams/journalArticleExample.svg)
 
 ## Matches
 
