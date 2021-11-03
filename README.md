@@ -42,6 +42,9 @@ And the following data types:
 
 ## Usage note
 This module cannot be used without the core.
+The module includes the following examples:
+* [Journal Article](./examples/Journal_Article_Example1.md)
+* ...
 
 ## Development Tools
 

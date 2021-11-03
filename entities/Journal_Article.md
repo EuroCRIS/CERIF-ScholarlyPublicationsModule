@@ -32,7 +32,8 @@ A journal article should contain information about *[journal](../entities/Journa
 ![The JournalArticle diagram](../diagrams/journalArticle.svg)
 
 ### Example usage
-![The JournalArticle example](../diagrams/journalArticleExample.svg)
+
+Please, find an example at [Juurnal Article example](../examples/Journal_Article_Example1.md)
 
 ## Matches
 

@@ -3,6 +3,7 @@
 package "CERIF core" #EFEFEF{
     !include ./coreExample.puml
 }
+    !startsub module
     object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess
 
      object "<u>EJOR : Journal</u>" as journalEJOR {
@@ -33,5 +34,6 @@ package "CERIF core" #EFEFEF{
     article09020 o--> "accessRights" OpenAccess
     article09020 *--> "0..* authorships" Aut1
     article09020 o--> "0..* authors" X
+    !endsub
 
 @enduml
