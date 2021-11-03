@@ -12,7 +12,7 @@ DOI: https://doi.org/10.1016/j.ejor.2020.09.020
 
 ## Illustrative diagram
 
-![Journal Article Example diagram](../diagrams/JournalArticleExample01.svg)
+![Journal Article Example diagram](../diagrams/journalArticleExample01.svg)
 
 ## Serialization
 
