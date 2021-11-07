@@ -13,13 +13,18 @@
     class "Textual_Document"#00ffff {
     }
     !endsub
+
     !startsub TDAS
     class "Textual_Document_Accessibility_Specification"#00ffff {
     }
     !endsub
+
+    !startsub Agent
     class "Agent"#00ffff {
 
-    }
+        }
+    !endsub
+
     class "Organisation_Unit"#00ffff {
         name : Multilingual_String
     }
@@ -34,6 +39,7 @@
     class "Authorship"#00ffff {
         correspondingAuthorFlag : Boolean
     }
+
     !startsub Contributorship
     class "Contributorship"#00ffff {
         contacts : List<URI>
@@ -45,6 +51,7 @@
         statement : Multilingual_String
     }
     !endsub
+
     class "Affiliation_Statement"#00ffff {
         displayAffiliation : String
     }
