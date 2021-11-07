@@ -1,99 +1,94 @@
 @startuml
-	!startsub common
-	!define datatype(x) class x << (D,#FF7700) DataType>>
-	hide empty members
-	skinparam BoxPadding 120
-	!endsub
+    !startsub common
+    	!define datatype(x) class x << (D,#FF7700) DataType>>
+    	hide empty members
+    !endsub
 
-    !startsub Contributorship
-    class "Document" #00ffff{
-        doi : DOI
+    !startsub Document
+    class "Document"#00ffff {
+        DOI : DOI_Type
         title : Multilingual_String
         publicationDate : Date
     }
+    class "Textual_Document"#00ffff {
+    }
     !endsub
-    class "Textual_Document" #00ffff{
+    !startsub TDAS
+    class "Textual_Document_Accessibility_Specification"#00ffff {
     }
-    class "Textual_Document_Accessibility_Specification" #00ffff{
-    }
-    !startsub Agent
-    class "Agent" #00ffff{
+    !endsub
+    class "Agent"#00ffff {
 
     }
-    class "Organisation_Unit" #00ffff{
+    class "Organisation_Unit"#00ffff {
         name : Multilingual_String
-        acronym : String
-        address : Postal_Address
-        rorId : ROR_Id
-        webSiteURL : URL
-        email : URL
     }
-    class "Person" #00ffff{
-        name : Person_Name
-        orcidId : ORCID_iD
+    class "Person"#00ffff {
+        orcidid : ORCID_iD
     }
-    datatype("Person_Name") #00ffff{
-        firstNames : Multilingual_String
-        familyNames : Multilingual_String
-        otherNames : Multilingual_String
+    datatype("Person_Name")#00ffff {
+        firstNames : String
+        familyNames : String
+        otherNames : String
     }
-    datatype("Postal_Address") #00ffff{
-        street : Multilingual_String
-        city : Multilingual_String
-        zipCode : Multilingual_String
+    class "Authorship"#00ffff {
+        correspondingAuthorFlag : Boolean
+    }
+    !startsub Contributorship
+    class "Contributorship"#00ffff {
+        contacts : List<URI>
+        displayName : String
+    }
+    class "Contribution_Statement"#00ffff {
+    }
+    class "Free_Text_Contribution"#00ffff {
+        statement : Multilingual_String
+    }
+    !endsub
+    class "Affiliation_Statement"#00ffff {
+        displayAffiliation : String
+    }
+   datatype("Postal_Address")#00ffff {
+        street : String
+        city : String
+        zipCode : String
         country : Country
     }
-    datatype("Country") #00ffff{
+    class "Country"#00ffff {
         name : Multilingual_String
         iso3166alpha2Code : ISO3166_Alpha2_Code
         # iso3166NumericCode : ISO3166_Numeric_Code
         # euCountryCode : EU_Country_Code
     }
-	"Postal_Address" o--> "country" "Country"
-    !endsub
-    class "Authorship" #00ffff{
-        correspondingAuthorFlag : Boolean
-    }
-    note left #yellow: author == contributor
+    "Postal_Address" o-- "country" "Country"
+    "Affiliation_Statement" ..> "postalAddress" "Postal_Address"
+    "Affiliation_Statement" o-- "0..1 orgUnit" "Organisation_Unit"
+    "Affiliation_Statement" o-- "0..1 institution" "Organisation_Unit"
+    "Affiliation_Statement" o-- "person" "Person"
     !startsub Contributorship
-    class "Contributorship" #00ffff{
-        contacts : List<URI>
-        displayName : String
-    }
-    class "Contribution_Statement" #00ffff{
-    }
-    class "Free_Text_Contribution_Statement" #00ffff{
-        statement : Multilingual_String
-    }
-    class "Affiliation_Statement" #00ffff{
-        displayAffiliation : String
-        address : Postal_Address
-    }
+    "Contribution_Statement" <|-- "Free_Text_Contribution"
     !endsub
-
-!startsub Contributorship
-"Affiliation_Statement" ..> "postalAddress" "Postal_Address"
-"Affiliation_Statement" o-- "0..1 orgUnit" "Organisation_Unit"
-"Affiliation_Statement" o-- "0..1 institution" "Organisation_Unit"
-' "Affiliation_Statement" o-- "person" "Person"
-"Person" o-- "0..* affiliations" "Affiliation_Statement"
-"Contribution_Statement" <|-- "Free_Text_Contribution_Statement"
-"Contributorship" "0..*" --r--* "Document"
-"Contributorship" "0..*" --l--o "0..1 contributor" "Agent"
-"Contributorship" o-- "0..* affiliations" "Affiliation_Statement"
-"Contributorship" *-- "0..* contributionStatements" "Contribution_Statement"
-!endsub
-"Authorship" -r-* "Textual_Document"
-"Contributorship" <|-u- "Authorship"
-"Authorship" "0..*" --o "0..1 author" "Agent"
-!startsub Agent
-"Person" ..> "name" "Person_Name"
-"Agent" <|-- "Person"
-"Agent" <|-- "Organisation_Unit"
-"Organisation_Unit" ..> "address" "Postal_Address"
-!endsub
-"Document" <|-u- "Textual_Document"
-"Textual_Document" *-r- "0..* accessRights" "Textual_Document_Accessibility_Specification"
-"Textual_Document" "0..* authoredDocuments" --- "0..* authors" "Agent"
+    !startsub Contributorship
+    "Contributorship" "0..*" -r-* "Document"
+    !endsub
+    !startsub Contributorship
+    "Contributorship" "0..*" -l-* "0..1 contributor" "Agent"
+    !endsub
+    "Contributorship" *-- "0..* affiliations" "Affiliation_Statement"
+    !startsub Contributorship
+    "Contributorship" *-u- "0..* contributionStatements" "Contribution_Statement"
+    !endsub
+    "Authorship" -r-* "Textual_Document"
+    "Contributorship" <|-u- "Authorship"
+    "Authorship" "0..*" --o "0..1 author" "Agent"
+    note on link #yellow: author == contributor
+    "Person" .d.> "names" "Person_Name"
+    "Agent" <|-d- "Person"
+    "Agent" <|-d- "Organisation_Unit"
+    !startsub Document
+    "Document" <|-u- "Textual_Document"
+    !endsub
+    "Textual_Document" *-u- "0..* accessRights" "Textual_Document_Accessibility_Specification"
+    "Textual_Document" "0..* authoredDocuments" --- "0..* authors" "Agent"
     note left of Agent: The Agent is mandatory for almost all \nsubclasses of Contributorship,\nReviewing is the exception if the \nreviewer's identity is concealed. \nAlso useful when authors are \nusing pseudonyms.
 @enduml

@@ -2,9 +2,9 @@
 
 !includesub core.puml!common
 
-package "CERIF core" #EFEFEF{
+
     !include ./core.puml
-}
+
     !startsub Coar
     class "COAR_Accessibility_Specification_v1"
 
