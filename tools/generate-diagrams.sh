@@ -8,6 +8,6 @@
 
 for D in . "$@"
 do
-	java -jar ./tools/plantuml.jar -v -tsvg "$D/diagrams/**.puml" || \
+	java -jar ./tools/plantuml.jar -charset UTF-8 -v -tsvg "$D/diagrams/**.puml" || \
 	exit 1
 done
