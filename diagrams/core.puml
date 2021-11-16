@@ -5,63 +5,63 @@
     !endsub
 
     !startsub Document
-    class "Document"#00ffff {
+    class "Document" #ffffff {
         DOI : DOI_Type
         title : Multilingual_String
         publicationDate : Date
     }
-    class "Textual_Document"#00ffff {
+    class "Textual_Document" #ffffff {
     }
     !endsub
 
     !startsub TDAS
-    class "Textual_Document_Accessibility_Specification"#00ffff {
+    class "Textual_Document_Accessibility_Specification" #ffffff {
     }
     !endsub
 
     !startsub Agent
-    class "Agent"#00ffff {
+    class "Agent" #ffffff {
 
         }
     !endsub
 
-    class "Organisation_Unit"#00ffff {
+    class "Organisation_Unit" #ffffff {
         name : Multilingual_String
     }
-    class "Person"#00ffff {
+    class "Person" #ffffff {
         orcidid : ORCID_iD
     }
-    datatype("Person_Name")#00ffff {
+    datatype("Person_Name") #ffffff {
         firstNames : String
         familyNames : String
         otherNames : String
     }
-    class "Authorship"#00ffff {
+    class "Authorship" #ffffff {
         correspondingAuthorFlag : Boolean
     }
 
     !startsub Contributorship
-    class "Contributorship"#00ffff {
+    class "Contributorship" #ffffff {
         contacts : List<URI>
         displayName : String
     }
-    class "Contribution_Statement"#00ffff {
+    class "Contribution_Statement" #ffffff {
     }
-    class "Free_Text_Contribution"#00ffff {
+    class "Free_Text_Contribution" #ffffff {
         statement : Multilingual_String
     }
     !endsub
 
-    class "Affiliation_Statement"#00ffff {
+    class "Affiliation_Statement" #ffffff {
         displayAffiliation : String
     }
-   datatype("Postal_Address")#00ffff {
+   datatype("Postal_Address") #ffffff {
         street : String
         city : String
         zipCode : String
         country : Country
     }
-    class "Country"#00ffff {
+    class "Country" #ffffff {
         name : Multilingual_String
         iso3166alpha2Code : ISO3166_Alpha2_Code
         # iso3166NumericCode : ISO3166_Numeric_Code

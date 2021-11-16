@@ -1,7 +1,7 @@
 @startuml
 
 	!startsub person
-	object "<u>X:Person</u>" as X #00ffff{
+	object "<u>X:Person</u>" as X  #ffffff {
            personName = {
            \t firstNames = "Urlike"
            \t familyNames = "Reisach"
@@ -12,7 +12,7 @@
     !endsub
 
     !startsub ins
-    object "<u>Institution 1:OrgUnit</u>" as Ins1 #00ffff {
+    object "<u>Institution 1:OrgUnit</u>" as Ins1  #ffffff {
     	    name = "Neu-Ulm University of Applied Sciences"@en,
     	    \t "Hochschule für angewandte Wissenschaften Neu-Ulm"@de
             acronym = "HNU"
@@ -23,13 +23,13 @@
 
 
     !startsub elsevier
-    object "<u>Elsevier B.V.:OrgUnit</u>" as Elsevier #00ffff {
+    object "<u>Elsevier B.V.:OrgUnit</u>" as Elsevier  #ffffff {
             name = "Elsevier B.V."@en
         }
     !endsub
 
     !startsub affiliations
-    object "<u>Affiliation 1 : AffiliationStatement</u>" as Aff1 #00ffff {
+    object "<u>Affiliation 1 : AffiliationStatement</u>" as Aff1  #ffffff {
             displayAffiliation = "Department of Information Management,
             \t Prof. Dr. Ulrike Reisach,
             \t Neu-Ulm University of Applied Sciences,
@@ -48,7 +48,7 @@
     !endsub
 
     !startsub aut
-    object "<u>Authorship 1 : Authorship</u>" as Aut1 #00ffff {
+    object "<u>Authorship 1 : Authorship</u>" as Aut1  #ffffff {
             contacts = [ "mailto:xxxxxxxx@hnu.de" ][Collection<URI>]
             displayName = "Ulrike Reisach"
             correspondingAuthorFlag = True
