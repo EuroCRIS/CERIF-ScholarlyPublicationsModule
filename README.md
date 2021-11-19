@@ -48,7 +48,7 @@ The module includes the following examples:
 
 ## Development Tools
 
-The [tools](./tools/) directory contains useful tools for checking the integrity of this repository.
+The [CERIF-Core/tools](https://github.com/EuroCRIS/CERIF-Core/tree/main/tools) directory contains useful tools for checking the integrity of this repository.
 
 * plantuml.jar should be used to generate SVG images by using Plant UML files. More details about this tool can be found at this [link](https://gist.github.com/thedmeyer/8b50362ae71ecbadabb17f8683c70ece). It might be run from the tools directory in terminal in this way
 
