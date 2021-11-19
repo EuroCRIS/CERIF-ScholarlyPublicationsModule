@@ -46,12 +46,6 @@ The module includes the following examples:
 * [Journal Article](./examples/Journal_Article_Example1.md)
 * ...
 
-## Development Tools
+## Development
 
-The [CERIF-Core/tools](https://github.com/EuroCRIS/CERIF-Core/tree/main/tools) directory contains useful tools for checking the integrity of this repository.
-
-* plantuml.jar should be used to generate SVG images by using Plant UML files. More details about this tool can be found at this [link](https://gist.github.com/thedmeyer/8b50362ae71ecbadabb17f8683c70ece). It might be run from the tools directory in terminal in this way
-
-java -jar plantuml.jar -v -tsvg -r -o "../diagrams" "../diagrams/**.puml"
-
-
+This module relies on the [CERIF-Core](https://github.com/EuroCRIS/CERIF-Core): we include some shared [entities](https://github.com/EuroCRIS/CERIF-Core/tree/main/entities) and [datatypes](https://github.com/EuroCRIS/CERIF-Core/tree/main/datatypes) from it and we also re-use the [building environment](https://github.com/EuroCRIS/CERIF-Core/tree/main/tools) for the diagrams. This module is developed in line with the [guidelines](https://github.com/EuroCRIS/CERIF-Core/tree/main/guidelines).
