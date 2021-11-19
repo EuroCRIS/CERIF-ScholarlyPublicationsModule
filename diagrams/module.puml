@@ -1,7 +1,9 @@
 @startuml
 
+!includesub core.puml!common
 
-    !include ../../CERIF-Core/diagrams/core.puml
+
+    !include ./core.puml
 
     !startsub Coar
     class "COAR_Accessibility_Specification_v1"

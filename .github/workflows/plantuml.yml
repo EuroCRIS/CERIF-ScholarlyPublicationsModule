@@ -10,10 +10,10 @@ jobs:
           sudo apt-get install graphviz
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Clone CERIF-Core
-        run: git clone https://github.com/EuroCRIS/CERIF-Core.git ../CERIF-Core
-      - name: Process Diagrams
-        run: ../CERIF-Core/tools/generate-diagrams.sh
+      # - name: Clone CERIF-Core
+      #  run: git clone https://github.com/EuroCRIS/CERIF-Core.git ../CERIF-Core
+      # - name: Process Diagrams
+      #  run: ./tools/generate-diagrams.sh
       - name: Display Diagrams
         run: pwd && ls diagrams
       - name: Commit Diagrams
