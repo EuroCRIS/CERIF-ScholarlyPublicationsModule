@@ -3,36 +3,36 @@
     !include ../../CERIF-Core/diagrams/core.puml
 
     !startsub Coar
-    class "COAR_Accessibility_Specification_v1"
+        class "COAR_Accessibility_Specification_v1"
 
-    class "Open_Access_COAR_v1_Accessibility_Specification"
+        class "Open_Access_COAR_v1_Accessibility_Specification"
 
-    class "Restricted_Access_COAR_v1_Accessibility_Specification"
+        class "Restricted_Access_COAR_v1_Accessibility_Specification"
 
-    class "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
+        class "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
 
-    class "Emargoed_Access_COAR_v1_Accessibility_Specification"{
-        embargoEndDate : Date
-    }
+        class "Emargoed_Access_COAR_v1_Accessibility_Specification"{
+            embargoEndDate : Date
+        }
     !endsub
 
     !startsub Journal
-    class "Journal"{
-        DOI : DOI_Type
-        title : Multilingual_String
-        ISSN : ISSN_Type
-        eISSN : ISSN_Type
-        acronym : Multilingual_String
-        startDate : Date
-        endDate : Date
-    }
+        class "Journal"{
+            DOI : DOI_Type
+            title : Multilingual_String
+            ISSN : ISSN_Type
+            eISSN : ISSN_Type
+            acronym : Multilingual_String
+            startDate : Date
+            endDate : Date
+        }
 
-    class "Journal_Article"{
-        startPage : String
-        endPage : String
-        volume : String
-        number : String
-    }
+        class "Journal_Article"{
+            startPage : String
+            endPage : String
+            volume : String
+            number : String
+        }
     !endsub
 
     class "Monograph"{
@@ -45,71 +45,73 @@
     class "Publishership"{
         leadingPublisherFlag : Boolean
     }
+
     !startsub CRediT
-    class "CRediT_Contribution_Statement"{
-    }
-    enum "CRediT_Degree_of_Contribution"{
-        Lead
-        Supporting
-        Equal
-    }
-    enum "CRediT_Role_Type"{
-        Conceptualization
-        Data curation
-        Formal analysis
-        Funding acquisition
-        Investigation
-        Methodology
-        Project administration
-        Resources
-        Software
-        Supervision
-        Validation
-        Visualization
-        Writing – original draft
-        Writing – review & editing
-    }
+        class "CRediT_Contribution_Statement"{
+        }
+        enum "CRediT_Degree_of_Contribution"{
+            Lead
+            Supporting
+            Equal
+        }
+        enum "CRediT_Role_Type"{
+            Conceptualization
+            Data curation
+            Formal analysis
+            Funding acquisition
+            Investigation
+            Methodology
+            Project administration
+            Resources
+            Software
+            Supervision
+            Validation
+            Visualization
+            Writing – original draft
+            Writing – review & editing
+        }
     !endsub
 
     !startsub Coar
-    "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v1"
+        "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v1"
     !endsub
     !startsub Coar
-    "COAR_Accessibility_Specification_v1" <|-- "Open_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v1" <|-- "Open_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Coar
-    "COAR_Accessibility_Specification_v1" <|-- "Restricted_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v1" <|-- "Restricted_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Coar
-    "COAR_Accessibility_Specification_v1" <|-- "Emargoed_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v1" <|-- "Emargoed_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Coar
-    "COAR_Accessibility_Specification_v1" <|-- "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v1" <|-- "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
     !endsub
     !startsub Journal
-    "Textual_Document" <|-- "Journal_Article"
+        "Textual_Document" <|-- "Journal_Article"
     !endsub
     "Textual_Document" <|-- "Monograph"
     "Contributorship" <|-- "Editorship"
     "Contributorship" <|-- "Publishership"
     !startsub CRediT
-    "Contribution_Statement" <|-- "CRediT_Contribution_Statement"
+        "Contribution_Statement" <|-- "CRediT_Contribution_Statement"
     !endsub
     !startsub Journal
-    "Journal" o-- "0..* predecessors" "Journal"
+        "Journal" o-- "0..* predecessors" "Journal"
     !endsub
-    "Journal" o--  "0..* publishers" "Agent"
+        "Journal" o--  "0..* publishers" "Agent"
     !startsub Journal
-    "Journal_Article" "0..*" o-- "source" "Journal"
+        "Journal_Article" "0..*" o-- "source" "Journal"
     !endsub
     "Editorship" --> "editor" "Agent"
     note on link #yellow: editor == contributor
     "Publishership" --> "publisher" "Agent"
     note on link #yellow: publisher == contributor
     !startsub CRediT
-    "CRediT_Contribution_Statement" ..> "roleType" "CRediT_Role_Type"
-    "CRediT_Contribution_Statement" ..> "degreeOfContribution" "CRediT_Degree_of_Contribution"
+        "CRediT_Contribution_Statement" ..> "roleType" "CRediT_Role_Type"
     !endsub
-
+    !startsub Journal
+        "CRediT_Contribution_Statement" ..> "degreeOfContribution" "CRediT_Degree_of_Contribution"
+    !endsub
     note right of CRediT_Role_Type: The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
 @enduml

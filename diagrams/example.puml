@@ -4,36 +4,44 @@
     !include ../../CERIF-Core/diagrams/example.puml
 
     !startsub module
-    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess
+        object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess
 
-     object "<u>EJOR : Journal</u>" as journalEJOR {
-                title = "European Journal of Operational Research"@en
-                issn = "0377-2217" ^^ ISSN
-                publishers = [ Elsevier ] ^^ List<Agent>
-            }
+        object "<u>EJOR : Journal</u>" as journalEJOR {
+            title = "European Journal of Operational Research"@en
+            issn = "0377-2217" ^^ ISSN
+            publishers = [ Elsevier ] ^^ List<Agent>
+        }
 
-    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 {
-        	    DOI = "10.1016/j.ejor.2020.09.020" ^^ DOI_Type
-                title = "The responsibility of social media in times of
-                \t societal and political manipulation"@en
-                publicationDate = 2021-06-16 ^^ Date
-                startPage = "906"
-                endPage = "917"
-                volume = "291"
-                number = "3"
-                authors = [ X ] ^^ List<Agent>
-                authorships = [ Authorship 1 ] ^^ List<Authorship>
-                accessRights = Open Access: Open Access COAR v.1.0 Accessibility
-                \t Specification ^^ Textual Document Accessibility Specification
-                source = EJOR ^^ Journal
-        	}
-
-
-    journalEJOR o-->  "0..* publishers" Elsevier
-    article09020 o--> "source" journalEJOR
-    article09020 o--> "accessRights" OpenAccess
-    article09020 *--> "0..* authorships" Aut1
-    article09020 o--> "0..* authors" X
+        object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 {
+            DOI = "10.1016/j.ejor.2020.09.020" ^^ DOI_Type
+            title = "The responsibility of social media in times of
+            \t societal and political manipulation"@en
+            publicationDate = 2021-06-16 ^^ Date
+            startPage = "906"
+            endPage = "917"
+            volume = "291"
+            number = "3"
+            authors = [ X ] ^^ List<Agent>
+            authorships = [ Authorship 1 ] ^^ List<Authorship>
+            accessRights = Open Access: Open Access COAR v.1.0 Accessibility
+            \t Specification ^^ Textual Document Accessibility Specification
+            source = EJOR ^^ Journal
+        }
+    !endsub
+    !startsub module
+        journalEJOR o-->  "0..* publishers" Elsevier
+    !endsub
+    !startsub module
+        article09020 o--> "source" journalEJOR
+    !endsub
+    !startsub module
+        article09020 o--> "accessRights" OpenAccess
+    !endsub
+    !startsub module
+        article09020 *--> "0..* authorships" Aut1
+    !endsub
+    !startsub module
+        article09020 o--> "0..* authors" X
     !endsub
 
 @enduml
