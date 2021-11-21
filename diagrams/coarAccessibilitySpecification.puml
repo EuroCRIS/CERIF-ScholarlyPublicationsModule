@@ -1,11 +1,9 @@
 @startuml
 
-!includesub core.puml!common
+    !includesub ../../CERIF-Core/diagrams/core.puml!common
 
+    !includesub ../../CERIF-Core/diagrams/core.puml!TDAS
 
-    !includesub core.puml!TDAS
-
-
-!includesub ./module.puml!Coar
+    !includesub ./module.puml!Coar
 
 @enduml

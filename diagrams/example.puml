@@ -1,7 +1,7 @@
 @startuml
 
 
-    !include ./coreExample.puml
+    !include ../../CERIF-Core/diagrams/example.puml
 
     !startsub module
     object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess

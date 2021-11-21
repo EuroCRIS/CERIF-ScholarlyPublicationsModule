@@ -111,5 +111,5 @@
     "CRediT_Contribution_Statement" ..> "degreeOfContribution" "CRediT_Degree_of_Contribution"
     !endsub
 
-    note right of "CRediT Role Type": The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
+    note right of CRediT_Role_Type: The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
 @enduml
