@@ -3,21 +3,21 @@
     !include ../../CERIF-Core/diagrams/core.puml
 
     !startsub Coar
-        class "COAR_Accessibility_Specification_v1"
+        class "COAR_Accessibility_Specification_v1" #00ff00
 
-        class "Open_Access_COAR_v1_Accessibility_Specification"
+        class "Open_Access_COAR_v1_Accessibility_Specification" #00ff00
 
-        class "Restricted_Access_COAR_v1_Accessibility_Specification"
+        class "Restricted_Access_COAR_v1_Accessibility_Specification" #00ff00
 
-        class "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
+        class "Metadata_Only_Access_COAR_v1_Accessibility_Specification" #00ff00
 
-        class "Emargoed_Access_COAR_v1_Accessibility_Specification"{
+        class "Emargoed_Access_COAR_v1_Accessibility_Specification" #00ff00{
             embargoEndDate : Date
         }
     !endsub
 
     !startsub Journal
-        class "Journal"{
+        class "Journal" #00ff00{
             DOI : DOI_Type
             title : Multilingual_String
             ISSN : ISSN_Type
@@ -27,7 +27,7 @@
             endDate : Date
         }
 
-        class "Journal_Article"{
+        class "Journal_Article" #00ff00{
             startPage : String
             endPage : String
             volume : String
@@ -35,26 +35,26 @@
         }
     !endsub
 
-    class "Monograph"{
+    class "Monograph" #00ff00{
         ISBN : ISBN_Type
         eISBN : ISBN_Type
     }
-    class "Editorship"{
+    class "Editorship" #00ff00{
         leadingEditorFlag : Boolean
     }
-    class "Publishership"{
+    class "Publishership" #00ff00{
         leadingPublisherFlag : Boolean
     }
 
     !startsub CRediT
-        class "CRediT_Contribution_Statement"{
+        class "CRediT_Contribution_Statement" #00ff00{
         }
-        enum "CRediT_Degree_of_Contribution"{
+        enum "CRediT_Degree_of_Contribution" #00ff00{
             Lead
             Supporting
             Equal
         }
-        enum "CRediT_Role_Type"{
+        enum "CRediT_Role_Type" #00ff00{
             Conceptualization
             Data curation
             Formal analysis
