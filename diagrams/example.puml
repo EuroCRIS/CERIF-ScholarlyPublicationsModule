@@ -1,18 +1,18 @@
 @startuml
 
 
-    !include ../../CERIF-Core/diagrams/example.puml
+!include ../../CERIF-Core/diagrams/example.puml
 
-    !startsub module
-        object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #00ff00
 
-        object "<u>EJOR : Journal</u>" as journalEJOR #00ff00 {
-            title = "European Journal of Operational Research"@en
-            issn = "0377-2217" ^^ ISSN
-            publishers = [ Elsevier ] ^^ List<Agent>
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #00ff00
+
+    object "<u>EJOR : Journal</u>" as journalEJOR #00ff00 {
+        title = "European Journal of Operational Research"@en
+        issn = "0377-2217" ^^ ISSN
+        publishers = [ Elsevier ] ^^ List<Agent>
         }
 
-        object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 #00ff00 {
+    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 #00ff00 {
             DOI = "10.1016/j.ejor.2020.09.020" ^^ DOI_Type
             title = "The responsibility of social media in times of
             \t societal and political manipulation"@en
@@ -26,22 +26,17 @@
             accessRights = Open Access: Open Access COAR v.1.0 Accessibility
             \t Specification ^^ Textual Document Accessibility Specification
             source = EJOR ^^ Journal
-        }
-    !endsub
-    !startsub module
+    }
+
         journalEJOR o-->  "0..* publishers" Elsevier
-    !endsub
-    !startsub module
+
         article09020 o--> "source" journalEJOR
-    !endsub
-    !startsub module
+
         article09020 o--> "accessRights" OpenAccess
-    !endsub
-    !startsub module
+
         article09020 *--> "0..* authorships" Aut1
-    !endsub
-    !startsub module
+
         article09020 o--> "0..* authors" X
-    !endsub
+
 
 @enduml
