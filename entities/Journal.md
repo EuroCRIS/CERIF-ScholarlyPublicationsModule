@@ -27,6 +27,8 @@ A journal can have any number of *publishers*: instances of [Agent](https://gith
 
 Moreover, a journal can have any number of its *predecessors*, i.e. it might be a journal which change the title or ISSN, or it might be two journals merged into the new one.  
 
+<a name="rel9cce29d9-c141-4947-be73-4058e52d377a">A journal contains a list of *[articles](../entities/Journal_Article.md#user-content-rel9cce29d9-c141-4947-be73-4058e52d377a)* which were published in it: instances of [Journal_Article](../entities/Journal_Article.md).</a>
+
 ## Matches
 
 1. Close match of [COAR Journal](http://vocabularies.coar-repositories.org/documentation/resource_types/#http://purl.org/coar/resource_type/c_0640)

@@ -24,7 +24,7 @@ number: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Stri
 ## Relationships
 Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#relationships).
 
-A journal article should contain information about *[journal](../entities/Journal.md)* in which it is published.
+<a name="rel9cce29d9-c141-4947-be73-4058e52d377a">A journal article should contain information about the *[journal](../entities/Journal.md#user-content-rel9cce29d9-c141-4947-be73-4058e52d377a)* in which it is published: an instance of [Journal](../entities/Journal.md).</a>
 
 ## Illustrative Diagram
 
