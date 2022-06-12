@@ -5,18 +5,18 @@ The relationship of a publisher to some subclasses of [Document](https://github.
 A **publisher** (a person or an organization) publishes material.<sup>[1](#fn1)</sup>
 
 ## Specialization of
-[Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Authorship.md)
+[Contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Authorship.md)
 
 ## Attributes
 
-Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#attributes), there are also the following specific attribute:
+Beside those inherited from [Contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md#attributes), there are also the following specific attribute:
 
 leading publisher flag : [Boolean](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Boolean.md) – indicates whether this publisher was the leading one among several (true)
 
 ## Relationships
 
-Beside those inherited from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md#relationships), there is also a link to *editor*: an instance of [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) 
-[FIXME] replacing the derived *contributor* link from [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) 
+Beside those inherited from [Contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md#relationships), there is also a link to *editor*: an instance of [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) 
+[FIXME] replacing the derived *contributor* link from [Contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md) 
 
 ---
 ## Matches

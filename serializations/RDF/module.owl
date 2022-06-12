@@ -96,9 +96,9 @@ cf:hasContributionStatements rdf:type owl:ObjectProperty ;
                              rdfs:label "Contribution Statements"@en .
 
 
-###  https://eurocris.org/cerif-core#hasContributorships
-cf:hasContributorships rdf:type owl:ObjectProperty ;
-                       rdfs:label "Contributorships"@en .
+###  https://eurocris.org/cerif-core#hasContributions
+cf:hasContributions rdf:type owl:ObjectProperty ;
+                       rdfs:label "Contributions"@en .
 
 
 ###  https://eurocris.org/cerif-core#hasCountry
@@ -422,7 +422,7 @@ cf:TextualDocumentAccessibilitySpecification rdf:type owl:Class ;
 
 ###  https://eurocris.org/spm#Editorship
 :Editorship rdf:type owl:Class ;
-            rdfs:subClassOf cf:Contributorship .
+            rdfs:subClassOf cf:Contribution .
 
 
 ###  https://eurocris.org/spm#EmbargoedAccessCOARAccessibilitySpecificationv.1.0
@@ -460,7 +460,7 @@ cf:TextualDocumentAccessibilitySpecification rdf:type owl:Class ;
 
 ###  https://eurocris.org/spm#Publishership
 :Publishership rdf:type owl:Class ;
-               rdfs:subClassOf cf:Contributorship .
+               rdfs:subClassOf cf:Contribution .
 
 
 ###  https://eurocris.org/spm#RestrictedAccesCOARAccessibilitySpecificationv.1.0

@@ -15,7 +15,7 @@ The Scholarly Publications Module consists of the following entities:
      * [Journal Article](./entities/Journal_Article.md)
      * [Monograph](./entities/Monograph.md)
 * [Journal](./entities/Journal.md)
-* [Contributorship](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contributorship.md) (imported from [the CERIF Core](https://github.com/EuroCRIS/CERIF-Core))
+* [Contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md) (imported from [the CERIF Core](https://github.com/EuroCRIS/CERIF-Core))
   * [Editorship](./entities/Editorship.md)
   * [Publishership](./entities/Publishership.md)
 * [Contribution Statement](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution_Statement.md) (imported from [the CERIF Core](https://github.com/EuroCRIS/CERIF-Core))
