@@ -3,15 +3,15 @@
     !include ../../CERIF-Core/diagrams/core.puml
 
     !startsub Coar
-        class "COAR_Accessibility_Specification_v1" #00ff00
+        class "COAR_Accessibility_Specification_v_1_0" #00ff00
 
-        class "Open_Access_COAR_v1_Accessibility_Specification" #00ff00
+        class "Open_Access_COAR_Accessibility_Specification_v_1_0" #00ff00
 
-        class "Restricted_Access_COAR_v1_Accessibility_Specification" #00ff00
+        class "Restricted_Access_COAR_Accessibility_Specification_v_1_0" #00ff00
 
-        class "Metadata_Only_Access_COAR_v1_Accessibility_Specification" #00ff00
+        class "Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0" #00ff00
 
-        class "Emargoed_Access_COAR_v1_Accessibility_Specification" #00ff00{
+        class "Embargoed_Access_COAR_Accessibility_Specification_v_1_0" #00ff00{
             embargoEndDate : Date
         }
     !endsub
@@ -73,19 +73,19 @@
     !endsub
 
     !startsub Coar
-        "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v1"
+        "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub Coar
-        "COAR_Accessibility_Specification_v1" <|-- "Open_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v_1_0" <|-- "Open_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub Coar
-        "COAR_Accessibility_Specification_v1" <|-- "Restricted_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v_1_0" <|-- "Restricted_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub Coar
-        "COAR_Accessibility_Specification_v1" <|-- "Emargoed_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v_1_0" <|-- "Embargoed_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub Coar
-        "COAR_Accessibility_Specification_v1" <|-- "Metadata_Only_Access_COAR_v1_Accessibility_Specification"
+        "COAR_Accessibility_Specification_v_1_0" <|-- "Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub Journal
         "Textual_Document" <|-- "Journal_Article"
