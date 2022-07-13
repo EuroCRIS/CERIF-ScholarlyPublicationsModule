@@ -2,9 +2,11 @@
 
     !includesub ../../CERIF-Core/diagrams/core.puml!common
 
-
+    !includesub ../../CERIF-Core/diagrams/core.puml!Resource
     !includesub ../../CERIF-Core/diagrams/core.puml!Document
+    !includesub ../../CERIF-Core/diagrams/core.puml!Activity
     !includesub ../../CERIF-Core/diagrams/core.puml!Contribution
+    !includesub ../../CERIF-Core/diagrams/core.puml!Contribution_to_Document
     !includesub ../../CERIF-Core/diagrams/core.puml!Agent
 
     !includesub ./module.puml!CRediT

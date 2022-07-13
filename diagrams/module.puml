@@ -2,22 +2,22 @@
 
     !include ../../CERIF-Core/diagrams/core.puml
 
-    !startsub Coar
-        class "COAR_Accessibility_Specification_v_1_0" #00ff00
+    !startsub COAR_Accessibility_Specification
+        class "COAR_Accessibility_Specification_v_1_0" #ddeedd
 
-        class "Open_Access_COAR_Accessibility_Specification_v_1_0" #00ff00
+        class "Open_Access_COAR_Accessibility_Specification_v_1_0" #ddeedd
 
-        class "Restricted_Access_COAR_Accessibility_Specification_v_1_0" #00ff00
+        class "Restricted_Access_COAR_Accessibility_Specification_v_1_0" #ddeedd
 
-        class "Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0" #00ff00
+        class "Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0" #ddeedd
 
-        class "Embargoed_Access_COAR_Accessibility_Specification_v_1_0" #00ff00{
+        class "Embargoed_Access_COAR_Accessibility_Specification_v_1_0" #ddeedd {
             embargoEndDate : Date
         }
     !endsub
 
     !startsub Journal
-        class "Journal" #00ff00{
+        class "Journal" #ddeedd {
             DOI : DOI_Type
             title : Multilingual_String
             ISSN : ISSN_Type
@@ -27,7 +27,7 @@
             endDate : Date
         }
 
-        class "Journal_Article" #00ff00{
+        class "Journal_Article" #ddeedd {
             startPage : String
             endPage : String
             volume : String
@@ -35,26 +35,26 @@
         }
     !endsub
 
-    class "Monograph" #00ff00{
+    class "Monograph" #ddeedd {
         ISBN : ISBN_Type
         eISBN : ISBN_Type
     }
-    class "Editorship" #00ff00{
+    class "Editorship" #ddeedd {
         leadingEditorFlag : Boolean
     }
-    class "Publishership" #00ff00{
+    class "Publishership" #ddeedd {
         leadingPublisherFlag : Boolean
     }
 
     !startsub CRediT
-        class "CRediT_Contribution_Statement" #00ff00{
+        class "CRediT_Contribution_Statement" #ddeedd {
         }
-        enum "CRediT_Degree_of_Contribution" #00ff00{
+        enum "CRediT_Degree_of_Contribution" #ddeedd {
             Lead
             Supporting
             Equal
         }
-        enum "CRediT_Role_Type" #00ff00{
+        enum "CRediT_Role_Type" #ddeedd {
             Conceptualization
             Data curation
             Formal analysis
@@ -72,19 +72,19 @@
         }
     !endsub
 
-    !startsub Coar
+    !startsub COAR_Accessibility_Specification
         "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v_1_0"
     !endsub
-    !startsub Coar
+    !startsub COAR_Accessibility_Specification
         "COAR_Accessibility_Specification_v_1_0" <|-- "Open_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
-    !startsub Coar
+    !startsub COAR_Accessibility_Specification
         "COAR_Accessibility_Specification_v_1_0" <|-- "Restricted_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
-    !startsub Coar
+    !startsub COAR_Accessibility_Specification
         "COAR_Accessibility_Specification_v_1_0" <|-- "Embargoed_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
-    !startsub Coar
+    !startsub COAR_Accessibility_Specification
         "COAR_Accessibility_Specification_v_1_0" <|-- "Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub Journal
@@ -104,14 +104,14 @@
         "Journal_Article" "0..*" o-- "source" "Journal"
     !endsub
     "Editorship" --> "editor" "Agent"
-    note on link #yellow: editor == contributor
+    note on link #ddeedd: editor == contributor
     "Publishership" --> "publisher" "Agent"
-    note on link #yellow: publisher == contributor
+    note on link #ddeedd: publisher == contributor
     !startsub CRediT
         "CRediT_Contribution_Statement" ..> "roleType" "CRediT_Role_Type"
     !endsub
     !startsub CRediT
         "CRediT_Contribution_Statement" ..> "degreeOfContribution" "CRediT_Degree_of_Contribution"
     !endsub
-    note right of CRediT_Role_Type: The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
+    note right of CRediT_Role_Type #ddeedd: The CRediT is currently not expressed as Linked Open Data. \nWe hope it will be in the future. We estimate it will be more \nstraightforward for it to be exposed as a list of terms (perhaps \na SKOS concept scheme), rather than a class hierarchy. \nThis justifies our choice to model it as an enumeration rather \nthan a class hierarchy in our model.
 @enduml

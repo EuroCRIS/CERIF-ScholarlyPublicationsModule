@@ -4,15 +4,15 @@
 !include ../../CERIF-Core/diagrams/example.puml
 
 
-    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #00ff00
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
 
-    object "<u>EJOR : Journal</u>" as journalEJOR #00ff00 {
+    object "<u>EJOR : Journal</u>" as journalEJOR #ddeedd {
         title = "European Journal of Operational Research"@en
         issn = "0377-2217" ^^ ISSN
         publishers = [ Elsevier ] ^^ List<Agent>
         }
 
-    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 #00ff00 {
+    object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 #ddeedd {
             DOI = "10.1016/j.ejor.2020.09.020" ^^ DOI_Type
             title = "The responsibility of social media in times of
             \t societal and political manipulation"@en
