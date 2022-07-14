@@ -13,7 +13,7 @@
         }
 
     object "<u>10.1016/j.ejor.2020.09.020: Journal Article</u>" as article09020 #ddeedd {
-            DOI = "10.1016/j.ejor.2020.09.020" ^^ DOI_Type
+            DOI = "10.1016/j.ejor.2020.09.020" ^^ DOI
             title = "The responsibility of social media in times of
             \t societal and political manipulation"@en
             publicationDate = 2021-06-16 ^^ Date
@@ -23,8 +23,8 @@
             number = "3"
             authors = [ X ] ^^ List<Agent>
             authorships = [ Authorship 1 ] ^^ List<Authorship>
-            accessRights = Open Access: Open Access COAR v.1.0 Accessibility
-            \t Specification ^^ Textual Document Accessibility Specification
+            accessRights = Open Access ^^ Open_Access_COAR_Accessibility_Specification_v_1_0
+            \t Specification ^^ Textual_Document_Accessibility_Specification
             source = EJOR ^^ Journal
     }
 

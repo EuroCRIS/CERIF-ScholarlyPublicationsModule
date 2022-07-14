@@ -7,7 +7,7 @@ A [journal article](../entities/Journal_Article.md) should contain information a
 
 ## Attributes
 
-DOI: [DOI_Type](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/DOI.md) 
+DOI: [DOI](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/DOI.md) 
 
 title: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md) 
 
