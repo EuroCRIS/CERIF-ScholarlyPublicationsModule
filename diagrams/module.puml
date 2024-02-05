@@ -19,26 +19,79 @@
     !startsub Journal
         class "Journal" #ddeedd {
             DOI : DOI
-            title : Multilingual_String
-            ISSN : ISSN
-            eISSN : ISSN
-            acronym : Multilingual_String
             startDate : Date
             endDate : Date
         }
 
-        class "Journal_Article" #ddeedd {
-            startPage : String
-            endPage : String
-            volume : String
-            number : String
-        }
+        "Publication_Series" <|-- "Journal"
+
     !endsub
 
-    class "Monograph" #ddeedd {
-        ISBN : ISBN
-        eISBN : ISBN
-    }
+    !startsub Books_Series
+        class "Books_Series" #ddeedd {
+        }
+
+        "Publication_Series" <|-- "Books_Series"
+    !endsub
+
+    !startsub Book
+        class "Book" #ddeedd {
+            ISBN : ISBN
+            eISBN : ISBN
+        }
+
+        "Textual_Document" <|-- "Book"
+
+        class "Monograph" #ddeedd {
+        }
+
+        "Book" <|-- "Monograph"
+
+        class "Book_of_Chapters" #ddeedd {
+        }
+
+        "Book" <|-- "Book_of_Chapters"
+
+        class "Proceedings" #ddeedd {
+        }
+
+        "Book" <|-- "Proceedings"
+
+        "Proceedings" *-- "0..1" "Event" : event >
+
+
+    !endsub
+
+    !startsub Article
+            class "Article" #ddeedd {
+                startPage : String
+                endPage : String
+                numberOfPages : Decimal
+                articleNumber : String
+            }
+
+            "Textual_Document" <|-- "Article"
+
+            class "Book_Chapter" #ddeedd {
+            }
+
+            "Article" <|-- "Book_Chapter"
+            "Book_Chapter" *-- "1" "Book_of_Chapters"
+
+            class "Conference_Article" #ddeedd {
+            }
+
+            "Article" <|-- "Conference_Article"
+            "Conference_Article" *-- "0..1" "Proceedings"
+
+             class "Journal_Article" #ddeedd {
+                volume : String
+                number : String
+             }
+
+             "Article" <|-- "Journal_Article"
+        !endsub
+
     class "Editorship" #ddeedd {
         leadingEditorFlag : Boolean
     }
@@ -87,10 +140,6 @@
     !startsub COAR_Accessibility_Specification
         "COAR_Accessibility_Specification_v_1_0" <|-- "Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0"
     !endsub
-    !startsub Journal
-        "Textual_Document" <|-- "Journal_Article"
-    !endsub
-    "Textual_Document" <|-- "Monograph"
     "Contribution" <|-- "Editorship"
     "Contribution" <|-- "Publishership"
     !startsub CRediT
@@ -99,9 +148,8 @@
     !startsub Journal
         "Journal" o-- "0..* predecessors" "Journal"
     !endsub
-        "Journal" o--  "0..* publishers" "Agent"
     !startsub Journal
-        "Journal_Article" "0..*" o-- "source" "Journal"
+        "Journal" o--  "0..* publishers" "Agent"
     !endsub
     "Editorship" --> "editor" "Agent"
     note on link #ddeedd: editor == contributor
