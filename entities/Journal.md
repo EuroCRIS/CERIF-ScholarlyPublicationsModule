@@ -5,15 +5,16 @@ A journal is a serial publication devoted to disseminating original research and
 ## Usage notes
 A [journal article](../entities/Journal_Article.md) should contain information about journal in which it is published. 
 
+## Specialization of
+[Publication Series](../entities/Publication_Series.md)
+
 ## Attributes
+
+Beside those inherited from [Publication Channel](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/PublicationChannel.md#attributes), and [Publication Series](../entities/Publication_Series.md#attributes):
 
 DOI: [DOI](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/DOI.md) 
 
-title: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md) 
-
-ISSN: [ISSN](../datatypes/ISSN.md)
-
-eISSN: [ISSN](../datatypes/ISSN.md)
+title: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md)
 
 acronym: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md)
 

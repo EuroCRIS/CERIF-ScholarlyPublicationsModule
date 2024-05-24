@@ -16,6 +16,15 @@
         }
     !endsub
 
+    !startsub Publication_Series
+        class "Publication_Series" #ffffff {
+            ISSN : ISSN
+            eISSN : ISSN
+        }
+
+        "Publication_Channel" <|-- "Publication_Series"
+    !endsub
+
     !startsub Journal
         class "Journal" #ddeedd {
             DOI : DOI
