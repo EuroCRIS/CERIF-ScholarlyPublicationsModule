@@ -57,7 +57,7 @@
     !endsub
 
     !startsub Publication_Series
-        class "Publication_Series" #ffffff {
+        class "Publication_Series" #ddeedd {
             ISSN : ISSN
             eISSN : ISSN
         }

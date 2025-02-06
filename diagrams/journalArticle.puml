@@ -3,11 +3,12 @@
     !includesub ../../CERIF-Core/diagrams/core.puml!common
 
     !includesub ../../CERIF-Core/diagrams/core.puml!Document
-    !includesub ../../CERIF-Core/diagrams/core.puml!Textual_Document
 
 
     !includesub ../../CERIF-Core/diagrams/core.puml!Publication_Channel
     !includesub ./module.puml!Publication_Series
     !includesub ./module.puml!Journal
+    !includesub ./module.puml!Scholarly_Publication
+    !includesub ./module.puml!Article
 
 @enduml
