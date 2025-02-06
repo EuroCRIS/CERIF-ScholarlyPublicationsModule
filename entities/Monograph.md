@@ -5,22 +5,22 @@ Monograph is a scholarly book or a treatise on a single subject or a group of re
 
 ## Specialization of
 
-[Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md)
+[Scholarly Publication](../entities/Scholarly_Publication.md)
 
 ## Attributes
 
-Beside those inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#attributes), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#attributes), there are the following attributes specific for this type of textual document:
+Beside those inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#attributes), and [Scholarly Publication](../entities/Scholarly_Publication.md#attributes), there are the following attributes specific for this type of scholarly publication:
 
 ISBN: [ISBN](../datatypes/ISBN.md)
 
 eISBN: [ISBN](../datatypes/ISBN.md)
 
 ## Relationships
-Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#relationships).
+Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Scholarly Publication](../entities/Scholarly_Publication.md#relationships).
 
-A Textual Document has any number of *editorships*: instances of [Editorship](../entities/Editorship.md). This relationship is derived from *Document.Contributions* by including just those [Contributions](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md) that are [Editorships](../entities/Editorship.md).
+A Monograph has any number of *editorships*: instances of [Editorship](../entities/Editorship.md). This relationship is derived from *Document.Contributions* by including just those [Contributions](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md) that are [Editorships](../entities/Editorship.md).
 
-A Textual Document has any number of *publisherships*: instances of [Publishership](../entities/Publishership.md). This relationship is derived from *Document.Contributions* by including just those [Contributions](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md) that are [Publisherships](../entities/Publishership.md).
+A Monograph has any number of *publisherships*: instances of [Publishership](../entities/Publishership.md). This relationship is derived from *Document.Contributions* by including just those [Contributions](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution.md) that are [Publisherships](../entities/Publishership.md).
 
 ## Matches
 

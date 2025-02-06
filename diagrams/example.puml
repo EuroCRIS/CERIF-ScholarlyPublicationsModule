@@ -28,15 +28,29 @@
             source = EJOR ^^ Journal
     }
 
-        journalEJOR o-->  "0..* publishers" Elsevier
+    object "<u>Authorship 1 : Authorship</u>" as Aut1 #ddeedd {
+            contacts = [ "mailto:xxxxxxxx@hnu.de" ] ^^ Collection<URI>
+            displayName = "Ulrike Reisach"
+            correspondingAuthorFlag = True
+            author = X ^^ Agent
+            document = 10.1016/j.ejor.2020.09.020 ^^ Document
+            Affiliation_Statement = [Affiliation 1] ^^ List<Affiliation_Statement>
+    }
 
-        article09020 o--> "source" journalEJOR
+    Aut1 o--> "author" X
 
-        article09020 o--> "accessRights" OpenAccess
+    Aut1 *--> "0..* Affiliation_Statement" Aff1
 
-        article09020 *--> "0..* authorships" Aut1
 
-        article09020 o--> "0..* authors" X
+    journalEJOR o-->  "0..* publishers" Elsevier
+
+    article09020 o--> "source" journalEJOR
+
+    article09020 o--> "accessRights" OpenAccess
+
+    article09020 *--> "0..* authorships" Aut1
+
+    article09020 o--> "0..* authors" X
 
 
 @enduml

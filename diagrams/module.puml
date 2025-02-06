@@ -2,6 +2,46 @@
 
     !include ../../CERIF-Core/diagrams/core.puml
 
+    !startsub Scholarly_Publication
+        class "Scholarly_Publication" #ddeedd {
+        }
+    !endsub
+
+    !startsub Scholarly_Publication
+        "Document" <|-- "Scholarly_Publication"
+    !endsub
+
+    !startsub Scholarly_Publication_Accessibility_Specification
+        class "Scholarly_Publication_Accessibility_Specification" #ddeedd {
+        }
+    !endsub
+
+    !startsub Scholarly_Publication_Accessibility_Specification
+        "Scholarly_Publication" *-r- "0..*" "Scholarly_Publication_Accessibility_Specification" : has access >
+    !endsub
+
+    !startsub Authorship
+        class "Authorship" #ddeedd {
+            correspondingAuthorFlag : Boolean
+        }
+    !endsub
+
+    !startsub Authorship
+        "Authorship" --o "Scholarly_Publication"
+    !endsub
+
+    !startsub Authorship
+        "Contribution_to_Document" <|-- "Authorship"
+    !endsub
+
+    !startsub Authorship
+        "Scholarly_Publication" "0..* authoredDocuments" o-- "0..* authors" "Agent"
+    !endsub
+
+    !startsub Authorship
+        "Authorship" "0..*" --o "0..1 author" "Agent"
+    !endsub
+
     !startsub COAR_Accessibility_Specification
         class "COAR_Accessibility_Specification_v_1_0" #ddeedd
 
@@ -49,7 +89,7 @@
             eISBN : ISBN
         }
 
-        "Textual_Document" <|-- "Book"
+        "Scholarly_Publication" <|-- "Book"
 
         class "Monograph" #ddeedd {
         }
@@ -79,7 +119,7 @@
                 articleNumber : String
             }
 
-            "Textual_Document" <|-- "Article"
+            "Scholarly_Publication" <|-- "Article"
 
             class "Book_Chapter" #ddeedd {
             }
@@ -135,7 +175,7 @@
     !endsub
 
     !startsub COAR_Accessibility_Specification
-        "Textual_Document_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v_1_0"
+        "Scholarly_Publication_Accessibility_Specification" <|-- "COAR_Accessibility_Specification_v_1_0"
     !endsub
     !startsub COAR_Accessibility_Specification
         "COAR_Accessibility_Specification_v_1_0" <|-- "Open_Access_COAR_Accessibility_Specification_v_1_0"

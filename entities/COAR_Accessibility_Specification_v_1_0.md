@@ -10,7 +10,7 @@ This is an abstract entity. There are four subclasses which should be used for [
 [metadata only access](../entities/Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0.md).
 
 ## Specialization of 
-[Textual Document Accessibility Rights](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document_Accessibility_Specification.md)
+[Scholarly Publication Accessibility Rights](../entities/Scholarly_Publication_Accessibility_Specification.md)
 
 ## Illustrative Diagram
 ![The COAR diagram](../diagrams/coarAccessibilitySpecification.svg)

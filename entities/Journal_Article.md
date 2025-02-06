@@ -7,11 +7,11 @@ An article on a particular topic and published in a journal issue. <sup>[1](#fn1
 
 ## Specialization of
 
-[Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md)
+[Scholarly Publication](../entities/Scholarly_Publication.md)
 
 ## Attributes
 
-Beside those inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#attributes), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#attributes), there are the following attributes specific for this type of textual document:
+Beside those inherited from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#attributes), and [Scholarly Publication](../entities/Scholarly_Publication.md#attributes), there are the following attributes specific for this type of scholarly publication:
 
 startPage: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
 
@@ -22,7 +22,7 @@ volume: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Stri
 number: [String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/String.md)
 
 ## Relationships
-Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Textual Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Textual_Document.md#relationships).
+Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#relationships), and [Scholarly Publication](../entities/Scholarly_Publication.md#relationships).
 
 <a name="journal"><a name="rel9cce29d9-c141-4947-be73-4058e52d377a">A journal article should contain information about the *[journal](../entities/Journal.md#user-content-articles)* in which it is published: an instance of [Journal](../entities/Journal.md).</a></a>
 
