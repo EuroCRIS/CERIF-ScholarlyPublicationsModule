@@ -112,34 +112,65 @@
     !endsub
 
     !startsub Article
-            class "Article" #ddeedd {
-                startPage : String
-                endPage : String
-                numberOfPages : Decimal
-                articleNumber : String
-            }
+        class "Article" #ddeedd {
+        }
 
-            "Scholarly_Publication" <|-- "Article"
+        "Scholarly_Publication" <|-- "Article"
 
-            class "Book_Chapter" #ddeedd {
-            }
+        class "Book_Chapter" #ddeedd {
+        }
 
-            "Article" <|-- "Book_Chapter"
-            "Book_Chapter" *-- "1" "Book_of_Chapters"
+        "Article" <|-- "Book_Chapter"
 
-            class "Conference_Article" #ddeedd {
-            }
+        class "Conference_Article" #ddeedd {
+        }
 
-            "Article" <|-- "Conference_Article"
-            "Conference_Article" *-- "0..1" "Proceedings"
+        "Article" <|-- "Conference_Article"
 
-             class "Journal_Article" #ddeedd {
-                volume : String
-                number : String
-             }
+         class "Journal_Article" #ddeedd {
+         }
 
-             "Article" <|-- "Journal_Article"
-        !endsub
+         "Article" <|-- "Journal_Article"
+
+         class "Conference_Abstract" #ddeedd {
+         }
+
+         "Article" <|-- "Conference_Abstract"
+
+         class "Presentation" #ddeedd {
+         }
+
+         "Scholarly_Publication" <|-- "Presentation"
+
+         class "Preface" #ddeedd {
+         }
+
+         "Article" <|-- "Preface"
+
+         class "Correction" #ddeedd {
+         }
+
+         "Article" <|-- "Correction"
+
+         class "Comment" #ddeedd {
+         }
+
+         "Article" <|-- "Comment"
+
+         class "Review" #ddeedd {
+         }
+
+         "Scholarly_Publication" <|-- "Comment"
+
+         "Article" "0..*" -- "0..1" "Book" : is part of >
+
+         "Comment" "0..*" -- "1..1" "Document" : for >
+
+         "Correction" "0..*" -- "1..1" "Document" : for >
+
+         "Review" "0..*" -- "1..1" "Document" : for >
+
+    !endsub
 
     class "Editorship" #ddeedd {
         leadingEditorFlag : Boolean
