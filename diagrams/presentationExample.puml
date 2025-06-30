@@ -1,0 +1,303 @@
+@startuml
+
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
+
+    object "<u>ZB Med Research Colloquium:EventSeries</u>" as zbMed #ffffff {
+        title = "ZB Med Research Colloquium"@en
+        description = ""@en
+        recurrencePeriod = 1
+        recurrenceUnit = "month"@en
+    }
+
+    object "<u>ZB Med Research Colloquium March 2025: Event</u>" as zbMedMarch2025 #ffffff {
+        title = "ZB Med Research Colloquium for March 2025"@en
+        dateRange = {
+        \t startDate = 2025-03-01 ^^ Date
+        \t endDate = 2025-03-31 ^^ Date
+        } ^^ DateRange
+    }
+
+    zbMedMarch2025 o--> "belongs-to-series" zbMed
+
+    object "<u>Christian Hauschke:Person</u>" as personChristian #ffffff {
+       personName = {
+       \t firstNames = "Christian"
+       \t familyNames = "Hauschke"
+       } ^^ PersonName
+    }
+
+    object "<u>Christian ORCID:ORCID_Identifier</u>" as orcidChristian #ffffff {
+       orcidId = "https://orcid.org/0000-0003-2499-7741" ^^ ORCID_iD_Type
+    }
+
+    personChristian o--> "has-identifier" orcidChristian
+
+    object "<u>TIB:Organisation_Unit</u>" as institutionTIB #ffffff {
+        name = "Leibniz Information Centre for Science and Technology and University Library"@en,
+        \t "Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek"@de
+        acronym = "TIB"
+        contacts = [
+        \t\t\t{uri =  "https://www.tib.eu/en/" ^^ URI}
+        \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>TIB ROR:ROR_Identifier</u>" as rorTIB #ffffff {
+        rorId = "https://ror.org/04aj4c181" ^^ ROR_ID_Type
+    }
+
+    institutionTIB o--> "has-identifier" rorTIB
+
+    object "<u>TIB Affiliation:Affiliation_Statement</u>" as affiliationChristianTIB #ffffff {
+        displayAffiliation = "TIB -
+        \t Leibniz Information Centre for Science and Technology and University Library"@en
+    }
+
+    affiliationChristianTIB o--> "has-organisation-unit" institutionTIB
+
+    object "<u>Dragan Ivanovic:Person</u>" as personDragan #ffffff {
+       personName = {
+       \t firstNames = "Dragan"
+       \t familyNames = "Ivanović"
+       } ^^ PersonName
+    }
+
+    object "<u>Dragan ORCID:ORCID_Identifier</u>" as orcidDragan #ffffff {
+       orcidId = "https://orcid.org/0000-0002-9942-5521" ^^ ORCID_iD_Type
+    }
+
+    personDragan o--> "has-identifier" orcidDragan
+
+    object "<u>Lyrasis:Organisation_Unit</u>" as institutionLyrasis #ffffff {
+        name = "Lyrasis"@en
+        contacts = [
+                \t\t\t{uri =  "https://lyrasis.org/" ^^ URI}
+                \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>Lyrasis ROR:ROR_Identifier</u>" as rorLyrasis #ffffff {
+        rorId = "https://ror.org/026tem613" ^^ ROR_ID_Type
+    }
+
+    institutionLyrasis o--> "has-identifier" rorLyrasis
+
+    object "<u>Lyrasis Affiliation:Affiliation_Statement</u>" as affiliationDraganLyrasis #ffffff {
+        displayAffiliation = "Lyrasis - VIVO"@en
+    }
+
+    affiliationDraganLyrasis o--> "has-organisation-unit" institutionLyrasis
+
+    object "<u>Christian's presentation at ZBMed:Contribution_to_Event</u>" as contributionChristianZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o--> "is-actor-in" contributionChristianZBMedMarch2025
+    zbMedMarch2025 o--> "has-contribution" contributionChristianZBMedMarch2025
+    contributionChristianZBMedMarch2025 o--> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianZBMedMarch2025 #ffffff {
+        statement = "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en
+    }
+
+    contributionChristianZBMedMarch2025 o--> "has-contribution-statement" contributionStatementChristianZBMedMarch2025
+
+    object "<u>Christian and Dragan Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementChristianDraganZBMedMarch2025 #ffffff {
+        statement = "Material for Christian and Dragan talk is prepared as open-access slides."@en
+    }
+
+    contributionStatementChristianZBMedMarch2025 o--> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
+
+    object "<u>Presentation slides:Presentation, Textual Contents, Downloadable</u>" as slides #ddeedd {
+        title = "VIVO – An Ontology-Based Research Information System"@en
+        downloadURL = "https://zenodo.org/records/15773109" ^^ URI
+    }
+
+    slides o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Slides DOI:DOI_Identifier</u>" as doiSlides #ffffff {
+       doiId = "10.5281/zenodo.15773108" ^^ DOI_ID
+    }
+
+    slides o--> "has-identifier" doiSlides
+
+    object "<u>Slides Zenodo:Document_Manifestation</u>" as zenodoSlides #ffffff {
+       publicationDate = 2025-03-20 ^^ Date
+    }
+
+    slides o--> "has-manifestation" zenodoSlides
+
+    object "<u>Zenodo:Repository, Publication_Channel</u>" as zenodo #ffffff {
+       title = "Zenodo"@en
+    }
+
+    zenodoSlides o--> "published-in" zenodo
+
+    resourceUsageStatementChristianDraganZBMedMarch2025 o--> "uses" slides
+
+    object "<u>Presentation video all:Presentation, Video, Downloadable</u>" as presentationComplete #ddeedd {
+        title = "VIVO – An Ontology-Based Research Information System"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+    }
+
+    presentationComplete o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video all YouTube:Document_Manifestation</u>" as presentationCompleteYoutube #ffffff {
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentationComplete o--> "has-manifestation" presentationCompleteYoutube
+
+    object "<u>Presentation video 1:Presentation, Video, Downloadable</u>" as presentation1 #ddeedd {
+        title = "What is VIVO and what are the features?"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+    }
+
+    presentation1 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video 1 YouTube:Document_Manifestation</u>" as presentation1Youtube #ffffff {
+       publicationDate = 2025-03-25 ^^ Date
+       startFrame = "0" ^^ Time
+       endFrame = "4:15" ^^ Time
+    }
+
+    presentation1 o--> "has-manifestation" presentation1Youtube
+
+    presentation1 o--> "is-part-of" presentationComplete
+
+    object "<u>YouTube:Repository, Publication_Channel</u>" as youtube #ffffff {
+       title = "YouTube"@en
+    }
+
+    presentation1 o--> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o--> "provides" presentation1
+
+    object "<u>Presentation video 2:Presentation, Video, Downloadable</u>" as presentation2 #ddeedd {
+        title = "Examples of usage of VIVO on national and institutional level"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=255s" ^^ URI
+    }
+
+    presentation2 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video 2 YouTube:Document_Manifestation</u>" as presentation2Youtube #ffffff {
+       publicationDate = 2025-03-25 ^^ Date
+       startFrame = "4:15" ^^ Time
+       endFrame = "7:55" ^^ Time
+    }
+
+    presentation2 o--> "has-manifestation" presentation2Youtube
+
+    presentation2 o--> "is-part-of" presentationComplete
+
+    presentation2 o--> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o--> "provides" presentation2
+
+/'
+    object "<u>Presentation video 3:Presentation, Video, Downloadable</u>" as presentation3 #ddeedd {
+        title = "Open Source Software and the VIVO community"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=475s" ^^ URI
+    }
+
+    presentation3 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video 3 YouTube:Document_Manifestation</u>" as presentation3Youtube #ffffff {
+       publicationDate = 2025-03-25 ^^ Date
+       startFrame = "7:55" ^^ Time
+       endFrame = "11:01" ^^ Time
+    }
+
+    presentation3 o--> "has-manifestation" presentation3Youtube
+
+    presentation3 o--> "is-part-of" presentationComplete
+
+    presentation3 o--> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o--> "provides" presentation3
+
+    object "<u>Presentation video 4:Presentation, Video, Downloadable</u>" as presentation4 #ddeedd {
+        title = "VIVO: Profiles/ Visualisations"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=661s" ^^ URI
+    }
+
+    presentation4 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video 4 YouTube:Document_Manifestation</u>" as presentation4Youtube #ffffff {
+       publicationDate = 2025-03-25 ^^ Date
+       startFrame = "11:01" ^^ Time
+       endFrame = "17:45" ^^ Time
+    }
+
+    presentation4 o--> "has-manifestation" presentation4Youtube
+
+    presentation4 o--> "is-part-of" presentationComplete
+
+    presentation4 o--> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o--> "provides" presentation4
+
+    object "<u>Presentation video 5:Presentation, Video, Downloadable</u>" as presentation5 #ddeedd {
+        title = "Linked data in VIVO: based on ontologies"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1065s" ^^ URI
+    }
+
+    presentation5 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video 5 YouTube:Document_Manifestation</u>" as presentation5Youtube #ffffff {
+       publicationDate = 2025-03-25 ^^ Date
+       startFrame = "17:45" ^^ Time
+       endFrame = "21:30" ^^ Time
+    }
+
+    presentation5 o--> "has-manifestation" presentation5Youtube
+
+    presentation5 o--> "is-part-of" presentationComplete
+
+    presentation5 o--> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o--> "provides" presentation5
+'/
+
+
+    object "<u>Dragan's presentation at ZBMed:Contribution_to_Event</u>" as contributionDraganZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o--> "is-actor-in" contributionDraganZBMedMarch2025
+    zbMedMarch2025 o--> "has-contribution" contributionDraganZBMedMarch2025
+    contributionDraganZBMedMarch2025 o--> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganZBMedMarch2025 #ffffff {
+        statement = "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en
+    }
+
+    contributionDraganZBMedMarch2025 o--> "has-contribution-statement" contributionStatementDraganZBMedMarch2025
+
+    contributionStatementDraganZBMedMarch2025 o--> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
+
+    object "<u>Presentation video 8:Presentation, Video, Downloadable</u>" as presentation8 #ddeedd {
+        title = "Development of VIVO"@en
+        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s" ^^ URI
+    }
+
+    presentation8 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+
+    object "<u>Presentation video 8 YouTube:Document_Manifestation</u>" as presentation8Youtube #ffffff {
+       publicationDate = 2025-03-25 ^^ Date
+       startFrame = "28:33" ^^ Time
+       endFrame = "40:14" ^^ Time
+    }
+
+    presentation8 o--> "has-manifestation" presentation8Youtube
+
+    presentation8 o--> "is-part-of" presentationComplete
+
+    presentation8 o--> "published-in" youtube
+
+    contributionStatementDraganZBMedMarch2025 o--> "provides" presentation8
+
+
+@enduml
