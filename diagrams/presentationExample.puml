@@ -50,6 +50,7 @@
     object "<u>TIB Affiliation:Affiliation_Statement</u>" as affiliationChristianTIB #ffffff {
         displayAffiliation = "TIB -
         \t Leibniz Information Centre for Science and Technology and University Library"@en
+        displayPersonName = "Hauschke, Christian"
     }
 
     affiliationChristianTIB o--> "has-organisation-unit" institutionTIB
@@ -82,6 +83,7 @@
 
     object "<u>Lyrasis Affiliation:Affiliation_Statement</u>" as affiliationDraganLyrasis #ffffff {
         displayAffiliation = "Lyrasis - VIVO"@en
+        displayPersonName = "Ivanovic, Dragan"
     }
 
     affiliationDraganLyrasis o--> "has-organisation-unit" institutionLyrasis
@@ -108,12 +110,13 @@
 
     contributionStatementChristianZBMedMarch2025 o--> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
 
-    object "<u>Presentation slides:Presentation, Textual Contents, Downloadable</u>" as slides #ddeedd {
+    object "<u>Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_via_Web</u>" as slides #ddeedd {
         title = "VIVO – An Ontology-Based Research Information System"@en
-        downloadURL = "https://zenodo.org/records/15773109" ^^ URI
+        downloadURL = "https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1" ^^ URI
+        accessURL = "https://zenodo.org/records/15773109" ^^ URI
     }
 
-    slides o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    slides o--> "open-access-rights" OpenAccess
 
     object "<u>Slides DOI:DOI_Identifier</u>" as doiSlides #ffffff {
        doiId = "10.5281/zenodo.15773108" ^^ DOI_ID
@@ -135,12 +138,13 @@
 
     resourceUsageStatementChristianDraganZBMedMarch2025 o--> "uses" slides
 
-    object "<u>Presentation video all:Presentation, Video, Downloadable</u>" as presentationComplete #ddeedd {
+    object "<u>Presentation video all:Presentation, Video_Contents, Accessible_via_Web</u>" as presentationComplete #ddeedd {
         title = "VIVO – An Ontology-Based Research Information System"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+        duration = "PT40M14S" ^^ Duration
     }
 
-    presentationComplete o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentationComplete o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video all YouTube:Document_Manifestation</u>" as presentationCompleteYoutube #ffffff {
         publicationDate = 2025-03-25 ^^ Date
@@ -148,12 +152,13 @@
 
     presentationComplete o--> "has-manifestation" presentationCompleteYoutube
 
-    object "<u>Presentation video 1:Presentation, Video, Downloadable</u>" as presentation1 #ddeedd {
+    object "<u>Presentation video 1:Presentation, Video_Contents, Accessible_via_Web</u>" as presentation1 #ddeedd {
         title = "What is VIVO and what are the features?"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=0s" ^^ URI
+        duration = "PT4M15S" ^^ Duration
     }
 
-    presentation1 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentation1 o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video 1 YouTube:Document_Manifestation</u>" as presentation1Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
@@ -169,16 +174,17 @@
        title = "YouTube"@en
     }
 
-    presentation1 o--> "published-in" youtube
+    presentationComplete o--> "published-in" youtube
 
     contributionStatementChristianZBMedMarch2025 o--> "provides" presentation1
 
-    object "<u>Presentation video 2:Presentation, Video, Downloadable</u>" as presentation2 #ddeedd {
+    object "<u>Presentation video 2:Presentation, Video_Contents, Accessible_via_Web</u>" as presentation2 #ddeedd {
         title = "Examples of usage of VIVO on national and institutional level"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=255s" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=255s" ^^ URI
+        duration = "PT3M40S" ^^ Duration
     }
 
-    presentation2 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentation2 o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video 2 YouTube:Document_Manifestation</u>" as presentation2Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
@@ -190,17 +196,16 @@
 
     presentation2 o--> "is-part-of" presentationComplete
 
-    presentation2 o--> "published-in" youtube
-
     contributionStatementChristianZBMedMarch2025 o--> "provides" presentation2
 
 /'
-    object "<u>Presentation video 3:Presentation, Video, Downloadable</u>" as presentation3 #ddeedd {
+    object "<u>Presentation video 3:Presentation, Video, Accessible_via_Web</u>" as presentation3 #ddeedd {
         title = "Open Source Software and the VIVO community"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=475s" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=475s" ^^ URI
+        duration = "PT3M6S" ^^ Duration
     }
 
-    presentation3 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentation3 o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video 3 YouTube:Document_Manifestation</u>" as presentation3Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
@@ -212,16 +217,15 @@
 
     presentation3 o--> "is-part-of" presentationComplete
 
-    presentation3 o--> "published-in" youtube
-
     contributionStatementChristianZBMedMarch2025 o--> "provides" presentation3
 
-    object "<u>Presentation video 4:Presentation, Video, Downloadable</u>" as presentation4 #ddeedd {
+    object "<u>Presentation video 4:Presentation, Video, Accessible_via_Web</u>" as presentation4 #ddeedd {
         title = "VIVO: Profiles/ Visualisations"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=661s" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=661s" ^^ URI
+        duration = "PT6M44S" ^^ Duration
     }
 
-    presentation4 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentation4 o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video 4 YouTube:Document_Manifestation</u>" as presentation4Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
@@ -233,16 +237,15 @@
 
     presentation4 o--> "is-part-of" presentationComplete
 
-    presentation4 o--> "published-in" youtube
-
     contributionStatementChristianZBMedMarch2025 o--> "provides" presentation4
 
-    object "<u>Presentation video 5:Presentation, Video, Downloadable</u>" as presentation5 #ddeedd {
+    object "<u>Presentation video 5:Presentation, Video, Accessible_via_Web</u>" as presentation5 #ddeedd {
         title = "Linked data in VIVO: based on ontologies"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1065s" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1065s" ^^ URI
+        duration = "PT3M45S" ^^ Duration
     }
 
-    presentation5 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentation5 o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video 5 YouTube:Document_Manifestation</u>" as presentation5Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
@@ -253,8 +256,6 @@
     presentation5 o--> "has-manifestation" presentation5Youtube
 
     presentation5 o--> "is-part-of" presentationComplete
-
-    presentation5 o--> "published-in" youtube
 
     contributionStatementChristianZBMedMarch2025 o--> "provides" presentation5
 '/
@@ -278,12 +279,13 @@
 
     contributionStatementDraganZBMedMarch2025 o--> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
 
-    object "<u>Presentation video 8:Presentation, Video, Downloadable</u>" as presentation8 #ddeedd {
+    object "<u>Presentation video 8:Presentation, Video_Contents, Accessible_via_Web</u>" as presentation8 #ddeedd {
         title = "Development of VIVO"@en
-        downloadURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s" ^^ URI
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s" ^^ URI
+        duration = "PT11M41S" ^^ Duration
     }
 
-    presentation8 o--> "open-access-rights" Open_Access_COAR_Accessibility_Specification_v_1_0
+    presentation8 o--> "open-access-rights" OpenAccess
 
     object "<u>Presentation video 8 YouTube:Document_Manifestation</u>" as presentation8Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
@@ -295,9 +297,42 @@
 
     presentation8 o--> "is-part-of" presentationComplete
 
-    presentation8 o--> "published-in" youtube
-
     contributionStatementDraganZBMedMarch2025 o--> "provides" presentation8
+
+    object "<u>Christian's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionChristianSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o--> "is-actor-in" contributionChristianSlides
+    slides o--> "has-contribution" contributionChristianSlides
+    contributionChristianSlides o--> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianSlides #ffffff {
+        statement = "Christian produces the first 34 slides."@en
+    }
+
+    contributionChristianSlides o--> "has-contribution-statement" contributionStatementChristianSlides
+
+
+    object "<u>Dragan's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o--> "is-actor-in" contributionDraganSlides
+    slides o--> "has-contribution" contributionDraganSlides
+    contributionDraganSlides o--> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganSlides #ffffff {
+        statement = "Dragan produced the last 5 slides."@en
+    }
+
+    contributionDraganSlides o--> "has-contribution-statement" contributionStatementDraganSlides
 
 
 @enduml
