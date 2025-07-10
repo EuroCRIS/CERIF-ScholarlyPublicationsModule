@@ -188,13 +188,17 @@
 
     object "<u>Presentation video 2 YouTube:Document_Manifestation</u>" as presentation2Youtube #ffffff {
        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation2 --> "has-manifestation" presentation2Youtube
+
+    object "<u>Presentation video 2 contents location : Time_Based_Contents_Location</u>" as presentation2ContentsLocation #ffffff {
        startFrame = "4:15" ^^ Time
        endFrame = "7:55" ^^ Time
     }
 
-    presentation2 o--> "has-manifestation" presentation2Youtube
-
-    presentation2 o--> "is-part-of" presentationComplete
+    presentation2 -- "is-part-of" presentationComplete
+    ( presentation2, presentationComplete ) .. presentation2ContentsLocation
 
     contributionStatementChristianZBMedMarch2025 o--> "provides" presentation2
 
