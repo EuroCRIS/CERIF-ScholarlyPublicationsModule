@@ -98,7 +98,14 @@
                        <https://eurocris.org/spm#hasSource> :EJOR ;
                        <https://eurocris.org/cerif-core#hasDOI> "10.1016/j.ejor.2020.09.020"^^<https://eurocris.org/cerif-core#DOI> ;
                        <https://eurocris.org/cerif-core#hasPublicationDate> "2021-06-16"^^xsd:string ;
-                       <https://eurocris.org/cerif-core#hasTitle> "The responsibility of social media in times of societal and political manipulation"@en ;
+                       <https://eurocris.org/cerif-core#hasTitle> "The responsibility of social media in times of societal and political manipulation"@en .
+
+## additional information about the link from the article to the journal: the location
+# using RDF reification: a blank node gives more detail about the link
+_ rdf:Type rdf:Statement , <https://eurocris.org/spm#Textual_Content_Location> ;
+                        rdf:Subject :sampleJournalArticle1 ;
+                        rdf:Predicate <https://eurocris.org/spm#hasSource> ;
+                        rdf:Object :EJOR ;
                        <https://eurocris.org/spm#hasEndPage> "917"^^xsd:string ;
                        <https://eurocris.org/spm#hasIssue> "3"^^xsd:string ;
                        <https://eurocris.org/spm#hasStartPage> "906"^^xsd:string ;
