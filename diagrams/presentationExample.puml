@@ -114,9 +114,10 @@
         title = "VIVO – An Ontology-Based Research Information System"@en
         downloadURL = "https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1" ^^ URI
         accessURL = "https://zenodo.org/records/15773109" ^^ URI
+        publicationDate = 2025-03-20 ^^ Date
     }
 
-    slides o--> "open-access-rights" OpenAccess
+    slides o--> "access-rights-specification" OpenAccess
 
     object "<u>Slides DOI:DOI_Identifier</u>" as doiSlides #ffffff {
        doiId = "10.5281/zenodo.15773108" ^^ DOI_ID
@@ -124,17 +125,11 @@
 
     slides o--> "has-identifier" doiSlides
 
-    object "<u>Slides Zenodo:Document_Publication</u>" as zenodoSlides #ffffff {
-       publicationDate = 2025-03-20 ^^ Date
-    }
-
-    slides o--> "published-as" zenodoSlides
-
     object "<u>Zenodo:Repository, Publication_Channel</u>" as zenodo #ffffff {
        title = "Zenodo"@en
     }
 
-    zenodoSlides o--> "published-in" zenodo
+    slides o--> "published-in" zenodo
 
     resourceUsageStatementChristianDraganZBMedMarch2025 o--> "uses" slides
 
@@ -142,29 +137,19 @@
         title = "VIVO – An Ontology-Based Research Information System"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
         duration = "PT40M14S" ^^ Duration
-    }
-
-    presentationComplete o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video all YouTube:Document_Publication</u>" as presentationCompleteYoutube #ffffff {
         publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentationComplete o--> "published-as" presentationCompleteYoutube
+    presentationComplete o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 1:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation1 #ddeedd {
         title = "What is VIVO and what are the features?"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=0s" ^^ URI
         duration = "PT4M15S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentation1 o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video 1 YouTube:Document_Publication</u>" as presentation1Youtube #ffffff {
-       publicationDate = 2025-03-25 ^^ Date
-    }
-
-    presentation1 o--> "published-as" presentation1Youtube
+    presentation1 o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 1 contents location : Time_Based_Contents_Location</u>" as presentation1ContentsLocation #ffffff {
        startTime = "0" ^^ Time
@@ -186,15 +171,10 @@
         title = "Examples of usage of VIVO on national and institutional level"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=255s" ^^ URI
         duration = "PT3M40S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentation2 o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video 2 YouTube:Document_Publication</u>" as presentation2Youtube #ffffff {
-       publicationDate = 2025-03-25 ^^ Date
-    }
-
-    presentation2 --> "published-as" presentation2Youtube
+    presentation2 o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 2 contents location : Time_Based_Contents_Location</u>" as presentation2ContentsLocation #ffffff {
        startTime = "4:15" ^^ Time
@@ -211,17 +191,10 @@
         title = "Open Source Software and the VIVO community"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=475s" ^^ URI
         duration = "PT3M6S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentation3 o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video 3 YouTube:Document_Publication</u>" as presentation3Youtube #ffffff {
-       publicationDate = 2025-03-25 ^^ Date
-       startFrame = "7:55" ^^ Time
-       endFrame = "11:01" ^^ Time
-    }
-
-    presentation3 o--> "published-as" presentation3Youtube
+    presentation3 o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 3 contents location : Time_Based_Contents_Location</u>" as presentation3ContentsLocation #ffffff {
        startTime = "7:55" ^^ Time
@@ -237,17 +210,10 @@
         title = "VIVO: Profiles/ Visualisations"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=661s" ^^ URI
         duration = "PT6M44S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentation4 o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video 4 YouTube:Document_Publication</u>" as presentation4Youtube #ffffff {
-       publicationDate = 2025-03-25 ^^ Date
-       startFrame = "11:01" ^^ Time
-       endFrame = "17:45" ^^ Time
-    }
-
-    presentation4 o--> "published-as" presentation4Youtube
+    presentation4 o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 4 contents location : Time_Based_Contents_Location</u>" as presentation4ContentsLocation #ffffff {
        startTime = "11:01" ^^ Time
@@ -263,17 +229,10 @@
         title = "Linked data in VIVO: based on ontologies"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1065s" ^^ URI
         duration = "PT3M45S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentation5 o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video 5 YouTube:Document_Publication</u>" as presentation5Youtube #ffffff {
-       publicationDate = 2025-03-25 ^^ Date
-       startFrame = "17:45" ^^ Time
-       endFrame = "21:30" ^^ Time
-    }
-
-    presentation5 o--> "published-as" presentation5Youtube
+    presentation5 o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 5 contents location : Time_Based_Contents_Location</u>" as presentation5ContentsLocation #ffffff {
        startTime = "17:45" ^^ Time
@@ -309,17 +268,10 @@
         title = "Development of VIVO"@en
         accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s" ^^ URI
         duration = "PT11M41S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
     }
 
-    presentation8 o--> "open-access-rights" OpenAccess
-
-    object "<u>Presentation video 8 YouTube:Document_Publication</u>" as presentation8Youtube #ffffff {
-       publicationDate = 2025-03-25 ^^ Date
-       startFrame = "28:33" ^^ Time
-       endFrame = "40:14" ^^ Time
-    }
-
-    presentation8 o--> "published-as" presentation8Youtube
+    presentation8 o--> "access-rights-specification" OpenAccess
 
     object "<u>Presentation video 8 contents location : Time_Based_Contents_Location</u>" as presentation8ContentsLocation #ffffff {
        startTime = "28:33" ^^ Time
