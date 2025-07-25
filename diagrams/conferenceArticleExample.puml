@@ -18,7 +18,7 @@
         } ^^ DateRange
     }
 
-    cris2024 o--> "belongs-to-series" cris
+    cris2024 --> "belongs-to-series" cris
 
     object "<u>Ivan Mrsulja:Person</u>" as personIvanMrsulja #ffffff {
        personName = {
@@ -40,14 +40,14 @@
         rorId = "https://ror.org/00xa57a59" ^^ ROR_ID_Type
     }
 
-    institutionUNS o--> "has-identifier" rorUNS
+    institutionUNS --> "has-identifier" rorUNS
 
     object "<u>Ivan Affiliation:Affiliation_Statement</u>" as affiliationIvanUNS #ffffff {
         displayAffiliation = "University of Novi Sad, Faculty of Technical Sciences"@en
         displayPersonName = "Mršulja, I."
     }
 
-    affiliationIvanUNS o--> "has-organisation-unit" institutionUNS
+    affiliationIvanUNS --> "has-organisation-unit" institutionUNS
 
     object "<u>Milos Popovic:Person</u>" as personMilosPopovic #ffffff {
        personName = {
@@ -61,7 +61,7 @@
         displayPersonName = "Popović, M."
     }
 
-    affiliationMilosUNS o--> "has-organisation-unit" institutionUNS
+    affiliationMilosUNS --> "has-organisation-unit" institutionUNS
 
     object "<u>Dragan Ivanovic:Person</u>" as personDraganIvanovic #ffffff {
        personName = {
@@ -74,14 +74,14 @@
        orcidId = "https://orcid.org/0000-0002-9942-5521" ^^ ORCID_iD_Type
     }
 
-    personDraganIvanovic o--> "has-identifier" orcidDragan
+    personDraganIvanovic --> "has-identifier" orcidDragan
 
     object "<u>Dragan Affiliation:Affiliation_Statement</u>" as affiliationDraganUNS #ffffff {
         displayAffiliation = "University of Novi Sad, Faculty of Technical Sciences"@en
         displayPersonName = "Ivanović, D."
     }
 
-    affiliationDraganUNS o--> "has-organisation-unit" institutionUNS
+    affiliationDraganUNS --> "has-organisation-unit" institutionUNS
 
     object "<u>Lidija Ivanovic:Person</u>" as personLidijaIvanovic #ffffff {
        personName = {
@@ -101,7 +101,7 @@
         displayPersonName = "Ivanović, L."
     }
 
-    affiliationLidijaUNS o--> "has-organisation-unit" institutionUNS
+    affiliationLidijaUNS --> "has-organisation-unit" institutionUNS
 
     object "<u>Dusan Surla:Person</u>" as personDusanSurla #ffffff {
        personName = {
@@ -115,7 +115,7 @@
         displayPersonName = "Surla, D."
     }
 
-    affiliationSurlaUNS o--> "has-organisation-unit" institutionUNS
+    affiliationSurlaUNS --> "has-organisation-unit" institutionUNS
 
     object "<u>Ivan's presentation at CRIS 2024:Contribution_to_Event</u>" as contributionIvanCRIS2024 #ffffff {
         dateRange = {
@@ -123,45 +123,45 @@
         } ^^ DateRange
     }
 
-    personIvanMrsulja o--> "is-actor-in" contributionIvanCRIS2024
-    cris2024 o--> "has-contribution" contributionIvanCRIS2024
-    contributionIvanCRIS2024 o--> "has-affiliation-statement" affiliationIvanUNS
+    personIvanMrsulja --> "is-actor-in" contributionIvanCRIS2024
+    cris2024 --> "has-contribution" contributionIvanCRIS2024
+    contributionIvanCRIS2024 --> "has-affiliation-statement" affiliationIvanUNS
 
     object "<u>Ivan's Contribution Statement:Contribution_Statement</u>" as contributionStatementIvanCRIS2024 #ffffff {
         statement = "Ivan presented the paper at the conference."@en
     }
 
-    contributionIvanCRIS2024 o--> "has-contribution-statement" contributionStatementIvanCRIS2024
+    contributionIvanCRIS2024 --> "has-contribution-statement" contributionStatementIvanCRIS2024
 
     object "<u>Ivan Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementIvanCRIS2024 #ffffff {
         statement = "Material for Ivan talk is prepared as open-access slides."@en
     }
 
-    contributionStatementIvanCRIS2024 o--> "is-detailed-in" resourceUsageStatementIvanCRIS2024
+    contributionStatementIvanCRIS2024 --> "is-detailed-in" resourceUsageStatementIvanCRIS2024
 
-    object "<u>Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_via_Web</u>" as slidesCRIS2024 #ddeedd {
+    object "<u>Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_on_the_Web</u>" as slidesCRIS2024 #ddeedd {
         title = "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en
         downloadURL = "https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf" ^^ URI
         accessURL = "https://dspacecris.eurocris.org/handle/11366/2540" ^^ URI
         publicationDate = 2024-05-15 ^^ Date
     }
 
-    slidesCRIS2024 o--> "access-rights-specification" OpenAccess
+    slidesCRIS2024 --> "access-rights-specification" OpenAccess
 
     object "<u>Slides Handle:Handle_Identifier</u>" as handleSlides #ffffff {
        handleId = "11366/2540" ^^ Handle_ID
     }
 
-    slidesCRIS2024 o--> "has-identifier" handleSlides
+    slidesCRIS2024 --> "has-identifier" handleSlides
 
     object "<u>DSpace-CRIS euroCRIS:Repository, Publication_Channel</u>" as dspaceCRISEuroCRIS #ffffff {
        title = "The euroCRIS repository"@en
        url = "https://dspacecris.eurocris.org/" ^^ Website_Address
     }
 
-    slidesCRIS2024 o--> "published-in" dspaceCRISEuroCRIS
+    slidesCRIS2024 --> "published-in" dspaceCRISEuroCRIS
 
-    resourceUsageStatementIvanCRIS2024 o--> "uses" slidesCRIS2024
+    resourceUsageStatementIvanCRIS2024 --> "uses" slidesCRIS2024
 
     object "<u>Ivan's Slides for CRIS 2024:Contribution_to_Document</u>" as contributionIvanSlides #ffffff {
         dateRange = {
@@ -170,17 +170,16 @@
         } ^^ DateRange
     }
 
-    personIvanMrsulja o--> "is-actor-in" contributionIvanSlides
-    slidesCRIS2024 o--> "has-contribution" contributionIvanSlides
-    contributionIvanSlides o--> "has-affiliation-statement" affiliationIvanUNS
+    personIvanMrsulja --> "is-actor-in" contributionIvanSlides
+    slidesCRIS2024 --> "has-contribution" contributionIvanSlides
+    contributionIvanSlides --> "has-affiliation-statement" affiliationIvanUNS
 
     object "<u>Ivan's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementIvanSlides #ddeedd {
         roleType = "Writing – original draft" ^^ CRediT_Role_Type
         degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionIvanSlides o--> "has-contribution-statement" contributionStatementIvanSlides
-
+    contributionIvanSlides --> "has-contribution-statement" contributionStatementIvanSlides
 
     object "<u>Milos's Slides for CRIS 2024:Contribution_to_Document</u>" as contributionMilosSlides #ffffff {
         dateRange = {
@@ -189,16 +188,16 @@
         } ^^ DateRange
     }
 
-    personMilosPopovic o--> "is-actor-in" contributionMilosSlides
-    slidesCRIS2024 o--> "has-contribution" contributionMilosSlides
-    contributionMilosSlides o--> "has-affiliation-statement" affiliationMilosUNS
+    personMilosPopovic --> "is-actor-in" contributionMilosSlides
+    slidesCRIS2024 --> "has-contribution" contributionMilosSlides
+    contributionMilosSlides --> "has-affiliation-statement" affiliationMilosUNS
 
     object "<u>Milos's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementMilosSlides #ddeedd {
         roleType = "Writing – original draft" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionMilosSlides o--> "has-contribution-statement" contributionStatementMilosSlides
+    contributionMilosSlides --> "has-contribution-statement" contributionStatementMilosSlides
 
     object "<u>Dragan's Slides for CRIS 2024:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
         dateRange = {
@@ -207,16 +206,16 @@
         } ^^ DateRange
     }
 
-    personDraganIvanovic o--> "is-actor-in" contributionDraganSlides
-    slidesCRIS2024 o--> "has-contribution" contributionDraganSlides
-    contributionDraganSlides o--> "has-affiliation-statement" affiliationDraganUNS
+    personDraganIvanovic --> "is-actor-in" contributionDraganSlides
+    slidesCRIS2024 --> "has-contribution" contributionDraganSlides
+    contributionDraganSlides --> "has-affiliation-statement" affiliationDraganUNS
 
     object "<u>Dragan's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDraganSlides #ddeedd {
         roleType = "Supervision" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionDraganSlides o--> "has-contribution-statement" contributionStatementDraganSlides
+    contributionDraganSlides --> "has-contribution-statement" contributionStatementDraganSlides
 
     object "<u>Lidija's Slides for CRIS 2024:Contribution_to_Document</u>" as contributionLidijaSlides #ffffff {
         dateRange = {
@@ -225,16 +224,16 @@
         } ^^ DateRange
     }
 
-    personLidijaIvanovic o--> "is-actor-in" contributionLidijaSlides
-    slidesCRIS2024 o--> "has-contribution" contributionLidijaSlides
-    contributionLidijaSlides o--> "has-affiliation-statement" affiliationLidijaUNS
+    personLidijaIvanovic --> "is-actor-in" contributionLidijaSlides
+    slidesCRIS2024 --> "has-contribution" contributionLidijaSlides
+    contributionLidijaSlides --> "has-affiliation-statement" affiliationLidijaUNS
 
     object "<u>Lidija's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementLidijaSlides #ddeedd {
         roleType = "Validation" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionLidijaSlides o--> "has-contribution-statement" contributionStatementLidijaSlides
+    contributionLidijaSlides --> "has-contribution-statement" contributionStatementLidijaSlides
 
     object "<u>Dusan's Slides for CRIS 2024:Contribution_to_Document</u>" as contributionDusanSlides #ffffff {
         dateRange = {
@@ -243,39 +242,39 @@
         } ^^ DateRange
     }
 
-    personDusanSurla o--> "is-actor-in" contributionDusanSlides
-    slidesCRIS2024 o--> "has-contribution" contributionDusanSlides
-    contributionDusanSlides o--> "has-affiliation-statement" affiliationDusanUNS
+    personDusanSurla --> "is-actor-in" contributionDusanSlides
+    slidesCRIS2024 --> "has-contribution" contributionDusanSlides
+    contributionDusanSlides --> "has-affiliation-statement" affiliationDusanUNS
 
     object "<u>Dusan's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDusanSlides #ddeedd {
         roleType = "Conceptualization" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionDusanSlides o--> "has-contribution-statement" contributionStatementDusanSlides
+    contributionDusanSlides --> "has-contribution-statement" contributionStatementDusanSlides
 
     object "<u>Slides based on Extended abstract Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementSlidesCRIS2024ExtendedAbstract #ffffff {
         statement = "Slides are prepared by using extended abstract."@en
     }
 
-    contributionStatementIvanSlides o--> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
-    contributionStatementMilosSlides o--> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
-    contributionStatementDraganSlides o--> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
-    contributionStatementLidijaSlides o--> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
-    contributionStatementDusanSlides o--> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+    contributionStatementIvanSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+    contributionStatementMilosSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+    contributionStatementDraganSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+    contributionStatementLidijaSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+    contributionStatementDusanSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
 
-    resourceUsageStatementSlidesCRIS2024ExtendedAbstract o--> "uses" extendedAbstractCRIS2024
+    resourceUsageStatementSlidesCRIS2024ExtendedAbstract --> "uses" extendedAbstractCRIS2024
 
-    object "<u>Extended abstract:Conference_Abstract, Textual_Contents, Downloadable, Accessible_via_Web</u>" as extendedAbstractCRIS2024 #ddeedd {
+    object "<u>Extended abstract:Conference_Abstract, Textual_Contents, Downloadable, Accessible_on_the_Web</u>" as extendedAbstractCRIS2024 #ddeedd {
         title = "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en
         downloadURL = "https://dspacecris.eurocris.org/bitstream/11366/2540/1/Mr%c5%a1ulja-et-al-CRIS2024_Reengineering-of-CRIS-at-UNS.pdf" ^^ URI
         accessURL = "https://dspacecris.eurocris.org/handle/11366/2540" ^^ URI
         publicationDate = 2024-03-01 ^^ Date
     }
 
-    extendedAbstractCRIS2024 o--> "access-rights-specification" OpenAccess
+    extendedAbstractCRIS2024 --> "access-rights-specification" OpenAccess
 
-    extendedAbstractCRIS2024 o--> "published-in" dspaceCRISEuroCRIS
+    extendedAbstractCRIS2024 --> "published-in" dspaceCRISEuroCRIS
 
     object "<u>Ivan's Extented Abstract for CRIS 2024:Contribution_to_Document</u>" as contributionIvanExtendedAbstract #ffffff {
         dateRange = {
@@ -284,16 +283,16 @@
         } ^^ DateRange
     }
 
-    personIvanMrsulja o--> "is-actor-in" contributionIvanExtendedAbstract
-    extendedAbstractCRIS2024 o--> "has-contribution" contributionIvanExtendedAbstract
-    contributionIvanExtendedAbstract o--> "has-affiliation-statement" affiliationIvanUNS
+    personIvanMrsulja --> "is-actor-in" contributionIvanExtendedAbstract
+    extendedAbstractCRIS2024 --> "has-contribution" contributionIvanExtendedAbstract
+    contributionIvanExtendedAbstract --> "has-affiliation-statement" affiliationIvanUNS
 
     object "<u>Ivan's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementIvanExtendedAbstract #ddeedd {
         roleType = "Writing – original draft" ^^ CRediT_Role_Type
         degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionIvanExtendedAbstract o--> "has-contribution-statement" contributionStatementIvanExtendedAbstract
+    contributionIvanExtendedAbstract --> "has-contribution-statement" contributionStatementIvanExtendedAbstract
 
     object "<u>Milos's Extented Abstract for CRIS 2024:Contribution_to_Document</u>" as contributionMilosExtentedAbstract #ffffff {
         dateRange = {
@@ -302,16 +301,16 @@
         } ^^ DateRange
     }
 
-    personMilosPopovic o--> "is-actor-in" contributionMilosExtentedAbstract
-    extendedAbstractCRIS2024 o--> "has-contribution" contributionMilosExtentedAbstract
-    contributionMilosExtentedAbstract o--> "has-affiliation-statement" affiliationMilosUNS
+    personMilosPopovic --> "is-actor-in" contributionMilosExtentedAbstract
+    extendedAbstractCRIS2024 --> "has-contribution" contributionMilosExtentedAbstract
+    contributionMilosExtentedAbstract --> "has-affiliation-statement" affiliationMilosUNS
 
     object "<u>Milos's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementMilosExtendedAbstract #ddeedd {
         roleType = "Writing – original draft" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionMilosExtentedAbstract o--> "has-contribution-statement" contributionMilosExtentedAbstract
+    contributionMilosExtentedAbstract --> "has-contribution-statement" contributionMilosExtentedAbstract
 
     object "<u>Dragan's Extented Abstract for CRIS 2024:Contribution_to_Document</u>" as contributionDraganExtentedAbstract #ffffff {
         dateRange = {
@@ -320,16 +319,16 @@
         } ^^ DateRange
     }
 
-    personDraganIvanovic o--> "is-actor-in" contributionDraganExtentedAbstract
-    extendedAbstractCRIS2024 o--> "has-contribution" contributionDraganExtentedAbstract
-    contributionDraganExtentedAbstract o--> "has-affiliation-statement" affiliationDraganUNS
+    personDraganIvanovic --> "is-actor-in" contributionDraganExtentedAbstract
+    extendedAbstractCRIS2024 --> "has-contribution" contributionDraganExtentedAbstract
+    contributionDraganExtentedAbstract --> "has-affiliation-statement" affiliationDraganUNS
 
     object "<u>Dragan's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDraganExtentedAbstract #ddeedd {
         roleType = "Supervision" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionDraganExtentedAbstract o--> "has-contribution-statement" contributionStatementDraganExtentedAbstract
+    contributionDraganExtentedAbstract --> "has-contribution-statement" contributionStatementDraganExtentedAbstract
 
     object "<u>Lidija's Extented Abstract for CRIS 2024:Contribution_to_Document</u>" as contributionLidijaExtentedAbstract #ffffff {
         dateRange = {
@@ -338,16 +337,16 @@
         } ^^ DateRange
     }
 
-    personLidijaIvanovic o--> "is-actor-in" contributionLidijaExtentedAbstract
-    extendedAbstractCRIS2024 o--> "has-contribution" contributionLidijaExtentedAbstract
-    contributionLidijaExtentedAbstract o--> "has-affiliation-statement" affiliationLidijaUNS
+    personLidijaIvanovic --> "is-actor-in" contributionLidijaExtentedAbstract
+    extendedAbstractCRIS2024 --> "has-contribution" contributionLidijaExtentedAbstract
+    contributionLidijaExtentedAbstract --> "has-affiliation-statement" affiliationLidijaUNS
 
     object "<u>Lidija's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementLidijaExtentedAbstract #ddeedd {
         roleType = "Validation" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionLidijaExtentedAbstract o--> "has-contribution-statement" contributionStatementLidijaExtentedAbstract
+    contributionLidijaExtentedAbstract --> "has-contribution-statement" contributionStatementLidijaExtentedAbstract
 
     object "<u>Dusan's Extented Abstract for CRIS 2024:Contribution_to_Document</u>" as contributionDusanExtentedAbstract #ffffff {
         dateRange = {
@@ -356,132 +355,138 @@
         } ^^ DateRange
     }
 
-    personDusanSurla o--> "is-actor-in" contributionDusanExtentedAbstract
-    extendedAbstractCRIS2024 o--> "has-contribution" contributionDusanExtentedAbstract
-    contributionDusanExtentedAbstract o--> "has-affiliation-statement" affiliationDusanUNS
+    personDusanSurla --> "is-actor-in" contributionDusanExtentedAbstract
+    extendedAbstractCRIS2024 --> "has-contribution" contributionDusanExtentedAbstract
+    contributionDusanExtentedAbstract --> "has-affiliation-statement" affiliationDusanUNS
 
     object "<u>Dusan's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDusanExtentedAbstract #ddeedd {
         roleType = "Conceptualization" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionDusanExtentedAbstract o--> "has-contribution-statement" contributionStatementDusanExtentedAbstract
+    contributionDusanExtentedAbstract --> "has-contribution-statement" contributionStatementDusanExtentedAbstract
 
 
     object "<u>Ivan's Full Paper for CRIS 2024:Contribution_to_Document</u>" as contributionIvanFullPaper #ffffff {
         dateRange = {
-        \t startDate = 2024 ^^ Date
-        \t endDate = 2024-05-15 ^^ Date
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
         } ^^ DateRange
     }
 
-    personIvanMrsulja o--> "is-actor-in" contributionIvanFullPaper
-    fullPaperCRIS2024 o--> "has-contribution" contributionIvanFullPaper
-    contributionIvanFullPaper o--> "has-affiliation-statement" affiliationIvanUNS
+    personIvanMrsulja --> "is-actor-in" contributionIvanFullPaper
+    fullPaperCRIS2024 --> "has-contribution" contributionIvanFullPaper
+    contributionIvanFullPaper --> "has-affiliation-statement" affiliationIvanUNS
 
     object "<u>Ivan's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementIvanFullPaper #ddeedd {
         roleType = "Writing – original draft" ^^ CRediT_Role_Type
         degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionIvanFullPaper o--> "has-contribution-statement" contributionStatementIvanFullPaper
+    contributionIvanFullPaper --> "has-contribution-statement" contributionStatementIvanFullPaper
 
 
     object "<u>Milos's Full Paper for CRIS 2024:Contribution_to_Document</u>" as contributionMilosFullPaper #ffffff {
         dateRange = {
-        \t startDate = 2024 ^^ Date
-        \t endDate = 2024-05-15 ^^ Date
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
         } ^^ DateRange
     }
 
-    personMilosPopovic o--> "is-actor-in" contributionMilosFullPaper
-    fullPaperCRIS2024 o--> "has-contribution" contributionMilosFullPaper
-    contributionMilosFullPaper o--> "has-affiliation-statement" affiliationMilosUNS
+    personMilosPopovic --> "is-actor-in" contributionMilosFullPaper
+    fullPaperCRIS2024 --> "has-contribution" contributionMilosFullPaper
+    contributionMilosFullPaper --> "has-affiliation-statement" affiliationMilosUNS
 
     object "<u>Milos's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementMilosFullPaper #ddeedd {
         roleType = "Writing – original draft" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionMilosFullPaper o--> "has-contribution-statement" contributionStatementMilosFullPaper
+    contributionMilosFullPaper --> "has-contribution-statement" contributionStatementMilosFullPaper
 
     object "<u>Dragan's Full Paper for CRIS 2024:Contribution_to_Document</u>" as contributionDraganFullPaper #ffffff {
         dateRange = {
-        \t startDate = 2024 ^^ Date
-        \t endDate = 2024-05-15 ^^ Date
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
         } ^^ DateRange
     }
 
-    personDraganIvanovic o--> "is-actor-in" contributionDraganFullPaper
-    fullPaperCRIS2024 o--> "has-contribution" contributionDraganFullPaper
-    contributionDraganFullPaper o--> "has-affiliation-statement" affiliationDraganUNS
+    personDraganIvanovic --> "is-actor-in" contributionDraganFullPaper
+    fullPaperCRIS2024 --> "has-contribution" contributionDraganFullPaper
+    contributionDraganFullPaper --> "has-affiliation-statement" affiliationDraganUNS
 
     object "<u>Dragan's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDraganFullPaper #ddeedd {
         roleType = "Supervision" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionDraganFullPaper o--> "has-contribution-statement" contributionStatementDraganFullPaper
+    contributionDraganFullPaper --> "has-contribution-statement" contributionStatementDraganFullPaper
 
     object "<u>Lidija's Full Paper for CRIS 2024:Contribution_to_Document</u>" as contributionLidijaFullPaper #ffffff {
         dateRange = {
-        \t startDate = 2024 ^^ Date
-        \t endDate = 2024-05-15 ^^ Date
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
         } ^^ DateRange
     }
 
-    personLidijaIvanovic o--> "is-actor-in" contributionLidijaFullPaper
-    fullPaperCRIS2024 o--> "has-contribution" contributionLidijaFullPaper
-    contributionLidijaFullPaper o--> "has-affiliation-statement" affiliationLidijaUNS
+    personLidijaIvanovic --> "is-actor-in" contributionLidijaFullPaper
+    fullPaperCRIS2024 --> "has-contribution" contributionLidijaFullPaper
+    contributionLidijaFullPaper --> "has-affiliation-statement" affiliationLidijaUNS
 
     object "<u>Lidija's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementLidijaFullPaper #ddeedd {
         roleType = "Validation" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionLidijaFullPaper o--> "has-contribution-statement" contributionStatementLidijaFullPaper
+    contributionLidijaFullPaper --> "has-contribution-statement" contributionStatementLidijaFullPaper
 
     object "<u>Dusan's Full Paper for CRIS 2024:Contribution_to_Document</u>" as contributionDusanFullPaper #ffffff {
         dateRange = {
-        \t startDate = 2024 ^^ Date
-        \t endDate = 2023-09-30 ^^ Date
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
         } ^^ DateRange
     }
 
-    personDusanSurla o--> "is-actor-in" contributionDusanFullPaper
-    fullPaperCRIS2024 o--> "has-contribution" contributionDusanFullPaper
-    contributionDusanFullPaper o--> "has-affiliation-statement" affiliationDusanUNS
+    personDusanSurla --> "is-actor-in" contributionDusanFullPaper
+    fullPaperCRIS2024 --> "has-contribution" contributionDusanFullPaper
+    contributionDusanFullPaper --> "has-affiliation-statement" affiliationDusanUNS
 
     object "<u>Dusan's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDusanFullPaper #ddeedd {
         roleType = "Conceptualization" ^^ CRediT_Role_Type
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionDusanFullPaper o--> "has-contribution-statement" contributionStatementDusanFullPaper
+    contributionDusanFullPaper --> "has-contribution-statement" contributionStatementDusanFullPaper
 
     object "<u>Full Paper based on Extended abstract Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides #ffffff {
         statement = "Full paper is prepared by using extended abstract and slides."@en
     }
 
-    contributionStatementIvanFullPaper o--> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
-    contributionStatementMilosFullPaper o--> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
-    contributionStatementDraganFullPaper o--> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
-    contributionStatementLidijaFullPaper o--> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
-    contributionStatementDusanFullPaper o--> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementIvanFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementMilosFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementDraganFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementLidijaFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementDusanFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
 
-    resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides o--> "uses" extendedAbstractCRIS2024
+    resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides --> "uses" extendedAbstractCRIS2024
 
-    resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides o--> "uses" slidesCRIS2024
+    resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides --> "uses" slidesCRIS2024
 
-    object "<u>Full Paper:Conference_Article, Textual_Contents, Accessible_via_Web</u>" as fullPaperCRIS2024 #ddeedd {
-        title = "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en
+    object "<u>Full Paper:Conference_Article, Textual_Contents, Accessible_on_the_Web</u>" as fullPaperCRIS2024 #ddeedd {
+        title = "Reengineering of CRIS at University of Novi Sad"@en
         accessURL = "https://www.sciencedirect.com/science/article/pii/S1877050924032630" ^^ URI
         publicationDate = 2024 ^^ Date
     }
 
-    fullPaperCRIS2024 o--> "access-rights-specification" OpenAccess
+    object "<u>Full Paper DOI:DOI_Identifier</u>" as doiFullPaper #ffffff {
+       doiID = "10.1016/j.procs.2024.11.052" ^^ DOI_ID
+    }
 
-    fullPaperCRIS2024 o--> "is-part-of" proceediaCRIS2024Proceedings
+    fullPaperCRIS2024 --> "has-identifier" doiFullPaper
+
+    fullPaperCRIS2024 --> "access-rights-specification" OpenAccess
+
+    fullPaperCRIS2024 --> "is-part-of" proceediaCRIS2024Proceedings
     ( fullPaperCRIS2024, proceediaCRIS2024Proceedings ) .. fullPaperContentsLocation
 
     object "<u>Full Paper contents location : Page_Based_Contents_Location</u>" as fullPaperContentsLocation #ffffff {
@@ -489,13 +494,15 @@
        endPage = 93
     }
 
-    object "<u>CRIS 2024 Proceedings:Proceedings, Textual_Contents, Accessible_via_Web</u>" as proceediaCRIS2024Proceedings #ddeedd {
-        title = "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en
+    object "<u>CRIS 2024 Proceedings:Proceedings, Textual_Contents, Accessible_on_the_Web</u>" as proceediaCRIS2024Proceedings #ddeedd {
+        title = "16th International Conference on Current Research Information Systems (CRIS 2024)"@en
         accessURL = "https://www.sciencedirect.com/journal/procedia-computer-science/vol/249" ^^ URI
         publicationDate = 2024 ^^ Date
     }
 
-    proceediaCRIS2024Proceedings o--> "published-in" proceediaComputerScience
+    proceediaCRIS2024Proceedings --> "event" cris2024
+
+    proceediaCRIS2024Proceedings --> "published-in" proceediaComputerScience
     ( proceediaCRIS2024Proceedings, proceediaComputerScience ) .. proceedingsContentsLocation
 
     object "<u>Full Paper contents location : Serial_Publication_Based_Contents_Location</u>" as proceedingsContentsLocation #ffffff {

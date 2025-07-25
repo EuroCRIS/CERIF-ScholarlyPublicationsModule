@@ -76,7 +76,8 @@ The Scholarly Publications Module consists of the following entities:
 This module cannot be used without the core.
 The module includes the following examples:
 * [Journal Article](./examples/Journal_Article_Example1.md)
-* ...
+* [Conference Article](./examples/Conference_Article_Example1.md)
+* [Presentation](./examples/Presentation_Example1.md)
 
 ## Development
 

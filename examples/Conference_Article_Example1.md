@@ -12,9 +12,9 @@ DOI: https://doi.org/10.1016/j.procs.2024.11.052
 
 ## Illustrative diagram
 
-![Conference Paper Example diagram](../diagrams/conferencePaperExample.svg)
+![Conference Paper Example diagram](../diagrams/conferenceArticleExample.svg)
 
 ## Serialization
 
 TODO:
-[Conference Paper Example serialization](../serializations/RDF/journalArticleExample1.owl)
+[Conference Paper Example serialization](../serializations/RDF/conferenceArticleExample.ttl)

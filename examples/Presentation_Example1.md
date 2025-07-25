@@ -17,4 +17,4 @@ DOI: https://doi.org/10.5281/zenodo.15773108
 ## Serialization
 
 TODO:
-[Presentation Example serialization](../serializations/RDF/journalArticleExample1.owl)
+[Presentation Example serialization](../serializations/RDF/presentationExample.ttl)

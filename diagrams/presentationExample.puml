@@ -294,7 +294,9 @@
     slides o--> "has-contribution" contributionChristianSlides
     contributionChristianSlides o--> "has-affiliation-statement" affiliationChristianTIB
 
-    object "<u>Christian's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianSlides #ffffff {
+    object "<u>Christian's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementChristianSlides #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
         statement = "Christian produces the first 34 slides."@en
     }
 
@@ -313,6 +315,8 @@
     contributionDraganSlides o--> "has-affiliation-statement" affiliationDraganLyrasis
 
     object "<u>Dragan's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganSlides #ffffff {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
         statement = "Dragan produced the last 5 slides."@en
     }
 
