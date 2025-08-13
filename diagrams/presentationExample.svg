@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1109px" preserveAspectRatio="none" style="width:3872px;height:1109px;background:#FFFFFF;" version="1.1" viewBox="0 0 3872 1109" width="3872px" zoomAndPan="magnify"><defs><filter height="300%" id="fpuv1w4hqhooz" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="418" x="1410" y="794.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="404" x="1417" y="807.6387">Open Access: Open Access COAR v.1.0 Accessibility Specification</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1411" x2="1827" y1="812.4688" y2="812.4688"/><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="274" x="2049" y="151"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="260" x="2056" y="164.1387">ZB Med Research Colloquium:EventSeries</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2050" x2="2322" y1="168.9688" y2="168.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="207" x="2055" y="182.251">title = "ZB Med Research Colloquium"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="99" x="2055" y="193.8916">description = ""@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="103" x="2055" y="205.5322">recurrencePeriod = 1</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="151" x="2055" y="217.1729">recurrenceUnit = "month"@en</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="84.1719" style="stroke:#A80036;stroke-width:1.5;" width="317" x="2027.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="303" x="2034.5" y="20.1387">ZB Med Research Colloquium March 2025: Event</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2028.5" x2="2343.5" y1="24.9688" y2="24.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="284" x="2033.5" y="38.251">title = "ZB Med Research Colloquium for March 2025"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="73" x="2033.5" y="49.8916">dateRange = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="163" x="2060.5" y="61.5322">startDate = 2025-03-01 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="158" x="2060.5" y="73.1729">endDate = 2025-03-31 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="2033.5" y="84.8135">} ^^ DateRange</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="183" x="322.5" y="12.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="169" x="329.5" y="25.6387">Christian Hauschke:Person</text><line style="stroke:#A80036;stroke-width:1.5;" x1="323.5" x2="504.5" y1="30.4688" y2="30.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="328.5" y="43.751">personName = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="121" x="355.5" y="55.3916">firstNames = "Christian"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="136" x="355.5" y="67.0322">familyNames = "Hauschke"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="92" x="328.5" y="78.6729">} ^^ PersonName</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="354" x="7" y="168.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="198" x="85" y="181.6387">Christian ORCID:ORCID_Identifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="360" y1="186.4688" y2="186.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="342" x="13" y="199.751">orcidId = "https://orcid.org/0000-0003-2499-7741" ^^ ORCID_iD_Type</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="95.8125" style="stroke:#A80036;stroke-width:1.5;" width="503" x="88.5" y="902"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="133" x="273.5" y="915.1387">TIB:Organisation_Unit</text><line style="stroke:#A80036;stroke-width:1.5;" x1="89.5" x2="590.5" y1="919.9688" y2="919.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="453" x="94.5" y="933.251">name = "Leibniz Information Centre for Science and Technology and University Library"@en,</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="464" x="121.5" y="944.8916">"Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek"@de</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="82" x="94.5" y="956.5322">acronym = "TIB"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="59" x="94.5" y="968.1729">contacts = [</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="197" x="166.5" y="979.8135">{uri =  "https://www.tib.eu/en/" ^^ URI}</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="160" x="142.5" y="991.4541">] ^^ List&lt;Contact_Information&gt;</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="266" x="207" y="1058"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="137" x="271.5" y="1071.1387">TIB ROR:ROR_Identifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="208" x2="472" y1="1075.9688" y2="1075.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="254" x="213" y="1089.251">rorId = "https://ror.org/04aj4c181" ^^ ROR_ID_Type</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="60.8906" style="stroke:#A80036;stroke-width:1.5;" width="442" x="119" y="781"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="212" x="234" y="794.1387">TIB Affiliation:Affiliation_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="120" x2="560" y1="798.9688" y2="798.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="119" x="125" y="812.251">displayAffiliation = "TIB -</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="403" x="152" y="823.8916">Leibniz Information Centre for Science and Technology and University Library"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="217" x="125" y="835.5322">displayPersonName = "Hauschke, Christian"</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="168" x="3367" y="12.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="147" x="3377.5" y="25.6387">Dragan Ivanovic:Person</text><line style="stroke:#A80036;stroke-width:1.5;" x1="3368" x2="3534" y1="30.4688" y2="30.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="3373" y="43.751">personName = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="114" x="3400" y="55.3916">firstNames = "Dragan"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="129" x="3400" y="67.0322">familyNames = "Ivanović"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="92" x="3373" y="78.6729">} ^^ PersonName</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="354" x="3504" y="168.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="189" x="3586.5" y="181.6387">Dragan ORCID:ORCID_Identifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="3505" x2="3857" y1="186.4688" y2="186.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="342" x="3510" y="199.751">orcidId = "https://orcid.org/0000-0002-9942-5521" ^^ ORCID_iD_Type</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="261" x="3391.5" y="913.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="157" x="3443.5" y="926.6387">Lyrasis:Organisation_Unit</text><line style="stroke:#A80036;stroke-width:1.5;" x1="3392.5" x2="3651.5" y1="931.4688" y2="931.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="109" x="3397.5" y="944.751">name = "Lyrasis"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="59" x="3397.5" y="956.3916">contacts = [</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="177" x="3469.5" y="968.0322">{uri =  "https://lyrasis.org/" ^^ URI}</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="160" x="3445.5" y="979.6729">] ^^ List&lt;Contact_Information&gt;</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="273" x="3385.5" y="1058"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="161" x="3441.5" y="1071.1387">Lyrasis ROR:ROR_Identifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="3386.5" x2="3657.5" y1="1075.9688" y2="1075.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="261" x="3391.5" y="1089.251">rorId = "https://ror.org/026tem613" ^^ ROR_ID_Type</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="250" x="3397" y="787"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="236" x="3404" y="800.1387">Lyrasis Affiliation:Affiliation_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="3398" x2="3646" y1="804.9688" y2="804.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="194" x="3403" y="818.251">displayAffiliation = "Lyrasis - VIVO"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="203" x="3403" y="829.8916">displayPersonName = "Ivanovic, Dragan"</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="60.8906" style="stroke:#A80036;stroke-width:1.5;" width="369" x="749.5" y="157"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="355" x="756.5" y="170.1387">Christian's presentation at ZBMed:Contribution_to_Event</text><line style="stroke:#A80036;stroke-width:1.5;" x1="750.5" x2="1117.5" y1="174.9688" y2="174.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="73" x="755.5" y="188.251">dateRange = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="163" x="782.5" y="199.8916">startDate = 2025-03-25 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="755.5" y="211.5322">} ^^ DateRange</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="816" x="808" y="284"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="369" x="1031.5" y="297.1387">Christian's Contribution Statement:Contribution_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="809" x2="1623" y1="301.9688" y2="301.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="804" x="814" y="315.251">statement = "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="505" x="2093.5" y="399.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="491" x="2100.5" y="412.6387">Christian and Dragan Resource Usage Statement:Resource_Usage_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2094.5" x2="2597.5" y1="417.4688" y2="417.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="446" x="2099.5" y="430.751">statement = "Material for Christian and Dragan talk is prepared as open-access slides."@en</text><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="692" x="2134" y="515"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="574" x="2193" y="528.1387">Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_on_the_Web</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2135" x2="2825" y1="532.9688" y2="532.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="343" x="2140" y="546.251">title = "VIVO - An Ontology-Based Research Information System"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="680" x="2140" y="557.8916">downloadURL = "https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1" ^^ URI</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="295" x="2140" y="569.5322">accessURL = "https://zenodo.org/records/15773109" ^^ URI</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="2140" y="581.1729">publicationDate = 2025-03-20 ^^ Date</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="244" x="1974" y="665.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="148" x="2022" y="678.6387">Slides DOI:DOI_Identifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1975" x2="2217" y1="683.4688" y2="683.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="232" x="1980" y="696.751">doiId = "10.5281/zenodo.15773108" ^^ DOI_ID</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="267" x="2253.5" y="665.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="253" x="2260.5" y="678.6387">Zenodo:Repository, Publication_Channel</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2254.5" x2="2519.5" y1="683.4688" y2="683.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="101" x="2259.5" y="696.751">title = "Zenodo"@en</text><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="497" x="990.5" y="648"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="483" x="997.5" y="661.1387">Presentation video all:Presentation, Video_Contents, Accessible_on_the_Web</text><line style="stroke:#A80036;stroke-width:1.5;" x1="991.5" x2="1486.5" y1="665.9688" y2="665.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="343" x="996.5" y="679.251">title = "VIVO - An Ontology-Based Research Information System"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="360" x="996.5" y="690.8916">accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="180" x="996.5" y="702.5322">duration = "PT40M14S" ^^ Duration</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="996.5" y="714.1729">publicationDate = 2025-03-25 ^^ Date</text><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="491" x="1240.5" y="382"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="477" x="1247.5" y="395.1387">Presentation video 1:Presentation, Video_Contents, Accessible_on_the_Web</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1241.5" x2="1730.5" y1="399.9688" y2="399.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="263" x="1246.5" y="413.251">title = "What is VIVO and what are the features?"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="392" x="1246.5" y="424.8916">accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&amp;t=0s" ^^ URI</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="174" x="1246.5" y="436.5322">duration = "PT4M15S" ^^ Duration</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="1246.5" y="448.1729">publicationDate = 2025-03-25 ^^ Date</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="466" x="1594" y="527"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="452" x="1601" y="540.1387">Presentation video 1 contents location : Time_Based_Contents_Location</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1595" x2="2059" y1="544.9688" y2="544.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="121" x="1600" y="558.251">startTime = "0" ^^ Time</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="131" x="1600" y="569.8916">endTime = "4:15" ^^ Time</text><ellipse cx="1486" cy="551.5" fill="#000000" rx="2" ry="2" style="stroke:none;stroke-width:1.0;"/><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="37.6094" style="stroke:#A80036;stroke-width:1.5;" width="272" x="1103" y="792.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="258" x="1110" y="805.6387">YouTube:Repository, Publication_Channel</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1104" x2="1374" y1="810.4688" y2="810.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="107" x="1109" y="823.751">title = "YouTube"@en</text><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="491" x="700.5" y="382"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="477" x="707.5" y="395.1387">Presentation video 2:Presentation, Video_Contents, Accessible_on_the_Web</text><line style="stroke:#A80036;stroke-width:1.5;" x1="701.5" x2="1190.5" y1="399.9688" y2="399.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="359" x="706.5" y="413.251">title = "Examples of usage of VIVO on national and institutional level"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="404" x="706.5" y="424.8916">accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&amp;t=255s" ^^ URI</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="174" x="706.5" y="436.5322">duration = "PT3M40S" ^^ Duration</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="706.5" y="448.1729">publicationDate = 2025-03-25 ^^ Date</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="466" x="983" y="527"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="452" x="990" y="540.1387">Presentation video 2 contents location : Time_Based_Contents_Location</text><line style="stroke:#A80036;stroke-width:1.5;" x1="984" x2="1448" y1="544.9688" y2="544.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="136" x="989" y="558.251">startTime = "4:15" ^^ Time</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="131" x="989" y="569.8916">endTime = "7:55" ^^ Time</text><ellipse cx="946" cy="551.5" fill="#000000" rx="2" ry="2" style="stroke:none;stroke-width:1.0;"/><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="60.8906" style="stroke:#A80036;stroke-width:1.5;" width="360" x="2869" y="157"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="346" x="2876" y="170.1387">Dragan's presentation at ZBMed:Contribution_to_Event</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2870" x2="3228" y1="174.9688" y2="174.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="73" x="2875" y="188.251">dateRange = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="163" x="2902" y="199.8916">startDate = 2025-03-25 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="2875" y="211.5322">} ^^ DateRange</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="33.9688" style="stroke:#A80036;stroke-width:1.5;" width="374" x="2692" y="286"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="360" x="2699" y="299.1387">Dragan's Contribution Statement:Contribution_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2693" x2="3065" y1="303.9688" y2="303.9688"/><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="491" x="2633.5" y="382"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="477" x="2640.5" y="395.1387">Presentation video 8:Presentation, Video_Contents, Accessible_on_the_Web</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2634.5" x2="3123.5" y1="399.9688" y2="399.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="172" x="2639.5" y="413.251">title = "Development of VIVO"@en</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="410" x="2639.5" y="424.8916">accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&amp;t=1713s" ^^ URI</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="180" x="2639.5" y="436.5322">duration = "PT11M41S" ^^ Duration</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="191" x="2639.5" y="448.1729">publicationDate = 2025-03-25 ^^ Date</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="49.25" style="stroke:#A80036;stroke-width:1.5;" width="466" x="2932" y="527"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="452" x="2939" y="540.1387">Presentation video 8 contents location : Time_Based_Contents_Location</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2933" x2="3397" y1="544.9688" y2="544.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="142" x="2938" y="558.251">startTime = "28:33" ^^ Time</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="137" x="2938" y="569.8916">endTime = "40:14" ^^ Time</text><ellipse cx="2097" cy="551.5" fill="#000000" rx="2" ry="2" style="stroke:none;stroke-width:1.0;"/><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="442" x="396" y="648"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="428" x="403" y="661.1387">Christian's slides for ZBMed presentation:Contribution_to_Document</text><line style="stroke:#A80036;stroke-width:1.5;" x1="397" x2="837" y1="665.9688" y2="665.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="73" x="402" y="679.251">dateRange = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="131" x="429" y="690.8916">startDate = 2025 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="158" x="429" y="702.5322">endDate = 2025-03-25 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="402" y="714.1729">} ^^ DateRange</text><rect fill="#DDEEDD" filter="url(#fpuv1w4hqhooz)" height="60.8906" style="stroke:#A80036;stroke-width:1.5;" width="472" x="596" y="781"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="458" x="603" y="794.1387">Christian's Slides Contribution Statement:CRediT_Contribution_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="597" x2="1067" y1="798.9688" y2="798.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="279" x="602" y="812.251">roleType = "Writing - original draft" ^^ CRediT_Role_Type</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="331" x="602" y="823.8916">degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="276" x="602" y="835.5322">statement = "Christian produces the first 34 slides."@en</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="72.5313" style="stroke:#A80036;stroke-width:1.5;" width="433" x="2987.5" y="648"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="419" x="2994.5" y="661.1387">Dragan's slides for ZBMed presentation:Contribution_to_Document</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2988.5" x2="3419.5" y1="665.9688" y2="665.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="73" x="2993.5" y="679.251">dateRange = {</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="131" x="3020.5" y="690.8916">startDate = 2025 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="158" x="3020.5" y="702.5322">endDate = 2025-03-25 ^^ Date</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="83" x="2993.5" y="714.1729">} ^^ DateRange</text><rect fill="#FFFFFF" filter="url(#fpuv1w4hqhooz)" height="60.8906" style="stroke:#A80036;stroke-width:1.5;" width="415" x="2947.5" y="781"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" text-decoration="underline" textLength="401" x="2954.5" y="794.1387">Dragan's Slides Contribution Statement:Contribution_Statement</text><line style="stroke:#A80036;stroke-width:1.5;" x1="2948.5" x2="3361.5" y1="798.9688" y2="798.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="279" x="2953.5" y="812.251">roleType = "Writing - original draft" ^^ CRediT_Role_Type</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="360" x="2953.5" y="823.8916">degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="262" x="2953.5" y="835.5322">statement = "Dragan produced the last 5 slides."@en</text><!--MD5=[01b4e7c1b195cd555351e54344922963]
+link zbMedMarch2025 to zbMed--><path codeLine="19" d="M2186,103.32 C2186,103.32 2186,127.02 2186,137.74 " fill="none" id="zbMedMarch2025-zbMed" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2186,150.85,2190,141.85,2186,145.85,2182,141.85,2186,150.85" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2186" x2="2186" y1="145.85" y2="137.85"/><polygon fill="#FFFFFF" points="2186,91.32,2182,97.32,2186,103.32,2190,97.32,2186,91.32" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="2064.7672" y="139.8322">belongs-to-series</text><!--MD5=[bdf008a533f18d2fb1bb7db52822767b]
+link personChristian to orcidChristian--><path codeLine="32" d="M343.8465,91.6276 C343.8465,91.6276 258.32,142.39 225.7,161.75 " fill="none" id="personChristian-orcidChristian" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="214.33,168.5,224.1118,167.3529,218.6315,165.951,220.0334,160.4706,214.33,168.5" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="218.6315" x2="225.51" y1="165.951" y2="161.865"/><polygon fill="#FFFFFF" points="354.17,85.51,346.969,85.1276,343.8465,91.6276,351.0475,92.01,354.17,85.51" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="127.9092" y="157.5314">has-identifier</text><!--MD5=[057c41e8dcc74ec3abd42ed585192067]
+link institutionTIB to rorTIB--><path codeLine="47" d="M340,1010.26 C340,1010.26 340,1034.55 340,1044.61 " fill="none" id="institutionTIB-rorTIB" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="340,1057.72,344,1048.72,340,1052.72,336,1048.72,340,1057.72" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="340" x2="340" y1="1052.72" y2="1044.72"/><polygon fill="#FFFFFF" points="340,998.26,336,1004.26,340,1010.26,344,1004.26,340,998.26" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="244.8094" y="1046.9971">has-identifier</text><!--MD5=[faa0f683cc4aa74420f4aa5e9dddd533]
+link affiliationChristianTIB to institutionTIB--><path codeLine="55" d="M340,854.12 C340,854.12 340,877.51 340,888.87 " fill="none" id="affiliationChristianTIB-institutionTIB" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="340,902,344,893,340,897,336,893,340,902" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="340" x2="340" y1="897" y2="889"/><polygon fill="#FFFFFF" points="340,842.12,336,848.12,340,854.12,344,848.12,340,842.12" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="194.0125" y="890.9389">has-organisation-unit</text><!--MD5=[861e93542476f45e77131ec408e411f9]
+link personDragan to orcidDragan--><path codeLine="68" d="M3521.1535,91.6276 C3521.1535,91.6276 3606.68,142.39 3639.3,161.75 " fill="none" id="personDragan-orcidDragan" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3650.67,168.5,3644.9666,160.4706,3646.3685,165.951,3640.8882,167.3529,3650.67,168.5" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3646.3685" x2="3639.49" y1="165.951" y2="161.865"/><polygon fill="#FFFFFF" points="3510.83,85.51,3513.9525,92.01,3521.1535,91.6276,3518.031,85.1276,3510.83,85.51" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="3545.6721" y="157.5314">has-identifier</text><!--MD5=[3d230ab02e04e34398162ce335beb929]
+link institutionLyrasis to rorLyrasis--><path codeLine="81" d="M3522,998.82 C3522,998.82 3522,1031.23 3522,1044.83 " fill="none" id="institutionLyrasis-rorLyrasis" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3522,1057.87,3526,1048.87,3522,1052.87,3518,1048.87,3522,1057.87" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3522" x2="3522" y1="1052.87" y2="1044.87"/><polygon fill="#FFFFFF" points="3522,986.82,3518,992.82,3522,998.82,3526,992.82,3522,986.82" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="3426.2906" y="1046.8616">has-identifier</text><!--MD5=[96b6d1b8c35432e3d2daa8ed8b5389bf]
+link affiliationDraganLyrasis to institutionLyrasis--><path codeLine="88" d="M3522,848.28 C3522,848.28 3522,883.34 3522,899.97 " fill="none" id="affiliationDraganLyrasis-institutionLyrasis" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3522,913.45,3526,904.45,3522,908.45,3518,904.45,3522,913.45" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3522" x2="3522" y1="908.45" y2="900.45"/><polygon fill="#FFFFFF" points="3522,836.28,3518,842.28,3522,848.28,3526,842.28,3522,836.28" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="3373.4625" y="902.4506">has-organisation-unit</text><!--MD5=[4af2eafc3ef5a40caf3ae93e750b739b]
+link personChristian to contributionChristianZBMedMarch2025--><path codeLine="96" d="M517.3768,77.1368 C517.3768,77.1368 720,130.33 808.81,153.64 " fill="none" id="personChristian-contributionChristianZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="821.41,156.95,813.7188,150.7981,816.5735,155.6819,811.6898,158.5366,821.41,156.95" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="816.5735" x2="808.835" y1="155.6819" y2="153.645"/><polygon fill="#FFFFFF" points="505.77,74.09,510.5578,79.4823,517.3768,77.1368,512.589,71.7445,505.77,74.09" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="725.7809" y="145.7199">is-actor-in</text><!--MD5=[203808570e15833016a2cc6949e32dfa]
+link zbMedMarch2025 to contributionChristianZBMedMarch2025--><path codeLine="97" d="M2015.4997,68.5819 C2015.4997,68.5819 1375.17,138.4 1131.95,164.92 " fill="none" id="zbMedMarch2025-contributionChristianZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1118.7,166.36,1128.0816,169.3576,1123.6703,165.8163,1127.2117,161.405,1118.7,166.36" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1123.6703" x2="1131.625" y1="165.8163" y2="164.955"/><polygon fill="#FFFFFF" points="2027.43,67.29,2021.0342,63.9592,2015.4997,68.5819,2021.8955,71.9127,2027.43,67.29" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="1126.4667" y="162.4911">has-contribution</text><!--MD5=[b40834e467e48c9f3df42e2e1506c26e]
+link contributionChristianZBMedMarch2025 to affiliationChristianTIB--><path codeLine="98" d="M866.7046,223.7997 C866.7046,223.7997 501.11,444.91 379,648 C356.92,684.71 347.34,733.14 343.18,767.55 " fill="none" id="contributionChristianZBMedMarch2025-affiliationChristianTIB" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="341.75,780.9,346.6864,772.3775,342.2829,775.9285,338.7319,771.525,341.75,780.9" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="342.2829" x2="343.135" y1="775.9285" y2="767.975"/><polygon fill="#FFFFFF" points="877.21,218,870.0241,217.3981,866.7046,223.7997,873.8905,224.4017,877.21,218" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="168.9203" y="770.1337">has-affiliation-statement</text><!--MD5=[f97eabeb4cb6085a284eb52221ab42c6]
+link contributionChristianZBMedMarch2025 to contributionStatementChristianZBMedMarch2025--><path codeLine="104" d="M1018.4953,222.4926 C1018.4953,222.4926 1118.94,262.93 1158.98,279.05 " fill="none" id="contributionChristianZBMedMarch2025-contributionStatementChristianZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1171.19,283.96,1164.3366,276.8868,1166.5522,282.0917,1161.3473,284.3073,1171.19,283.96" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1166.5522" x2="1159.13" y1="282.0917" y2="279.11"/><polygon fill="#FFFFFF" points="1007.36,218.02,1011.4368,223.9681,1018.4953,222.4926,1014.4185,216.5445,1007.36,218.02" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="954.5169" y="272.9792">has-contribution-statement</text><!--MD5=[6f48918776cef504aa9f0b4ab2259077]
+link contributionStatementChristianZBMedMarch2025 to resourceUsageStatementChristianDraganZBMedMarch2025--><path codeLine="110" d="M1407.2998,323.2206 C1407.2998,323.2206 1945.4,377.26 2153.29,398.14 " fill="none" id="contributionStatementChristianZBMedMarch2025-resourceUsageStatementChristianDraganZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2166.49,399.47,2157.9348,394.5906,2161.515,398.9703,2157.1353,402.5505,2166.49,399.47" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2161.515" x2="2153.555" y1="398.9703" y2="398.17"/><polygon fill="#FFFFFF" points="1395.36,322.02,1400.9297,326.6002,1407.2998,323.2206,1401.7301,318.6404,1395.36,322.02" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="2016.9588" y="388.4922">is-detailed-in</text><!--MD5=[9d3fce740c884c66f4bd42db07ae9b27]
+link slides to OpenAccess--><path codeLine="119" d="M2517.8906,597.9657 C2517.8906,597.9657 2568.84,687.01 2538,721 C2492.01,771.69 2098.39,794.58 1841.42,804.2 " fill="none" id="slides-OpenAccess" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1828.15,804.69,1837.2931,808.3512,1833.1465,804.5033,1836.9944,800.3568,1828.15,804.69" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1833.1465" x2="1841.14" y1="804.5033" y2="804.21"/><polygon fill="#FFFFFF" points="2510.82,588.27,2511.1234,595.4747,2517.8906,597.9657,2517.5872,590.761,2510.82,588.27" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="1835.9501" y="801.379">access-rights-specification</text><!--MD5=[8a63a664e1f48e1881e8b1b7f9db22cb]
+link slides to doiSlides--><path codeLine="125" d="M2364.4738,591.9177 C2364.4738,591.9177 2216.5,642.39 2161.31,661.22 " fill="none" id="slides-doiSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2148.89,665.46,2158.6994,666.3406,2153.6223,663.846,2156.1169,658.7689,2148.89,665.46" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2153.6223" x2="2161.19" y1="663.846" y2="661.26"/><polygon fill="#FFFFFF" points="2375.83,588.04,2368.8593,586.1935,2364.4738,591.9177,2371.4445,593.7643,2375.83,588.04" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="2069.3782" y="654.4792">has-identifier</text><!--MD5=[3956f99a49c53e9896faed5f47bc0794]
+link slides to zenodo--><path codeLine="131" d="M2447.6414,598.0835 C2447.6414,598.0835 2419.2,638.14 2407.63,654.44 " fill="none" id="slides-zenodo" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2399.82,665.44,2408.2881,660.411,2402.7116,661.361,2401.7617,655.7844,2399.82,665.44" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2402.7116" x2="2407.35" y1="661.361" y2="654.84"/><polygon fill="#FFFFFF" points="2454.59,588.3,2447.8545,590.8755,2447.6414,598.0835,2454.3768,595.508,2454.59,588.3" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="2314.9555" y="654.453">published-in</text><!--MD5=[32f35b7c0906c72abb7df99c08a33a2a]
+link resourceUsageStatementChristianDraganZBMedMarch2025 to slides--><path codeLine="133" d="M2373.2136,446.0958 C2373.2136,446.0958 2414.22,486.19 2434.11,505.64 " fill="none" id="resourceUsageStatementChristianDraganZBMedMarch2025-slides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2443.62,514.94,2439.9776,505.7894,2440.0435,511.4459,2434.387,511.5118,2443.62,514.94" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2440.0435" x2="2434.33" y1="511.4459" y2="505.845"/><polygon fill="#FFFFFF" points="2364.63,437.71,2366.1265,444.7641,2373.2136,446.0958,2371.7171,439.0417,2364.63,437.71" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="30" x="2404.1468" y="503.9388">uses</text><!--MD5=[f429a88a5245b582b3a2d006e05073a1]
+link presentationComplete to OpenAccess--><path codeLine="142" d="M1358.5299,724.8172 C1358.5299,724.8172 1504.44,772.81 1557.71,790.34 " fill="none" id="presentationComplete-OpenAccess" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1570.34,794.49,1563.0391,787.8796,1565.59,792.9287,1560.541,795.4796,1570.34,794.49" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1565.59" x2="1557.99" y1="792.9287" y2="790.43"/><polygon fill="#FFFFFF" points="1347.13,721.07,1351.5809,726.7436,1358.5299,724.8172,1354.079,719.1436,1347.13,721.07" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="1370.2182" y="781.3933">access-rights-specification</text><!--MD5=[b14ff910bff06f3cf5ceeeb7a60f4bfc]
+link presentation1 to OpenAccess--><path codeLine="151" d="M1502.0219,466.6016 C1502.0219,466.6016 1586.59,715.22 1609.22,781.74 " fill="none" id="presentation1-OpenAccess" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1613.52,794.38,1614.4108,784.5715,1611.9109,789.646,1606.8364,787.1461,1613.52,794.38" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1611.9109" x2="1609.33" y1="789.646" y2="782.065"/><polygon fill="#FFFFFF" points="1498.16,455.24,1496.3037,462.2081,1502.0219,466.6016,1503.8781,459.6335,1498.16,455.24" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="1639.6954" y="783.3187">access-rights-specification</text><!--MD5=[9d7310e7e4266e28fb49255f9646bfc2]
+reverse link presentation1 to apoint79--><path d="M1486,468.6 C1486,501.87 1486,541.17 1486,549.07 " fill="none" id="presentation1-backto-apoint79" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="1486,455.3,1482,461.3,1486,467.3,1490,461.3,1486,455.3" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[18041e142d019607461567c778aecfbc]
+link apoint79 to presentationComplete--><path d="M1485.73,553.53 C1484.44,558.19 1478.58,577.46 1467,588 C1439.77,612.77 1405.18,631.66 1371.23,645.83 " fill="none" id="apoint79-to-presentationComplete" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1366.23,647.89,1376.0748,648.1727,1370.8555,645.9913,1373.0368,640.7719,1366.23,647.89" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="1326.3412" y="636.8796">is-part-of</text><!--MD5=[776999544c69d4c0fd6d7373cce79549]
+link apoint79 to presentation1ContentsLocation--><path d="M1488.33,551.5 C1523.5,551.5 1558.67,551.5 1593.83,551.5 " fill="none" id="apoint79-presentation1ContentsLocation" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[bafc2d37e3d282be9d61c18410103ce9]
+link presentationComplete to youtube--><path codeLine="165" d="M1239,733.32 C1239,733.32 1239,765.73 1239,779.33 " fill="none" id="presentationComplete-youtube" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1239,792.37,1243,783.37,1239,787.37,1235,783.37,1239,792.37" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1239" x2="1239" y1="787.37" y2="779.37"/><polygon fill="#FFFFFF" points="1239,721.32,1235,727.32,1239,733.32,1243,727.32,1239,721.32" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="1150.2094" y="781.3616">published-in</text><!--MD5=[2f60d367f36eae41fe6d9d12f59969af]
+link contributionStatementChristianZBMedMarch2025 to presentation1--><path codeLine="167" d="M1270.1409,326.7637 C1270.1409,326.7637 1349.64,360.18 1389.27,376.84 " fill="none" id="contributionStatementChristianZBMedMarch2025-presentation1" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1401.4,381.94,1394.6514,374.7667,1396.7902,380.0037,1391.5532,382.1424,1401.4,381.94" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1396.7902" x2="1389.42" y1="380.0037" y2="376.9"/><polygon fill="#FFFFFF" points="1259.08,322.11,1263.0592,328.1238,1270.1409,326.7637,1266.1617,320.7499,1259.08,322.11" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="1326.8238" y="370.9388">provides</text><!--MD5=[520cc56ea9235f39b7dd2f64b1615bf4]
+link presentation2 to OpenAccess--><path codeLine="176" d="M932.5937,466.7602 C932.5937,466.7602 900.1,661.11 973,721 C977.93,725.05 1296.66,767.83 1484.52,792.75 " fill="none" id="presentation2-OpenAccess" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1497.53,794.47,1489.1361,789.3181,1492.5737,793.8106,1488.0811,797.2482,1497.53,794.47" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1492.5737" x2="1484.64" y1="793.8106" y2="792.77"/><polygon fill="#FFFFFF" points="935.47,455.11,930.1485,459.9763,932.5937,466.7602,937.9153,461.8939,935.47,455.11" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="1485.2837" y="783.4385">access-rights-specification</text><!--MD5=[f9ae245b61ddd6aa770296500d3dc346]
+link presentation2 to apoint91--><path d="M946,455.3 C946,490.45 946,540.08 946,549.07 " fill="none" id="presentation2-apoint91" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[06309ceae9042bfef0405dd98725c0ad]
+link apoint91 to presentationComplete--><path d="M946.29,553.55 C947.65,558.28 953.85,577.83 966,588 C997.66,614.51 1037.16,633.85 1076.19,647.88 " fill="none" id="apoint91-presentationComplete" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="982.825" y="636.8677">is-part-of</text><!--MD5=[f07e0108178db0d333243d5773e69795]
+link apoint91 to presentation2ContentsLocation--><path d="M948.11,551.5 C959.71,551.5 971.31,551.5 982.9,551.5 " fill="none" id="apoint91-presentation2ContentsLocation" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[ee6dae59b979f464a03e71dbdca76a78]
+link contributionStatementChristianZBMedMarch2025 to presentation2--><path codeLine="186" d="M1161.8591,326.7637 C1161.8591,326.7637 1082.36,360.18 1042.73,376.84 " fill="none" id="contributionStatementChristianZBMedMarch2025-presentation2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1030.6,381.94,1040.4468,382.1424,1035.2098,380.0037,1037.3486,374.7667,1030.6,381.94" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1035.2098" x2="1042.58" y1="380.0037" y2="376.9"/><polygon fill="#FFFFFF" points="1172.92,322.11,1165.8383,320.7499,1161.8591,326.7637,1168.9408,328.1238,1172.92,322.11" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="987.22" y="370.9388">provides</text><!--MD5=[9688823b62e8f39bb4422fd96b5a6028]
+link personDragan to contributionDraganZBMedMarch2025--><path codeLine="254" d="M3355.3698,82.4759 C3355.3698,82.4759 3211.37,131.37 3148.64,152.67 " fill="none" id="personDragan-contributionDraganZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3135.94,156.98,3145.7485,157.8708,3140.674,155.3709,3143.1739,150.2964,3135.94,156.98" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3140.674" x2="3148.245" y1="155.3709" y2="152.8"/><polygon fill="#FFFFFF" points="3366.73,78.61,3359.7613,76.7562,3355.3698,82.4759,3362.3385,84.3297,3366.73,78.61" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="3083.9581" y="145.7565">is-actor-in</text><!--MD5=[b3373537bd99a62be4e9b5eca56b3e06]
+link zbMedMarch2025 to contributionDraganZBMedMarch2025--><path codeLine="255" d="M2356.393,76.9522 C2356.393,76.9522 2706.37,132.31 2855.78,155.94 " fill="none" id="zbMedMarch2025-contributionDraganZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2868.69,157.98,2860.4252,152.6234,2863.7514,157.1991,2859.1757,160.5252,2868.69,157.98" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2863.7514" x2="2855.85" y1="157.1991" y2="155.95"/><polygon fill="#FFFFFF" points="2344.54,75.08,2349.8424,79.9671,2356.393,76.9522,2351.0906,72.0651,2344.54,75.08" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="2757.0673" y="153.8361">has-contribution</text><!--MD5=[8ff9f0feb2556e15e9cf936a522f5041]
+link contributionDraganZBMedMarch2025 to affiliationDraganLyrasis--><path codeLine="256" d="M3105.0998,224.7932 C3105.0998,224.7932 3330.75,388.79 3416,515 C3472.35,598.42 3502.56,715.28 3515.02,773.91 " fill="none" id="contributionDraganZBMedMarch2025-affiliationDraganLyrasis" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3517.68,786.84,3519.7875,777.2193,3516.6741,781.9422,3511.9511,778.8288,3517.68,786.84" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3516.6741" x2="3515.065" y1="781.9422" y2="774.105"/><polygon fill="#FFFFFF" points="3095.16,218.07,3097.8888,224.7448,3105.0998,224.7932,3102.3709,218.1183,3095.16,218.07" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="3535.7614" y="776.0536">has-affiliation-statement</text><!--MD5=[5da15a745b192ba03df464724ead397d]
+link contributionDraganZBMedMarch2025 to contributionStatementDraganZBMedMarch2025--><path codeLine="262" d="M2994.7974,224.6794 C2994.7974,224.6794 2937.01,263.27 2914.02,278.62 " fill="none" id="contributionDraganZBMedMarch2025-contributionStatementDraganZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2903.07,285.93,2912.7767,284.2629,2907.2294,283.1552,2908.3371,277.6079,2903.07,285.93" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2907.2294" x2="2913.885" y1="283.1552" y2="278.705"/><polygon fill="#FFFFFF" points="3004.78,218.02,2997.5689,218.0222,2994.7974,224.6794,3002.0085,224.6772,3004.78,218.02" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="2705.8932" y="274.8853">has-contribution-statement</text><!--MD5=[0c329e40db46d0d51a55fbb730ebfebf]
+link contributionStatementDraganZBMedMarch2025 to resourceUsageStatementChristianDraganZBMedMarch2025--><path codeLine="264" d="M2792.0244,322.5253 C2792.0244,322.5253 2542.99,375.55 2443.72,396.69 " fill="none" id="contributionStatementDraganZBMedMarch2025-resourceUsageStatementChristianDraganZBMedMarch2025" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2430.98,399.4,2440.6168,401.4328,2435.8698,398.3561,2438.9466,393.6091,2430.98,399.4" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2435.8698" x2="2443.69" y1="398.3561" y2="396.7"/><polygon fill="#FFFFFF" points="2803.76,320.02,2797.0571,317.3608,2792.0244,322.5253,2798.7273,325.1845,2803.76,320.02" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="2362.4489" y="388.4008">is-detailed-in</text><!--MD5=[bf705ad290eca1e11878d263782c8a14]
+link presentation8 to OpenAccess--><path codeLine="273" d="M2879.9737,467.1747 C2879.9737,467.1747 2870.43,554.02 2844,588 C2761.13,694.53 2700.95,684.54 2571,721 C2438.59,758.15 2078.82,784.7 1841.44,798.81 " fill="none" id="presentation8-OpenAccess" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1828.11,799.6,1837.3316,803.0586,1833.1012,799.3032,1836.8567,795.0728,1828.11,799.6" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="1833.1012" x2="1841.09" y1="799.3032" y2="798.83"/><polygon fill="#FFFFFF" points="2880.33,455.18,2876.1536,461.0586,2879.9737,467.1747,2884.1501,461.2961,2880.33,455.18" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="1835.909" y="811.5522">access-rights-specification</text><!--MD5=[52cecaf95adff2ed0d535738a6c6fed8]
+reverse link presentation8 to apoint108--><path d="M2620.3,454.45 C2618.86,454.63 2617.43,454.82 2616,455 C2505.21,469.14 2209.89,452.98 2117,515 C2103.82,523.8 2098.39,544.38 2097.24,549.39 " fill="none" id="presentation8-backto-apoint108" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="2633.33,452.78,2626.8692,449.5771,2621.4278,454.309,2627.8886,457.5119,2633.33,452.78" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3654118bee7a87365830cfb566ebe372]
+link apoint108 to presentationComplete--><path d="M2096.79,553.61 C2095.79,558.62 2090.96,579.21 2078,588 C1985.34,650.9 1704.44,672.73 1493,680.12 " fill="none" id="apoint108-to-presentationComplete" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="1487.7,680.3,1496.8318,683.9893,1492.6971,680.1287,1496.5577,675.994,1487.7,680.3" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="1495.0764" y="677.0641">is-part-of</text><!--MD5=[2bca9d226fd2a96196bb38cb58ffe003]
+link apoint108 to presentation8ContentsLocation--><path d="M2097.4,549.34 C2099.35,539.61 2108.75,499.79 2134.5,485 C2207.05,443.33 2804.41,475.18 2887.5,485 C2955.03,492.98 3029.91,511.52 3084.85,527 " fill="none" id="apoint108-presentation8ContentsLocation" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><!--MD5=[7b932911a3a20a2e7a92aa3af2873262]
+link contributionStatementDraganZBMedMarch2025 to presentation8--><path codeLine="283" d="M2879,332.26 C2879,332.26 2879,356.66 2879,368.52 " fill="none" id="contributionStatementDraganZBMedMarch2025-presentation8" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="2879,381.6,2883,372.6,2879,376.6,2875,372.6,2879,381.6" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="2879" x2="2879" y1="376.6" y2="368.6"/><polygon fill="#FFFFFF" points="2879,320.26,2875,326.26,2879,332.26,2883,326.26,2879,320.26" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="2820.1906" y="370.8117">provides</text><!--MD5=[9a18c4aea4dc110a197bab990432e376]
+link personChristian to contributionChristianSlides--><path codeLine="292" d="M414,97.89 C414,97.89 414,231.47 414,302 C414,302 414,302 414,419.5 C414,512.49 494.13,592.85 553.71,639.73 " fill="none" id="personChristian-contributionChristianSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="564.19,647.81,559.5039,639.1474,560.2299,644.7575,554.6199,645.4835,564.19,647.81" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="560.2299" x2="553.895" y1="644.7575" y2="639.88"/><polygon fill="#FFFFFF" points="414,85.89,410,91.89,414,97.89,418,91.89,414,85.89" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="485.0832" y="637.0591">is-actor-in</text><!--MD5=[96bc225851f60a87032e03128b08b4d3]
+link slides to contributionChristianSlides--><path codeLine="293" d="M2121.7356,587.6434 C2121.7356,587.6434 2118.21,587.91 2117,588 C1609.29,626.12 1480.68,609.4 973,648 C933.6,651 891.8,654.7 851.22,658.56 " fill="none" id="slides-contributionChristianSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="838.1,659.82,847.4411,662.9414,843.0771,659.3421,846.6764,654.978,838.1,659.82" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="843.0771" x2="851.035" y1="659.3421" y2="658.58"/><polygon fill="#FFFFFF" points="2133.7,586.72,2127.41,583.1936,2121.7356,587.6434,2128.0256,591.1698,2133.7,586.72" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="846.2077" y="655.9405">has-contribution</text><!--MD5=[43d0820c5a349c835190793bf28ac172]
+link contributionChristianSlides to affiliationChristianTIB--><path codeLine="294" d="M527.0544,726.0908 C527.0544,726.0908 451.32,760.27 417.66,775.45 " fill="none" id="contributionChristianSlides-affiliationChristianTIB" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="405.55,780.92,415.3987,780.8695,410.1086,778.8659,412.1122,773.5757,405.55,780.92" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="410.1086" x2="417.4" y1="778.8659" y2="775.57"/><polygon fill="#FFFFFF" points="537.99,721.15,530.8752,719.9752,527.0544,726.0908,534.1691,727.2656,537.99,721.15" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="433.7686" y="769.9432">has-affiliation-statement</text><!--MD5=[7b14c6e7ec0e96e90dacb2a6b4565c91]
+link contributionChristianSlides to contributionStatementChristianSlides--><path codeLine="302" d="M688.6916,727.1858 C688.6916,727.1858 744.55,759.66 769.56,774.2 " fill="none" id="contributionChristianSlides-contributionStatementChristianSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="781.12,780.92,775.3457,772.9414,776.7961,778.4092,771.3284,779.8596,781.12,780.92" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="776.7961" x2="769.885" y1="778.4092" y2="774.385"/><polygon fill="#FFFFFF" points="678.32,721.15,681.4938,727.6251,688.6916,727.1858,685.5177,720.7107,678.32,721.15" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="576.476" y="770.1579">has-contribution-statement</text><!--MD5=[cea1f8d289314dd7c387ae1dd530af1b]
+link personDragan to contributionDraganSlides--><path codeLine="312" d="M3451,97.89 C3451,97.89 3451,231.47 3451,302 C3451,302 3451,302 3451,419.5 C3451,495.99 3463.87,528.34 3416,588 C3397.51,611.04 3372.28,628.71 3345.66,642.2 " fill="none" id="personDragan-contributionDraganSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3333.77,647.92,3343.6145,647.6276,3338.2768,645.7546,3340.1498,640.4168,3333.77,647.92" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3338.2768" x2="3345.48" y1="645.7546" y2="642.28"/><polygon fill="#FFFFFF" points="3451,85.89,3447,91.89,3451,97.89,3455,91.89,3451,85.89" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="3287.7963" y="636.9151">is-actor-in</text><!--MD5=[38888387c814417f9ae0d2fc2dad7d73]
+link slides to contributionDraganSlides--><path codeLine="313" d="M2688.2085,590.175 C2688.2085,590.175 2898.82,628.28 2994.73,645.63 " fill="none" id="slides-contributionDraganSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3007.54,647.95,2999.3953,642.4125,3002.6198,647.0604,2997.9719,650.2849,3007.54,647.95" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3002.6198" x2="2994.75" y1="647.0604" y2="645.64"/><polygon fill="#FFFFFF" points="2676.4,588.04,2681.5926,593.0437,2688.2085,590.175,2683.0159,585.1713,2676.4,588.04" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="2874.8118" y="639.9584">has-contribution</text><!--MD5=[953af11742d826d149befec4b0da720d]
+link contributionDraganSlides to affiliationDraganLyrasis--><path codeLine="314" d="M3305.8679,725.5407 C3305.8679,725.5407 3407.46,765.48 3449.71,782.08 " fill="none" id="contributionDraganSlides-affiliationDraganLyrasis" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3461.86,786.86,3454.9476,779.8444,3457.2067,785.0305,3452.0205,787.2896,3461.86,786.86" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3457.2067" x2="3449.755" y1="785.0305" y2="782.105"/><polygon fill="#FFFFFF" points="3294.7,721.15,3298.8204,727.068,3305.8679,725.5407,3301.7475,719.6227,3294.7,721.15" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="157" x="3300.8595" y="769.9738">has-affiliation-statement</text><!--MD5=[a179e4e970026ddb961509e94e0b5d81]
+link contributionDraganSlides to contributionStatementDraganSlides--><path codeLine="322" d="M3185.5807,732.4924 C3185.5807,732.4924 3175.75,757.57 3171.34,768.82 " fill="none" id="contributionDraganSlides-contributionStatementDraganSlides" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="3166.57,781,3173.5758,774.0777,3168.3928,776.3441,3166.1264,771.1611,3166.57,781" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="3168.3928" x2="3171.31" y1="776.3441" y2="768.89"/><polygon fill="#FFFFFF" points="3189.96,721.32,3184.0462,725.4464,3185.5807,732.4924,3191.4945,728.3659,3189.96,721.32" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="2973.8509" y="769.7809">has-contribution-statement</text><!--MD5=[3ee56fd2ab26cc84b2504d820dad681f]
+@startuml
+
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
+
+    object "<u>ZB Med Research Colloquium:EventSeries</u>" as zbMed #ffffff {
+        title = "ZB Med Research Colloquium"@en
+        description = ""@en
+        recurrencePeriod = 1
+        recurrenceUnit = "month"@en
+    }
+
+    object "<u>ZB Med Research Colloquium March 2025: Event</u>" as zbMedMarch2025 #ffffff {
+        title = "ZB Med Research Colloquium for March 2025"@en
+        dateRange = {
+        \t startDate = 2025-03-01 ^^ Date
+        \t endDate = 2025-03-31 ^^ Date
+        } ^^ DateRange
+    }
+
+    zbMedMarch2025 o- -> "belongs-to-series" zbMed
+
+    object "<u>Christian Hauschke:Person</u>" as personChristian #ffffff {
+       personName = {
+       \t firstNames = "Christian"
+       \t familyNames = "Hauschke"
+       } ^^ PersonName
+    }
+
+    object "<u>Christian ORCID:ORCID_Identifier</u>" as orcidChristian #ffffff {
+       orcidId = "https://orcid.org/0000-0003-2499-7741" ^^ ORCID_iD_Type
+    }
+
+    personChristian o- -> "has-identifier" orcidChristian
+
+    object "<u>TIB:Organisation_Unit</u>" as institutionTIB #ffffff {
+        name = "Leibniz Information Centre for Science and Technology and University Library"@en,
+        \t "Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek"@de
+        acronym = "TIB"
+        contacts = [
+        \t\t\t{uri =  "https://www.tib.eu/en/" ^^ URI}
+        \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>TIB ROR:ROR_Identifier</u>" as rorTIB #ffffff {
+        rorId = "https://ror.org/04aj4c181" ^^ ROR_ID_Type
+    }
+
+    institutionTIB o- -> "has-identifier" rorTIB
+
+    object "<u>TIB Affiliation:Affiliation_Statement</u>" as affiliationChristianTIB #ffffff {
+        displayAffiliation = "TIB -
+        \t Leibniz Information Centre for Science and Technology and University Library"@en
+        displayPersonName = "Hauschke, Christian"
+    }
+
+    affiliationChristianTIB o- -> "has-organisation-unit" institutionTIB
+
+    object "<u>Dragan Ivanovic:Person</u>" as personDragan #ffffff {
+       personName = {
+       \t firstNames = "Dragan"
+       \t familyNames = "Ivanović"
+       } ^^ PersonName
+    }
+
+    object "<u>Dragan ORCID:ORCID_Identifier</u>" as orcidDragan #ffffff {
+       orcidId = "https://orcid.org/0000-0002-9942-5521" ^^ ORCID_iD_Type
+    }
+
+    personDragan o- -> "has-identifier" orcidDragan
+
+    object "<u>Lyrasis:Organisation_Unit</u>" as institutionLyrasis #ffffff {
+        name = "Lyrasis"@en
+        contacts = [
+                \t\t\t{uri =  "https://lyrasis.org/" ^^ URI}
+                \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>Lyrasis ROR:ROR_Identifier</u>" as rorLyrasis #ffffff {
+        rorId = "https://ror.org/026tem613" ^^ ROR_ID_Type
+    }
+
+    institutionLyrasis o- -> "has-identifier" rorLyrasis
+
+    object "<u>Lyrasis Affiliation:Affiliation_Statement</u>" as affiliationDraganLyrasis #ffffff {
+        displayAffiliation = "Lyrasis - VIVO"@en
+        displayPersonName = "Ivanovic, Dragan"
+    }
+
+    affiliationDraganLyrasis o- -> "has-organisation-unit" institutionLyrasis
+
+    object "<u>Christian's presentation at ZBMed:Contribution_to_Event</u>" as contributionChristianZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o- -> "is-actor-in" contributionChristianZBMedMarch2025
+    zbMedMarch2025 o- -> "has-contribution" contributionChristianZBMedMarch2025
+    contributionChristianZBMedMarch2025 o- -> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianZBMedMarch2025 #ffffff {
+        statement = "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en
+    }
+
+    contributionChristianZBMedMarch2025 o- -> "has-contribution-statement" contributionStatementChristianZBMedMarch2025
+
+    object "<u>Christian and Dragan Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementChristianDraganZBMedMarch2025 #ffffff {
+        statement = "Material for Christian and Dragan talk is prepared as open-access slides."@en
+    }
+
+    contributionStatementChristianZBMedMarch2025 o- -> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
+
+    object "<u>Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_on_the_Web</u>" as slides #ddeedd {
+        title = "VIVO - An Ontology-Based Research Information System"@en
+        downloadURL = "https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1" ^^ URI
+        accessURL = "https://zenodo.org/records/15773109" ^^ URI
+        publicationDate = 2025-03-20 ^^ Date
+    }
+
+    slides o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Slides DOI:DOI_Identifier</u>" as doiSlides #ffffff {
+       doiId = "10.5281/zenodo.15773108" ^^ DOI_ID
+    }
+
+    slides o- -> "has-identifier" doiSlides
+
+    object "<u>Zenodo:Repository, Publication_Channel</u>" as zenodo #ffffff {
+       title = "Zenodo"@en
+    }
+
+    slides o- -> "published-in" zenodo
+
+    resourceUsageStatementChristianDraganZBMedMarch2025 o- -> "uses" slides
+
+    object "<u>Presentation video all:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentationComplete #ddeedd {
+        title = "VIVO - An Ontology-Based Research Information System"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+        duration = "PT40M14S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentationComplete o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 1:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation1 #ddeedd {
+        title = "What is VIVO and what are the features?"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=0s" ^^ URI
+        duration = "PT4M15S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation1 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 1 contents location : Time_Based_Contents_Location</u>" as presentation1ContentsLocation #ffffff {
+       startTime = "0" ^^ Time
+       endTime = "4:15" ^^ Time
+    }
+
+    presentation1 o- -> "is-part-of" presentationComplete
+    ( presentation1, presentationComplete ) .. presentation1ContentsLocation
+
+    object "<u>YouTube:Repository, Publication_Channel</u>" as youtube #ffffff {
+       title = "YouTube"@en
+    }
+
+    presentationComplete o- -> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation1
+
+    object "<u>Presentation video 2:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation2 #ddeedd {
+        title = "Examples of usage of VIVO on national and institutional level"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=255s" ^^ URI
+        duration = "PT3M40S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation2 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 2 contents location : Time_Based_Contents_Location</u>" as presentation2ContentsLocation #ffffff {
+       startTime = "4:15" ^^ Time
+       endTime = "7:55" ^^ Time
+    }
+
+    presentation2 - - "is-part-of" presentationComplete
+    ( presentation2, presentationComplete ) .. presentation2ContentsLocation
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation2
+
+/'
+    object "<u>Presentation video 3:Presentation, Video, Accessible_on_the_Web</u>" as presentation3 #ddeedd {
+        title = "Open Source Software and the VIVO community"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=475s" ^^ URI
+        duration = "PT3M6S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation3 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 3 contents location : Time_Based_Contents_Location</u>" as presentation3ContentsLocation #ffffff {
+       startTime = "7:55" ^^ Time
+       endTime = "11:01" ^^ Time
+    }
+
+    presentation3 o- -> "is-part-of" presentationComplete
+    ( presentation3, presentationComplete ) .. presentation3ContentsLocation
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation3
+
+    object "<u>Presentation video 4:Presentation, Video, Accessible_on_the_Web</u>" as presentation4 #ddeedd {
+        title = "VIVO: Profiles/ Visualisations"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=661s" ^^ URI
+        duration = "PT6M44S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation4 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 4 contents location : Time_Based_Contents_Location</u>" as presentation4ContentsLocation #ffffff {
+       startTime = "11:01" ^^ Time
+       endTime = "17:45" ^^ Time
+    }
+
+    presentation4 o- -> "is-part-of" presentationComplete
+    ( presentation4, presentationComplete ) .. presentation4ContentsLocation
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation4
+
+    object "<u>Presentation video 5:Presentation, Video, Accessible_on_the_Web</u>" as presentation5 #ddeedd {
+        title = "Linked data in VIVO: based on ontologies"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1065s" ^^ URI
+        duration = "PT3M45S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation5 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 5 contents location : Time_Based_Contents_Location</u>" as presentation5ContentsLocation #ffffff {
+       startTime = "17:45" ^^ Time
+       endTime = "21:30" ^^ Time
+    }
+
+    presentation5 o- -> "is-part-of" presentationComplete
+    ( presentation5, presentationComplete ) .. presentation5ContentsLocation
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation5
+'/
+
+
+    object "<u>Dragan's presentation at ZBMed:Contribution_to_Event</u>" as contributionDraganZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o- -> "is-actor-in" contributionDraganZBMedMarch2025
+    zbMedMarch2025 o- -> "has-contribution" contributionDraganZBMedMarch2025
+    contributionDraganZBMedMarch2025 o- -> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganZBMedMarch2025 #ffffff {
+        statement = "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en
+    }
+
+    contributionDraganZBMedMarch2025 o- -> "has-contribution-statement" contributionStatementDraganZBMedMarch2025
+
+    contributionStatementDraganZBMedMarch2025 o- -> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
+
+    object "<u>Presentation video 8:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation8 #ddeedd {
+        title = "Development of VIVO"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s" ^^ URI
+        duration = "PT11M41S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation8 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 8 contents location : Time_Based_Contents_Location</u>" as presentation8ContentsLocation #ffffff {
+       startTime = "28:33" ^^ Time
+       endTime = "40:14" ^^ Time
+    }
+
+    presentation8 o- -> "is-part-of" presentationComplete
+    ( presentation8, presentationComplete ) .. presentation8ContentsLocation
+
+    contributionStatementDraganZBMedMarch2025 o- -> "provides" presentation8
+
+    object "<u>Christian's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionChristianSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o- -> "is-actor-in" contributionChristianSlides
+    slides o- -> "has-contribution" contributionChristianSlides
+    contributionChristianSlides o- -> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementChristianSlides #ddeedd {
+        roleType = "Writing - original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
+        statement = "Christian produces the first 34 slides."@en
+    }
+
+    contributionChristianSlides o- -> "has-contribution-statement" contributionStatementChristianSlides
+
+
+    object "<u>Dragan's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o- -> "is-actor-in" contributionDraganSlides
+    slides o- -> "has-contribution" contributionDraganSlides
+    contributionDraganSlides o- -> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganSlides #ffffff {
+        roleType = "Writing - original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+        statement = "Dragan produced the last 5 slides."@en
+    }
+
+    contributionDraganSlides o- -> "has-contribution-statement" contributionStatementDraganSlides
+
+
+@enduml
+
+@startuml
+
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
+
+    object "<u>ZB Med Research Colloquium:EventSeries</u>" as zbMed #ffffff {
+        title = "ZB Med Research Colloquium"@en
+        description = ""@en
+        recurrencePeriod = 1
+        recurrenceUnit = "month"@en
+    }
+
+    object "<u>ZB Med Research Colloquium March 2025: Event</u>" as zbMedMarch2025 #ffffff {
+        title = "ZB Med Research Colloquium for March 2025"@en
+        dateRange = {
+        \t startDate = 2025-03-01 ^^ Date
+        \t endDate = 2025-03-31 ^^ Date
+        } ^^ DateRange
+    }
+
+    zbMedMarch2025 o- -> "belongs-to-series" zbMed
+
+    object "<u>Christian Hauschke:Person</u>" as personChristian #ffffff {
+       personName = {
+       \t firstNames = "Christian"
+       \t familyNames = "Hauschke"
+       } ^^ PersonName
+    }
+
+    object "<u>Christian ORCID:ORCID_Identifier</u>" as orcidChristian #ffffff {
+       orcidId = "https://orcid.org/0000-0003-2499-7741" ^^ ORCID_iD_Type
+    }
+
+    personChristian o- -> "has-identifier" orcidChristian
+
+    object "<u>TIB:Organisation_Unit</u>" as institutionTIB #ffffff {
+        name = "Leibniz Information Centre for Science and Technology and University Library"@en,
+        \t "Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek"@de
+        acronym = "TIB"
+        contacts = [
+        \t\t\t{uri =  "https://www.tib.eu/en/" ^^ URI}
+        \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>TIB ROR:ROR_Identifier</u>" as rorTIB #ffffff {
+        rorId = "https://ror.org/04aj4c181" ^^ ROR_ID_Type
+    }
+
+    institutionTIB o- -> "has-identifier" rorTIB
+
+    object "<u>TIB Affiliation:Affiliation_Statement</u>" as affiliationChristianTIB #ffffff {
+        displayAffiliation = "TIB -
+        \t Leibniz Information Centre for Science and Technology and University Library"@en
+        displayPersonName = "Hauschke, Christian"
+    }
+
+    affiliationChristianTIB o- -> "has-organisation-unit" institutionTIB
+
+    object "<u>Dragan Ivanovic:Person</u>" as personDragan #ffffff {
+       personName = {
+       \t firstNames = "Dragan"
+       \t familyNames = "Ivanović"
+       } ^^ PersonName
+    }
+
+    object "<u>Dragan ORCID:ORCID_Identifier</u>" as orcidDragan #ffffff {
+       orcidId = "https://orcid.org/0000-0002-9942-5521" ^^ ORCID_iD_Type
+    }
+
+    personDragan o- -> "has-identifier" orcidDragan
+
+    object "<u>Lyrasis:Organisation_Unit</u>" as institutionLyrasis #ffffff {
+        name = "Lyrasis"@en
+        contacts = [
+                \t\t\t{uri =  "https://lyrasis.org/" ^^ URI}
+                \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>Lyrasis ROR:ROR_Identifier</u>" as rorLyrasis #ffffff {
+        rorId = "https://ror.org/026tem613" ^^ ROR_ID_Type
+    }
+
+    institutionLyrasis o- -> "has-identifier" rorLyrasis
+
+    object "<u>Lyrasis Affiliation:Affiliation_Statement</u>" as affiliationDraganLyrasis #ffffff {
+        displayAffiliation = "Lyrasis - VIVO"@en
+        displayPersonName = "Ivanovic, Dragan"
+    }
+
+    affiliationDraganLyrasis o- -> "has-organisation-unit" institutionLyrasis
+
+    object "<u>Christian's presentation at ZBMed:Contribution_to_Event</u>" as contributionChristianZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o- -> "is-actor-in" contributionChristianZBMedMarch2025
+    zbMedMarch2025 o- -> "has-contribution" contributionChristianZBMedMarch2025
+    contributionChristianZBMedMarch2025 o- -> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianZBMedMarch2025 #ffffff {
+        statement = "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en
+    }
+
+    contributionChristianZBMedMarch2025 o- -> "has-contribution-statement" contributionStatementChristianZBMedMarch2025
+
+    object "<u>Christian and Dragan Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementChristianDraganZBMedMarch2025 #ffffff {
+        statement = "Material for Christian and Dragan talk is prepared as open-access slides."@en
+    }
+
+    contributionStatementChristianZBMedMarch2025 o- -> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
+
+    object "<u>Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_on_the_Web</u>" as slides #ddeedd {
+        title = "VIVO - An Ontology-Based Research Information System"@en
+        downloadURL = "https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1" ^^ URI
+        accessURL = "https://zenodo.org/records/15773109" ^^ URI
+        publicationDate = 2025-03-20 ^^ Date
+    }
+
+    slides o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Slides DOI:DOI_Identifier</u>" as doiSlides #ffffff {
+       doiId = "10.5281/zenodo.15773108" ^^ DOI_ID
+    }
+
+    slides o- -> "has-identifier" doiSlides
+
+    object "<u>Zenodo:Repository, Publication_Channel</u>" as zenodo #ffffff {
+       title = "Zenodo"@en
+    }
+
+    slides o- -> "published-in" zenodo
+
+    resourceUsageStatementChristianDraganZBMedMarch2025 o- -> "uses" slides
+
+    object "<u>Presentation video all:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentationComplete #ddeedd {
+        title = "VIVO - An Ontology-Based Research Information System"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew" ^^ URI
+        duration = "PT40M14S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentationComplete o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 1:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation1 #ddeedd {
+        title = "What is VIVO and what are the features?"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=0s" ^^ URI
+        duration = "PT4M15S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation1 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 1 contents location : Time_Based_Contents_Location</u>" as presentation1ContentsLocation #ffffff {
+       startTime = "0" ^^ Time
+       endTime = "4:15" ^^ Time
+    }
+
+    presentation1 o- -> "is-part-of" presentationComplete
+    ( presentation1, presentationComplete ) .. presentation1ContentsLocation
+
+    object "<u>YouTube:Repository, Publication_Channel</u>" as youtube #ffffff {
+       title = "YouTube"@en
+    }
+
+    presentationComplete o- -> "published-in" youtube
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation1
+
+    object "<u>Presentation video 2:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation2 #ddeedd {
+        title = "Examples of usage of VIVO on national and institutional level"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=255s" ^^ URI
+        duration = "PT3M40S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation2 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 2 contents location : Time_Based_Contents_Location</u>" as presentation2ContentsLocation #ffffff {
+       startTime = "4:15" ^^ Time
+       endTime = "7:55" ^^ Time
+    }
+
+    presentation2 - - "is-part-of" presentationComplete
+    ( presentation2, presentationComplete ) .. presentation2ContentsLocation
+
+    contributionStatementChristianZBMedMarch2025 o- -> "provides" presentation2
+
+
+
+    object "<u>Dragan's presentation at ZBMed:Contribution_to_Event</u>" as contributionDraganZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o- -> "is-actor-in" contributionDraganZBMedMarch2025
+    zbMedMarch2025 o- -> "has-contribution" contributionDraganZBMedMarch2025
+    contributionDraganZBMedMarch2025 o- -> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganZBMedMarch2025 #ffffff {
+        statement = "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en
+    }
+
+    contributionDraganZBMedMarch2025 o- -> "has-contribution-statement" contributionStatementDraganZBMedMarch2025
+
+    contributionStatementDraganZBMedMarch2025 o- -> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
+
+    object "<u>Presentation video 8:Presentation, Video_Contents, Accessible_on_the_Web</u>" as presentation8 #ddeedd {
+        title = "Development of VIVO"@en
+        accessURL = "https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s" ^^ URI
+        duration = "PT11M41S" ^^ Duration
+        publicationDate = 2025-03-25 ^^ Date
+    }
+
+    presentation8 o- -> "access-rights-specification" OpenAccess
+
+    object "<u>Presentation video 8 contents location : Time_Based_Contents_Location</u>" as presentation8ContentsLocation #ffffff {
+       startTime = "28:33" ^^ Time
+       endTime = "40:14" ^^ Time
+    }
+
+    presentation8 o- -> "is-part-of" presentationComplete
+    ( presentation8, presentationComplete ) .. presentation8ContentsLocation
+
+    contributionStatementDraganZBMedMarch2025 o- -> "provides" presentation8
+
+    object "<u>Christian's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionChristianSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o- -> "is-actor-in" contributionChristianSlides
+    slides o- -> "has-contribution" contributionChristianSlides
+    contributionChristianSlides o- -> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementChristianSlides #ddeedd {
+        roleType = "Writing - original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
+        statement = "Christian produces the first 34 slides."@en
+    }
+
+    contributionChristianSlides o- -> "has-contribution-statement" contributionStatementChristianSlides
+
+
+    object "<u>Dragan's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o- -> "is-actor-in" contributionDraganSlides
+    slides o- -> "has-contribution" contributionDraganSlides
+    contributionDraganSlides o- -> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganSlides #ffffff {
+        roleType = "Writing - original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+        statement = "Dragan produced the last 5 slides."@en
+    }
+
+    contributionDraganSlides o- -> "has-contribution-statement" contributionStatementDraganSlides
+
+
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 08:20:59 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
