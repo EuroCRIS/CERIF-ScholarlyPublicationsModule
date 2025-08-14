@@ -27,8 +27,8 @@
 
 :ivan_mrsulja a cerif_core:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-    cerif_core:firstNames "Ivan"@sr-Latn-RS , "Иван"@sr-Cyrl-RS;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Ivan"@sr-Latn-RS , "Иван"@sr-Cyrl-RS ;
     cerif_core:familyNames "Mršulja"@sr-Latn-RS , "Мршуља"@sr-Cyrl-RS
   ] .
 
@@ -39,8 +39,8 @@
 
 :milos_popovic a cerif_core:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-		cerif_core:firstNames "Miloš"@sr-Latn-RS , "Милош"@sr-Cyrl-RS ;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Miloš"@sr-Latn-RS , "Милош"@sr-Cyrl-RS ;
     cerif_core:familyNames "Popović"@sr-Latn-RS , "Поповић"@sr-Cyrl-RS
   ] .
 
@@ -51,8 +51,8 @@
 
 :dragan_ivanovic a cerif_core:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-		cerif_core:firstNames "Dragan"@sr-Latn-RS , "Драган"@sr-Cyrl-RS ;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Dragan"@sr-Latn-RS , "Драган"@sr-Cyrl-RS ;
     cerif_core:familyNames "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
   ] ;
   cerif_core:hasIdentifier :orcid_dragan .
@@ -67,12 +67,12 @@
 
 :lidija_ivanovic a cerif_core:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-		cerif_core:firstNames "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
     cerif_core:familyNames "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
   ] ;
   cerif_core:alternateName [
-	  a cerif_core:PersonName	;
+    a cerif_core:PersonName ;
     cerif_core:firstNames "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
     cerif_core:familyNames "Vujošević"@sr-Latn-RS , "Вујошевић"@sr-Cyrl-RS
   ] .
@@ -84,8 +84,8 @@
 
 :dusan_surla a foaf:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-	  cerif_core:firstNames "Dušan"@sr-Latn-RS , "Душан"@sr-Cyrl-RS ;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Dušan"@sr-Latn-RS , "Душан"@sr-Cyrl-RS ;
     cerif_core:familyNames "Surla"@sr-Latn-RS , "Сурла"@sr-Cyrl-RS
   ] .
 
@@ -111,44 +111,44 @@
   cerif_core:acronym "CRIS 2024"@en ;
   cerif_core:ordinalNumber 16 ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024-05-15"^^xsd:date ;
     cerif_core:endDate "2024-05-17"^^xsd:date ;
   ] ;
   cerif_core:isPartOf :cris_series .
 
-:cris2024_presentation a cerif_spm:Presentation	,
-          cerif_core:Textual_Contents	,
-	        cerif_core:Downloadable	,
-	        cerif_core:Accessible_on_the_Web	;
+:cris2024_presentation a cerif_spm:Presentation  ,
+          cerif_core:Textual_Contents  ,
+          cerif_core:Downloadable  ,
+          cerif_core:Accessible_on_the_Web ;
   cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
-	cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf> ;
+  cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf> ;
   cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
-	cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:publicationDate "2024-05-14"^^xsd:date ;
-	cerif_core:isPublishedIn :dspace_cris_eurocris ;
+  cerif_core:isPublishedIn :dspace_cris_eurocris ;
   cerif_core:hasIdentifier :handle_presentation .
 
 :handle_presentation a cerif_core:Handle_Identifier ;
   cerif_core:handle "11366/2540"^^xsd:string .
 
 :cris2024_extended_abstract a cerif_spm:Conference_Abstract ,
-	          cerif_core:Textual_Contents	,
-	          cerif_core:Downloadable	,
-	          cerif_core:Accessible_on_the_Web	;
+            cerif_core:Textual_Contents  ,
+            cerif_core:Downloadable  ,
+            cerif_core:Accessible_on_the_Web ;
   cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
   cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/1/Mr%c5%a1ulja-et-al-CRIS2024_Reengineering-of-CRIS-at-UNS.pdf> ;
   cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
-  cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:publicationDate "2024-03-01"^^xsd:date ;
-	cerif_core:isPublishedIn :dspace_cris_eurocris .
+  cerif_core:isPublishedIn :dspace_cris_eurocris .
 
 :cris2024_full_paper a cerif_spm:Conference_Article ,
-	          cerif_core:Textual_Contents	,
-	          cerif_core:Accessible_on_the_Web	;
+            cerif_core:Textual_Contents  ,
+            cerif_core:Accessible_on_the_Web ;
   cerif_core:title "Reengineering of CRIS at University of Novi Sad"@en ;
   cerif_core:accessURL <https://www.sciencedirect.com/science/article/pii/S1877050924032630> ;
-	cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:publicationDate "2024"^^xsd:gYear ;
   cerif_core:hasIdentifier :doi_fullpaper ;
   cerif_core:isPartOf :cris2024_proceedings .
@@ -170,18 +170,18 @@
   cerif_core:hasEvent :cris2024_event .
 
 [] a rdf:Statement,
-	          cerif_core:Serial_Publication_Based_Contents_Location;
-	rdf:Subject	:cris2024_proceedings	;
-	rdf:Predicate cerif_core:isPublishedIn	;
-	rdf:Object	:proceedia_computer_science	;
+            cerif_core:Serial_Publication_Based_Contents_Location;
+  rdf:Subject  :cris2024_proceedings ;
+  rdf:Predicate cerif_core:isPublishedIn ;
+  rdf:Object  :proceedia_computer_science ;
   cerif_core:volume "249"^^xsd:integer .
 
 [] a rdf:Statement,
-	          cerif_core:Page_Based_Contents_Location;
-	rdf:Subject	:cris2024_full_paper	;
-	rdf:Predicate cerif_core:isPartOf	;
-	rdf:Object	:cris2024_proceedings	;
-	cerif_core:startPage "85"^^xsd:integer ;
+            cerif_core:Page_Based_Contents_Location;
+  rdf:Subject  :cris2024_full_paper ;
+  rdf:Predicate cerif_core:isPartOf ;
+  rdf:Object  :cris2024_proceedings ;
+  cerif_core:startPage "85"^^xsd:integer ;
   cerif_core:endPage "93"^^xsd:integer .
 
 :dspace_cris_eurocris a cerif_core:Repository ;
@@ -198,7 +198,7 @@
   cerif_core:hasActor :ivan_mrsulja ;
   cerif_core:hasTarget :cris2024 ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:hasStartDate "2024-05-15"^^xsd:date
   ] ;
   cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
@@ -210,7 +210,7 @@
 
 :resource_usage_statement_ivan_cris2024 a cerif_core:Resource_Usage_Statement ;
   cerif_core:statement "Material for Ivan talk is prepared as open-access slides."@en ;
-	cerif_core:uses :cris2024_presentation	.
+  cerif_core:uses :cris2024_presentation  .
 
 ### Contribution to CRIS 2024 presentation (slides)
 
@@ -220,7 +220,7 @@
   cerif_core:hasActor :ivan_mrsulja ;
   cerif_core:hasTarget :cris2024_presentation ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-05-15"^^xsd:date
   ] ;
@@ -238,7 +238,7 @@
   cerif_core:hasActor :milos_popovic ;
   cerif_core:hasTarget :cris2024_presentation ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-05-15"^^xsd:date
   ] ;
@@ -256,7 +256,7 @@
   cerif_core:hasActor :dragan_ivanovic ;
   cerif_core:hasTarget :cris2024_presentation ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-05-15"^^xsd:date
   ] ;
@@ -274,7 +274,7 @@
   cerif_core:hasActor :lidija_ivanovic ;
   cerif_core:hasTarget :cris2024_presentation ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-05-15"^^xsd:date
   ] ;
@@ -292,7 +292,7 @@
   cerif_core:hasActor :dusan_surla ;
   cerif_core:hasTarget :cris2024_presentation ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2023-09-30"^^xsd:date
   ] ;
@@ -317,7 +317,7 @@
   cerif_core:hasActor :ivan_mrsulja ;
   cerif_core:hasTarget :cris2024_extended_abstract ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-03-01"^^xsd:date
   ] ;
@@ -334,7 +334,7 @@
   cerif_core:hasActor :milos_popovic ;
   cerif_core:hasTarget :cris2024_extended_abstract ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-03-01"^^xsd:date
   ] ;
@@ -351,7 +351,7 @@
   cerif_core:hasActor :dragan_ivanovic ;
   cerif_core:hasTarget :cris2024_extended_abstract ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-03-01"^^xsd:date
   ] ;
@@ -368,7 +368,7 @@
   cerif_core:hasActor :lidija_ivanovic ;
   cerif_core:hasTarget :cris2024_extended_abstract ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2024-03-01"^^xsd:date
   ] ;
@@ -385,7 +385,7 @@
   cerif_core:hasActor :dusan_surla ;
   cerif_core:hasTarget :cris2024_extended_abstract ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024"^^xsd:gYear ;
     cerif_core:endDate "2023-09-30"^^xsd:date
   ] ;
@@ -404,7 +404,7 @@
   cerif_core:hasActor :ivan_mrsulja ;
   cerif_core:hasTarget :cris2024_full_paper ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024-05-15"^^xsd:date ;
     cerif_core:endDate "2024-10-15"^^xsd:date
   ] ;
@@ -422,7 +422,7 @@
   cerif_core:hasActor :milos_popovic ;
   cerif_core:hasTarget :cris2024_full_paper ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024-05-15"^^xsd:date ;
     cerif_core:endDate "2024-10-15"^^xsd:date
   ] ;
@@ -440,11 +440,11 @@
   cerif_core:hasActor :dragan_ivanovic ;
   cerif_core:hasTarget :cris2024_full_paper ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024-05-15"^^xsd:date ;
     cerif_core:endDate "2024-10-15"^^xsd:date
   ] ;
-	cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
+  cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
   cerif_core:hasContributionStatement :contribution_statement_dragan_full_paper .
 
 :contribution_statement_dragan_full_paper a cerif_spm:CRediT_Contribution_Statement ;
@@ -458,11 +458,11 @@
   cerif_core:hasActor :lidija_ivanovic ;
   cerif_core:hasTarget :cris2024_full_paper ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024-05-15"^^xsd:date ;
     cerif_core:endDate "2024-10-15"^^xsd:date
   ] ;
-	cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
+  cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
   cerif_core:hasContributionStatement :contribution_statement_lidija_full_paper .
 
 :contribution_statement_lidija_full_paper a cerif_spm:CRediT_Contribution_Statement ;
@@ -476,11 +476,11 @@
   cerif_core:hasActor :dusan_surla ;
   cerif_core:hasTarget :cris2024_full_paper ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2024-05-15"^^xsd:date ;
     cerif_core:endDate "2024-10-15"^^xsd:date
   ] ;
-	cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
+  cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
   cerif_core:hasContributionStatement :contribution_statement_dusan_full_paper .
 
 :contribution_statement_dusan_full_paper a cerif_spm:CRediT_Contribution_Statement ;

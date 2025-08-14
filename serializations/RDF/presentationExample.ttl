@@ -19,8 +19,8 @@
 
 :christian_hauschke a cerif_core:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-	  cerif_core:firstNames "Christian"^^xsd:string ;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Christian"^^xsd:string ;
     cerif_core:familyNames "Hauschke"^^xsd:string
   ] ;
   cerif_core:hasIdentifier :orcid_christian .
@@ -30,8 +30,8 @@
 
 :dragan_ivanovic a cerif_core:Person ;
   cerif_core:name [
-    a cerif_core:PersonName	;
-		cerif_core:firstNames "Dragan"^^xsd:string ;
+    a cerif_core:PersonName ;
+    cerif_core:firstNames "Dragan"^^xsd:string ;
     cerif_core:familyNames "Ivanović"^^xsd:string
   ] ;
   cerif_core:hasIdentifier :orcid_dragan .
@@ -42,10 +42,10 @@
 :tib a cerif_core:Organisation_Unit ;
   cerif_core:name "Leibniz Information Centre for Science and Technology and University Library"@en, "Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek"@de ;
   cerif_core:acronym "TIB"@en ;
-	cerif_core:contacts [
-		a cerif_core:Website_Address	;
-		cerif_core:uri <https://www.tib.eu/en/>
-	] ;
+  cerif_core:contacts [
+    a cerif_core:Website_Address ;
+    cerif_core:uri <https://www.tib.eu/en/>
+  ] ;
   cerif_core:hasIdentifier :ror_tib .
 
 :ror_tib a cerif_core:ROR_Identifier ;
@@ -54,21 +54,21 @@
 :lyrasis a cerif_core:Organisation_Unit ;
   cerif_core:name "Lyrasis"@en ;
   cerif_core:contacts [
-	  a cerif_core:Website_Address	;
-		cerif_core:uri <https://lyrasis.org/>
-	] ;
+    a cerif_core:Website_Address ;
+    cerif_core:uri <https://lyrasis.org/>
+  ] ;
   cerif_core:hasIdentifier :ror_lyrasis .
 
 :ror_lyrasis a cerif_core:ROR_Identifier ;
   cerif_core:rorId "026tem613"^^xsd:string .
 
 :affiliation_christian_tib a cerif_core:Affiliation_Statement ;
-  cerif_core:displayAffiliation "TIB - Leibniz Information Centre for Science and Technology and University Library"@en  ;
+  cerif_core:displayAffiliation "TIB - Leibniz Information Centre for Science and Technology and University Library"@en ;
   cerif_core:displayPersonName "Hauschke, C."@en ;
   cerif_core:hasInstitution :tib .
 
 :affiliation_dragan_lyrasis a cerif_core:Affiliation_Statement ;
-  cerif_core:displayAffiliation "Lyrasis"@en  ;
+  cerif_core:displayAffiliation "Lyrasis"@en ;
   cerif_core:displayPersonName "Ivanovic, D."@en ;
   cerif_core:hasInstitution :lyrasis .
 
@@ -86,22 +86,22 @@
 :zbmed_march2025 a cerif_core:Event ;
   cerif_core:title "ZB Med Research Colloquium for March 2025"@en ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2025-03-01"^^xsd:date ;
     cerif_core:endDate "2025-03-31"^^xsd:date
   ];
   cerif_core:isPartOf :zbmed_series .
 
-:presentation_slides a cerif_spm:Presentation	,
-	          cerif_core:Textual_Contents	,
-	          cerif_core:Downloadable	,
-	          cerif_core:Accessible_on_the_Web	;
+:presentation_slides a cerif_spm:Presentation  ,
+            cerif_core:Textual_Contents  ,
+            cerif_core:Downloadable  ,
+            cerif_core:Accessible_on_the_Web ;
   cerif_core:title "VIVO – An Ontology-Based Research Information System"@en ;
-	cerif_core:downloadURL <https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1> ;
+  cerif_core:downloadURL <https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1> ;
   cerif_core:accessURL <https://zenodo.org/records/15773109> ;
-	cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:publicationDate "2025-03-20"^^xsd:date ;
-	cerif_core:isPublishedIn :zenodo ;
+  cerif_core:isPublishedIn :zenodo ;
   cerif_core:hasIdentifier :doi_slides .
 
 :doi_slides a cerif_core:DOI_Identifier ;
@@ -111,72 +111,72 @@
   cerif_core:title "Zenodo"@en ;
   cerif_core:url <https://zenodo.org/> .
 
-:presentation_video_complete a cerif_spm:Presentation	,
-						cerif_core:Video_Contents	,
-						cerif_core:Accessible_on_the_Web	 ;
+:presentation_video_complete a cerif_spm:Presentation  ,
+            cerif_core:Video_Contents  ,
+            cerif_core:Accessible_on_the_Web   ;
   cerif_core:title "VIVO – An Ontology-Based Research Information System"@en ;
   cerif_core:publicationDate "2025-03-25"^^xsd:date ;
   cerif_core:duration "PT40M14S"^^xsd:duration ;
   cerif_core:accessURL <https://www.youtube.com/watch?v=64lhd_am9ew> ;
-  cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:isPublishedIn :youtube .
 
 :zenodo a cerif_core:Repository , cerif_core:Publication_Channel ;
   cerif_core:title "YouTube"@en ;
   cerif_core:url <https://www.youtube.com/> .
 
-:presentation_video_1 a cerif_spm:Presentation	,
-	          cerif_core:Video_Contents	,
-						cerif_core:Accessible_on_the_Web	 ;
+:presentation_video_1 a cerif_spm:Presentation  ,
+            cerif_core:Video_Contents  ,
+            cerif_core:Accessible_on_the_Web   ;
   cerif_core:title "What is VIVO and what are the features?"@en ;
   cerif_core:publicationDate "2025-03-25"^^xsd:date ;
   cerif_core:duration "PT4M15S"^^xsd:duration ;
   cerif_core:accessURL <https://www.youtube.com/watch?v=64lhd_am9ew&t=0s> ;
-  cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:isPartOf :presentation_video_complete .
 
 [] a rdf:Statement,
-	          cerif_core:Time_Based_Contents_Location;
-	rdf:Subject	:presentation_video_1	;
-	rdf:Predicate cerif_core:isPartOf	;
-	rdf:Object	:presentation_video_complete	;
-	cerif_core:startTime "0"^^xsd:time ;
+            cerif_core:Time_Based_Contents_Location;
+  rdf:Subject  :presentation_video_1 ;
+  rdf:Predicate cerif_core:isPartOf ;
+  rdf:Object  :presentation_video_complete ;
+  cerif_core:startTime "0"^^xsd:time ;
   cerif_core:endTime "00:04:15"^^xsd:time .
 
-:presentation_video_2 a cerif_spm:Presentation	,
-						cerif_core:Video_Contents	,
-						cerif_core:Accessible_on_the_Web	 ;
+:presentation_video_2 a cerif_spm:Presentation  ,
+            cerif_core:Video_Contents  ,
+            cerif_core:Accessible_on_the_Web   ;
   cerif_core:title "Examples of usage of VIVO on national and institutional level"@en ;
   cerif_core:publicationDate "2025-03-25"^^xsd:date ;
   cerif_core:duration "PT3M40S"^^xsd:duration ;
   cerif_core:accessURL <https://www.youtube.com/watch?v=64lhd_am9ew&t=255s> ;
-  cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:isPartOf :presentation_video_complete .
 
 [] a rdf:Statement,
-	          cerif_core:Time_Based_Contents_Location;
-	rdf:Subject	:presentation_video_2	;
-	rdf:Predicate cerif_core:isPartOf	;
-	rdf:Object	:presentation_video_complete	;
-	cerif_core:startTime "00:04:15"^^xsd:time ;
+            cerif_core:Time_Based_Contents_Location;
+  rdf:Subject  :presentation_video_2 ;
+  rdf:Predicate cerif_core:isPartOf ;
+  rdf:Object  :presentation_video_complete ;
+  cerif_core:startTime "00:04:15"^^xsd:time ;
   cerif_core:endTime "00:07:55"^^xsd:time .
 
-:presentation_video_8 a cerif_spm:Presentation	,
-						cerif_core:Video_Contents	,
-						cerif_core:Accessible_on_the_Web	 ;
-	cerif_core:title "Development of VIVO"@en ;
+:presentation_video_8 a cerif_spm:Presentation  ,
+            cerif_core:Video_Contents  ,
+            cerif_core:Accessible_on_the_Web   ;
+  cerif_core:title "Development of VIVO"@en ;
   cerif_core:publicationDate "2025-03-25"^^xsd:date ;
   cerif_core:duration "PT11M41S"^^xsd:duration ;
   cerif_core:accessURL <https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s> ;
-  cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_spm:hasAccessRightsSpecification :open_access ;
   cerif_core:isPartOf :presentation_video_complete.
 
 [] a rdf:Statement,
-	          cerif_core:Time_Based_Contents_Location;
-	rdf:Subject	:presentation_video_8	;
-	rdf:Predicate cerif_core:isPartOf	;
-	rdf:Object	:presentation_video_complete	;
-	cerif_core:startTime "00:28:33"^^xsd:time ;
+            cerif_core:Time_Based_Contents_Location;
+  rdf:Subject  :presentation_video_8 ;
+  rdf:Predicate cerif_core:isPartOf ;
+  rdf:Object  :presentation_video_complete ;
+  cerif_core:startTime "00:28:33"^^xsd:time ;
   cerif_core:endTime "00:40:14"^^xsd:time .
 
 #################################################################
@@ -194,9 +194,9 @@
 
 :contribution_statement_christian_zbmed_march2025 a cerif_core:Contribution_Statement ;
   cerif_core:statement "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en ;
-  cerif_core:provides :presentation_video_1	,
-	          :presentation_video_2	;
-	cerif_core:isDetailedIn :resource_usage_statement_christian_dragan_zbmed_march2025 .
+  cerif_core:provides :presentation_video_1  ,
+            :presentation_video_2 ;
+  cerif_core:isDetailedIn :resource_usage_statement_christian_dragan_zbmed_march2025 .
 
 ### Dragan's presentation at ZBMed (Contribution_to_Event)
 
@@ -209,12 +209,12 @@
 
 :contribution_statement_dragan_zbmed_march2025 a cerif_core:Contribution_Statement ;
   cerif_core:statement "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en ;
-  cerif_core:provides :presentation_video_8	;
-	cerif_core:isDetailedIn :resource_usage_statement_christian_dragan_zbmed_march2025 .
+  cerif_core:provides :presentation_video_8 ;
+  cerif_core:isDetailedIn :resource_usage_statement_christian_dragan_zbmed_march2025 .
 
 :resource_usage_statement_christian_dragan_zbmed_march2025 a cerif_core:Resource_Usage_Statement ;
   cerif_core:statement "Material for Christian and Dragan talk is prepared as open-access slides."@en ;
-	cerif_core:uses :presentation_slides .
+  cerif_core:uses :presentation_slides .
 
 ### Contribution to ZBMed March 2025 presentation (slides)
 
@@ -224,7 +224,7 @@
   cerif_core:hasActor :christian_hauschke ;
   cerif_core:hasTarget :presentation_slides ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2025"^^xsd:gYear ;
     cerif_core:endDate "2025-03-25"^^xsd:date
   ] ;
@@ -242,7 +242,7 @@
   cerif_core:hasActor :dragan_ivanovic ;
   cerif_core:hasTarget :presentation_slides ;
   cerif_core:dateRange [
-    a cerif_core:DateRange	;
+    a cerif_core:DateRange ;
     cerif_core:startDate "2025"^^xsd:gYear ;
     cerif_core:endDate "2025-03-25"^^xsd:date
   ] ;
