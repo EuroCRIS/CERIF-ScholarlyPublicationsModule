@@ -18,82 +18,81 @@
 #################################################################
 
 :uns a cerif_core:Organisation_Unit ;
-    cerif_core:name "University of Novi Sad"@en , "Univerzitet u Novom Sadu"@sr ;
-    cerif_core:acronym "UNS"@en ;
-    cerif_core:hasIdentifier :ror_uns .
+  cerif_core:name "University of Novi Sad"@en , "Univerzitet u Novom Sadu"@sr ;
+  cerif_core:acronym "UNS"@en ;
+  cerif_core:hasIdentifier :ror_uns .
 
 :ror_uns a cerif_core:ROR_Identifier ;
-    cerif_core:rorId "00xa57a59"^^xsd:string .
+  cerif_core:rorId "00xa57a59"^^xsd:string .
 
 :ivan_mrsulja a cerif_core:Person ;
-    cerif_core:name [
-        a cerif_core:PersonName	;
-        cerif_core:firstNames "Ivan"@sr-Latn-RS , "Иван"@sr-Cyrl-RS;
-        cerif_core:familyNames "Mršulja"@sr-Latn-RS , "Мршуља"@sr-Cyrl-RS
-    ] .
+  cerif_core:name [
+    a cerif_core:PersonName	;
+    cerif_core:firstNames "Ivan"@sr-Latn-RS , "Иван"@sr-Cyrl-RS;
+    cerif_core:familyNames "Mršulja"@sr-Latn-RS , "Мршуља"@sr-Cyrl-RS
+  ] .
 
 :affiliation_ivan_uns a cerif_core:Affiliation_Statement ;
-    cerif_core:displayAffiliation "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
-    cerif_core:displayPersonName "Mršulja, I."@en ;
-    cerif_core:hasInstitution :uns .
+  cerif_core:displayAffiliation "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
+  cerif_core:displayPersonName "Mršulja, I."@en ;
+  cerif_core:hasInstitution :uns .
 
 :milos_popovic a cerif_core:Person ;
-    cerif_core:name [
-        a cerif_core:PersonName	;
+  cerif_core:name [
+    a cerif_core:PersonName	;
 		cerif_core:firstNames "Miloš"@sr-Latn-RS , "Милош"@sr-Cyrl-RS ;
-        cerif_core:familyNames "Popović"@sr-Latn-RS , "Поповић"@sr-Cyrl-RS
-    ] .
+    cerif_core:familyNames "Popović"@sr-Latn-RS , "Поповић"@sr-Cyrl-RS
+  ] .
 
 :affiliation_milos_uns a cerif_core:Affiliation_Statement ;
-    cerif_core:displayAffiliation "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
-    cerif_core:displayPersonName "Popović, M."@en ;
-    cerif_core:hasInstitution :uns .
-
+  cerif_core:displayAffiliation "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
+  cerif_core:displayPersonName "Popović, M."@en ;
+  cerif_core:hasInstitution :uns .
 
 :dragan_ivanovic a cerif_core:Person ;
-    cerif_core:name [
-        a cerif_core:PersonName	;
+  cerif_core:name [
+    a cerif_core:PersonName	;
 		cerif_core:firstNames "Dragan"@sr-Latn-RS , "Драган"@sr-Cyrl-RS ;
-        cerif_core:familyNames "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
-    ] ;
-    cerif_core:hasIdentifier :orcid_dragan .
+    cerif_core:familyNames "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
+  ] ;
+  cerif_core:hasIdentifier :orcid_dragan .
 
 :orcid_dragan a cerif_core:ORCID_Identifier ;
-    cerif_core:orcidId "0000-0002-9942-5521"^^xsd:string .
+  cerif_core:orcidId "0000-0002-9942-5521"^^xsd:string .
 
 :affiliation_dragan_uns a cerif_core:Affiliation_Statement ;
-    cerif_core:displayAffiliation "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
-    cerif_core:displayPersonName "Ivanović, D."@en ;
-    cerif_core:hasInstitution :uns .
+  cerif_core:displayAffiliation "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
+  cerif_core:displayPersonName "Ivanović, D."@en ;
+  cerif_core:hasInstitution :uns .
 
 :lidija_ivanovic a cerif_core:Person ;
-    cerif_core:name [
-        a cerif_core:PersonName	;
+  cerif_core:name [
+    a cerif_core:PersonName	;
 		cerif_core:firstNames "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
-        cerif_core:familyNames "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
-    ] ;
-    cerif_core:alternateName [
-		a cerif_core:PersonName	;
-        cerif_core:firstNames "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
-        cerif_core:familyNames "Vujošević"@sr-Latn-RS , "Вујошевић"@sr-Cyrl-RS
-    ] .
+    cerif_core:familyNames "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
+  ] ;
+  cerif_core:alternateName [
+	  a cerif_core:PersonName	;
+    cerif_core:firstNames "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
+    cerif_core:familyNames "Vujošević"@sr-Latn-RS , "Вујошевић"@sr-Cyrl-RS
+  ] .
 
 :affiliation_lidija_uns a cerif_core:Affiliation_Statement ;
-    cerif_core:displayAffiliation "University of Novi Sad, Faculty of Education, Podgoricka 4, 25000 Sombor, Serbia"@en ;
-    cerif_core:displayPersonName "Ivanović, L."@en ;
-    cerif_core:hasInstitution :uns .
+  cerif_core:displayAffiliation "University of Novi Sad, Faculty of Education, Podgoricka 4, 25000 Sombor, Serbia"@en ;
+  cerif_core:displayPersonName "Ivanović, L."@en ;
+  cerif_core:hasInstitution :uns .
 
 :dusan_surla a foaf:Person ;
-    cerif_core:name [
-        a cerif_core:PersonName	;
-		cerif_core:firstNames "Dušan"@sr-Latn-RS , "Душан"@sr-Cyrl-RS ;
-        cerif_core:familyNames "Surla"@sr-Latn-RS , "Сурла"@sr-Cyrl-RS
-    ] .
+  cerif_core:name [
+    a cerif_core:PersonName	;
+	  cerif_core:firstNames "Dušan"@sr-Latn-RS , "Душан"@sr-Cyrl-RS ;
+    cerif_core:familyNames "Surla"@sr-Latn-RS , "Сурла"@sr-Cyrl-RS
+  ] .
 
 :affiliation_dusan_uns a cerif_core:Affiliation_Statement ;
-    cerif_core:displayAffiliation "University of Novi Sad, Faculty of Sciences, Trg Dositeja Obradovica 3, 21000 Novi Sad, Serbia"@en ;
-    cerif_core:displayPersonName "Surla, D."@en ;
-    cerif_core:hasInstitution :uns .
+  cerif_core:displayAffiliation "University of Novi Sad, Faculty of Sciences, Trg Dositeja Obradovica 3, 21000 Novi Sad, Serbia"@en ;
+  cerif_core:displayPersonName "Surla, D."@en ;
+  cerif_core:hasInstitution :uns .
 
 #################################################################
 ### Documents and Events
@@ -102,94 +101,92 @@
 :open_access a cerif_spm:Open_Access_COAR_Accessibility_Specification_v1.0 .
 
 :cris_series a cerif_core:Event_Series ;
-    cerif_core:title "International Conference on Current Research Information Systems"@en ;
-    cerif_core:acronym "CRIS"@en ;
-    cerif_core:recurrencePeriod 2 ;
-    cerif_core:recurrenceUnit "year"@en .
+  cerif_core:title "International Conference on Current Research Information Systems"@en ;
+  cerif_core:acronym "CRIS"@en ;
+  cerif_core:recurrencePeriod 2 ;
+  cerif_core:recurrenceUnit "year"@en .
 
 :cris2024_event a cerif_core:Event ;
-    cerif_core:title "16th International Conference on Current Research Information Systems"@en ;
-    cerif_core:acronym "CRIS 2024"@en ;
-    cerif_core:ordinalNumber 16 ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024-05-15"^^xsd:date ;
-        cerif_core:endDate "2024-05-17"^^xsd:date ;
-    ]
-    cerif_core:isPartOf :cris_series .
+  cerif_core:title "16th International Conference on Current Research Information Systems"@en ;
+  cerif_core:acronym "CRIS 2024"@en ;
+  cerif_core:ordinalNumber 16 ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024-05-15"^^xsd:date ;
+    cerif_core:endDate "2024-05-17"^^xsd:date ;
+  ] ;
+  cerif_core:isPartOf :cris_series .
 
 :cris2024_presentation a cerif_spm:Presentation	,
-							cerif_core:Textual_Contents	,
-							cerif_core:Downloadable	,
-							cerif_core:Accessible_on_the_Web	;
-    cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
+          cerif_core:Textual_Contents	,
+	        cerif_core:Downloadable	,
+	        cerif_core:Accessible_on_the_Web	;
+  cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
 	cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf> ;
-    cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
+  cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
 	cerif_spm:hasAccessRightsSpecification :open_access	;
-    cerif_core:publicationDate "2024-05-14"^^xsd:date ;
+  cerif_core:publicationDate "2024-05-14"^^xsd:date ;
 	cerif_core:isPublishedIn :dspace_cris_eurocris ;
-    cerif_core:hasIdentifier :handle_presentation .
+  cerif_core:hasIdentifier :handle_presentation .
 
 :handle_presentation a cerif_core:Handle_Identifier ;
-    cerif_core:handle "11366/2540"^^xsd:string .
+  cerif_core:handle "11366/2540"^^xsd:string .
 
-:cris2024_extended_abstract a cerif_core:Conference_Abstract ,
-							cerif_core:Textual_Contents	,
-							cerif_core:Downloadable	,
-							cerif_core:Accessible_on_the_Web	;
-    cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
-    cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/1/Mr%c5%a1ulja-et-al-CRIS2024_Reengineering-of-CRIS-at-UNS.pdf> ;
-    cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
-    cerif_spm:hasAccessRightsSpecification :open_access	;
-    cerif_core:publicationDate "2024-03-01"^^xsd:date ;
+:cris2024_extended_abstract a cerif_spm:Conference_Abstract ,
+	          cerif_core:Textual_Contents	,
+	          cerif_core:Downloadable	,
+	          cerif_core:Accessible_on_the_Web	;
+  cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
+  cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/1/Mr%c5%a1ulja-et-al-CRIS2024_Reengineering-of-CRIS-at-UNS.pdf> ;
+  cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
+  cerif_spm:hasAccessRightsSpecification :open_access	;
+  cerif_core:publicationDate "2024-03-01"^^xsd:date ;
 	cerif_core:isPublishedIn :dspace_cris_eurocris .
 
-:cris2024_full_paper a cerif_core:Conference_Article ,
-							cerif_core:Textual_Contents	,
-							cerif_core:Accessible_on_the_Web	;
-    cerif_core:title "Reengineering of CRIS at University of Novi Sad"@en ;
-    cerif_core:accessURL <https://www.sciencedirect.com/science/article/pii/S1877050924032630> ;
+:cris2024_full_paper a cerif_spm:Conference_Article ,
+	          cerif_core:Textual_Contents	,
+	          cerif_core:Accessible_on_the_Web	;
+  cerif_core:title "Reengineering of CRIS at University of Novi Sad"@en ;
+  cerif_core:accessURL <https://www.sciencedirect.com/science/article/pii/S1877050924032630> ;
 	cerif_spm:hasAccessRightsSpecification :open_access	;
-    cerif_core:publicationDate "2024"^^xsd:gYear ;
-    cerif_core:hasIdentifier :doi_fullpaper ;
-    cerif_core:isPartOf cris2024_proceedings .
+  cerif_core:publicationDate "2024"^^xsd:gYear ;
+  cerif_core:hasIdentifier :doi_fullpaper ;
+  cerif_core:isPartOf :cris2024_proceedings .
 
 :doi_fullpaper a cerif_core:DOI_Identifier ;
-    cerif_core:DOI_ID "10.1016/j.procs.2024.11.052"^^xsd:string .
+  cerif_core:DOI_ID "10.1016/j.procs.2024.11.052"^^xsd:string .
 
 :proceedia_computer_science a cerif_core:Books_Series ;
-    cerif_core:title "Proceedia Computer Science"@en ;
-    cerif_spm:hasISSN "1877-0509"^^xsd:string .
+  cerif_core:title "Proceedia Computer Science"@en ;
+  cerif_spm:hasISSN "1877-0509"^^xsd:string .
 
-:cris2024_proceedings a cerif_core:Proceedings ,
-                             cerif_core:Textual_Contents ,
-                             cerif_core:Accessible_on_the_Web ;
-    cerif_core:title "Proceedings of 16th International Conference on Current Research Information Systems (CRIS 2024)"@en ;
-    cerif_core:accessURL <https://www.sciencedirect.com/journal/procedia-computer-science/vol/249> ;
-    cerif_core:publicationDate "2024"^^xsd:gYear ;
-    cerif_core:isPublishedIn :proceedia_computer_science ;
-    cerif_core:hasEvent :cris2024_event .
+:cris2024_proceedings a cerif_spm:Proceedings ,
+            cerif_core:Textual_Contents ,
+            cerif_core:Accessible_on_the_Web ;
+  cerif_core:title "Proceedings of 16th International Conference on Current Research Information Systems (CRIS 2024)"@en ;
+  cerif_core:accessURL <https://www.sciencedirect.com/journal/procedia-computer-science/vol/249> ;
+  cerif_core:publicationDate "2024"^^xsd:gYear ;
+  cerif_core:isPublishedIn :proceedia_computer_science ;
+  cerif_core:hasEvent :cris2024_event .
 
 [] a rdf:Statement,
-	cerif_core:Serial_Publication_Based_Contents_Location;
+	          cerif_core:Serial_Publication_Based_Contents_Location;
 	rdf:Subject	:cris2024_proceedings	;
 	rdf:Predicate cerif_core:isPublishedIn	;
 	rdf:Object	:proceedia_computer_science	;
-    cerif_core:volume "249"^^xsd:integer .
+  cerif_core:volume "249"^^xsd:integer .
 
 [] a rdf:Statement,
-	cerif_core:Page_Based_Contents_Location;
+	          cerif_core:Page_Based_Contents_Location;
 	rdf:Subject	:cris2024_full_paper	;
 	rdf:Predicate cerif_core:isPartOf	;
 	rdf:Object	:cris2024_proceedings	;
 	cerif_core:startPage "85"^^xsd:integer ;
-    cerif_core:endPage "93"^^xsd:integer .
-
+  cerif_core:endPage "93"^^xsd:integer .
 
 :dspace_cris_eurocris a cerif_core:Repository ;
-    cerif_core:title "The euroCRIS repository"@en ;
-    cerif_core:url <https://dspacecris.eurocris.org/> .
-
+  cerif_core:title "The euroCRIS repository"@en ;
+  cerif_core:url <https://dspacecris.eurocris.org/> .
 
 #################################################################
 ### Contributions to Documents and Events
@@ -198,21 +195,21 @@
 ### Ivan's presentation at CRIS 2024 (Contribution_to_Event)
 
 :contribution_ivan_cris2024 a cerif_core:Contribution_to_Event ;
-    cerif_core:hasActor :ivan_mrsulja ;
-    cerif_core:hasTarget :cris2024 ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:hasStartDate "2024-05-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_ivan_cris2024 .
+  cerif_core:hasActor :ivan_mrsulja ;
+  cerif_core:hasTarget :cris2024 ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:hasStartDate "2024-05-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_ivan_cris2024 .
 
-:contribution_statement_ivan_cris2024 a cerif_core:Contribution_Statement ;
-    cerif_core:statement "Ivan presented the paper at the conference."@en ;
-    cerif_core:isDetailedIn :resource_usage_statement_ivan_cris2024 .
+:contribution_statement_ivan_cris2024 a cerif_spm:Contribution_Statement ;
+  cerif_spm:statement "Ivan presented the paper at the conference."@en ;
+  cerif_spm:isDetailedIn :resource_usage_statement_ivan_cris2024 .
 
 :resource_usage_statement_ivan_cris2024 a cerif_core:Resource_Usage_Statement ;
-    cerif_core:statement "Material for Ivan talk is prepared as open-access slides."@en ;
+  cerif_core:statement "Material for Ivan talk is prepared as open-access slides."@en ;
 	cerif_core:uses :cris2024_presentation	.
 
 ### Contribution to CRIS 2024 presentation (slides)
@@ -220,278 +217,278 @@
 ### Contribution to CRIS 2024 presentation (slides) - Ivan
 
 :contribution_ivan_presentation a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :ivan_mrsulja ;
-    cerif_core:hasTarget :cris2024_presentation ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-05-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_ivan_presentation .
+  cerif_core:hasActor :ivan_mrsulja ;
+  cerif_core:hasTarget :cris2024_presentation ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-05-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_ivan_presentation .
 
-:contribution_statement_ivan_presentation a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Writing – original draft" ;
-    cerif_core:degreeOfContribution "Lead" ;
-    cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
+:contribution_statement_ivan_presentation a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Writing – original draft" ;
+  cerif_spm:degreeOfContribution "Lead" ;
+  cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
 
 ### Contribution to CRIS 2024 presentation (slides) - Milos
 
 :contribution_milos_presentation a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :milos_popovic ;
-    cerif_core:hasTarget :cris2024_presentation ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-05-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_milos_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_milos_presentation .
+  cerif_core:hasActor :milos_popovic ;
+  cerif_core:hasTarget :cris2024_presentation ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-05-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_milos_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_milos_presentation .
 
-:contribution_statement_milos_presentation a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Writing – original draft" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
+:contribution_statement_milos_presentation a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Writing – original draft" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
 
 ### Contribution to CRIS 2024 presentation (slides) - Dragan
 
 :contribution_dragan_presentation a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :dragan_ivanovic ;
-    cerif_core:hasTarget :cris2024_presentation ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-05-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_dragan_presentation .
+  cerif_core:hasActor :dragan_ivanovic ;
+  cerif_core:hasTarget :cris2024_presentation ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-05-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_dragan_presentation .
 
-:contribution_statement_dragan_presentation a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Supervision" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
+:contribution_statement_dragan_presentation a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Supervision" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
 
 ### Contribution to CRIS 2024 presentation (slides) - Lidija
 
 :contribution_lidija_presentation a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :lidija_ivanovic ;
-    cerif_core:hasTarget :cris2024_presentation ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-05-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_lidija_presentation .
+  cerif_core:hasActor :lidija_ivanovic ;
+  cerif_core:hasTarget :cris2024_presentation ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-05-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_lidija_presentation .
 
-:contribution_statement_lidija_presentation a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Validation" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
+:contribution_statement_lidija_presentation a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Validation" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
 
 ### Contribution to CRIS 2024 presentation (slides) - Dusan
 
 :contribution_dusan_presentation a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :dusan_surla ;
-    cerif_core:hasTarget :cris2024_presentation ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2023-09-30"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_dusan_presentation .
+  cerif_core:hasActor :dusan_surla ;
+  cerif_core:hasTarget :cris2024_presentation ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2023-09-30"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_dusan_presentation .
 
-:contribution_statement_dusan_presentation a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Conceptualization" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
+:contribution_statement_dusan_presentation a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Conceptualization" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_statement_presentation_cris2024 .
 
 ### Resource Usage Statement (shared)
 :resource_usage_statement_presentation_cris2024 a cerif_core:Resource_Usage_Statement ;
-    cerif_core:statement "Slides are prepared by using extended abstract."@en ;
-    cerif_core:uses :cris2024_extended_abstract .
+  cerif_core:statement "Slides are prepared by using extended abstract."@en ;
+  cerif_core:uses :cris2024_extended_abstract .
 
 ### Contribution to CRIS 2024 Extended Abstract
 
 ### Contribution to CRIS 2024 Extended Abstract - Ivan
 
 :contribution_ivan_extended_abstract a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :ivan_mrsulja ;
-    cerif_core:hasTarget :cris2024_extended_abstract ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-03-01"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_ivan_extended_abstract .
+  cerif_core:hasActor :ivan_mrsulja ;
+  cerif_core:hasTarget :cris2024_extended_abstract ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-03-01"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_ivan_extended_abstract .
 
-:contribution_statement_ivan_extended_abstract a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Writing – original draft" ;
-    cerif_core:degreeOfContribution "Lead" .
+:contribution_statement_ivan_extended_abstract a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Writing – original draft" ;
+  cerif_spm:degreeOfContribution "Lead" .
 
 ### Contribution to CRIS 2024 Extended Abstract - Milos
 
 :contribution_milos_extended_abstract a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :milos_popovic ;
-    cerif_core:hasTarget :cris2024_extended_abstract ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-03-01"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_milos_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_milos_extended_abstract .
+  cerif_core:hasActor :milos_popovic ;
+  cerif_core:hasTarget :cris2024_extended_abstract ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-03-01"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_milos_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_milos_extended_abstract .
 
-:contribution_statement_milos_extended_abstract a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Writing – original draft" ;
-    cerif_core:degreeOfContribution "Supporting" .
+:contribution_statement_milos_extended_abstract a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Writing – original draft" ;
+  cerif_spm:degreeOfContribution "Supporting" .
 
 ### Contribution to CRIS 2024 Extended Abstract - Dragan
 
 :contribution_dragan_extended_abstract a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :dragan_ivanovic ;
-    cerif_core:hasTarget :cris2024_extended_abstract ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-03-01"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_dragan_extended_abstract .
+  cerif_core:hasActor :dragan_ivanovic ;
+  cerif_core:hasTarget :cris2024_extended_abstract ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-03-01"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_dragan_extended_abstract .
 
-:contribution_statement_dragan_extended_abstract a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Supervision" ;
-    cerif_core:degreeOfContribution "Supporting" .
+:contribution_statement_dragan_extended_abstract a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Supervision" ;
+  cerif_spm:degreeOfContribution "Supporting" .
 
 ### Contribution to CRIS 2024 Extended Abstract - Lidija
 
 :contribution_lidija_extended_abstract a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :lidija_ivanovic ;
-    cerif_core:hasTarget :cris2024_extended_abstract ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2024-03-01"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_lidija_extended_abstract .
+  cerif_core:hasActor :lidija_ivanovic ;
+  cerif_core:hasTarget :cris2024_extended_abstract ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2024-03-01"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_lidija_extended_abstract .
 
-:contribution_statement_lidija_extended_abstract a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Validation" ;
-    cerif_core:degreeOfContribution "Supporting" .
+:contribution_statement_lidija_extended_abstract a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Validation" ;
+  cerif_spm:degreeOfContribution "Supporting" .
 
 ### Contribution to CRIS 2024 Extended Abstract - Dusan
 
 :contribution_dusan_extended_abstract a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :dusan_surla ;
-    cerif_core:hasTarget :cris2024_extended_abstract ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024"^^xsd:gYear ;
-        cerif_core:endDate "2023-09-30"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_dusan_extended_abstract .
+  cerif_core:hasActor :dusan_surla ;
+  cerif_core:hasTarget :cris2024_extended_abstract ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024"^^xsd:gYear ;
+    cerif_core:endDate "2023-09-30"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_dusan_extended_abstract .
 
-:contribution_statement_dusan_extended_abstract a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Conceptualization" ;
-    cerif_core:degreeOfContribution "Supporting" .
+:contribution_statement_dusan_extended_abstract a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Conceptualization" ;
+  cerif_spm:degreeOfContribution "Supporting" .
 
 ### Contribution to CRIS 2024 Full Paper
 
 ### Contribution to CRIS 2024 Full Paper - Ivan
 
 :contribution_ivan_full_paper a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :ivan_mrsulja ;
-    cerif_core:hasTarget :cris2024_full_paper ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024-05-15"^^xsd:date ;
-        cerif_core:endDate "2024-10-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_ivan_full_paper .
+  cerif_core:hasActor :ivan_mrsulja ;
+  cerif_core:hasTarget :cris2024_full_paper ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024-05-15"^^xsd:date ;
+    cerif_core:endDate "2024-10-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_ivan_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_ivan_full_paper .
 
-:contribution_statement_ivan_full_paper a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Writing – original draft" ;
-    cerif_core:degreeOfContribution "Lead" ;
-    cerif_core:isDetailedIn :resource_usage_full_paper_cris2024 .
+:contribution_statement_ivan_full_paper a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Writing – original draft" ;
+  cerif_spm:degreeOfContribution "Lead" ;
+  cerif_core:isDetailedIn :resource_usage_full_paper_cris2024 .
 
 ### Contribution to CRIS 2024 Full Paper - Milos
 
 :contribution_milos_full_paper a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :milos_popovic ;
-    cerif_core:hasTarget :cris2024_full_paper ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024-05-15"^^xsd:date ;
-        cerif_core:endDate "2024-10-15"^^xsd:date
-    ] ;
-    cerif_core:hasAffiliationStatement :affiliation_milos_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_milos_full_paper .
+  cerif_core:hasActor :milos_popovic ;
+  cerif_core:hasTarget :cris2024_full_paper ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024-05-15"^^xsd:date ;
+    cerif_core:endDate "2024-10-15"^^xsd:date
+  ] ;
+  cerif_core:hasAffiliationStatement :affiliation_milos_uns ;
+  cerif_core:hasContributionStatement :contribution_statement_milos_full_paper .
 
-:contribution_statement_milos_full_paper a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Writing – original draft" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
+:contribution_statement_milos_full_paper a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Writing – original draft" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
 
 ### Contribution to CRIS 2024 Full Paper - Dragan
 
 :contribution_dragan_full_paper a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :dragan_ivanovic ;
-    cerif_core:hasTarget :cris2024_full_paper ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024-05-15"^^xsd:date ;
-        cerif_core:endDate "2024-10-15"^^xsd:date
-    ] ;
+  cerif_core:hasActor :dragan_ivanovic ;
+  cerif_core:hasTarget :cris2024_full_paper ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024-05-15"^^xsd:date ;
+    cerif_core:endDate "2024-10-15"^^xsd:date
+  ] ;
 	cerif_core:hasAffiliationStatement :affiliation_dragan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_dragan_full_paper .
+  cerif_core:hasContributionStatement :contribution_statement_dragan_full_paper .
 
-:contribution_statement_dragan_full_paper a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Supervision" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
+:contribution_statement_dragan_full_paper a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Supervision" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
 
 ### Contribution to CRIS 2024 Full Paper - Lidija
 
 :contribution_lidija_full_paper a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :lidija_ivanovic ;
-    cerif_core:hasTarget :cris2024_full_paper ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024-05-15"^^xsd:date ;
-        cerif_core:endDate "2024-10-15"^^xsd:date
-    ] ;
+  cerif_core:hasActor :lidija_ivanovic ;
+  cerif_core:hasTarget :cris2024_full_paper ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024-05-15"^^xsd:date ;
+    cerif_core:endDate "2024-10-15"^^xsd:date
+  ] ;
 	cerif_core:hasAffiliationStatement :affiliation_lidija_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_lidija_full_paper .
+  cerif_core:hasContributionStatement :contribution_statement_lidija_full_paper .
 
-:contribution_statement_lidija_full_paper a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Validation" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
+:contribution_statement_lidija_full_paper a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Validation" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
 
 ### Contribution to CRIS 2024 Full Paper - Dusan
 
 :contribution_dusan_full_paper a cerif_core:Contribution_to_Document ;
-    cerif_core:hasActor :dusan_surla ;
-    cerif_core:hasTarget :cris2024_full_paper ;
-    cerif_core:dateRange [
-        a cerif_core:DateRange	;
-        cerif_core:startDate "2024-05-15"^^xsd:date ;
-        cerif_core:endDate "2024-10-15"^^xsd:date
-    ] ;
+  cerif_core:hasActor :dusan_surla ;
+  cerif_core:hasTarget :cris2024_full_paper ;
+  cerif_core:dateRange [
+    a cerif_core:DateRange	;
+    cerif_core:startDate "2024-05-15"^^xsd:date ;
+    cerif_core:endDate "2024-10-15"^^xsd:date
+  ] ;
 	cerif_core:hasAffiliationStatement :affiliation_dusan_uns ;
-    cerif_core:hasContributionStatement :contribution_statement_dusan_full_paper .
+  cerif_core:hasContributionStatement :contribution_statement_dusan_full_paper .
 
-:contribution_statement_dusan_full_paper a cerif_core:CRediT_Contribution_Statement ;
-    cerif_core:roleType "Conceptualization" ;
-    cerif_core:degreeOfContribution "Supporting" ;
-    cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
+:contribution_statement_dusan_full_paper a cerif_spm:CRediT_Contribution_Statement ;
+  cerif_spm:roleType "Conceptualization" ;
+  cerif_spm:degreeOfContribution "Supporting" ;
+  cerif_core:isDetailedIn :resource_usage_full_paper_cris2024.
 
 ### Resource Usage Statement (shared)
 :resource_usage_full_paper_cris2024 a cerif_core:Resource_Usage_Statement ;
-    cerif_core:statement "The basis for writting paper were slides and extended abstract."@en ;
-    cerif_core:uses :cris2024_extended_abstract , :cris2024_presentation .
+  cerif_core:statement "The basis for writting paper were slides and extended abstract."@en ;
+  cerif_core:uses :cris2024_extended_abstract , :cris2024_presentation .
