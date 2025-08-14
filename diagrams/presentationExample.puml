@@ -1,23 +1,6 @@
 @startuml
 
-    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
-
-    object "<u>ZB Med Research Colloquium:EventSeries</u>" as zbMed #ffffff {
-        title = "ZB Med Research Colloquium"@en
-        description = ""@en
-        recurrencePeriod = 1
-        recurrenceUnit = "month"@en
-    }
-
-    object "<u>ZB Med Research Colloquium March 2025: Event</u>" as zbMedMarch2025 #ffffff {
-        title = "ZB Med Research Colloquium for March 2025"@en
-        dateRange = {
-        \t startDate = 2025-03-01 ^^ Date
-        \t endDate = 2025-03-31 ^^ Date
-        } ^^ DateRange
-    }
-
-    zbMedMarch2025 o--> "belongs-to-series" zbMed
+frame "Christian" #LightBlue {
 
     object "<u>Christian Hauschke:Person</u>" as personChristian #ffffff {
        personName = {
@@ -53,7 +36,47 @@
         displayPersonName = "Hauschke, Christian"
     }
 
-    affiliationChristianTIB o--> "has-organisation-unit" institutionTIB
+    affiliationChristianTIB o--> "has-institution" institutionTIB
+
+    object "<u>Christian's presentation at ZBMed:Contribution_to_Event</u>" as contributionChristianZBMedMarch2025 #ffffff {
+        dateRange = {
+        \t startDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o--> "is-actor-in" contributionChristianZBMedMarch2025
+
+    contributionChristianZBMedMarch2025 o--> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianZBMedMarch2025 #ffffff {
+        statement = "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en
+    }
+
+    contributionChristianZBMedMarch2025 o--> "has-contribution-statement" contributionStatementChristianZBMedMarch2025
+
+    object "<u>Christian's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionChristianSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personChristian o--> "is-actor-in" contributionChristianSlides
+
+    contributionChristianSlides o--> "has-affiliation-statement" affiliationChristianTIB
+
+    object "<u>Christian's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementChristianSlides #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
+        statement = "Christian produces the first 34 slides."@en
+    }
+
+    contributionChristianSlides o--> "has-contribution-statement" contributionStatementChristianSlides
+
+}
+
+
+frame "Dragan" #LightYellow {
 
     object "<u>Dragan Ivanovic:Person</u>" as personDragan #ffffff {
        personName = {
@@ -86,23 +109,65 @@
         displayPersonName = "Ivanovic, Dragan"
     }
 
-    affiliationDraganLyrasis o--> "has-organisation-unit" institutionLyrasis
+    affiliationDraganLyrasis o--> "has-institution" institutionLyrasis
 
-    object "<u>Christian's presentation at ZBMed:Contribution_to_Event</u>" as contributionChristianZBMedMarch2025 #ffffff {
+    object "<u>Dragan's presentation at ZBMed:Contribution_to_Event</u>" as contributionDraganZBMedMarch2025 #ffffff {
         dateRange = {
         \t startDate = 2025-03-25 ^^ Date
         } ^^ DateRange
     }
 
-    personChristian o--> "is-actor-in" contributionChristianZBMedMarch2025
-    zbMedMarch2025 o--> "has-contribution" contributionChristianZBMedMarch2025
-    contributionChristianZBMedMarch2025 o--> "has-affiliation-statement" affiliationChristianTIB
+    personDragan o--> "is-actor-in" contributionDraganZBMedMarch2025
 
-    object "<u>Christian's Contribution Statement:Contribution_Statement</u>" as contributionStatementChristianZBMedMarch2025 #ffffff {
-        statement = "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en
+    contributionDraganZBMedMarch2025 o--> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganZBMedMarch2025 #ffffff {
+        statement = "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en
     }
 
-    contributionChristianZBMedMarch2025 o--> "has-contribution-statement" contributionStatementChristianZBMedMarch2025
+    contributionDraganZBMedMarch2025 o--> "has-contribution-statement" contributionStatementDraganZBMedMarch2025
+
+    object "<u>Dragan's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
+        dateRange = {
+        \t startDate = 2025 ^^ Date
+        \t endDate = 2025-03-25 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDragan o--> "is-actor-in" contributionDraganSlides
+
+    contributionDraganSlides o--> "has-affiliation-statement" affiliationDraganLyrasis
+
+    object "<u>Dragan's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganSlides #ffffff {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+        statement = "Dragan produced the last 5 slides."@en
+    }
+
+    contributionDraganSlides o--> "has-contribution-statement" contributionStatementDraganSlides
+
+}
+
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
+
+    object "<u>ZB Med Research Colloquium:EventSeries</u>" as zbMed #ffffff {
+        title = "ZB Med Research Colloquium"@en
+        description = ""@en
+        recurrencePeriod = 1
+        recurrenceUnit = "month"@en
+    }
+
+    object "<u>ZB Med Research Colloquium March 2025: Event</u>" as zbMedMarch2025 #ffffff {
+        title = "ZB Med Research Colloquium for March 2025"@en
+        dateRange = {
+        \t startDate = 2025-03-01 ^^ Date
+        \t endDate = 2025-03-31 ^^ Date
+        } ^^ DateRange
+    }
+
+    zbMedMarch2025 o--> "belongs-to-series" zbMed
+
+    zbMedMarch2025 o--> "has-contribution" contributionChristianZBMedMarch2025
 
     object "<u>Christian and Dragan Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementChristianDraganZBMedMarch2025 #ffffff {
         statement = "Material for Christian and Dragan talk is prepared as open-access slides."@en
@@ -246,21 +311,7 @@
 '/
 
 
-    object "<u>Dragan's presentation at ZBMed:Contribution_to_Event</u>" as contributionDraganZBMedMarch2025 #ffffff {
-        dateRange = {
-        \t startDate = 2025-03-25 ^^ Date
-        } ^^ DateRange
-    }
-
-    personDragan o--> "is-actor-in" contributionDraganZBMedMarch2025
     zbMedMarch2025 o--> "has-contribution" contributionDraganZBMedMarch2025
-    contributionDraganZBMedMarch2025 o--> "has-affiliation-statement" affiliationDraganLyrasis
-
-    object "<u>Dragan's Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganZBMedMarch2025 #ffffff {
-        statement = "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en
-    }
-
-    contributionDraganZBMedMarch2025 o--> "has-contribution-statement" contributionStatementDraganZBMedMarch2025
 
     contributionStatementDraganZBMedMarch2025 o--> "is-detailed-in" resourceUsageStatementChristianDraganZBMedMarch2025
 
@@ -283,44 +334,8 @@
 
     contributionStatementDraganZBMedMarch2025 o--> "provides" presentation8
 
-    object "<u>Christian's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionChristianSlides #ffffff {
-        dateRange = {
-        \t startDate = 2025 ^^ Date
-        \t endDate = 2025-03-25 ^^ Date
-        } ^^ DateRange
-    }
-
-    personChristian o--> "is-actor-in" contributionChristianSlides
     slides o--> "has-contribution" contributionChristianSlides
-    contributionChristianSlides o--> "has-affiliation-statement" affiliationChristianTIB
 
-    object "<u>Christian's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementChristianSlides #ddeedd {
-        roleType = "Writing – original draft" ^^ CRediT_Role_Type
-        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
-        statement = "Christian produces the first 34 slides."@en
-    }
-
-    contributionChristianSlides o--> "has-contribution-statement" contributionStatementChristianSlides
-
-
-    object "<u>Dragan's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
-        dateRange = {
-        \t startDate = 2025 ^^ Date
-        \t endDate = 2025-03-25 ^^ Date
-        } ^^ DateRange
-    }
-
-    personDragan o--> "is-actor-in" contributionDraganSlides
     slides o--> "has-contribution" contributionDraganSlides
-    contributionDraganSlides o--> "has-affiliation-statement" affiliationDraganLyrasis
-
-    object "<u>Dragan's Slides Contribution Statement:Contribution_Statement</u>" as contributionStatementDraganSlides #ffffff {
-        roleType = "Writing – original draft" ^^ CRediT_Role_Type
-        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
-        statement = "Dragan produced the last 5 slides."@en
-    }
-
-    contributionDraganSlides o--> "has-contribution-statement" contributionStatementDraganSlides
-
 
 @enduml
