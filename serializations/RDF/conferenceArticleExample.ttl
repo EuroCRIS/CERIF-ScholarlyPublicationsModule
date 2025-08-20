@@ -1,6 +1,6 @@
 @prefix : <http://www.example.org/cerif_corecoreandpubmodule#> .
-@prefix cerif_core: <https://eurocris.org/cerif-core#> .  # or this should be https://w3id.org/cerif2
-@prefix cerif_spm: <https://eurocris.org/cerif-spm#> .
+@prefix cerif_core: <https://w3id.org/cerif2> .
+@prefix cerif_spm: <https://w3id.org/cerif2/spm> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -18,7 +18,7 @@
 #################################################################
 
 :uns a cerif_core:Organisation_Unit ;
-  cerif_core:name "University of Novi Sad"@en , "Univerzitet u Novom Sadu"@sr ;
+  cerif_core:Group_or_Organisation_Unit#name "University of Novi Sad"@en , "Univerzitet u Novom Sadu"@sr ;
   cerif_core:acronym "UNS"@en ;
   cerif_core:hasIdentifier :ror_uns .
 
@@ -124,7 +124,7 @@
   cerif_core:title "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
   cerif_core:downloadURL <https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf> ;
   cerif_core:accessURL <https://dspacecris.eurocris.org/handle/11366/2540> ;
-  cerif_spm:hasAccessRightsSpecification :open_access ;
+  cerif_spm:Scholarly_Publication#hasAccessRightsSpecification :open_access ;
   cerif_core:publicationDate "2024-05-14"^^xsd:date ;
   cerif_core:isPublishedIn :dspace_cris_eurocris ;
   cerif_core:hasIdentifier :handle_presentation .
