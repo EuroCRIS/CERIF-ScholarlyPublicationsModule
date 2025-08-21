@@ -16,4 +16,4 @@ DOI: https://doi.org/10.1016/j.ejor.2020.09.020
 
 ## Serialization
 
-[Journal Article Example serialization](../serializations/RDF/journalArticleExample1.owl)
+[Journal Article Example serialization](../serializations/RDF/journalArticleExample.ttl)

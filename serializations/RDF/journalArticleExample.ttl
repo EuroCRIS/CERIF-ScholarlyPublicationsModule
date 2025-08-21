@@ -1,0 +1,116 @@
+@prefix : <https://w3id.org/cerif2/spm/example/> .
+@prefix cerif_core: <https://w3id.org/cerif2/> .
+@prefix cerif_spm: <https://w3id.org/cerif2/spm/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+@base <https://w3id.org/cerif2/spm/example/> .
+
+: a owl:Ontology ;
+  rdfs:label "An example for a journal article"@en .
+
+#################################################################
+### Persons and Affiliations
+#################################################################
+
+:elsevier a cerif_core:Organisation_Unit ;
+  cerif_core:Group_or_Organisation_Unit:name "Elsevier B.V."@en ;
+  cerif_core:Agent:hasIdentifier :ror_elsevier .
+
+:ror_elsevier a cerif_core:ROR_Identifier ;
+  cerif_core:ROR_Identifier:rorId "013fhv752" .
+
+:neu_ulm a cerif_core:Organisation_Unit ;
+  cerif_core:Group_or_Organisation_Unit:name "Hochschule für angewandte Wissenschaften Neu-Ulm"@de ,
+            "Neu-Ulm University of Applied Sciences"@en ;
+  cerif_core:Agent:hasIdentifier :ror_neu_ulm .
+
+:ror_neu_ulm a cerif_core:ROR_Identifier ;
+  cerif_core:ROR_Identifier:rorId "03ggzay52" .
+
+:ulrike a cerif_core:Person ;
+  cerif_core:Person:name [
+    a cerif_core:Person_Name ;
+    cerif_core:Person_Name:firstNames "Ulrike"@en ;
+    cerif_core:Person_Name:familyNames "Reisach"@en
+  ] ;
+  cerif_core:Agent:hasIdentifier [
+    a cerif_core:ORCID_Identifier ;
+    cerif_core:ORCID_Identifier:orcidId "0000-0003-3432-8728"
+  ] .
+
+#################################################################
+### Journal and article
+#################################################################
+
+:open_access a cerif_spm:Open_Access_COAR_Accessibility_Specification_v1.0 .
+
+:ejor_journal a cerif_core:Journal ;
+  cerif_core:Publication_Channel:title "European Journal of Operational Research"@en ;
+  cerif_core:Publication_Channel:acronym "EJOR"@en ;
+  cerif_spm:Publication_Series:ISSN "1877-0509"^^cerif_spm:ISSN ;
+  cerif_spm:Publication_Series:hasPublishers :elsevier .
+
+:ejor_journal_article a cerif_spm:Journal_Article ;
+  cerif_core:Document:title "The responsibility of social media in times of societal and political manipulation"@en ;
+  cerif_core:Document:publicationDate "2021-06-16"^^xsd:date ;
+  cerif_spm:Scholarly_Publication:hasAccessRightsSpecification :open_access ;
+  cerif_core:Resource:hasIdentifier [
+    a cerif_core:DOI_Identifier ;
+    cerif_core:DOI_Identifier:doiId "10.1016/j.ejor.2020.09.020"^^cerif_core:DOI_ID
+  ] ;
+  cerif_core:Document:isPublishedIn :ejor_journal ;
+  cerif_spm:Scholarly_Publication:hasAuthors :ulrike .
+
+[] a rdf:Statement,
+            cerif_core:Textual_Content_Location;
+  rdf:Subject  :ejor_journal_article ;
+  rdf:Predicate cerif_core:Document:isPublishedIn ;
+  rdf:Object  :ejor_journal ;
+  cerif_core:Textual_Content_Location:volume "291" ;
+  cerif_core:Textual_Content_Location:issue "3" ;
+  cerif_core:Textual_Content_Location:startPage "906" ;
+  cerif_core:Textual_Content_Location:endPage "917" .
+
+#################################################################
+### Contributions to Documents
+#################################################################
+
+:germany a cerif_core:Country ;
+  cerif_core:Country:iso3166Alpha2Code "DE"^^cerif_core:ISO_3166_Alpha2_Code ;
+  cerif_core:Country:name "Deutschland"@de ,
+            "Germany"@en ,
+            "Nemačka"@sr-Latn-RS ,
+            "Немачка"@sr-Cyrl-RS .
+
+:affiliation_ulrike_neu_ulm a cerif_core:АffilliationStatement ;
+  cerif_core:АffilliationStatement:hasInstitution :neu_ulm ;
+  cerif_core:АffilliationStatement:contacts :affiliation_ulrike_neu_ulm_postal_address ,
+            :affiliation_ulrike_neu_ulm_email ;
+  cerif_core:АffilliationStatement:displayPersonName "Ulrike Reisach"@en ;
+  cerif_core:АffilliationStatement:displayAffiliation """Department of Information Management,
+            Prof. Dr. Ulrike Reisach,
+            Neu-Ulm University of Applied Sciences,
+            Wiley-Street 1, D-89231 Neu-Ulm, Germany"""@en .
+
+:affiliation_ulrike_neu_ulm_postal_address a cerif_core:Postal_Address ;
+  cerif_core:Postal_Address:physicalAddress [
+    a cerif_core:Structured_Physical_Address ;
+    cerif_core:Physical_Address:country :Germany ;
+    cerif_core:Structured_Physical_Address:city "Neu-Ulm"@en ;
+    cerif_core:Structured_Physical_Address:street "Wiley-Street 1"@en ;
+    cerif_core:Structured_Physical_Address:zipCode "D-89231"@en
+  ] .
+
+:affiliation_ulrike_neu_ulm_email a cerif_core:Electronic_Address ;
+  cerif_core:Electronic_Address:uri <mailto:xxxxxxxx@hnu.de> .
+
+:authorship_ulrike_journal_article_ejor a cerif_spm:Authorship ;
+  cerif_core:Activity:hasAffiliationStatement :affiliation_ulrike_neu_ulm ;
+  cerif_core:Activity:hasActor :ulrike ;
+  cerif_core:Contribution_to_Document:hasTarget :ejor_journal_article ;
+  cerif_spm:Authorship:correspondingAuthorFlag true .

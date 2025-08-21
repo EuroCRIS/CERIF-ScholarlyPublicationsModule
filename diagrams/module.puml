@@ -106,7 +106,7 @@
 
         "Book" <|-- "Proceedings"
 
-        "Proceedings" *-- "0..1" "Event" : event >
+        "Proceedings" *-- "0..1" "Event" : hasEvent >
 
 
     !endsub
