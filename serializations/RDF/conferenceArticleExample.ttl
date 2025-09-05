@@ -65,7 +65,7 @@
     <https://w3id.org/cerif2/Person_Name#firstNames> "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
     <https://w3id.org/cerif2/Person_Name#familyNames> "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
   ] ;
-  <https://w3id.org/cerif2/Person#alternateName> [
+  <https://w3id.org/cerif2/Person#alternateNames> [
     a <https://w3id.org/cerif2/Person_Name> ;
     <https://w3id.org/cerif2/Person_Name#firstNames> "Lidija"@sr-Latn-RS , "Лидија"@sr-Cyrl-RS ;
     <https://w3id.org/cerif2/Person_Name#familyNames> "Vujošević"@sr-Latn-RS , "Вујошевић"@sr-Cyrl-RS
@@ -191,7 +191,7 @@
 
 :contribution_ivan_cris2024 a <https://w3id.org/cerif2/Contribution_to_Event> ;
   <https://w3id.org/cerif2/Activity#hasActor> :ivan_mrsulja ;
-  <https://w3id.org/cerif2/Contribution_to_Event#hasTarget> :cris2024 ;
+  <https://w3id.org/cerif2/Contribution_to_Event#hasTarget> :cris2024_event ;
   <https://w3id.org/cerif2/Activity#dateRange> [
     a <https://w3id.org/cerif2/Date_Range> ;
     <https://w3id.org/cerif2/Date_Range#startDate> "2024-05-15"^^xsd:date
