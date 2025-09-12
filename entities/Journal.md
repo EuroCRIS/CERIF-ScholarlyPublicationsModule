@@ -1,5 +1,6 @@
 # Journal
 
+## Definition
 A journal is a serial publication devoted to disseminating original research and current developments on a subject. <sup>[1](#fn1)</sup>
 
 ## Usage notes

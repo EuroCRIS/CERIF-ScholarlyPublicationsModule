@@ -1,5 +1,6 @@
 # Journal Article
 
+## Definition
 An article on a particular topic and published in a journal issue. <sup>[1](#fn1)</sup>
 
 ## Usage notes
