@@ -1,583 +1,585 @@
-@prefix : <https://eurocris.org/spm#> .
-@prefix cf: <https://eurocris.org/cerif-core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://eurocris.org/spm> .
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/cerif2/spm/"
+     xml:base="https://w3id.org/cerif2/spm/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/cerif2/spm/"/>
+    
 
-<https://eurocris.org/spm> rdf:type owl:Ontology ;
-                            owl:imports <https://eurocris.org/cerif-core> .
 
-#################################################################
-#    Datatypes
-#################################################################
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-###  https://eurocris.org/cerif-core#DOI
-cf:DOI rdf:type rdfs:Datatype .
 
+    
 
-###  https://eurocris.org/cerif-core#EUCountryCode
-cf:EUCountryCode rdf:type rdfs:Datatype ;
-                 owl:equivalentClass xsd:string .
 
+    <!-- https://w3id.org/cerif2/Boolean -->
 
-###  https://eurocris.org/cerif-core#ISO3166AlphaCode
-cf:ISO3166AlphaCode rdf:type rdfs:Datatype ;
-                    owl:equivalentClass xsd:string .
 
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/Boolean"/>
+    
 
-###  https://eurocris.org/cerif-core#ISO3166NumericCode
-cf:ISO3166NumericCode rdf:type rdfs:Datatype ;
-                      owl:equivalentClass xsd:string .
 
+    <!-- https://w3id.org/cerif2/Date -->
 
-###  https://eurocris.org/cerif-core#ORCIDIdentifier
-cf:ORCIDIdentifier rdf:type rdfs:Datatype ;
-                   owl:equivalentClass xsd:string .
 
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/Date"/>
+    
 
-###  https://eurocris.org/spm#ISBN
-:ISBN rdf:type rdfs:Datatype ;
-      owl:equivalentClass xsd:string .
 
+    <!-- https://w3id.org/cerif2/Multilingual_String -->
 
-###  https://eurocris.org/spm#ISSN
-:ISSN rdf:type rdfs:Datatype ;
-      owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                            owl:onDatatype xsd:string ;
-                            owl:withRestrictions ( [ xsd:pattern "\\d{4}-\\d{3}(\\d|x|X)"
-                                                   ]
-                                                 )
-                          ] .
 
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/Multilingual_String"/>
+    
 
-#################################################################
-#    Object Properties
-#################################################################
 
-###  https://eurocris.org/cerif-core#hasAccessRights
-cf:hasAccessRights rdf:type owl:ObjectProperty ;
-                   rdfs:range cf:TextualDocumentAccessibilitySpecification ;
-                   rdfs:label "Access Rights"@en .
+    <!-- https://w3id.org/cerif2/String -->
 
 
-###  https://eurocris.org/cerif-core#hasAffiliations
-cf:hasAffiliations rdf:type owl:ObjectProperty ;
-                   rdfs:label "Affiliations"@en .
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/String"/>
+    
 
 
-###  https://eurocris.org/cerif-core#hasAgent
-cf:hasAgent rdf:type owl:ObjectProperty ;
-            owl:equivalentProperty cf:hasAuthor ,
-                                   :hasEditor ,
-                                   :hasPublisher ;
-            rdfs:label "Contributor"@en .
+    <!-- https://w3id.org/cerif2/spm/CRediT_Degree_of_Contribution -->
 
 
-###  https://eurocris.org/cerif-core#hasAuthor
-cf:hasAuthor rdf:type owl:ObjectProperty ;
-             rdfs:label "Author"@en .
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/spm/CRediT_Degree_of_Contribution"/>
+    
 
 
-###  https://eurocris.org/cerif-core#hasAuthors
-cf:hasAuthors rdf:type owl:ObjectProperty ;
-              rdfs:label "Authors"@en .
+    <!-- https://w3id.org/cerif2/spm/CRediT_Role_Type -->
 
 
-###  https://eurocris.org/cerif-core#hasAuthorships
-cf:hasAuthorships rdf:type owl:ObjectProperty ;
-                  rdfs:label "Authorships"@en .
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/spm/CRediT_Role_Type"/>
+    
 
 
-###  https://eurocris.org/cerif-core#hasContributionStatements
-cf:hasContributionStatements rdf:type owl:ObjectProperty ;
-                             rdfs:label "Contribution Statements"@en .
+    <!-- https://w3id.org/cerif2/spm/ISBN -->
 
 
-###  https://eurocris.org/cerif-core#hasContributions
-cf:hasContributions rdf:type owl:ObjectProperty ;
-                       rdfs:label "Contributions"@en .
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/spm/ISBN"/>
+    
 
 
-###  https://eurocris.org/cerif-core#hasCountry
-cf:hasCountry rdf:type owl:ObjectProperty ;
-              rdfs:label "Country"@en .
+    <!-- https://w3id.org/cerif2/spm/ISSN -->
 
 
-###  https://eurocris.org/cerif-core#hasDocument
-cf:hasDocument rdf:type owl:ObjectProperty ;
-               rdfs:label "Document"@en .
+    <rdfs:Datatype rdf:about="https://w3id.org/cerif2/spm/ISSN"/>
+    
 
 
-###  https://eurocris.org/cerif-core#hasInstitution
-cf:hasInstitution rdf:type owl:ObjectProperty ;
-                  rdfs:label "Institution"@en .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-###  https://eurocris.org/cerif-core#hasOrgUnit
-cf:hasOrgUnit rdf:type owl:ObjectProperty ;
-              rdfs:label "Organization Unit"@en .
+    
 
 
-###  https://eurocris.org/cerif-core#hasPostalAddress
-cf:hasPostalAddress rdf:type owl:ObjectProperty ;
-                    rdfs:label "Postall Address"@en .
+    <!-- https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship -->
 
 
-###  https://eurocris.org/spm#hasDegreeOfContribution
-:hasDegreeOfContribution rdf:type owl:ObjectProperty ;
-                         rdfs:domain :CRediTContributionStatement ;
-                         rdfs:range :CRediTDegreeOfContribution ;
-                         rdfs:label "Degree of Contribution"@en .
+    <owl:ObjectProperty rdf:about="https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Scholarly_Publication"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/Authorship"/>
+        <rdfs:comment xml:lang="en">A Scholarly Publication can have any number of [Authorships](../entities/Authorship.md). This relationship is derived from [Document.has-contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#user-content-rel__has-contribution) by including just those [Contributions to Documents](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution_to_Document.md) that are [Authorships](../entities/Authorship.md).</rdfs:comment>
+    </owl:ObjectProperty>
+    
 
 
-###  https://eurocris.org/spm#hasEditor
-:hasEditor rdf:type owl:ObjectProperty ;
-           rdfs:domain :Editorship ;
-           rdfs:range cf:Agent ;
-           rdfs:label "Editor"@en .
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-###  https://eurocris.org/spm#hasEditorships
-:hasEditorships rdf:type owl:ObjectProperty ;
-                rdfs:domain :Monograph ;
-                rdfs:range :Editorship ;
-                rdfs:label "Editorships"@en .
+    
 
 
-###  https://eurocris.org/spm#hasPublisher
-:hasPublisher rdf:type owl:ObjectProperty ;
-              rdfs:domain :Publishership ;
-              rdfs:range cf:Agent ;
-              rdfs:label "Publisher"@en .
+    <!-- https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution -->
 
 
-###  https://eurocris.org/spm#hasPublishers
-:hasPublishers rdf:type owl:ObjectProperty ;
-               rdfs:domain :Monograph ;
-               rdfs:range :Publishership ;
-               rdfs:label "Publishers"@en .
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/CRediT_Contribution_Statement"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/CRediT_Degree_of_Contribution"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  https://eurocris.org/spm#hasPublishersAgents
-:hasPublishersAgents rdf:type owl:ObjectProperty ;
-                     rdfs:domain :Journal ;
-                     rdfs:range cf:Agent ;
-                     rdfs:label "Publishers Agents"@en .
+    <!-- https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType -->
 
 
-###  https://eurocris.org/spm#hasRoleType
-:hasRoleType rdf:type owl:ObjectProperty ;
-             rdfs:domain :CRediTContributionStatement ;
-             rdfs:range :CRediTRoleType ;
-             rdfs:label "Role Type"@en .
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/CRediT_Contribution_Statement"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/CRediT_Role_Type"/>
+    </owl:DatatypeProperty>
+    
 
 
-###  https://eurocris.org/spm#hasSource
-:hasSource rdf:type owl:ObjectProperty ;
-           rdfs:domain :JournalArticle ;
-           rdfs:range :Journal ;
-           rdfs:label "Source"@en .
+    <!-- https://w3id.org/cerif2/spm/Editorship#leadingEditorFlag -->
 
 
-#################################################################
-#    Data properties
-#################################################################
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Editorship#leadingEditorFlag">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Editorship"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Boolean"/>
+        <rdfs:label>indicates whether this editor contributed all or major effort (true)</rdfs:label>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasCity
-cf:hasCity rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:string ;
-           rdfs:label "CIty"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0#embargoEndDate -->
 
-###  https://eurocris.org/cerif-core#hasContacts
-cf:hasContacts rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:anyURI ;
-               rdfs:label "Contacts"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0#embargoEndDate">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Date"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasCorrespondingAuthorFlag
-cf:hasCorrespondingAuthorFlag rdf:type owl:DatatypeProperty ;
-                              rdfs:range xsd:boolean ;
-                              rdfs:label "Corresponding Author Flag"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal#acronym -->
 
-###  https://eurocris.org/cerif-core#hasDOI
-cf:hasDOI rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Journal ;
-          rdfs:label "DOI"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal#acronym">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Multilingual_String"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasDisplayText
-cf:hasDisplayText rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "Display Text" .
 
+    <!-- https://w3id.org/cerif2/spm/Journal#endDate -->
 
-###  https://eurocris.org/cerif-core#hasEUContryCode
-cf:hasEUContryCode rdf:type owl:DatatypeProperty ;
-                   rdfs:range cf:EUCountryCode ;
-                   rdfs:label "EU Country Code"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal#endDate">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Date"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasFamilyNames
-cf:hasFamilyNames rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "Family Names"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal#startDate -->
 
-###  https://eurocris.org/cerif-core#hasFirstName
-cf:hasFirstName rdf:type owl:DatatypeProperty ;
-                rdfs:label "First names"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal#startDate">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Date"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasISO3166AlphaCode
-cf:hasISO3166AlphaCode rdf:type owl:DatatypeProperty ;
-                       rdfs:range cf:ISO3166AlphaCode ;
-                       rdfs:label "ISO 3166 Alpha Code"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal#title -->
 
-###  https://eurocris.org/cerif-core#hasISO3166NumericCode
-cf:hasISO3166NumericCode rdf:type owl:DatatypeProperty ;
-                         rdfs:range cf:ISO3166NumericCode ;
-                         rdfs:label "ISO 3166 Numeric Code"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal#title">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Multilingual_String"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasName
-cf:hasName rdf:type owl:DatatypeProperty ;
-           rdfs:range rdf:PlainLiteral ;
-           rdfs:label "Name"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal_Article#endPage -->
 
-###  https://eurocris.org/cerif-core#hasORCIDiD
-cf:hasORCIDiD rdf:type owl:DatatypeProperty ;
-              rdfs:range xsd:string ;
-              rdfs:label "ORCIDiD" .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal_Article#endPage">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal_Article"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/String"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasOtherNames
-cf:hasOtherNames rdf:type owl:DatatypeProperty ;
-                 rdfs:range xsd:string ;
-                 rdfs:label "Other Names"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal_Article#number -->
 
-###  https://eurocris.org/cerif-core#hasPublicationDate
-cf:hasPublicationDate rdf:type owl:DatatypeProperty ;
-                      rdfs:range xsd:dateTime ;
-                      rdfs:label "Publication Date"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal_Article#number">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal_Article"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/String"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasStatement
-cf:hasStatement rdf:type owl:DatatypeProperty ;
-                rdfs:range rdf:PlainLiteral ;
-                rdfs:label "Statement"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal_Article#startPage -->
 
-###  https://eurocris.org/cerif-core#hasStreet
-cf:hasStreet rdf:type owl:DatatypeProperty ;
-             rdfs:range xsd:string ;
-             rdfs:label "Street"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal_Article#startPage">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal_Article"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/String"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/cerif-core#hasTitle
-cf:hasTitle rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Journal ;
-            rdfs:range rdf:PlainLiteral ;
-            rdfs:label "Title"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal_Article#volume -->
 
-###  https://eurocris.org/cerif-core#hasZipCode
-cf:hasZipCode rdf:type owl:DatatypeProperty ;
-              rdfs:label "Zip Code"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Journal_Article#volume">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Journal_Article"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/String"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/spm#hasAcronym
-:hasAcronym rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Journal ;
-            rdfs:range rdf:PlainLiteral ;
-            rdfs:label "Acronym"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Monograph#eISBN -->
 
-###  https://eurocris.org/spm#hasEISBN
-:hasEISBN rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Monograph ;
-          rdfs:range :ISBN ;
-          rdfs:label "eISBN"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Monograph#eISBN">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Monograph"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/ISBN"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/spm#hasEISSN
-:hasEISSN rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Journal ;
-          rdfs:range :ISSN ;
-          rdfs:label "eISSN"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Monograph#isbn -->
 
-###  https://eurocris.org/spm#hasEmbargoEndDate
-:hasEmbargoEndDate rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :EmbargoedAccessCOARAccessibilitySpecificationv.1.0 ;
-                   rdfs:range xsd:dateTime ;
-                   rdfs:label "Embargo End Date"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Monograph#isbn">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Monograph"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/ISBN"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/spm#hasEndDate
-:hasEndDate rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Journal ;
-            rdfs:range xsd:dateTime ;
-            rdfs:label "End Date"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Publication_Series#eISSN -->
 
-###  https://eurocris.org/spm#hasEndPage
-:hasEndPage rdf:type owl:DatatypeProperty ;
-            rdfs:domain :JournalArticle ;
-            rdfs:range xsd:string ;
-            rdfs:label "End Page"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Publication_Series#eISSN">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Publication_Series"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/ISSN"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/spm#hasISBN
-:hasISBN rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Monograph ;
-         rdfs:range :ISBN ;
-         rdfs:label "ISBN"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Publication_Series#issn -->
 
-###  https://eurocris.org/spm#hasISSN
-:hasISSN rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Journal ;
-         rdfs:range :ISSN ;
-         rdfs:label "ISSN"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Publication_Series#issn">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Publication_Series"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/ISSN"/>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/spm#hasIssue
-:hasIssue rdf:type owl:DatatypeProperty ;
-          rdfs:domain :JournalArticle ;
-          rdfs:range xsd:string ;
-          rdfs:label "Issue"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Publishership#leadingPublisherFlag -->
 
-###  https://eurocris.org/spm#hasLeadingEditorFlag
-:hasLeadingEditorFlag rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Editorship ;
-                      rdfs:range xsd:boolean ;
-                      rdfs:label "Leading Editor Flag"@en .
 
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cerif2/spm/Publishership#leadingPublisherFlag">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Publishership"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/Boolean"/>
+        <rdfs:label>indicates whether this publisher was the leading one among several (true)</rdfs:label>
+    </owl:DatatypeProperty>
+    
 
-###  https://eurocris.org/spm#hasLeadingPublisherFlag
-:hasLeadingPublisherFlag rdf:type owl:DatatypeProperty ;
-                         rdfs:label "Leading Publisher Flag"@en .
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-###  https://eurocris.org/spm#hasStartDate
-:hasStartDate rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Journal ;
-              rdfs:range xsd:dateTime ;
-              rdfs:label "Start Date"@en .
 
+    
 
-###  https://eurocris.org/spm#hasStartPage
-:hasStartPage rdf:type owl:DatatypeProperty ;
-              rdfs:domain :JournalArticle ;
-              rdfs:range xsd:string ;
-              rdfs:label "Start Page"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Authorship -->
 
-###  https://eurocris.org/spm#hasVolume
-:hasVolume rdf:type owl:DatatypeProperty ;
-           rdfs:domain :JournalArticle ;
-           rdfs:range xsd:string ;
-           rdfs:label "Volume"@en .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Authorship">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Contribution_to_Document"/>
+        <rdfs:comment xml:lang="en">Structured information about linking an [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) or any of its specializations ([Person](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Person.md), [Organisation Unit](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Organisation_Unit.md)) with a [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md) or any of its specializations. Authorship implies responsibility and accountability of an Agent for published Document.</rdfs:comment>
+        <rdfs:label xml:lang="en">Authorship</rdfs:label>
+    </owl:Class>
+    
 
-#################################################################
-#    Classes
-#################################################################
 
-###  https://eurocris.org/cerif-core#TextualDocumentAccessibilitySpecification
-cf:TextualDocumentAccessibilitySpecification rdf:type owl:Class ;
-                                             rdfs:label "Textual Document Accessibility Specification"@en .
+    <!-- https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0 -->
 
 
-###  https://eurocris.org/spm#COARAccessibilitySpecificationv.1.0
-:COARAccessibilitySpecificationv.1.0 rdf:type owl:Class ;
-                                     rdfs:subClassOf cf:TextualDocumentAccessibilitySpecification ;
-                                     rdfs:label "COAR Accessibility Specification v.1.0"@en .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Scholarly_Publication_Accessibility_Specification"/>
+        <rdfs:comment xml:lang="en">The COAR Access Rights vocabulary defines concepts to declare the access status of a resource. Multilingual labels regard regional distinctions in language and term. The Access Rights vocabulary builds on access rights defined in info:eu-repo/semantics. &lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">COAR Accessibility Specification v1.0</rdfs:label>
+    </owl:Class>
+    
 
 
-###  https://eurocris.org/spm#CRediTContributionStatement
-:CRediTContributionStatement rdf:type owl:Class ;
-                             rdfs:subClassOf cf:ContributionStatement ;
-                             rdfs:label "CRediT Contribution Statement"@en .
+    <!-- https://w3id.org/cerif2/spm/CRediT_Contribution_Statement -->
 
 
-###  https://eurocris.org/spm#CRediTDegreeOfContribution
-:CRediTDegreeOfContribution rdf:type owl:Class ;
-                            rdfs:label "CRediT Degree of Contribution"@en .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/CRediT_Contribution_Statement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Contribution_Statement"/>
+        <rdfs:comment xml:lang="en">A statement describing a contribution of an agent in producing a document in accordance with the CRediT contribution role taxonomy.</rdfs:comment>
+        <rdfs:label xml:lang="en">CRediTContributionStatement</rdfs:label>
+    </owl:Class>
+    
 
 
-###  https://eurocris.org/spm#CRediTRoleType
-:CRediTRoleType rdf:type owl:Class ;
-                rdfs:label "CRediT Role Type"@en .
+    <!-- https://w3id.org/cerif2/spm/Conference_Article -->
 
 
-###  https://eurocris.org/spm#Editorship
-:Editorship rdf:type owl:Class ;
-            rdfs:subClassOf cf:Contribution .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Conference_Article">
+        <rdfs:comment xml:lang="en">The scope of the entity and its meaning.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Conference Article</rdfs:label>
+    </owl:Class>
+    
 
 
-###  https://eurocris.org/spm#EmbargoedAccessCOARAccessibilitySpecificationv.1.0
-:EmbargoedAccessCOARAccessibilitySpecificationv.1.0 rdf:type owl:Class ;
-                                                    rdfs:subClassOf :COARAccessibilitySpecificationv.1.0 ;
-                                                    rdfs:label "Embargoed Access COAR Accessibility Specification v.1.0"@en .
+    <!-- https://w3id.org/cerif2/spm/Contribution -->
 
 
-###  https://eurocris.org/spm#Journal
-:Journal rdf:type owl:Class .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Contribution"/>
+    
 
 
-###  https://eurocris.org/spm#JournalArticle
-:JournalArticle rdf:type owl:Class ;
-                rdfs:subClassOf cf:TextualDocument ;
-                rdfs:label "Journal Article"@en .
+    <!-- https://w3id.org/cerif2/spm/Contribution_Statement -->
 
 
-###  https://eurocris.org/spm#MetadataOnlyAccessCOARAccessibilitySpecificationv.1.0
-:MetadataOnlyAccessCOARAccessibilitySpecificationv.1.0 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :COARAccessibilitySpecificationv.1.0 ;
-                                                       rdfs:label "Metadata Only Access COAR Accessibility Specification v.1.0"@en .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Contribution_Statement"/>
+    
 
 
-###  https://eurocris.org/spm#Monograph
-:Monograph rdf:type owl:Class ;
-           rdfs:subClassOf cf:TextualDocument .
+    <!-- https://w3id.org/cerif2/spm/Contribution_to_Document -->
 
 
-###  https://eurocris.org/spm#OpenAccessCOARAccessibilitySpecificationv.1.0
-:OpenAccessCOARAccessibilitySpecificationv.1.0 rdf:type owl:Class ;
-                                               rdfs:subClassOf :COARAccessibilitySpecificationv.1.0 ;
-                                               rdfs:label "Open Access COAR Accessibility Specification v.1.0"@en .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Contribution_to_Document"/>
+    
 
 
-###  https://eurocris.org/spm#Publishership
-:Publishership rdf:type owl:Class ;
-               rdfs:subClassOf cf:Contribution .
+    <!-- https://w3id.org/cerif2/spm/Contribution_to_Evaluation_Outcome -->
 
 
-###  https://eurocris.org/spm#RestrictedAccesCOARAccessibilitySpecificationv.1.0
-:RestrictedAccesCOARAccessibilitySpecificationv.1.0 rdf:type owl:Class ;
-                                                    rdfs:subClassOf :COARAccessibilitySpecificationv.1.0 ;
-                                                    rdfs:label "Restricted Acces COAR Accessibility Specification v.1.0"@en .
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Contribution_to_Evaluation_Outcome"/>
+    
 
 
-#################################################################
-#    Individuals
-#################################################################
+    <!-- https://w3id.org/cerif2/spm/Document -->
 
-###  https://eurocris.org/spm#ConceptualizationCRediTRoleType
-:ConceptualizationCRediTRoleType rdf:type owl:NamedIndividual ,
-                                          :CRediTRoleType ;
-                                 rdfs:label "Conceptualization CRediT Role Type"@en .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Document"/>
+    
 
-###  https://eurocris.org/spm#DataCurationCRediTRoleType
-:DataCurationCRediTRoleType rdf:type owl:NamedIndividual ,
-                                     :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Editorship -->
 
-###  https://eurocris.org/spm#EqualCRediTDegreeOfContribution
-:EqualCRediTDegreeOfContribution rdf:type owl:NamedIndividual ,
-                                          :CRediTDegreeOfContribution ;
-                                 rdfs:label "Equal CRediT Degree of Contribution"@en .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Editorship">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Contribution"/>
+        <rdfs:comment xml:lang="en">The relationship of an editor to some specific subclasses of [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md).
+An **editor** selects and prepares for publication material created and submitted by authors, having oversight of its content, format and presentation.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Editorship</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#FormalAnalysisCRediTRoleType
-:FormalAnalysisCRediTRoleType rdf:type owl:NamedIndividual ,
-                                       :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0 -->
 
-###  https://eurocris.org/spm#FundingAcquisitionCRediTRoleType
-:FundingAcquisitionCRediTRoleType rdf:type owl:NamedIndividual ,
-                                           :CRediTRoleType .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0"/>
+        <rdfs:comment xml:lang="en">Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Embargoed Access COAR Accessibility Specification v1.0</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#InvestigationCRediTRoleType
-:InvestigationCRediTRoleType rdf:type owl:NamedIndividual ,
-                                      :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Evaluation_Outcome -->
 
-###  https://eurocris.org/spm#LeadCRediTDegreeOfContribution
-:LeadCRediTDegreeOfContribution rdf:type owl:NamedIndividual ,
-                                         :CRediTDegreeOfContribution ;
-                                rdfs:label "Lead CRediT Degree of Contribution"@en .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Evaluation_Outcome"/>
+    
 
-###  https://eurocris.org/spm#MetadataOnlyAccessCOARv.1.0
-:MetadataOnlyAccessCOARv.1.0 rdf:type owl:NamedIndividual ,
-                                      :MetadataOnlyAccessCOARAccessibilitySpecificationv.1.0 ;
-                             rdfs:label "Metadata Only Access COAR v.1.0"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal -->
 
-###  https://eurocris.org/spm#MethodologyCRediTRoleType
-:MethodologyCRediTRoleType rdf:type owl:NamedIndividual ,
-                                    :CRediTRoleType .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Journal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Publication_Series"/>
+        <rdfs:comment xml:lang="en">A journal is a serial publication devoted to disseminating original research and current developments on a subject. &lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Journal</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#OpenAccessCOARv.1.0
-:OpenAccessCOARv.1.0 rdf:type owl:NamedIndividual ,
-                              :OpenAccessCOARAccessibilitySpecificationv.1.0 ;
-                     rdfs:label "Open Access COAR v.1.0"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Journal_Article -->
 
-###  https://eurocris.org/spm#ProjectAdministrationCRediTRoleType
-:ProjectAdministrationCRediTRoleType rdf:type owl:NamedIndividual ,
-                                              :CRediTRoleType .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Journal_Article">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Scholarly_Publication"/>
+        <rdfs:comment xml:lang="en">An article on a particular topic and published in a journal issue. &lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Journal Article</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#ResourcesCRediTRoleType
-:ResourcesCRediTRoleType rdf:type owl:NamedIndividual ,
-                                  :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Manuscript_Review_Activity -->
 
-###  https://eurocris.org/spm#RestrictedAccesCOARv.1.0
-:RestrictedAccesCOARv.1.0 rdf:type owl:NamedIndividual ,
-                                   :RestrictedAccesCOARAccessibilitySpecificationv.1.0 ;
-                          rdfs:label "Restricted Acces COAR v.1.0"@en .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Manuscript_Review_Activity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Contribution_to_Evaluation_Outcome"/>
+        <rdfs:comment xml:lang="en">Reviewing a manuscript before a decision is made on whether it is published.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manuscript Review Activity</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#SoftwareCRediTRoleType
-:SoftwareCRediTRoleType rdf:type owl:NamedIndividual ,
-                                 :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Manuscript_Review_Outcome -->
 
-###  https://eurocris.org/spm#SupervisionCRediTRoleType
-:SupervisionCRediTRoleType rdf:type owl:NamedIndividual ,
-                                    :CRediTRoleType .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Manuscript_Review_Outcome">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Evaluation_Outcome"/>
+        <rdfs:comment xml:lang="en">The outcome of a manuscript review.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manuscript Review Outcome</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#SupportingCRediTDegreeOfContribution
-:SupportingCRediTDegreeOfContribution rdf:type owl:NamedIndividual ,
-                                               :CRediTDegreeOfContribution ;
-                                      rdfs:label "Supporting CRediT Degree of Contribution"@en .
 
+    <!-- https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Not_Publish -->
 
-###  https://eurocris.org/spm#ValidationCRediTRoleType
-:ValidationCRediTRoleType rdf:type owl:NamedIndividual ,
-                                   :CRediTRoleType .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Not_Publish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Manuscript_Review_Outcome"/>
+        <rdfs:comment xml:lang="en">The manuscript either does not fit the intended publishing channel or has major shortcomings that cannot be repaired.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manuscript Suggestion to Not Publish</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#VisualizationCRediTRoleType
-:VisualizationCRediTRoleType rdf:type owl:NamedIndividual ,
-                                      :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Publish_As_Is -->
 
-###  https://eurocris.org/spm#WritingOriginalDraftCRediTRoleType
-:WritingOriginalDraftCRediTRoleType rdf:type owl:NamedIndividual ,
-                                             :CRediTRoleType .
 
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Publish_As_Is">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Manuscript_Review_Outcome"/>
+        <rdfs:comment xml:lang="en">The manuscript fits the intended publishing channel, is without shortcomings and can be published in its current form.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manuscript Suggestion to Publish As-Is</rdfs:label>
+    </owl:Class>
+    
 
-###  https://eurocris.org/spm#WritingReviewAndEditingCRediTRoleType
-:WritingReviewAndEditingCRediTRoleType rdf:type owl:NamedIndividual ,
-                                                :CRediTRoleType .
 
+    <!-- https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Publish_with_Revisions -->
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Publish_with_Revisions">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Manuscript_Review_Outcome"/>
+        <rdfs:comment xml:lang="en">The manuscript fits the intended publishing channel, but has shortcomings. 
+If the manuscript is revised, it can be published.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manuscript Suggestion to Publish with Revisions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0"/>
+        <rdfs:comment xml:lang="en">Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but neither is directly available through the system or platform nor can be referenced to an open access copy in an external journal or trustworthy archive.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Metadata Only Access COAR Accessibility Specification v1.0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Monograph -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Monograph">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Scholarly_Publication"/>
+        <rdfs:comment xml:lang="en">[FIXME] Book is a non-serial publication that is complete in one volume or a designated finite number of volumes. &lt;sup&gt;[1](#fn1)&lt;/sup&gt; 
+Monograph is a scholarly book or a treatise on a single subject or a group of related subjects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monograph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Open_Access_COAR_Accessibility_Specification_v_1_0 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Open_Access_COAR_Accessibility_Specification_v_1_0">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0"/>
+        <rdfs:comment xml:lang="en">Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.The resource is either stored in the repository or referenced to an external journal or trustworthy archive.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Open Access COAR Accessibility Specification v1.0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Publication_Channel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Publication_Channel"/>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Publication_Series -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Publication_Series">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Publication_Channel"/>
+        <rdfs:comment xml:lang="en">A Publication Series is a publication that is published regularly about a particular subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Publication Series</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Publishership -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Publishership">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Authorship"/>
+        <rdfs:comment xml:lang="en">The relationship of a publisher to some subclasses of [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md).
+A **publisher** (a person or an organization) publishes material.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Publishership</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Restricted_Access_COAR_Accessibility_Specification_v_1_0 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Restricted_Access_COAR_Accessibility_Specification_v_1_0">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0"/>
+        <rdfs:comment xml:lang="en">Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g. limited to a university community).&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Restricted Access COAR Accessibility Specification v1.0</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Scholarly_Publication -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Scholarly_Publication">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cerif2/spm/Document"/>
+        <rdfs:comment xml:lang="en">A resource consisting primarily of words for reading.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Scholarly Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cerif2/spm/Scholarly_Publication_Accessibility_Specification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Scholarly_Publication_Accessibility_Specification">
+        <rdfs:comment xml:lang="en">[FIXME] An entity for representing vocabularies for definition of concepts to declare the access status of a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Scholarly Publication Accessibility Rights</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.5.1) https://github.com/owlcs/owlapi/ -->
+
+
