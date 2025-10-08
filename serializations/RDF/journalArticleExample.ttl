@@ -58,7 +58,7 @@
     <https://w3id.org/cerif2/DOI_Identifier#doiId> "10.1016/j.ejor.2020.09.020"^^<https://w3id.org/cerif2/DOI_ID>
   ] ;
   <https://w3id.org/cerif2/Document#isPublishedIn> :ejor_journal ;
-  <https://w3id.org/cerif2/Document#hasAuthors> ( :ulrike ) .
+  <https://w3id.org/cerif2/Document#hasAuthors> ( :authorship_ulrike_journal_article_ejor ) .
 
 [] a rdf:Statement,
             <https://w3id.org/cerif2/Textual_Content_Location> ;

@@ -96,7 +96,7 @@
   <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
   <https://w3id.org/cerif2/Document#publicationDate> "2025-03-20"^^xsd:date ;
   <https://w3id.org/cerif2/Document#isPublishedIn> :zenodo ;
-  <https://w3id.org/cerif2/Document#hasAuthors> ( :christian_hauschke :dragan_ivanovic ) ;
+  <https://w3id.org/cerif2/Document#hasAuthors> ( ::contribution_christian_presentation ::contribution_dragan_presentation ) ;
   <https://w3id.org/cerif2/Resource#hasIdentifier> [
     a <https://w3id.org/cerif2/DOI_Identifier> ;
     <https://w3id.org/cerif2/DOI_Identifier#doiId> "10.5281/zenodo.15773108"^^<https://w3id.org/cerif2/DOI_ID>
