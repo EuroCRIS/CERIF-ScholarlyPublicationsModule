@@ -330,12 +330,12 @@
     
 
 
-    <!-- https://w3id.org/cerif2/spm/Conference_Article -->
+    <!-- https://w3id.org/cerif2/spm/Conference_Paper -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Conference_Article">
-        <rdfs:comment xml:lang="en">The scope of the entity and its meaning.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
-        <rdfs:label xml:lang="en">Conference Article</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/cerif2/spm/Conference_Paper">
+        <rdfs:comment xml:lang="en">A paper, published within a conference proceeding, typically the realization of a research paper reporting original research findings.&lt;sup&gt;[1](#fn1)&lt;/sup&gt;</rdfs:comment>
+        <rdfs:label xml:lang="en">Conference Paper</rdfs:label>
     </owl:Class>
     
 
