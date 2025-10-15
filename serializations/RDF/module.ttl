@@ -48,6 +48,13 @@
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification
+<https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain :Scholarly_Publication ;
+                                                                                 rdfs:range :Scholarly_Publication ;
+                                                                                 rdfs:comment "A Scholarly Publication has an optional *access rights specification*: an instance of [Scholarly Publication Accessibility Specification](../entities/Scholarly_Publication_Accessibility_Specification.md)."@en .
+
+
 ###  https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship
 <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship> rdf:type owl:ObjectProperty ;
                                                                   rdfs:domain :Scholarly_Publication ;

@@ -90,6 +90,17 @@
     
 
 
+    <!-- https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification">
+        <rdfs:domain rdf:resource="https://w3id.org/cerif2/spm/Scholarly_Publication"/>
+        <rdfs:range rdf:resource="https://w3id.org/cerif2/spm/Scholarly_Publication"/>
+        <rdfs:comment xml:lang="en">A Scholarly Publication has an optional *access rights specification*: an instance of [Scholarly Publication Accessibility Specification](../entities/Scholarly_Publication_Accessibility_Specification.md).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship -->
 
 
