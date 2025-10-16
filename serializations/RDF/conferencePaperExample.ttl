@@ -124,7 +124,7 @@
   <https://w3id.org/cerif2/Document#isPublishedIn> :dspace_cris_eurocris ;
   <https://w3id.org/cerif2/Document#hasContribution> :contribution_ivan_extended_abstract , :contribution_milos_extended_abstract , :contribution_dragan_extended_abstract  , :contribution_lidija_extended_abstract  , :contribution_dusan_extended_abstract .
 
-:cris2024_full_paper a <https://w3id.org/cerif2/spm/Conference_Article> ,
+:cris2024_full_paper a <https://w3id.org/cerif2/spm/Conference_Paper> ,
             <https://w3id.org/cerif2/Textual_Contents> ,
             <https://w3id.org/cerif2/Accessible_on_the_Web> ;
   <https://w3id.org/cerif2/Document#title> "Reengineering of CRIS at University of Novi Sad"@en ;

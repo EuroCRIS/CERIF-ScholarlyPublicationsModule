@@ -70,13 +70,13 @@ The Scholarly Publications Module consists of the following entities:
 ## Illustrative Diagrams
 ![The module diagram](./diagrams/module.svg)
 
-![The example diagram](./diagrams/example.svg)
+![The journal article example diagram](./diagrams/journalArticleExample01.svg)
 
 ## Usage note
 This module cannot be used without the core.
 The module includes the following examples:
 * [Journal Article](./examples/Journal_Article_Example1.md)
-* [Conference Article](./examples/Conference_Article_Example1.md)
+* [Conference Paper](./examples/Conference_Paper_Example1.md)
 * [Presentation](./examples/Presentation_Example1.md)
 
 ## Development

@@ -54,7 +54,8 @@ frame "Christian" #LightBlue {
 
     contributionChristianZBMedMarch2025 o--> "has-contribution-statement" contributionStatementChristianZBMedMarch2025
 
-    object "<u>Christian's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionChristianSlides #ffffff {
+    object "<u>Christian's slides for ZBMed presentation:Authorship</u>" as contributionChristianSlides #ffffff {
+        contributionSequenceKey = 1
         dateRange = {
         \t startDate = 2025 ^^ Date
         \t endDate = 2025-03-25 ^^ Date
@@ -127,7 +128,8 @@ frame "Dragan" #LightYellow {
 
     contributionDraganZBMedMarch2025 o--> "has-contribution-statement" contributionStatementDraganZBMedMarch2025
 
-    object "<u>Dragan's slides for ZBMed presentation:Contribution_to_Document</u>" as contributionDraganSlides #ffffff {
+    object "<u>Dragan's slides for ZBMed presentation:Authorship</u>" as contributionDraganSlides #ffffff {
+        contributionSequenceKey = 1
         dateRange = {
         \t startDate = 2025 ^^ Date
         \t endDate = 2025-03-25 ^^ Date

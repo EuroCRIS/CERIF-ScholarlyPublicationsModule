@@ -122,10 +122,10 @@
 
         "Article" <|-- "Book_Chapter"
 
-        class "Conference_Article" #ddeedd {
+        class "Conference_Paper" #ddeedd {
         }
 
-        "Article" <|-- "Conference_Article"
+        "Article" <|-- "Conference_Paper"
 
          class "Journal_Article" #ddeedd {
          }
