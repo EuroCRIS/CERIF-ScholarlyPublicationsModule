@@ -58,7 +58,7 @@
     <https://w3id.org/cerif2/DOI_Identifier#doiId> "10.1016/j.ejor.2020.09.020"^^<https://w3id.org/cerif2/DOI_ID>
   ] ;
   <https://w3id.org/cerif2/Document#isPublishedIn> :ejor_journal ;
-  <https://w3id.org/cerif2/Document#hasAuthors> ( :authorship_ulrike_journal_article_ejor ) .
+  <https://w3id.org/cerif2/Document#hasContribution> :authorship_ulrike_journal_article_ejor  .
 
 [] a rdf:Statement,
             <https://w3id.org/cerif2/Textual_Content_Location> ;
@@ -104,6 +104,7 @@
   <https://w3id.org/cerif2/Electronic_Address#uri> <mailto:xxxxxxxx@hnu.de> .
 
 :authorship_ulrike_journal_article_ejor a <https://w3id.org/cerif2/spm/Corresponding_Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 1 ;
   <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_ulrike_neu_ulm ;
   <https://w3id.org/cerif2/Activity#hasActor> :ulrike ;
   <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :ejor_journal_article .
