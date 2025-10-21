@@ -1,8 +1,7 @@
 @startuml
 
 
-!include ../../CERIF-Core/diagrams/example.puml
-
+!include ../../../CERIF-Core/examples/01_Person/example01.puml
 
     object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
 
@@ -33,6 +32,10 @@
             correspondingAuthorFlag = True
             document = 10.1016/j.ejor.2020.09.020 ^^ Document
             Affiliation_Statement = [Affiliation 1] ^^ List<Affiliation_Statement>
+    }
+
+    object "<u>Elsevier B.V.:Organisation_Unit</u>" as Elsevier #ffffff {
+            name = "Elsevier B.V."@en
     }
 
     Aut1 o--> "has-actor" X
