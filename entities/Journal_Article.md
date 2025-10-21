@@ -34,7 +34,7 @@ Those from [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/
 
 ### Example usage
 
-Please, find an example at [Juurnal Article example](../examples/Journal_Article_Example1.md)
+Please, find an example at [Journal Article example](../examples/README.md#journal-article-example)
 
 ## Matches
 
