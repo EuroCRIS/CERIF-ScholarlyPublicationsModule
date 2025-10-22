@@ -1,9 +1,9 @@
-@prefix : <https://w3id.org/cerif2/spm/example02#> .
+@prefix : <https://w3id.org/cerif2/spm/example03#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-@base <https://w3id.org/cerif2/spm/example02#> .
+@base <https://w3id.org/cerif2/spm/example03#> .
 
 : rdfs:label "An example for an online presentation"@en .
 
@@ -25,8 +25,10 @@
 :dragan_ivanovic a <https://w3id.org/cerif2/Person> ;
   <https://w3id.org/cerif2/Person#name> [
     a <https://w3id.org/cerif2/Person_Name> ;
-    <https://w3id.org/cerif2/Person_Name#firstNames> "Dragan"@sr-Latn-RS , "Драган"@sr-Cyrl-RS ;
-    <https://w3id.org/cerif2/Person_Name#familyNames> "Ivanović"@sr-Latn-RS , "Ивановић"@sr-Cyrl-RS
+    <https://w3id.org/cerif2/Person_Name#firstNames> "Dragan"@sr-Latn-RS ,
+                                                     "Драган"@sr-Cyrl-RS ;
+    <https://w3id.org/cerif2/Person_Name#familyNames> "Ivanović"@sr-Latn-RS ,
+                                                      "Ивановић"@sr-Cyrl-RS
   ] ;
   <https://w3id.org/cerif2/Agent#hasIdentifier> [
     a <https://w3id.org/cerif2/ORCID_Identifier> ;
@@ -96,7 +98,8 @@
   <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
   <https://w3id.org/cerif2/Document#publicationDate> "2025-03-20"^^xsd:date ;
   <https://w3id.org/cerif2/Document#isPublishedIn> :zenodo ;
-  <https://w3id.org/cerif2/Document#hasContribution>  :contribution_christian_presentation  , :contribution_dragan_presentation ;
+  <https://w3id.org/cerif2/Document#hasContribution>  :contribution_christian_presentation  ,
+                                                      :contribution_dragan_presentation ;
   <https://w3id.org/cerif2/Resource#hasIdentifier> [
     a <https://w3id.org/cerif2/DOI_Identifier> ;
     <https://w3id.org/cerif2/DOI_Identifier#doiId> "10.5281/zenodo.15773108"^^<https://w3id.org/cerif2/DOI_ID>
