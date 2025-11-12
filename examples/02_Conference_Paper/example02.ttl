@@ -1,0 +1,438 @@
+@prefix : <https://w3id.org/cerif2/spm/example02#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@base <https://w3id.org/cerif2/spm/example02#> .
+
+: rdfs:label "An example for a conference article presented at CRIS 2024"@en .
+
+#################################################################
+### Persons and Affiliations
+#################################################################
+
+:uns a <https://w3id.org/cerif2/Organisation_Unit> ;
+  <https://w3id.org/cerif2/Group_or_Organisation_Unit#name> "University of Novi Sad"@en , "Univerzitet u Novom Sadu"@sr ;
+  <https://w3id.org/cerif2/Group_or_Organisation_Unit#acronym> "UNS"@en ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/ROR_Identifier> ;
+    <https://w3id.org/cerif2/ROR_Identifier#rorId> "00xa57a59"^^<https://w3id.org/cerif2/ROR_ID>
+  ] ;
+  <https://w3id.org/cerif2/Group#hasParts> :fts .
+
+:fts a <https://w3id.org/cerif2/Organisation_Unit> ;
+     <https://w3id.org/cerif2/Group_or_Organisation_Unit#name> "Faculty of Technical Sciences"@en , "Fakultet Tehničkih Nauka"@sr ;
+     <https://w3id.org/cerif2/Group_or_Organisation_Unit#acronym> "FTS"@en , "FTN"@sr ;
+     <https://w3id.org/cerif2/Group#isPartOf> :uns .
+
+:ivan_mrsulja a <https://w3id.org/cerif2/Person> ;
+  <https://w3id.org/cerif2/Person#name> [
+    a <https://w3id.org/cerif2/Person_Name> ;
+    <https://w3id.org/cerif2/Person_Name#firstNames> "Ivan"@sr-Latn-RS , "Иван"@sr-Cyrl-RS ;
+    <https://w3id.org/cerif2/Person_Name#familyNames> "Mršulja"@sr-Latn-RS , "Мршуља"@sr-Cyrl-RS
+  ] .
+
+:affiliation_ivan_uns a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Mršulja, I."@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#hasInstitution> :fts .
+
+:milos_popovic a <https://w3id.org/cerif2/Person> ;
+  <https://w3id.org/cerif2/Person#name> [
+    a <https://w3id.org/cerif2/Person_Name> ;
+    <https://w3id.org/cerif2/Person_Name#firstNames> "Miloš"@sr-Latn-RS ,
+                                                     "Милош"@sr-Cyrl-RS ;
+    <https://w3id.org/cerif2/Person_Name#familyNames> "Popović"@sr-Latn-RS ,
+                                                      "Поповић"@sr-Cyrl-RS
+  ] .
+
+:affiliation_milos_uns a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Popović, M."@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#hasInstitution> :fts .
+
+:dragan_ivanovic a <https://w3id.org/cerif2/Person> ;
+  <https://w3id.org/cerif2/Person#name> [
+    a <https://w3id.org/cerif2/Person_Name> ;
+    <https://w3id.org/cerif2/Person_Name#firstNames> "Dragan"@sr-Latn-RS ,
+                                                     "Драган"@sr-Cyrl-RS ;
+    <https://w3id.org/cerif2/Person_Name#familyNames> "Ivanović"@sr-Latn-RS ,
+                                                      "Ивановић"@sr-Cyrl-RS
+  ] ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/ORCID_Identifier> ;
+    <https://w3id.org/cerif2/ORCID_Identifier#orcidId> "0000-0002-9942-5521"^^<https://w3id.org/cerif2/ORCID_iD>
+  ] .
+
+:affiliation_dragan_uns a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "University of Novi Sad, Faculty of Technical Sciences, Trg Dositeja Obradovica 6, 21000 Novi Sad, Serbia"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Ivanović, D."@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#hasInstitution> :fts .
+
+:affiliation_lidija_uns a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "University of Novi Sad, Faculty of Education, Podgoricka 4, 25000 Sombor, Serbia"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Ivanović, L."@en .
+
+:affiliation_dusan_uns a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "University of Novi Sad, Faculty of Sciences, Trg Dositeja Obradovica 3, 21000 Novi Sad, Serbia"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Surla, D."@en .
+
+#################################################################
+### Documents and Events
+#################################################################
+
+:open_access a <https://w3id.org/cerif2/spm/Open_Access_COAR_Accessibility_Specification_v1.0> .
+
+:cris_series a <https://w3id.org/cerif2/Event_Series> ;
+  <https://w3id.org/cerif2/Event_Series#title> "International Conference on Current Research Information Systems"@en ;
+  <https://w3id.org/cerif2/Event_Series#acronym> "CRIS"@en ;
+  <https://w3id.org/cerif2/Event_Series#recurrencePeriod> 2 ;
+  <https://w3id.org/cerif2/Event_Series#recurrenceUnit> "year"@en .
+
+:cris2024_event a <https://w3id.org/cerif2/Event> ;
+  <https://w3id.org/cerif2/Event#title> "16th International Conference on Current Research Information Systems"@en ;
+  <https://w3id.org/cerif2/Event#acronym> "CRIS 2024"@en ;
+  <https://w3id.org/cerif2/Event#ordinalNumber> 16 ;
+  <https://w3id.org/cerif2/Event#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024-05-15"^^xsd:date ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-05-17"^^xsd:date ;
+  ] ;
+  <https://w3id.org/cerif2/Event#belongsToSeries> :cris_series .
+
+:cris2024_presentation a <https://w3id.org/cerif2/spm/Presentation> ,
+          <https://w3id.org/cerif2/Textual_Contents> ,
+          <https://w3id.org/cerif2/Downloadable> ,
+          <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
+  <https://w3id.org/cerif2/Downloadable#downloadURL> <https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf> ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://dspacecris.eurocris.org/handle/11366/2540> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2024-05-14"^^xsd:date ;
+  <https://w3id.org/cerif2/Document#isPublishedIn> :dspace_cris_eurocris ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/Handle_Identifier> ;
+    <https://w3id.org/cerif2/Handle_Identifier#handleId> "11366/2540"^^<https://w3id.org/cerif2/Handle_ID>
+  ] ;
+  <https://w3id.org/cerif2/Document#hasContribution> :contribution_ivan_presentation  ,
+                                                     :contribution_milos_presentation  ,
+                                                     :contribution_dragan_presentation ,
+                                                     :contribution_lidija_presentation ,
+                                                     :contribution_dusan_presentation .
+
+:cris2024_extended_abstract a <https://w3id.org/cerif2/spm/Conference_Abstract> ,
+            <https://w3id.org/cerif2/Textual_Contents> ,
+            <https://w3id.org/cerif2/Downloadable> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en ;
+  <https://w3id.org/cerif2/Downloadable#downloadURL> <https://dspacecris.eurocris.org/bitstream/11366/2540/1/Mr%c5%a1ulja-et-al-CRIS2024_Reengineering-of-CRIS-at-UNS.pdf> ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://dspacecris.eurocris.org/handle/11366/2540> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2024-03-01"^^xsd:date ;
+  <https://w3id.org/cerif2/Document#isPublishedIn> :dspace_cris_eurocris ;
+  <https://w3id.org/cerif2/Document#hasContribution> :contribution_ivan_extended_abstract ,
+                                                     :contribution_milos_extended_abstract ,
+                                                     :contribution_dragan_extended_abstract  ,
+                                                     :contribution_lidija_extended_abstract  ,
+                                                     :contribution_dusan_extended_abstract .
+
+:cris2024_full_paper a <https://w3id.org/cerif2/spm/Conference_Paper> ,
+            <https://w3id.org/cerif2/Textual_Contents> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "Reengineering of CRIS at University of Novi Sad"@en ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://www.sciencedirect.com/science/article/pii/S1877050924032630> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2024"^^xsd:gYear ;
+  <https://w3id.org/cerif2/Resource#hasIdentifier> [
+    a <https://w3id.org/cerif2/DOI_Identifier> ;
+    <https://w3id.org/cerif2/DOI_Identifier#doiId> "10.1016/j.procs.2024.11.052"^^<https://w3id.org/cerif2/DOI_ID>
+  ] ;
+  <https://w3id.org/cerif2/Document#hasContribution> :contribution_ivan_full_paper  ,
+                                                     :contribution_milos_full_paper  ,
+                                                     :contribution_dragan_full_paper ,
+                                                     :contribution_lidija_full_paper ,
+                                                     :contribution_dusan_full_paper ;
+  <https://w3id.org/cerif2/Document#isPartOf> :cris2024_proceedings .
+
+:procedia_computer_science a <https://w3id.org/cerif2/Books_Series> ;
+  <https://w3id.org/cerif2/Publication_Channel#title> "Proceedia Computer Science"@en ;
+  <https://w3id.org/cerif2/spm/Publication_Series#ISSN> "1877-0509" .
+
+:cris2024_proceedings a <https://w3id.org/cerif2/spm/Proceedings> ,
+            <https://w3id.org/cerif2/Textual_Contents> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "Proceedings of 16th International Conference on Current Research Information Systems (CRIS 2024)"@en ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://www.sciencedirect.com/journal/procedia-computer-science/vol/249> ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2024"^^xsd:gYear ;
+  <https://w3id.org/cerif2/Document#isPublishedIn> :procedia_computer_science ;
+  <https://w3id.org/cerif2/spm/Proceedings#hasEvent> :cris2024_event .
+
+[] a rdf:Statement,
+            <https://w3id.org/cerif2/Serial_Publication_Based_Contents_Location> ;
+  rdf:Subject  :cris2024_proceedings ;
+  rdf:Predicate <https://w3id.org/cerif2/Document#isPublishedIn> ;
+  rdf:Object  :procedia_computer_science ;
+  <https://w3id.org/cerif2/Serial_Publication_Based_Contents_Location#volume> "249" .
+
+[] a rdf:Statement,
+            <https://w3id.org/cerif2/Page_Based_Contents_Location>;
+  rdf:Subject  :cris2024_full_paper ;
+  rdf:Predicate <https://w3id.org/cerif2/Document#isPartOf> ;
+  rdf:Object  :cris2024_proceedings ;
+  <https://w3id.org/cerif2/Page_Based_Contents_Location#startPage> "85" ;
+  <https://w3id.org/cerif2/Page_Based_Contents_Location#endPage> "93" .
+
+:dspace_cris_eurocris a <https://w3id.org/cerif2/Repository> ;
+  <https://w3id.org/cerif2/Infrastructure#title> "The euroCRIS repository"@en ;
+  <https://w3id.org/cerif2/Infrastructure#url> <https://dspacecris.eurocris.org/> .
+
+#################################################################
+### Contributions to Documents and Events
+#################################################################
+
+### Ivan's presentation at CRIS 2024 (Contribution_to_Event)
+
+:contribution_ivan_cris2024 a <https://w3id.org/cerif2/Contribution_to_Event> ;
+  <https://w3id.org/cerif2/Activity#hasActor> :ivan_mrsulja ;
+  <https://w3id.org/cerif2/Contribution_to_Event#hasTarget> :cris2024_event ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024-05-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_ivan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_ivan_cris2024 .
+
+:contribution_statement_ivan_cris2024 a <https://w3id.org/cerif2/spm/Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/Contribution_Statement#statement> "Ivan presented the paper at the conference."@en ;
+  <https://w3id.org/cerif2/spm/Contribution_Statement#isDetailedIn> :resource_usage_statement_ivan_cris2024 .
+
+:resource_usage_statement_ivan_cris2024 a <https://w3id.org/cerif2/Resource_Usage_Statement> ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#statement> "Material for Ivan talk is prepared as open-access slides."@en ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#uses> :cris2024_presentation  .
+
+### Contribution to CRIS 2024 presentation (slides)
+
+### Contribution to CRIS 2024 presentation (slides) - Ivan
+
+:contribution_ivan_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 1 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :ivan_mrsulja ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_presentation ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-05-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_ivan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_ivan_presentation .
+
+:contribution_statement_ivan_presentation a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Lead" ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_statement_presentation_cris2024 .
+
+### Contribution to CRIS 2024 presentation (slides) - Milos
+
+:contribution_milos_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 2 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :milos_popovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_presentation ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-05-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_milos_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_milos_presentation .
+
+:contribution_statement_milos_presentation a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_statement_presentation_cris2024 .
+
+### Contribution to CRIS 2024 presentation (slides) - Dragan
+
+:contribution_dragan_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 3 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :dragan_ivanovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_presentation ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-05-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dragan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_dragan_presentation .
+
+:contribution_statement_dragan_presentation a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Supervision" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_statement_presentation_cris2024 .
+
+### Contribution to CRIS 2024 presentation (slides) - Lidija (non-managed / FTS external author)
+
+:contribution_lidija_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 4 ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_presentation ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_lidija_uns .
+
+### Contribution to CRIS 2024 presentation (slides) - Dusan (non-managed / FTS external author)
+
+:contribution_dusan_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 5 ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_presentation ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dusan_uns .
+
+### Resource Usage Statement (shared)
+:resource_usage_statement_presentation_cris2024 a <https://w3id.org/cerif2/Resource_Usage_Statement> ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#statement> "Slides are prepared by using extended abstract."@en ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#uses> :cris2024_extended_abstract .
+
+### Contribution to CRIS 2024 Extended Abstract
+
+### Contribution to CRIS 2024 Extended Abstract - Ivan
+
+:contribution_ivan_extended_abstract a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 1 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :ivan_mrsulja ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_extended_abstract ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-03-01"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_ivan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_ivan_extended_abstract .
+
+:contribution_statement_ivan_extended_abstract a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Lead" .
+
+### Contribution to CRIS 2024 Extended Abstract - Milos
+
+:contribution_milos_extended_abstract a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 2 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :milos_popovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_extended_abstract ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-03-01"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_milos_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_milos_extended_abstract .
+
+:contribution_statement_milos_extended_abstract a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" .
+
+### Contribution to CRIS 2024 Extended Abstract - Dragan
+
+:contribution_dragan_extended_abstract a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 3 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :dragan_ivanovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_extended_abstract ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-03-01"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dragan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_dragan_extended_abstract .
+
+:contribution_statement_dragan_extended_abstract a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Supervision" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" .
+
+### Contribution to CRIS 2024 Extended Abstract - Lidija (non-managed / FTS external author)
+
+:contribution_lidija_extended_abstract a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 4 ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_extended_abstract ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_lidija_uns .
+
+### Contribution to CRIS 2024 Extended Abstract - Dusan (non-managed / FTS external author)
+
+:contribution_dusan_extended_abstract a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 5 ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_extended_abstract ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dusan_uns .
+
+### Contribution to CRIS 2024 Full Paper
+
+### Contribution to CRIS 2024 Full Paper - Ivan
+
+:contribution_ivan_full_paper a <https://w3id.org/cerif2/spm/Corresponding_Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 1 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :ivan_mrsulja ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_full_paper ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024-05-15"^^xsd:date ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-10-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_ivan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_ivan_full_paper .
+
+:contribution_statement_ivan_full_paper a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Lead" ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_full_paper_cris2024 .
+
+### Contribution to CRIS 2024 Full Paper - Milos
+
+:contribution_milos_full_paper a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 2 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :milos_popovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_full_paper ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024-05-15"^^xsd:date ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-10-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_milos_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_milos_full_paper .
+
+:contribution_statement_milos_full_paper a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_full_paper_cris2024.
+
+### Contribution to CRIS 2024 Full Paper - Dragan
+
+:contribution_dragan_full_paper a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 3 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :dragan_ivanovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_full_paper ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2024-05-15"^^xsd:date ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2024-10-15"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dragan_uns ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_dragan_full_paper .
+
+:contribution_statement_dragan_full_paper a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Supervision" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_full_paper_cris2024.
+
+### Contribution to CRIS 2024 Full Paper - Lidija (non-managed / FTS external author)
+
+:contribution_lidija_full_paper a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 4 ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_full_paper ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_lidija_uns .
+
+### Contribution to CRIS 2024 Full Paper - Dusan (non-managed / FTS external author)
+
+:contribution_dusan_full_paper a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 5 ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :cris2024_full_paper ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dusan_uns .
+
+### Resource Usage Statement (shared)
+:resource_usage_full_paper_cris2024 a <https://w3id.org/cerif2/Resource_Usage_Statement> ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#statement> "The basis for writting paper were slides and extended abstract."@en ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#uses> :cris2024_extended_abstract ,
+                                                          :cris2024_presentation .

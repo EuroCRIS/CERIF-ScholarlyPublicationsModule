@@ -1,0 +1,261 @@
+@prefix : <https://w3id.org/cerif2/spm/example03#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+@base <https://w3id.org/cerif2/spm/example03#> .
+
+: rdfs:label "An example for an online presentation"@en .
+
+#################################################################
+### Persons and Affiliations
+#################################################################
+
+:christian_hauschke a <https://w3id.org/cerif2/Person> ;
+  <https://w3id.org/cerif2/Person#name> [
+    a <https://w3id.org/cerif2/Person_Name> ;
+    <https://w3id.org/cerif2/Person_Name#firstNames> "Christian"@de ;
+    <https://w3id.org/cerif2/Person_Name#familyNames> "Hauschke"@de
+  ] ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/ORCID_Identifier> ;
+    <https://w3id.org/cerif2/ORCID_Identifier#orcidId> "0000-0003-2499-7741"^^<https://w3id.org/cerif2/ORCID_iD>
+  ] .
+
+:dragan_ivanovic a <https://w3id.org/cerif2/Person> ;
+  <https://w3id.org/cerif2/Person#name> [
+    a <https://w3id.org/cerif2/Person_Name> ;
+    <https://w3id.org/cerif2/Person_Name#firstNames> "Dragan"@sr-Latn-RS ,
+                                                     "Драган"@sr-Cyrl-RS ;
+    <https://w3id.org/cerif2/Person_Name#familyNames> "Ivanović"@sr-Latn-RS ,
+                                                      "Ивановић"@sr-Cyrl-RS
+  ] ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/ORCID_Identifier> ;
+    <https://w3id.org/cerif2/ORCID_Identifier#orcidId> "0000-0002-9942-5521"^^<https://w3id.org/cerif2/ORCID_iD>
+  ] .
+
+:tib a <https://w3id.org/cerif2/Organisation_Unit> ;
+  <https://w3id.org/cerif2/Group_or_Organisation_Unit#name> "Leibniz Information Centre for Science and Technology and University Library"@en, "Leibniz-Informationszentrum Technik und Naturwissenschaften und Universitätsbibliothek"@de ;
+  <https://w3id.org/cerif2/Group_or_Organisation_Unit#acronym> "TIB"@en ;
+  <https://w3id.org/cerif2/Agent#contacts> [
+    a <https://w3id.org/cerif2/Electronic_Address> ;
+    <https://w3id.org/cerif2/Electronic_Address#uri> <https://www.tib.eu/en/>
+  ] ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/ROR_Identifier> ;
+    <https://w3id.org/cerif2/ROR_Identifier#rorId> "04aj4c181"^^<https://w3id.org/cerif2/ROR_ID>
+  ] .
+
+:lyrasis a <https://w3id.org/cerif2/Organisation_Unit> ;
+  <https://w3id.org/cerif2/Group_or_Organisation_Unit#name> "Lyrasis"@en ;
+  <https://w3id.org/cerif2/Agent#contacts> [
+    a <https://w3id.org/cerif2/Electronic_Address> ;
+    <https://w3id.org/cerif2/Electronic_Address#uri> <https://lyrasis.org/>
+  ] ;
+  <https://w3id.org/cerif2/Agent#hasIdentifier> [
+    a <https://w3id.org/cerif2/ROR_Identifier> ;
+    <https://w3id.org/cerif2/ROR_Identifier#rorId> "026tem613"^^<https://w3id.org/cerif2/ROR_ID>
+  ] .
+
+:affiliation_christian_tib a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "TIB - Leibniz Information Centre for Science and Technology and University Library"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Hauschke, C."@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#hasInstitution> :tib .
+
+:affiliation_dragan_lyrasis a <https://w3id.org/cerif2/Affiliation_Statement> ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayAffiliation> "Lyrasis"@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#displayPersonName> "Ivanovic, D."@en ;
+  <https://w3id.org/cerif2/Affiliation_Statement#hasInstitution> :lyrasis .
+
+#################################################################
+### Documents (slides, video) and Events
+#################################################################
+
+:open_access a <https://w3id.org/cerif2/spm/Open_Access_COAR_Accessibility_Specification_v1.0> .
+
+:zbmed_series a <https://w3id.org/cerif2/Event_Series> ;
+  <https://w3id.org/cerif2/Event_Series#title> "ZB Med Research Colloquium"@en ;
+  <https://w3id.org/cerif2/Event_Series#recurrencePeriod> 1 ;
+  <https://w3id.org/cerif2/Event_Series#recurrenceUnit> "month"@en .
+
+:zbmed_march2025 a <https://w3id.org/cerif2/Event> ;
+  <https://w3id.org/cerif2/Event#title> "ZB Med Research Colloquium for March 2025"@en ;
+  <https://w3id.org/cerif2/Event#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2025-03-01"^^xsd:date ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2025-03-31"^^xsd:date
+  ];
+  <https://w3id.org/cerif2/Event#belongsToSeries> :zbmed_series .
+
+:presentation_slides a <https://w3id.org/cerif2/spm/Presentation> ,
+            <https://w3id.org/cerif2/Textual_Contents> ,
+            <https://w3id.org/cerif2/Downloadable> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "VIVO – An Ontology-Based Research Information System"@en ;
+  <https://w3id.org/cerif2/Downloadable#downloadURL> <https://zenodo.org/records/15773109/files/VIVO%20-%20ZB%20MED%20Research%20Seminar.pdf?download=1> ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://zenodo.org/records/15773109> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2025-03-20"^^xsd:date ;
+  <https://w3id.org/cerif2/Document#isPublishedIn> :zenodo ;
+  <https://w3id.org/cerif2/Document#hasContribution>  :contribution_christian_presentation  ,
+                                                      :contribution_dragan_presentation ;
+  <https://w3id.org/cerif2/Resource#hasIdentifier> [
+    a <https://w3id.org/cerif2/DOI_Identifier> ;
+    <https://w3id.org/cerif2/DOI_Identifier#doiId> "10.5281/zenodo.15773108"^^<https://w3id.org/cerif2/DOI_ID>
+  ] .
+
+:zenodo a <https://w3id.org/cerif2/Repository> ;
+  <https://w3id.org/cerif2/Infrastructure#title> "Zenodo"@en ;
+  <https://w3id.org/cerif2/Infrastructure#url> <https://zenodo.org/> .
+
+:presentation_video_complete a <https://w3id.org/cerif2/spm/Presentation> ,
+            <https://w3id.org/cerif2/Video_Contents> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "VIVO – An Ontology-Based Research Information System"@en ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2025-03-25"^^xsd:date ;
+  <https://w3id.org/cerif2/Video_Contents#duration> "PT40M14S"^^xsd:duration ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://www.youtube.com/watch?v=64lhd_am9ew> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#isPublishedIn> :youtube .
+
+:zenodo a <https://w3id.org/cerif2/Repository> ;
+  <https://w3id.org/cerif2/Infrastructure#title> "YouTube"@en ;
+  <https://w3id.org/cerif2/Infrastructure#url> <https://www.youtube.com/> .
+
+:presentation_video_1 a <https://w3id.org/cerif2/spm/Presentation> ,
+            <https://w3id.org/cerif2/Video_Contents> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "What is VIVO and what are the features?"@en ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2025-03-25"^^xsd:date ;
+  <https://w3id.org/cerif2/Video_Contents#duration> "PT4M15S"^^xsd:duration ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://www.youtube.com/watch?v=64lhd_am9ew&t=0s> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#isPartOf> :presentation_video_complete .
+
+[] a rdf:Statement,
+            <https://w3id.org/cerif2/Time_Based_Contents_Location> ;
+  rdf:Subject  :presentation_video_1 ;
+  rdf:Predicate <https://w3id.org/cerif2/Document:isPartOf> ;
+  rdf:Object  :presentation_video_complete ;
+  <https://w3id.org/cerif2/Time_Based_Contents_Location#startTime> "0"^^xsd:time ;
+  <https://w3id.org/cerif2/Time_Based_Contents_Location#endTime> "00:04:15"^^xsd:time .
+
+:presentation_video_2 a <https://w3id.org/cerif2/spm/Presentation> ,
+            <https://w3id.org/cerif2/Video_Contents> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "Examples of usage of VIVO on national and institutional level"@en ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2025-03-25"^^xsd:date ;
+  <https://w3id.org/cerif2/Video_Contents#duration> "PT3M40S"^^xsd:duration ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://www.youtube.com/watch?v=64lhd_am9ew&t=255s> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#isPartOf> :presentation_video_complete .
+
+[] a rdf:Statement,
+            <https://w3id.org/cerif2/Time_Based_Contents_Location> ;
+  rdf:Subject  :presentation_video_2 ;
+  rdf:Predicate <https://w3id.org/cerif2/Document#isPartOf> ;
+  rdf:Object  :presentation_video_complete ;
+  <https://w3id.org/cerif2/Time_Based_Contents_Location#startTime> "00:04:15"^^xsd:time ;
+  <https://w3id.org/cerif2/Time_Based_Contents_Location#endTime> "00:07:55"^^xsd:time .
+
+:presentation_video_8 a <https://w3id.org/cerif2/spm/Presentation> ,
+            <https://w3id.org/cerif2/Video_Contents> ,
+            <https://w3id.org/cerif2/Accessible_on_the_Web> ;
+  <https://w3id.org/cerif2/Document#title> "Development of VIVO"@en ;
+  <https://w3id.org/cerif2/Document#publicationDate> "2025-03-25"^^xsd:date ;
+  <https://w3id.org/cerif2/Video_Contents#duration> "PT11M41S"^^xsd:duration ;
+  <https://w3id.org/cerif2/Accessible_on_the_Web#accessURL> <https://www.youtube.com/watch?v=64lhd_am9ew&t=1713s> ;
+  <https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> :open_access ;
+  <https://w3id.org/cerif2/Document#isPartOf> :presentation_video_complete .
+
+[] a rdf:Statement,
+            <https://w3id.org/cerif2/Time_Based_Contents_Location> ;
+  rdf:Subject  :presentation_video_8 ;
+  rdf:Predicate <https://w3id.org/cerif2/Document#isPartOf> ;
+  rdf:Object  :presentation_video_complete ;
+  <https://w3id.org/cerif2/Time_Based_Contents_Location#startTime> "00:28:33"^^xsd:time ;
+  <https://w3id.org/cerif2/Time_Based_Contents_Location#endTime> "00:40:14"^^xsd:time .
+
+#################################################################
+### Contributions to Documents and Events
+#################################################################
+
+### Christian's presentation at ZBMed (Contribution_to_Event)
+
+:contribution_christian_zbmed_march2025 a <https://w3id.org/cerif2/Contribution_to_Event> ;
+  <https://w3id.org/cerif2/Activity#hasActor> :christian_hauschke ;
+  <https://w3id.org/cerif2/Contribution_to_Event#hasTarget> :zbmed_march2025 ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2025-03-25"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_christian_tib ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_christian_zbmed_march2025 .
+
+:contribution_statement_christian_zbmed_march2025 a <https://w3id.org/cerif2/Contribution_Statement> ;
+  <https://w3id.org/cerif2/Contribution_Statement#statement> "Christian presented VIVO as an ontology, as well as main features of the VIVO platform. His speech generated 7 sections in the complete session."@en ;
+  <https://w3id.org/cerif2/Contribution_Statement#provides> :presentation_video_1  ,
+            :presentation_video_2 ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_statement_christian_dragan_zbmed_march2025 .
+
+### Dragan's presentation at ZBMed (Contribution_to_Event)
+
+:contribution_dragan_zbmed_march2025 a <https://w3id.org/cerif2/Contribution_to_Event> ;
+  <https://w3id.org/cerif2/Activity#hasActor> :dragan_ivanovic ;
+  <https://w3id.org/cerif2/Contribution_to_Event#hasTarget> :zbmed_march2025 ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2025-03-25"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dragan_lyrasis ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_dragan_zbmed_march2025 .
+
+:contribution_statement_dragan_zbmed_march2025 a <https://w3id.org/cerif2/Contribution_Statement> ;
+  <https://w3id.org/cerif2/Contribution_Statement#statement> "Dragan presented VIVO technical community and basic process in the code contribution. His speech generated 1 section (the last one) in the complete session."@en ;
+  <https://w3id.org/cerif2/Contribution_Statement#provides> :presentation_video_8 ;
+  <https://w3id.org/cerif2/Contribution_Statement#isDetailedIn> :resource_usage_statement_christian_dragan_zbmed_march2025 .
+
+:resource_usage_statement_christian_dragan_zbmed_march2025 a <https://w3id.org/cerif2/Resource_Usage_Statement> ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#statement> "Material for Christian and Dragan talk is prepared as open-access slides."@en ;
+  <https://w3id.org/cerif2/Resource_Usage_Statement#uses> :presentation_slides .
+
+### Contribution to ZBMed March 2025 presentation (slides)
+
+### Contribution to ZBMed March 2025 presentation (slides) - Christian
+
+:contribution_christian_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 1 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :christian_hauschke ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :presentation_slides ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2025"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2025-03-25"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_christian_tib ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_christian_presentation .
+
+:contribution_statement_christian_presentation a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Lead" ;
+  <https://w3id.org/cerif2/Contribution_Statement#statement> "Christian produces the first 34 slides."@en  .
+
+### Contribution to CRIS 2024 presentation (slides) - Dragan
+
+:contribution_dragan_presentation a <https://w3id.org/cerif2/spm/Authorship> ;
+  <https://w3id.org/cerif2/Contribution#contributionSortingKey> 2 ;
+  <https://w3id.org/cerif2/Activity#hasActor> :dragan_ivanovic ;
+  <https://w3id.org/cerif2/Contribution_to_Document#hasTarget> :presentation_slides ;
+  <https://w3id.org/cerif2/Activity#dateRange> [
+    a <https://w3id.org/cerif2/Date_Range> ;
+    <https://w3id.org/cerif2/Date_Range#startDate> "2025"^^xsd:gYear ;
+    <https://w3id.org/cerif2/Date_Range#endDate> "2025-03-25"^^xsd:date
+  ] ;
+  <https://w3id.org/cerif2/Activity#hasAffiliationStatement> :affiliation_dragan_lyrasis ;
+  <https://w3id.org/cerif2/Contribution#hasContributionStatement> :contribution_statement_dragan_presentation .
+
+:contribution_statement_dragan_presentation a <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement> ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> "Writing – original draft" ;
+  <https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> "Supporting" ;
+  <https://w3id.org/cerif2/Contribution_Statement#statement> "Dragan produced the last 5 slides."@en  .

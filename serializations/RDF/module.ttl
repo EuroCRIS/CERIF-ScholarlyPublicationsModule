@@ -1,0 +1,354 @@
+@prefix : <https://w3id.org/cerif2/spm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/cerif2/spm/> .
+
+<https://w3id.org/cerif2/spm/> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  https://w3id.org/cerif2/Boolean
+<https://w3id.org/cerif2/Boolean> rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/Date
+<https://w3id.org/cerif2/Date> rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/Multilingual_String
+<https://w3id.org/cerif2/Multilingual_String> rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/String
+<https://w3id.org/cerif2/String> rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/spm/CRediT_Degree_of_Contribution
+:CRediT_Degree_of_Contribution rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/spm/CRediT_Role_Type
+:CRediT_Role_Type rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/spm/ISBN
+:ISBN rdf:type rdfs:Datatype .
+
+
+###  https://w3id.org/cerif2/spm/ISSN
+:ISSN rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification
+<https://w3id.org/cerif2/spm/Scholarly_Publication#hasAccessRightsSpecification> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain :Scholarly_Publication ;
+                                                                                 rdfs:range :Scholarly_Publication ;
+                                                                                 rdfs:comment "A Scholarly Publication has an optional *access rights specification*: an instance of [Scholarly Publication Accessibility Specification](../entities/Scholarly_Publication_Accessibility_Specification.md)."@en .
+
+
+###  https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship
+<https://w3id.org/cerif2/spm/Scholarly_Publication#hasAuthorship> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain :Scholarly_Publication ;
+                                                                  rdfs:range :Authorship ;
+                                                                  rdfs:comment "A Scholarly Publication can have any number of [Authorships](../entities/Authorship.md). This relationship is derived from [Document.has-contribution](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md#user-content-rel__has-contribution) by including just those [Contributions to Documents](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Contribution_to_Document.md) that are [Authorships](../entities/Authorship.md)."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution
+<https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#degreeOfContribution> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:domain :CRediT_Contribution_Statement ;
+                                                                                 rdfs:range :CRediT_Degree_of_Contribution .
+
+
+###  https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType
+<https://w3id.org/cerif2/spm/CRediT_Contribution_Statement#roleType> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain :CRediT_Contribution_Statement ;
+                                                                     rdfs:range :CRediT_Role_Type .
+
+
+###  https://w3id.org/cerif2/spm/Editorship#leadingEditorFlag
+<https://w3id.org/cerif2/spm/Editorship#leadingEditorFlag> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain :Editorship ;
+                                                           rdfs:range <https://w3id.org/cerif2/Boolean> ;
+                                                           rdfs:label "indicates whether this editor contributed all or major effort (true)" .
+
+
+###  https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0#embargoEndDate
+<https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0#embargoEndDate> rdf:type owl:DatatypeProperty ;
+                                                                                                     rdfs:domain :Embargoed_Access_COAR_Accessibility_Specification_v_1_0 ;
+                                                                                                     rdfs:range <https://w3id.org/cerif2/Date> .
+
+
+###  https://w3id.org/cerif2/spm/Journal#acronym
+<https://w3id.org/cerif2/spm/Journal#acronym> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :Journal ;
+                                              rdfs:range <https://w3id.org/cerif2/Multilingual_String> .
+
+
+###  https://w3id.org/cerif2/spm/Journal#endDate
+<https://w3id.org/cerif2/spm/Journal#endDate> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :Journal ;
+                                              rdfs:range <https://w3id.org/cerif2/Date> .
+
+
+###  https://w3id.org/cerif2/spm/Journal#startDate
+<https://w3id.org/cerif2/spm/Journal#startDate> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :Journal ;
+                                                rdfs:range <https://w3id.org/cerif2/Date> .
+
+
+###  https://w3id.org/cerif2/spm/Journal#title
+<https://w3id.org/cerif2/spm/Journal#title> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :Journal ;
+                                            rdfs:range <https://w3id.org/cerif2/Multilingual_String> .
+
+
+###  https://w3id.org/cerif2/spm/Journal_Article#endPage
+<https://w3id.org/cerif2/spm/Journal_Article#endPage> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :Journal_Article ;
+                                                      rdfs:range <https://w3id.org/cerif2/String> .
+
+
+###  https://w3id.org/cerif2/spm/Journal_Article#number
+<https://w3id.org/cerif2/spm/Journal_Article#number> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain :Journal_Article ;
+                                                     rdfs:range <https://w3id.org/cerif2/String> .
+
+
+###  https://w3id.org/cerif2/spm/Journal_Article#startPage
+<https://w3id.org/cerif2/spm/Journal_Article#startPage> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain :Journal_Article ;
+                                                        rdfs:range <https://w3id.org/cerif2/String> .
+
+
+###  https://w3id.org/cerif2/spm/Journal_Article#volume
+<https://w3id.org/cerif2/spm/Journal_Article#volume> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain :Journal_Article ;
+                                                     rdfs:range <https://w3id.org/cerif2/String> .
+
+
+###  https://w3id.org/cerif2/spm/Monograph#eISBN
+<https://w3id.org/cerif2/spm/Monograph#eISBN> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :Monograph ;
+                                              rdfs:range :ISBN .
+
+
+###  https://w3id.org/cerif2/spm/Monograph#isbn
+<https://w3id.org/cerif2/spm/Monograph#isbn> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain :Monograph ;
+                                             rdfs:range :ISBN .
+
+
+###  https://w3id.org/cerif2/spm/Publication_Series#eISSN
+<https://w3id.org/cerif2/spm/Publication_Series#eISSN> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain :Publication_Series ;
+                                                       rdfs:range :ISSN .
+
+
+###  https://w3id.org/cerif2/spm/Publication_Series#issn
+<https://w3id.org/cerif2/spm/Publication_Series#issn> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :Publication_Series ;
+                                                      rdfs:range :ISSN .
+
+
+###  https://w3id.org/cerif2/spm/Publishership#leadingPublisherFlag
+<https://w3id.org/cerif2/spm/Publishership#leadingPublisherFlag> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain :Publishership ;
+                                                                 rdfs:range <https://w3id.org/cerif2/Boolean> ;
+                                                                 rdfs:label "indicates whether this publisher was the leading one among several (true)" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/cerif2/spm/Authorship
+:Authorship rdf:type owl:Class ;
+            rdfs:subClassOf :Contribution_to_Document ;
+            rdfs:comment "Structured information about linking an [Agent](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Agent.md) or any of its specializations ([Person](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Person.md), [Organisation Unit](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Organisation_Unit.md)) with a [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md) or any of its specializations. Authorship implies responsibility and accountability of an Agent for published Document."@en ;
+            rdfs:label "Authorship"@en .
+
+
+###  https://w3id.org/cerif2/spm/COAR_Accessibility_Specification_v_1_0
+:COAR_Accessibility_Specification_v_1_0 rdf:type owl:Class ;
+                                        rdfs:subClassOf :Scholarly_Publication_Accessibility_Specification ;
+                                        rdfs:comment "The COAR Access Rights vocabulary defines concepts to declare the access status of a resource. Multilingual labels regard regional distinctions in language and term. The Access Rights vocabulary builds on access rights defined in info:eu-repo/semantics. <sup>[1](#fn1)</sup>"@en ;
+                                        rdfs:label "COAR Accessibility Specification v1.0"@en .
+
+
+###  https://w3id.org/cerif2/spm/CRediT_Contribution_Statement
+:CRediT_Contribution_Statement rdf:type owl:Class ;
+                               rdfs:subClassOf :Contribution_Statement ;
+                               rdfs:comment "A statement describing a contribution of an agent in producing a document in accordance with the CRediT contribution role taxonomy."@en ;
+                               rdfs:label "CRediTContributionStatement"@en .
+
+
+###  https://w3id.org/cerif2/spm/Conference_Paper
+:Conference_Paper rdf:type owl:Class ;
+                  rdfs:comment "A paper, published within a conference proceeding, typically the realization of a research paper reporting original research findings.<sup>[1](#fn1)</sup>"@en ;
+                  rdfs:label "Conference Paper"@en .
+
+
+###  https://w3id.org/cerif2/spm/Contribution
+:Contribution rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Contribution_Statement
+:Contribution_Statement rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Contribution_to_Document
+:Contribution_to_Document rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Contribution_to_Evaluation_Outcome
+:Contribution_to_Evaluation_Outcome rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Document
+:Document rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Editorship
+:Editorship rdf:type owl:Class ;
+            rdfs:subClassOf :Contribution ;
+            rdfs:comment """The relationship of an editor to some specific subclasses of [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md).
+An **editor** selects and prepares for publication material created and submitted by authors, having oversight of its content, format and presentation.<sup>[1](#fn1)</sup>"""@en ;
+            rdfs:label "Editorship"@en .
+
+
+###  https://w3id.org/cerif2/spm/Embargoed_Access_COAR_Accessibility_Specification_v_1_0
+:Embargoed_Access_COAR_Accessibility_Specification_v_1_0 rdf:type owl:Class ;
+                                                         rdfs:subClassOf :COAR_Accessibility_Specification_v_1_0 ;
+                                                         rdfs:comment "Embargoed access refers to a resource that is metadata only access until released for open access on a certain date. Embargoes can be required by publishers and funders policies, or set by the author (e.g such as in the case of theses and dissertations).<sup>[1](#fn1)</sup>"@en ;
+                                                         rdfs:label "Embargoed Access COAR Accessibility Specification v1.0"@en .
+
+
+###  https://w3id.org/cerif2/spm/Evaluation_Outcome
+:Evaluation_Outcome rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Journal
+:Journal rdf:type owl:Class ;
+         rdfs:subClassOf :Publication_Series ;
+         rdfs:comment "A journal is a serial publication devoted to disseminating original research and current developments on a subject. <sup>[1](#fn1)</sup>"@en ;
+         rdfs:label "Journal"@en .
+
+
+###  https://w3id.org/cerif2/spm/Journal_Article
+:Journal_Article rdf:type owl:Class ;
+                 rdfs:subClassOf :Scholarly_Publication ;
+                 rdfs:comment "An article on a particular topic and published in a journal issue. <sup>[1](#fn1)</sup>"@en ;
+                 rdfs:label "Journal Article"@en .
+
+
+###  https://w3id.org/cerif2/spm/Manuscript_Review_Activity
+:Manuscript_Review_Activity rdf:type owl:Class ;
+                            rdfs:subClassOf :Contribution_to_Evaluation_Outcome ;
+                            rdfs:comment "Reviewing a manuscript before a decision is made on whether it is published."@en ;
+                            rdfs:label "Manuscript Review Activity"@en .
+
+
+###  https://w3id.org/cerif2/spm/Manuscript_Review_Outcome
+:Manuscript_Review_Outcome rdf:type owl:Class ;
+                           rdfs:subClassOf :Evaluation_Outcome ;
+                           rdfs:comment "The outcome of a manuscript review."@en ;
+                           rdfs:label "Manuscript Review Outcome"@en .
+
+
+###  https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Not_Publish
+:Manuscript_Suggestion_to_Not_Publish rdf:type owl:Class ;
+                                      rdfs:subClassOf :Manuscript_Review_Outcome ;
+                                      rdfs:comment "The manuscript either does not fit the intended publishing channel or has major shortcomings that cannot be repaired."@en ;
+                                      rdfs:label "Manuscript Suggestion to Not Publish"@en .
+
+
+###  https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Publish_As_Is
+:Manuscript_Suggestion_to_Publish_As_Is rdf:type owl:Class ;
+                                        rdfs:subClassOf :Manuscript_Review_Outcome ;
+                                        rdfs:comment "The manuscript fits the intended publishing channel, is without shortcomings and can be published in its current form."@en ;
+                                        rdfs:label "Manuscript Suggestion to Publish As-Is"@en .
+
+
+###  https://w3id.org/cerif2/spm/Manuscript_Suggestion_to_Publish_with_Revisions
+:Manuscript_Suggestion_to_Publish_with_Revisions rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Manuscript_Review_Outcome ;
+                                                 rdfs:comment """The manuscript fits the intended publishing channel, but has shortcomings. 
+If the manuscript is revised, it can be published."""@en ;
+                                                 rdfs:label "Manuscript Suggestion to Publish with Revisions"@en .
+
+
+###  https://w3id.org/cerif2/spm/Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0
+:Metadata_Only_Access_COAR_Accessibility_Specification_v_1_0 rdf:type owl:Class ;
+                                                             rdfs:subClassOf :COAR_Accessibility_Specification_v_1_0 ;
+                                                             rdfs:comment "Metadata only access refers to a resource in which access is limited to metadata only. The resource itself is described by the metadata, but neither is directly available through the system or platform nor can be referenced to an open access copy in an external journal or trustworthy archive.<sup>[1](#fn1)</sup>"@en ;
+                                                             rdfs:label "Metadata Only Access COAR Accessibility Specification v1.0"@en .
+
+
+###  https://w3id.org/cerif2/spm/Monograph
+:Monograph rdf:type owl:Class ;
+           rdfs:subClassOf :Scholarly_Publication ;
+           rdfs:comment """[FIXME] Book is a non-serial publication that is complete in one volume or a designated finite number of volumes. <sup>[1](#fn1)</sup> 
+Monograph is a scholarly book or a treatise on a single subject or a group of related subjects."""@en ;
+           rdfs:label "Monograph"@en .
+
+
+###  https://w3id.org/cerif2/spm/Open_Access_COAR_Accessibility_Specification_v_1_0
+:Open_Access_COAR_Accessibility_Specification_v_1_0 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :COAR_Accessibility_Specification_v_1_0 ;
+                                                    rdfs:comment "Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers.The resource is either stored in the repository or referenced to an external journal or trustworthy archive.<sup>[1](#fn1)</sup>"@en ;
+                                                    rdfs:label "Open Access COAR Accessibility Specification v1.0"@en .
+
+
+###  https://w3id.org/cerif2/spm/Publication_Channel
+:Publication_Channel rdf:type owl:Class .
+
+
+###  https://w3id.org/cerif2/spm/Publication_Series
+:Publication_Series rdf:type owl:Class ;
+                    rdfs:subClassOf :Publication_Channel ;
+                    rdfs:comment "A Publication Series is a publication that is published regularly about a particular subject."@en ;
+                    rdfs:label "Publication Series"@en .
+
+
+###  https://w3id.org/cerif2/spm/Publishership
+:Publishership rdf:type owl:Class ;
+               rdfs:subClassOf :Authorship ;
+               rdfs:comment """The relationship of a publisher to some subclasses of [Document](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/Document.md).
+A **publisher** (a person or an organization) publishes material.<sup>[1](#fn1)</sup>"""@en ;
+               rdfs:label "Publishership"@en .
+
+
+###  https://w3id.org/cerif2/spm/Restricted_Access_COAR_Accessibility_Specification_v_1_0
+:Restricted_Access_COAR_Accessibility_Specification_v_1_0 rdf:type owl:Class ;
+                                                          rdfs:subClassOf :COAR_Accessibility_Specification_v_1_0 ;
+                                                          rdfs:comment "Restricted access refers to a resource that is available in a system but with some type of restriction for full open access. This type of access can occur in a number of different situations. Some examples are described below: The user must log-in to the system in order to access the resource The user must send an email to the author or system administrator to access the resource Access to the resource is restricted to a specific community (e.g. limited to a university community).<sup>[1](#fn1)</sup>"@en ;
+                                                          rdfs:label "Restricted Access COAR Accessibility Specification v1.0"@en .
+
+
+###  https://w3id.org/cerif2/spm/Scholarly_Publication
+:Scholarly_Publication rdf:type owl:Class ;
+                       rdfs:subClassOf :Document ;
+                       rdfs:comment "A resource consisting primarily of words for reading.<sup>[1](#fn1)</sup>"@en ;
+                       rdfs:label "Scholarly Publication"@en .
+
+
+###  https://w3id.org/cerif2/spm/Scholarly_Publication_Accessibility_Specification
+:Scholarly_Publication_Accessibility_Specification rdf:type owl:Class ;
+                                                   rdfs:comment "[FIXME] An entity for representing vocabularies for definition of concepts to declare the access status of a resource."@en ;
+                                                   rdfs:label "Scholarly Publication Accessibility Rights"@en .
+
+
+###  Generated by the OWL API (version 5.5.1) https://github.com/owlcs/owlapi/

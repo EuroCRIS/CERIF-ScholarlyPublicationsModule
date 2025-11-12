@@ -1,5 +1,6 @@
 # Monograph
 
+## Definition
 [FIXME] Book is a non-serial publication that is complete in one volume or a designated finite number of volumes. <sup>[1](#fn1)</sup> 
 Monograph is a scholarly book or a treatise on a single subject or a group of related subjects.
 

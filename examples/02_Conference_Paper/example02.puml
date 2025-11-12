@@ -1,0 +1,471 @@
+@startuml
+left to right direction
+
+frame "Ivan" #LightBlue {
+    object "<u>Ivan Mrsulja:Person</u>" as personIvanMrsulja #ffffff {
+       personName = {
+       \t firstNames = "Ivan"
+       \t familyNames = "Mršulja"
+       } ^^ PersonName
+    }
+
+    object "<u>Ivan Affiliation:Affiliation_Statement</u>" as affiliationIvanUNS #ffffff {
+        displayAffiliation = "University of Novi Sad, Faculty of Technical Sciences"@en
+        displayPersonName = "Mršulja, I."
+    }
+
+    object "<u>Ivan's presentation at CRIS 2024:Contribution_to_Event</u>" as contributionIvanCRIS2024 #ffffff {
+         dateRange = {
+         \t startDate = 2024-05-15 ^^ Date
+         } ^^ DateRange
+    }
+
+    personIvanMrsulja --> "is-actor-in" contributionIvanCRIS2024
+    contributionIvanCRIS2024 --> "has-affiliation-statement" affiliationIvanUNS
+
+    object "<u>Ivan's Contribution Statement:Contribution_Statement</u>" as contributionStatementIvanCRIS2024 #ffffff {
+        statement = "Ivan presented the paper at the conference."@en
+    }
+
+    contributionIvanCRIS2024 --> "has-contribution-statement" contributionStatementIvanCRIS2024
+
+    object "<u>Ivan Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementIvanCRIS2024 #ffffff {
+        statement = "Material for Ivan talk is prepared as open-access slides."@en
+    }
+
+    contributionStatementIvanCRIS2024 --> "is-detailed-in" resourceUsageStatementIvanCRIS2024
+
+    object "<u>Ivan's Slides for CRIS 2024:Authorship</u>" as contributionIvanSlides #ffffff {
+        contributionSequenceKey = 1
+        dateRange = {
+        \t startDate = 2024 ^^ Date
+        \t endDate = 2024-05-15 ^^ Date
+        } ^^ DateRange
+    }
+
+    personIvanMrsulja --> "is-actor-in" contributionIvanSlides
+    contributionIvanSlides --> "has-affiliation-statement" affiliationIvanUNS
+
+    object "<u>Ivan's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementIvanSlides #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionIvanSlides --> "has-contribution-statement" contributionStatementIvanSlides
+
+    object "<u>Ivan's Extented Abstract for CRIS 2024:Authorship</u>" as contributionIvanExtendedAbstract #ffffff {
+        contributionSequenceKey = 1
+        dateRange = {
+        \t startDate = 2024 ^^ Date
+        \t endDate = 2024-03-01 ^^ Date
+        } ^^ DateRange
+    }
+
+    personIvanMrsulja --> "is-actor-in" contributionIvanExtendedAbstract
+    contributionIvanExtendedAbstract --> "has-affiliation-statement" affiliationIvanUNS
+
+    object "<u>Ivan's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementIvanExtendedAbstract #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionIvanExtendedAbstract --> "has-contribution-statement" contributionStatementIvanExtendedAbstract
+
+    object "<u>Ivan's Full Paper for CRIS 2024:Authorship</u>" as contributionIvanFullPaper #ffffff {
+        contributionSequenceKey = 1
+        dateRange = {
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
+        } ^^ DateRange
+    }
+
+    personIvanMrsulja --> "is-actor-in" contributionIvanFullPaper
+    contributionIvanFullPaper --> "has-affiliation-statement" affiliationIvanUNS
+
+    object "<u>Ivan's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementIvanFullPaper #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Lead" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionIvanFullPaper --> "has-contribution-statement" contributionStatementIvanFullPaper
+
+}
+
+    affiliationIvanUNS --> "has-institution" institutionUNS
+
+    cris2024 --> "has-contribution" contributionIvanCRIS2024
+
+    resourceUsageStatementIvanCRIS2024 --> "uses" slidesCRIS2024
+
+    slidesCRIS2024 --> "has-contribution" contributionIvanSlides
+
+    contributionStatementIvanSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+
+    extendedAbstractCRIS2024 --> "has-contribution" contributionIvanExtendedAbstract
+
+    fullPaperCRIS2024 --> "has-contribution" contributionIvanFullPaper
+
+frame "Milos" #LightGreen {
+    object "<u>Milos Popovic:Person</u>" as personMilosPopovic #ffffff {
+       personName = {
+       \t firstNames = "Miloš"
+       \t familyNames = "Popović"
+       } ^^ PersonName
+    }
+
+    object "<u>Milos Affiliation:Affiliation_Statement</u>" as affiliationIvanUNS #ffffff {
+        displayAffiliation = "University of Novi Sad, Faculty of Technical Sciences"@en
+        displayPersonName = "Popović, M."
+    }
+
+    object "<u>Milos's Slides for CRIS 2024:Authorship</u>" as contributionMilosSlides #ffffff {
+        contributionSequenceKey = 2
+        dateRange = {
+        \t startDate = 2024 ^^ Date
+        \t endDate = 2024-05-15 ^^ Date
+        } ^^ DateRange
+    }
+
+    personMilosPopovic --> "is-actor-in" contributionMilosSlides
+    contributionMilosSlides --> "has-affiliation-statement" affiliationMilosUNS
+
+    object "<u>Milos's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementMilosSlides #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionMilosSlides --> "has-contribution-statement" contributionStatementMilosSlides
+
+    object "<u>Milos's Extented Abstract for CRIS 2024:Authorship</u>" as contributionMilosExtentedAbstract #ffffff {
+        contributionSequenceKey = 2
+        dateRange = {
+        \t startDate = 2024 ^^ Date
+        \t endDate = 2024-03-01 ^^ Date
+        } ^^ DateRange
+    }
+
+    personMilosPopovic --> "is-actor-in" contributionMilosExtentedAbstract
+    contributionMilosExtentedAbstract --> "has-affiliation-statement" affiliationMilosUNS
+
+    object "<u>Milos's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementMilosExtendedAbstract #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionMilosExtentedAbstract --> "has-contribution-statement" contributionMilosExtentedAbstract
+
+    object "<u>Milos's Full Paper for CRIS 2024:Authorship</u>" as contributionMilosFullPaper #ffffff {
+        contributionSequenceKey = 2
+        dateRange = {
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
+        } ^^ DateRange
+    }
+
+    personMilosPopovic --> "is-actor-in" contributionMilosFullPaper
+    contributionMilosFullPaper --> "has-affiliation-statement" affiliationMilosUNS
+
+    object "<u>Milos's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementMilosFullPaper #ddeedd {
+        roleType = "Writing – original draft" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionMilosFullPaper --> "has-contribution-statement" contributionStatementMilosFullPaper
+
+}
+
+    affiliationMilosUNS --> "has-institution" institutionUNS
+
+    slidesCRIS2024 --> "has-contribution" contributionMilosSlides
+
+    contributionStatementMilosSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+
+    extendedAbstractCRIS2024 --> "has-contribution" contributionMilosExtentedAbstract
+
+    fullPaperCRIS2024 --> "has-contribution" contributionMilosFullPaper
+
+frame "Dragan" #LightYellow {
+    object "<u>Dragan Ivanovic:Person</u>" as personDraganIvanovic #ffffff {
+       personName = {
+       \t firstNames = "Dragan"
+       \t familyNames = "Ivanović"
+       } ^^ PersonName
+    }
+
+    object "<u>Dragan ORCID:ORCID_Identifier</u>" as orcidDragan #ffffff {
+       orcidId = "https://orcid.org/0000-0002-9942-5521" ^^ ORCID_iD_Type
+    }
+
+    personDraganIvanovic --> "has-identifier" orcidDragan
+
+    object "<u>Dragan Affiliation:Affiliation_Statement</u>" as affiliationDraganUNS #ffffff {
+        displayAffiliation = "University of Novi Sad, Faculty of Technical Sciences"@en
+        displayPersonName = "Ivanović, D."
+    }
+
+    object "<u>Dragan's Slides for CRIS 2024:Authorship</u>" as contributionDraganSlides #ffffff {
+        contributionSequenceKey = 3
+        dateRange = {
+        \t startDate = 2024 ^^ Date
+        \t endDate = 2024-05-15 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDraganIvanovic --> "is-actor-in" contributionDraganSlides
+    contributionDraganSlides --> "has-affiliation-statement" affiliationDraganUNS
+
+    object "<u>Dragan's Slides Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDraganSlides #ddeedd {
+        roleType = "Supervision" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionDraganSlides --> "has-contribution-statement" contributionStatementDraganSlides
+
+    object "<u>Dragan's Extented Abstract for CRIS 2024:Authorship</u>" as contributionDraganExtentedAbstract #ffffff {
+        contributionSequenceKey = 3
+        dateRange = {
+        \t startDate = 2024 ^^ Date
+        \t endDate = 2024-03-01 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDraganIvanovic --> "is-actor-in" contributionDraganExtentedAbstract
+    contributionDraganExtentedAbstract --> "has-affiliation-statement" affiliationDraganUNS
+
+    object "<u>Dragan's Extented Abstract Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDraganExtentedAbstract #ddeedd {
+        roleType = "Supervision" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionDraganExtentedAbstract --> "has-contribution-statement" contributionStatementDraganExtentedAbstract
+
+    object "<u>Dragan's Full Paper for CRIS 2024:Authorship</u>" as contributionDraganFullPaper #ffffff {
+        contributionSequenceKey = 3
+        dateRange = {
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-10-15 ^^ Date
+        } ^^ DateRange
+    }
+
+    personDraganIvanovic --> "is-actor-in" contributionDraganFullPaper
+    contributionDraganFullPaper --> "has-affiliation-statement" affiliationDraganUNS
+
+    object "<u>Dragan's Full Paper Contribution Statement:CRediT_Contribution_Statement</u>" as contributionStatementDraganFullPaper #ddeedd {
+        roleType = "Supervision" ^^ CRediT_Role_Type
+        degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
+    }
+
+    contributionDraganFullPaper --> "has-contribution-statement" contributionStatementDraganFullPaper
+
+}
+
+    affiliationDraganUNS --> "has-institution" institutionUNS
+
+    slidesCRIS2024 --> "has-contribution" contributionDraganSlides
+
+    contributionStatementDraganSlides --> "is-detailed-in" resourceUsageStatementSlidesCRIS2024ExtendedAbstract
+
+    extendedAbstractCRIS2024 --> "has-contribution" contributionDraganExtentedAbstract
+
+    fullPaperCRIS2024 --> "has-contribution" contributionDraganFullPaper
+
+frame "Lidija" #LightPink{
+
+    object "<u>Lidija Affiliation:Affiliation_Statement</u>" as affiliationLidijaUNS #ffffff {
+        displayAffiliation = "University of Novi Sad, Faculty of Education"@en
+        displayPersonName = "Ivanović, L."
+    }
+
+    object "<u>Lidija's Slides for CRIS 2024:Authorship</u>" as contributionLidijaSlides #ffffff {
+        contributionSequenceKey = 4
+    }
+
+    contributionLidijaSlides --> "has-affiliation-statement" affiliationLidijaUNS
+
+    object "<u>Lidija's Extented Abstract for CRIS 2024:Authorship</u>" as contributionLidijaExtentedAbstract #ffffff {
+        contributionSequenceKey = 4
+    }
+
+    contributionLidijaExtentedAbstract --> "has-affiliation-statement" affiliationLidijaUNS
+
+    object "<u>Lidija's Full Paper for CRIS 2024:Authorship</u>" as contributionLidijaFullPaper #ffffff {
+        contributionSequenceKey = 4
+    }
+
+    contributionLidijaFullPaper --> "has-affiliation-statement" affiliationLidijaUNS
+
+}
+
+    slidesCRIS2024 --> "has-contribution" contributionLidijaSlides
+
+    extendedAbstractCRIS2024 --> "has-contribution" contributionLidijaExtentedAbstract
+
+    fullPaperCRIS2024 --> "has-contribution" contributionLidijaFullPaper
+
+frame "Dusan" #LightGray {
+
+    object "<u>Surla Affiliation:Affiliation_Statement</u>" as affiliationSurlaUNS #ffffff {
+        displayAffiliation = "University of Novi Sad, Faculty of Sciences"@en
+        displayPersonName = "Surla, D."
+    }
+
+    object "<u>Dusan's Slides for CRIS 2024:Authorship</u>" as contributionDusanSlides #ffffff {
+        contributionSequenceKey = 5
+    }
+
+    contributionDusanSlides --> "has-affiliation-statement" affiliationDusanUNS
+
+    object "<u>Dusan's Extented Abstract for CRIS 2024:Authorship</u>" as contributionDusanExtentedAbstract #ffffff {
+        contributionSequenceKey = 5
+    }
+
+    contributionDusanExtentedAbstract --> "has-affiliation-statement" affiliationDusanUNS
+
+    object "<u>Dusan's Full Paper for CRIS 2024:Authorship</u>" as contributionDusanFullPaper #ffffff {
+        contributionSequenceKey = 5
+    }
+
+    contributionDusanFullPaper --> "has-affiliation-statement" affiliationDusanUNS
+
+}
+
+    slidesCRIS2024 --> "has-contribution" contributionDusanSlides
+
+    extendedAbstractCRIS2024 --> "has-contribution" contributionDusanExtentedAbstract
+
+    fullPaperCRIS2024 --> "has-contribution" contributionDusanFullPaper
+
+    object "<u>Open Access: Open Access COAR v.1.0 Accessibility Specification</u>" as OpenAccess #ddeedd
+
+    object "<u>CRIS:EventSeries</u>" as cris #ffffff {
+        title = "International Conference on Current Research Information Systems"@en
+        acronym = "CRIS"@en
+        recurrencePeriod = 1
+        recurrenceUnit = "year"@en
+    }
+
+    object "<u>CRIS 2024: Event</u>" as cris2024 #ffffff {
+        title = "16th International Conference on Current Research Information Systems"@en
+        acronym = "CRIS 2024"@en
+        dateRange = {
+        \t startDate = 2024-05-15 ^^ Date
+        \t endDate = 2024-05-17 ^^ Date
+        } ^^ DateRange
+    }
+
+    cris2024 --> "belongs-to-series" cris
+
+    object "<u>UNS:Organisation_Unit</u>" as institutionUNS #ffffff {
+        name = "University of Novi Sad"@en,
+        \t "Univerzitet u Novom Sadu"@sr
+        acronym = "UNS"
+        contacts = [
+        \t\t\t{uri =  "https://www.uns.ac.rs" ^^ URI}
+        \t\t] ^^ List<Contact_Information>
+    }
+
+    object "<u>UNS ROR:ROR_Identifier</u>" as rorUNS #ffffff {
+        rorId = "https://ror.org/00xa57a59" ^^ ROR_ID_Type
+    }
+
+    institutionUNS --> "has-identifier" rorUNS
+
+
+    object "<u>Presentation slides:Presentation, Textual_Contents, Downloadable, Accessible_on_the_Web</u>" as slidesCRIS2024 #ddeedd {
+        title = "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en
+        downloadURL = "https://dspacecris.eurocris.org/bitstream/11366/2540/4/Mr%c5%a1ulja-et-al-CRIS2024_slides_Reengineering-of-CRIS-at-UNS.pdf" ^^ URI
+        accessURL = "https://dspacecris.eurocris.org/handle/11366/2540" ^^ URI
+        publicationDate = 2024-05-15 ^^ Date
+    }
+
+    slidesCRIS2024 --> "access-rights-specification" OpenAccess
+
+    object "<u>Slides Handle:Handle_Identifier</u>" as handleSlides #ffffff {
+       handleId = "11366/2540" ^^ Handle_ID
+    }
+
+    slidesCRIS2024 --> "has-identifier" handleSlides
+
+    object "<u>DSpace-CRIS euroCRIS:Repository, Publication_Channel</u>" as dspaceCRISEuroCRIS #ffffff {
+       title = "The euroCRIS repository"@en
+       url = "https://dspacecris.eurocris.org/" ^^ Website_Address
+    }
+
+    slidesCRIS2024 --> "published-in" dspaceCRISEuroCRIS
+
+    object "<u>Slides based on Extended abstract Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementSlidesCRIS2024ExtendedAbstract #ffffff {
+        statement = "Slides are prepared by using extended abstract."@en
+    }
+
+    resourceUsageStatementSlidesCRIS2024ExtendedAbstract --> "uses" extendedAbstractCRIS2024
+
+    object "<u>Extended abstract:Conference_Abstract, Textual_Contents, Downloadable, Accessible_on_the_Web</u>" as extendedAbstractCRIS2024 #ddeedd {
+        title = "TeslaRIS - Reengineering of CRIS at University of Novi Sad"@en
+        downloadURL = "https://dspacecris.eurocris.org/bitstream/11366/2540/1/Mr%c5%a1ulja-et-al-CRIS2024_Reengineering-of-CRIS-at-UNS.pdf" ^^ URI
+        accessURL = "https://dspacecris.eurocris.org/handle/11366/2540" ^^ URI
+        publicationDate = 2024-03-01 ^^ Date
+    }
+
+    extendedAbstractCRIS2024 --> "access-rights-specification" OpenAccess
+
+    extendedAbstractCRIS2024 --> "published-in" dspaceCRISEuroCRIS
+
+    object "<u>Full Paper based on Extended abstract Resource Usage Statement:Resource_Usage_Statement</u>" as resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides #ffffff {
+        statement = "Full paper is prepared by using extended abstract and slides."@en
+    }
+
+    contributionStatementIvanFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementMilosFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementDraganFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementLidijaFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+    contributionStatementDusanFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
+
+    resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides --> "uses" extendedAbstractCRIS2024
+
+    resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides --> "uses" slidesCRIS2024
+
+    object "<u>Full Paper:Conference_Paper, Textual_Contents, Accessible_on_the_Web</u>" as fullPaperCRIS2024 #ddeedd {
+        title = "Reengineering of CRIS at University of Novi Sad"@en
+        accessURL = "https://www.sciencedirect.com/science/article/pii/S1877050924032630" ^^ URI
+        publicationDate = 2024 ^^ Date
+    }
+
+    object "<u>Full Paper DOI:DOI_Identifier</u>" as doiFullPaper #ffffff {
+       doiID = "10.1016/j.procs.2024.11.052" ^^ DOI_ID
+    }
+
+    fullPaperCRIS2024 --> "has-identifier" doiFullPaper
+
+    fullPaperCRIS2024 --> "access-rights-specification" OpenAccess
+
+    fullPaperCRIS2024 --> "is-part-of" proceediaCRIS2024Proceedings
+    ( fullPaperCRIS2024, proceediaCRIS2024Proceedings ) .. fullPaperContentsLocation
+
+    object "<u>Full Paper contents location : Page_Based_Contents_Location</u>" as fullPaperContentsLocation #ffffff {
+       startPage = 85
+       endPage = 93
+    }
+
+    object "<u>CRIS 2024 Proceedings:Proceedings, Textual_Contents, Accessible_on_the_Web</u>" as proceediaCRIS2024Proceedings #ddeedd {
+        title = "16th International Conference on Current Research Information Systems (CRIS 2024)"@en
+        accessURL = "https://www.sciencedirect.com/journal/procedia-computer-science/vol/249" ^^ URI
+        publicationDate = 2024 ^^ Date
+    }
+
+    proceediaCRIS2024Proceedings --> "event" cris2024
+
+    proceediaCRIS2024Proceedings --> "published-in" proceediaComputerScience
+    ( proceediaCRIS2024Proceedings, proceediaComputerScience ) .. proceedingsContentsLocation
+
+    object "<u>Full Paper contents location : Serial_Publication_Based_Contents_Location</u>" as proceedingsContentsLocation #ffffff {
+       volume = 249
+    }
+
+    object "<u>Proceedia Computer Science:Books_Series</u>" as proceediaComputerScience #ddeedd {
+        title = "Proceedia Computer Science"@en
+        ISSN = "1877-0509" ^^ ISSN
+    }
+
+
+
+@enduml
