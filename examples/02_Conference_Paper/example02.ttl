@@ -18,12 +18,12 @@
     a <https://w3id.org/cerif2/ROR_Identifier> ;
     <https://w3id.org/cerif2/ROR_Identifier#rorId> "00xa57a59"^^<https://w3id.org/cerif2/ROR_ID>
   ] ;
-  <https://w3id.org/cerif2/Group#hasParts> :fts .
+  <https://w3id.org/cerif2/Organisation_Unit#hasPart> :fts .
 
 :fts a <https://w3id.org/cerif2/Organisation_Unit> ;
      <https://w3id.org/cerif2/Group_or_Organisation_Unit#name> "Faculty of Technical Sciences"@en , "Fakultet Tehničkih Nauka"@sr ;
      <https://w3id.org/cerif2/Group_or_Organisation_Unit#acronym> "FTS"@en , "FTN"@sr ;
-     <https://w3id.org/cerif2/Group#isPartOf> :uns .
+     <https://w3id.org/cerif2/Organisation_Unit#isPartOf> :uns .
 
 :ivan_mrsulja a <https://w3id.org/cerif2/Person> ;
   <https://w3id.org/cerif2/Person#name> [

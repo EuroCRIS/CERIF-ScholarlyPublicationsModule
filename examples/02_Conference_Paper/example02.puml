@@ -113,7 +113,7 @@ frame "Milos" #LightGreen {
        } ^^ PersonName
     }
 
-    object "<u>Milos Affiliation:Affiliation_Statement</u>" as affiliationIvanUNS #ffffff {
+    object "<u>Milos Affiliation:Affiliation_Statement</u>" as affiliationMilosUNS #ffffff {
         displayAffiliation = "University of Novi Sad, Faculty of Technical Sciences"@en
         displayPersonName = "Popović, M."
     }
@@ -152,7 +152,7 @@ frame "Milos" #LightGreen {
         degreeOfContribution = "Supporting" ^^ CRediT_Degree_of_Contribution
     }
 
-    contributionMilosExtentedAbstract --> "has-contribution-statement" contributionMilosExtentedAbstract
+    contributionMilosExtentedAbstract --> "has-contribution-statement" contributionStatementMilosExtendedAbstract
 
     object "<u>Milos's Full Paper for CRIS 2024:Authorship</u>" as contributionMilosFullPaper #ffffff {
         contributionSequenceKey = 2
@@ -304,7 +304,7 @@ frame "Lidija" #LightPink{
 
 frame "Dusan" #LightGray {
 
-    object "<u>Surla Affiliation:Affiliation_Statement</u>" as affiliationSurlaUNS #ffffff {
+    object "<u>Dusan Affiliation:Affiliation_Statement</u>" as affiliationDusanUNS #ffffff {
         displayAffiliation = "University of Novi Sad, Faculty of Sciences"@en
         displayPersonName = "Surla, D."
     }
@@ -417,8 +417,6 @@ frame "Dusan" #LightGray {
     contributionStatementIvanFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
     contributionStatementMilosFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
     contributionStatementDraganFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
-    contributionStatementLidijaFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
-    contributionStatementDusanFullPaper --> "is-detailed-in" resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides
 
     resourceUsageStatementFullPaperCRIS2024ExtendedAbstractSlides --> "uses" extendedAbstractCRIS2024
 
