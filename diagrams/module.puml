@@ -84,7 +84,6 @@
 
     !startsub Journal
         class "Journal" #ddeedd {
-            DOI : DOI
             startDate : Date
             endDate : Date
         }

@@ -13,8 +13,6 @@ A [journal article](../entities/Journal_Article.md) should contain information a
 
 Beside those inherited from [Publication Channel](https://github.com/EuroCRIS/CERIF-Core/blob/main/entities/PublicationChannel.md#attributes), and [Publication Series](../entities/Publication_Series.md#attributes):
 
-DOI: [DOI](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/DOI.md) 
-
 title: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md)
 
 acronym: [Multilingual String](https://github.com/EuroCRIS/CERIF-Core/blob/main/datatypes/Multilingual_String.md)
